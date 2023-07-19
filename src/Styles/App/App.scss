@@ -1,0 +1,16 @@
+body {
+    background-color: var(--bg)
+}
+*{
+    padding: 0; margin: 0;
+}
+a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+button,svg{
+    cursor: pointer;
+}
