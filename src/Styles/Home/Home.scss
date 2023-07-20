@@ -11,42 +11,78 @@
         width: 100%;
     }
  
-    .NavBar{
-        position: absolute;
-        width: fill;
-        padding: 20px 64px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        img{
-            width: 100px !important;
-        }
-        a{
-            color: white;
-            font-size: 14px;
-            margin-inline: 24px;
+//     .NavBar{
+//         position: absolute;
+//         width: fill;
+//         padding: 20px 64px;
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         img{
+//             width: 100px !important;
+//         }
+//         a{
+//             color: white;
+//             font-size: 14px;
+//             margin-inline: 24px;
 
-        }
-        span{
-            background: black;
-            color: white;
-            padding: 9px;
-            font-weight: bold;
-            font-size: 11px;
-            margin-left: 20px;
-            border-radius: 5px;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            -ms-border-radius: 5px;
-            -o-border-radius: 5px;
-}
-    }
-    .Links{
-        a:first-child{
-            color: #C7F36C !important;
-        }
-    }
+//         }
+//         span{
+//             background: black;
+//             color: white;
+//             padding: 9px;
+//             font-weight: bold;
+//             font-size: 11px;
+//             margin-left: 20px;
+//             border-radius: 5px;
+//             -webkit-border-radius: 5px;
+//             -moz-border-radius: 5px;
+//             -ms-border-radius: 5px;
+//             -o-border-radius: 5px;
+// }
+//     }
+//     .Links{
+//         a:first-child{
+//             color: #C7F36C !important;
+//         }
+//     }
     
+}
+.NavBar{
+    position: absolute;
+    width: fill;
+    padding: 20px 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+    img{
+        width: 100px !important;
+    }
+    a{
+        color: white;
+        font-size: 14px;
+        margin-inline: 24px;
+
+    }
+    span{
+        background: black;
+        color: white;
+        padding: 9px;
+        font-weight: bold;
+        font-size: 11px;
+        margin-left: 20px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
+}
+.Links{
+    a:first-child{
+        color: #C7F36C !important;
+    }
 }
 
 .Home2{
