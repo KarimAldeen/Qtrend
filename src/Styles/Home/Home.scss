@@ -1,15 +1,16 @@
 
-.Home,.Home2,.Home3{
+.Home,.Home2,.Home3,.Home4{
     max-width: 100vw;
     position: relative;
-    
-}
-.Home{
     
     img{
         max-width: 100vw;
         width: 100%;
     }
+    
+}
+.Home{
+
  
     .NavBar{
         position: absolute;
@@ -84,7 +85,10 @@
         color: #C7F36C !important;
     }
 }
-
+.Home2_Contain{
+    position: absolute;
+    top: 0;
+}
 .Home2{
  
     .Home2_Text{
@@ -92,12 +96,6 @@
         align-items: center;
         padding-top: 70px;
     }
-    img{
-        max-width: 100vw;
-        width: 100%;
-        position: absolute;
-    }
-  
 }
 .Home2{
     .Home2_Text{
@@ -181,3 +179,12 @@
     -ms-transform: translateY(-12px);
     -o-transform: translateY(-12px);
 }
+
+// .Home3{
+//     background-image: url("../../../public/HomeBG.png");
+//     height: 100%;
+
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: contain;
+// }

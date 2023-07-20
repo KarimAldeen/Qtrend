@@ -2,8 +2,10 @@
 import Link from 'next/link'
 import React from 'react'
 import one from '../../public/Number/1.svg'
-import Services_Cards from '@/components/Services_Cards'
 import NavBar from '@/components/NavBar'
+import Services_Cards from '@/Components/Services_Cards'
+import { FaFacebookF,FaTiktok,FaWhatsapp,FaSnapchatGhost,FaInstagram ,FaLinkedinIn } from "react-icons/fa";
+
 const Page = () => {
 
   return (
@@ -15,7 +17,8 @@ const Page = () => {
       </div>
       <div className='Home2'>
         <img src="../HomeBG123.png" alt="Image" />
-        <div className='Home2_Text'>
+    <div className='Home2_Contain'>
+    <div className='Home2_Text'>
           <h2>Welcome</h2>
           <div className='Home2_Text_h1'>
             <h1>
@@ -33,13 +36,51 @@ const Page = () => {
 
         </div>
         <div className='Home2_Services'>
-          <Services_Cards  Key={1} Number={one} />
+          <Services_Cards  Key={1}/>
           <Services_Cards  Key={2} />
           <Services_Cards  Key={3} />
+        
+        </div>
+        <div className='Home2_Services2'>
+          <Services_Cards  Key={4} />
+          <Services_Cards  Key={5} />
+          <Services_Cards  Key={6} />
+
 
         </div>
-      </div>
+        <div className='Services_Social'>
+          <div className='Services_MIcon MIcon1 '>
+          <FaFacebookF />
+          </div>
+          <div className='Services_MIcon MIcon2'>
+          <FaTiktok />
+          </div>
+          <div className='Services_MIcon MIcon3'>
+          <FaInstagram />
 
+          </div>
+          <div className='Services_MIcon MIcon4'>
+          <FaSnapchatGhost />
+
+          </div>
+          <div className='Services_MIcon MIcon5'>
+          <FaWhatsapp />
+
+          </div>
+          <div className='Services_MIcon MIcon6'>
+          <FaLinkedinIn />
+          </div>
+        
+        </div>
+       
+    </div>
+      </div>
+      <div className='Home3'>
+        <img src="../HomeBG4.png" alt="Image" />
+        </div>
+        <div className='Home4'>
+        <img src="../Footer.png" alt="Image" />
+        </div>
 
     </>
 

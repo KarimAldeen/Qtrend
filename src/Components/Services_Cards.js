@@ -14,7 +14,7 @@ const Services_Cards = ({Key}) => {
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                 >
-                    <h4>After Hover</h4>
+                    <h4>Ibra is Trash</h4>
                 </div>
                 <div
                     className="Card_2"

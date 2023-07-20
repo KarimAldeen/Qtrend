@@ -1,10 +1,33 @@
 .Home2{
+    
     .Home2_Services{
         position: absolute;
         left: 25vw;
-        display: flex;
         gap: 60px ;
-        max-width: 100vw;
+        max-width: 100%;
+            transform: translateY(24vw);
+            -webkit-transform: translateY(24vw);
+            -moz-transform: translateY(24vw);
+            -ms-transform: translateY(24vw);
+            -o-transform: translateY(24vw);
+        
+        display: flex;
+      
+
+
     }
+      .Home2_Services2{
+            position: absolute;
+            left: 25vw;
+            gap: 60px ;
+            max-width: 100%;
+            transform: translateY(45vw);
+            -webkit-transform: translateY(45vw);
+            -moz-transform: translateY(45vw);
+            -ms-transform: translateY(45vw);
+            -o-transform: translateY(45vw);
+            
+            display: flex;
+}
 
 }
