@@ -1,20 +1,22 @@
 .Services_Cards{
     display: flex;
-    height: 218px;
-    width: 247px;
+    height: 15vw;
+    width: 19vw;
+   
+    
     .Main_Card{
         position: relative;
     }
     .Card_2{
         position: absolute;
         background: red;
-        height: 218px;
-        width: 247px;
-        border-radius: 30px;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        -ms-border-radius: 30px;
-        -o-border-radius: 30px;
+        height: 15vw;
+        width: 19vw;
+        border-radius: 2vw;
+        -webkit-border-radius: 2vw;
+        -moz-border-radius: 2vw;
+        -ms-border-radius: 2vw;
+        -o-border-radius: 2vw;
         display: flex;
         align-items: center ;
         cursor: pointer;
@@ -24,19 +26,18 @@
         -ms-transition: .4s ease-in-out;
         -o-transition: .4s ease-in-out;
         box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.4);
-
 }
 .Card_1{
     position: absolute;
     background: white;
-    height: 180px;
-    width: 215px;
-    left: 15px;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    height: 15vw;
+     width: 17vw;
+    left: 1vw;
+    border-radius: 2vw;
+    -webkit-border-radius: 2vw;
+    -moz-border-radius: 2vw;
+    -ms-border-radius: 2vw;
+    -o-border-radius: 2vw;
     display: flex;
     align-items: center ;
     justify-content: center;
@@ -96,24 +97,29 @@
     .Card_2_Top{
         display: flex;
         text-align: center; justify-content: center;
-        padding-top: 20px;
+        padding-top: 1.8vw;
 
     }
     .Card_2_Top_Word{
         display: flex; flex-direction: column; align-items: start; justify-content: center;
         h2{
             
-            font-size:20px;
+            font-size:1.8vw;
             font-weight: 950;
             color: #3E4349;
             margin-bottom: 0;
             
         }
         h3{
-            font-size:33px;
+            font-size:2.7vw;
             font-weight: 950;
             color: #3E4349;
-        }
+            transform: translateY(-10px);
+            -webkit-transform: translateY(-10px);
+            -moz-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+            -o-transform: translateY(-10px);
+}
     }
 }
 .Card_2{
@@ -142,4 +148,11 @@ button{
     -moz-box-shadow: 9px 0px 0px 0px #d9d9d9;
     box-shadow: 9px 0px 0px 0px #d9d9d9;
 }
+}
+.Services_Cards{
+    transform: translateY(24vw);
+    -webkit-transform: translateY(24vw);
+    -moz-transform: translateY(24vw);
+    -ms-transform: translateY(24vw);
+    -o-transform: translateY(24vw);
 }

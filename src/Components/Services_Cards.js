@@ -22,7 +22,7 @@ const Services_Cards = ({Key}) => {
                     onMouseLeave={handleMouseLeave}
                 >
                     <div className="Card_2_Top">
-                        <h1>1</h1>
+                        <h1>{Key}</h1>
                         <div className="Card_2_Top_Word">
                             <h2>CREATIVE</h2>
                             <h3>DESIGNS</h3>

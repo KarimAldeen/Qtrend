@@ -14,31 +14,31 @@
     .NavBar{
         position: absolute;
         width: fill;
-        padding: 20px 64px;
+        padding: 20px 3vw;
         display: flex;
         align-items: center;
         justify-content: space-between;
         img{
-            width: 100px !important;
+            width: 10vw !important;
         }
         a{
             color: white;
-            font-size: 14px;
-            margin-inline: 24px;
+            font-size: 1vw;
+            margin-inline: 2vw;
 
         }
         span{
             background: black;
             color: white;
-            padding: 9px;
+            padding: .7vw;
             font-weight: bold;
-            font-size: 11px;
+            font-size: 1vw;
             margin-left: 20px;
-            border-radius: 5px;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            -ms-border-radius: 5px;
-            -o-border-radius: 5px;
+            border-radius: .7vw;
+            -webkit-border-radius: .7vw;
+            -moz-border-radius: .7vw;
+            -ms-border-radius: .7vw;
+            -o-border-radius: .7vw;
 }
     }
     .Links{
@@ -144,7 +144,4 @@
     -moz-transform: translateY(-12px);
     -ms-transform: translateY(-12px);
     -o-transform: translateY(-12px);
-}
-.Home2_Text{
-    margin-bottom: 320px;
 }
