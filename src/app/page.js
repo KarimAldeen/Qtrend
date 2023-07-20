@@ -1,27 +1,16 @@
-import Services_Cards from '@/Components/Services_Cards'
+// import Services_Cards from '@/Components/Services_Cards'
 import Link from 'next/link'
 import React from 'react'
 import one from '../../public/Number/1.svg'
+import Services_Cards from '@/components/Services_Cards'
+import NavBar from '@/components/NavBar'
 const Page = () => {
-  const NavLinks = ["HOME", "OUR SERVICES", "OUR WORKS", "ABOUT US", "MEET US"]
 
   return (
     <>
+    <NavBar />
       <div className='Home'>
-        <div className='NavBar'>
-          <img src='../Logo_Qtrend.svg' alt='' />
-          <div className='Links'>
-            {
-              NavLinks?.map((i, index) => (
-                // <Link key={index} href={i} className={router?.pathname === i ? "Active_Links" : ""} >{i}</Link>
-                <Link key={index} href={i}  >{i}</Link>
-
-              ))
-            }
-            <span>AR</span>
-          </div>
-
-        </div>
+          
         <img src="../HomeBG.png" alt="Image" />
       </div>
       <div className='Home2'>
