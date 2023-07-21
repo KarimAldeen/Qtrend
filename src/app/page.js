@@ -4,7 +4,17 @@ import { FaFacebookF, FaTiktok, FaWhatsapp, FaSnapchatGhost, FaInstagram, FaLink
 import NavBar from '@/Components/NavBar';
 import Home3 from '../Components/Home/Home3'
 import LogoShadow from '@/Components/Home/LogoShadow';
+import Footer from '@/Components/Footer';
+
 const Page = () => {
+  const Cards= {
+    Url1 : "Services_Card/CARD1.png",
+    Url2 : "Services_Card/CARD2.png",
+    Url3 : "Services_Card/CARD3.png",
+    Url4 : "Services_Card/CARD4.png",
+    Url5 : "Services_Card/CARD5.png",
+    Url6 : "Services_Card/CARD6.png",
+  }
   return (
     <>
       <NavBar />
@@ -33,15 +43,15 @@ const Page = () => {
 
           </div>
           <div className='Home2_Services'>
-            <Services_Cards Key={1} />
-            <Services_Cards Key={2} />
-            <Services_Cards Key={3} />
+            <Services_Cards  Url={Cards.Url1}  Key={1} Word1={"CREATIVE"} Word2={" DESIGNS"}/>
+            <Services_Cards  Url={Cards.Url2}  Key={2} Word1={"DIGITAL"} Word2={" MARKETING"}/>
+            <Services_Cards  Url={Cards.Url3}  Key={3} Word1={"PHOTOS"} Word2={" &VIDEOS"}/>
 
           </div>
           <div className='Home2_Services2'>
-            <Services_Cards Key={4} />
-            <Services_Cards Key={5} />
-            <Services_Cards Key={6} />
+            <Services_Cards  Url={Cards.Url4}  Key={4} Word1={"MODELING"} Word2={" SERVICES"}/>
+            <Services_Cards  Url={Cards.Url5}  Key={5} Word1={"APPS & WEB"} Word2={" DEVELOPMENT"}/>
+            <Services_Cards  Url={Cards.Url6}  Key={6} Word1={"BLOGGERS"} Word2={"  SERVICES"}/>
 
 
           </div>
@@ -109,8 +119,11 @@ const Page = () => {
           </div>
 
         </div>
+        <img className='Home4_IbraDonkey' src="../Home4_Image/IbraDonkey.svg" alt="Image" />
+
       </div>
 
+<Footer/>
     </>
 
   )
