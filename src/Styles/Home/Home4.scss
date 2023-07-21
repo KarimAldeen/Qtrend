@@ -35,21 +35,32 @@
         .ImageContainer {
             display: flex;
             gap: 15px;
+            width: 710px;
+            height: 254px;
           }
         img{
+            height: 100%;
             flex: 1;
-            width: 15vw;
             z-index: 99;
-            overflow-X: hidden;
+            overflow: hidden;
             cursor: pointer;
             transition: all .5s;
             &:hover{
-                flex: 2;
-                scale: 1.1;
+                flex: 3;
                 z-index: 999;
                 margin-inline: 1vw;
+               
+          
             }
         }
+    }
+    .Home4_Down_Right{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .Rectangle{
+        width: 20vw;
     }
 }
 

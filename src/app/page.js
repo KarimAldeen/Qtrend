@@ -93,6 +93,8 @@ const Page = () => {
     <img className='Home4_Sec2' src='../Home4_Image/Home4_Sec2.svg' alt='' />
     <img className='Home4_Sec2' src='../Home4_Image/Home4_Sec3.svg' alt='' />
 </div>  
+<img className='Rectangle' src='../Home4_Image/Rectangle.svg' alt='' />
+
           </div>
 
         </div>
