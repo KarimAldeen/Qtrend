@@ -5,11 +5,13 @@
         padding: .5vw;
         margin-inline: .5vw;
         border-radius: .6vw;
+        margin-bottom: .8vw !important;
+
     }
 }
 .Footer{
     border-top: 1.3vw solid #C7F36C;
-    margin-top: 10vw;
+    margin-top: 8vw;
     background: black;
     color: white;
     display: flex; 
@@ -22,7 +24,8 @@
     p{
         width: 70%;
         color :#8E8E8E;
-        margin-bottom: 1.5vw;
+        margin-bottom: 2vw;
+        font-size: 1.2vw;
     }
     .Footer_Right{
         display: flex;
@@ -36,9 +39,7 @@
         }
         a{
             color :#8E8E8E;
-            margin-bottom: .3vw;
             white-space: nowrap;
-
             font-size: 1vw;
             font-weight: 400;
         }

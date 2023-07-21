@@ -1,7 +1,7 @@
 .Services_Cards{
     display: flex;
     height: 15vw;
-    width: 19vw;
+    width: 20vw;
    
     
     .Main_Card{
@@ -11,7 +11,7 @@
         position: absolute;
         background: red;
         height: 15vw;
-        width: 19vw;
+        width: 20vw;
         border-radius: 2vw;
         -webkit-border-radius: 2vw;
         -moz-border-radius: 2vw;
@@ -31,7 +31,7 @@
     position: absolute;
     background: white;
     height: 15vw;
-     width: 17vw;
+     width: 18vw;
     left: 1vw;
     border-radius: 2vw;
     -webkit-border-radius: 2vw;
@@ -48,6 +48,12 @@
     -ms-transition: .4s ease-in-out;
     -o-transition: .4s ease-in-out;
     box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.4);
+    img{
+        display: none;
+        width: 11vw;
+
+    }
+
 }
 .Card_2{
     background-color: #C7F36C;
@@ -68,9 +74,15 @@
     -moz-transform: translateY(-19vw);
     -ms-transform: translateY(-19vw);
     -o-transform: translateY(-19vw);
+    display: flex; justify-content: center; align-items: center;
+    img{
+        display: block;
+        width: fit-content;
+        max-width: 13vw;
+    }
 }
 }
-.Key_1,.Key_3,.Key_5,.Key_7{
+.Key_1,.Key_3,.Key_5{
     .Card_1{
         background-color: #C7F36C !important;
 
@@ -79,7 +91,7 @@
         background-color: white !important;
     }
 }
-.Key_2,.Key_4,.Key_6,.Key_8{
+.Key_2,.Key_4,.Key_6{
     .Card_1{
         background-color: white !important;
 
@@ -88,6 +100,7 @@
         background-color: #C7F36C !important;
     }
 }
+
 .Services_Cards{
     h1{
         font-size:7vw;
@@ -108,18 +121,53 @@
             font-weight: 950;
             color: #3E4349;
             margin-bottom: 0;
+
             
         }
         h3{
             font-size:2.7vw;
             font-weight: 950;
             color: #3E4349;
-            transform: translateY(-10px);
+            transform: translateY(-1vw);
             -webkit-transform: translateY(-10px);
             -moz-transform: translateY(-10px);
             -ms-transform: translateY(-10px);
             -o-transform: translateY(-10px);
+
 }
+    }
+    .Key_4,.Key_5{
+       
+            h3,h2,h1{
+                text-shadow: 12px 12px 5px #0000003d;
+    
+                
+            }
+        
+    }
+    .Key_2{
+        .Card_2_Top_Word
+        {
+            h3{
+                font-size:2vw ;
+    
+                
+            }
+        }
+    }
+    .Key_5{
+        .Card_2_Top_Word
+        {
+            h2{
+                font-size:1.5vw ;
+
+            }
+            h3{
+                font-size:1.7vw ;
+    
+                
+            }
+        }
     }
 }
 .Card_2{
@@ -128,24 +176,24 @@
 .Card_2_Down{
    width: 100%; text-align: end; margin-bottom:1vw; margin-right: 2.5vw;
 button{
-    background-color: black;
+    background-color: #312C2C;
     color: white;
     outline: none;
-    height: 3.7vw;
-    width: 10vw;
+    height: 3.3vw;
+    width: 11vw;
     border-radius:3vw;
     -webkit-border-radius:3vw;
     -moz-border-radius:3vw;
     -ms-border-radius:3vw;
     -o-border-radius:3vw;
     font-size: 1vw;
-    letter-spacing: .2vw;
+    letter-spacing: .1vw;
     text-transform: uppercase;
     font-weight: bold;
     position: relative;
     z-index: 88;
-    -webkit-box-shadow: 9px 0px 0px 0px #d9d9d9;
-    -moz-box-shadow: 9px 0px 0px 0px #d9d9d9;
-    box-shadow: 9px 0px 0px 0px #d9d9d9;
+    -webkit-box-shadow: 9px 0px 0px 0px #D9D9D9;
+    -moz-box-shadow: 9px 0px 0px 0px #D9D9D9;
+    box-shadow: 9px 0px 0px 0px #D9D9D9;
 }
 }

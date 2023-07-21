@@ -16,8 +16,8 @@ const Footer = () => {
                 </p>
                 <div className='Footer_SocialMedia'>
                  <a class="btn btn-primary btn-lg btn-floating"  href="#!">  <FaFacebookF/></a>
-                 <a class="btn btn-primary btn-lg btn-floating"  href="#!">  <FaFacebookF/></a>
-                 <a class="btn btn-primary btn-lg btn-floating"  href="#!">  <FaFacebookF/></a>
+                 <a class="btn btn-primary btn-lg btn-floating"  href="#!">  <FaInstagram/></a>
+                 <a class="btn btn-primary btn-lg btn-floating"  href="#!">  <FaLinkedinIn/></a>
                 </div>
             </div>
             <div className='Footer_Right'>
