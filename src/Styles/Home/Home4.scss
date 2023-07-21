@@ -11,17 +11,50 @@
     .Home4_Top{
         display: flex;
         justify-content: space-between;
-        padding-left: 15vw;
+        padding-left: 5vw;
         align-items: start;
-        height: 25vw;
+        height: 27vw;
         svg{
-            width: 45vw;
+            width: 40vw;
             transform: translateY(-10vw);
+            z-index: 1;
         }
         h1{
-            font-size: 3.4vw;
+            font-size: 4.4vw;
             white-space: nowrap;
 
         }
     }
+    .Home4_Down{
+        width: 100%;
+        display: flex; justify-content: space-between;
+    }
+    .Home4_Down_Right{
+        margin-right: 3vw;
+        
+        .ImageContainer {
+            display: flex;
+            gap: 15px;
+          }
+        img{
+            flex: 1;
+            width: 15vw;
+            z-index: 99;
+            overflow-X: hidden;
+            cursor: pointer;
+            transition: all .5s;
+            &:hover{
+                flex: 2;
+                scale: 1.1;
+                z-index: 999;
+                margin-inline: 1vw;
+            }
+        }
+    }
 }
+
+  
+
+  
+  
+  
