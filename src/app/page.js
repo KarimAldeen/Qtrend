@@ -1,13 +1,10 @@
-// import Services_Cards from '@/Components/Services_Cards'
-import Link from 'next/link'
 import React from 'react'
-import one from '../../public/Number/1.svg'
-import NavBar from '@/components/NavBar'
 import Services_Cards from '@/Components/Services_Cards'
 import { FaFacebookF,FaTiktok,FaWhatsapp,FaSnapchatGhost,FaInstagram ,FaLinkedinIn } from "react-icons/fa";
-
+import NavBar from '@/Components/NavBar';
+import Home3 from '../Components/Home/Home3'
+import LogoShadow from '@/Components/Home/LogoShadow';
 const Page = () => {
-
   return (
     <>
     <NavBar />
@@ -16,7 +13,7 @@ const Page = () => {
         <img src="../HomeBG.png" alt="Image" />
       </div>
       <div className='Home2'>
-        <img src="../HomeBG123.png" alt="Image" />
+        <img src="../HomeBG23.png" alt="Image" />
     <div className='Home2_Contain'>
     <div className='Home2_Text'>
           <h2>Welcome</h2>
@@ -75,11 +72,16 @@ const Page = () => {
        
     </div>
       </div>
-      <div className='Home3'>
-        <img src="../HomeBG4.png" alt="Image" />
-        </div>
-        <div className='Home4'>
-        <img src="../Footer.png" alt="Image" />
+    <Home3/>
+    <div className='Home4'>
+          
+          <img className='Home4_BG_Image' src="../Home4_BG.png" alt="Image" />
+          <div className='Home4_Top'>
+            <h1>Our Awesome Portofolio</h1>
+            {/* <img src="../Home4_Image/Logo_Shadow.svg" alt="Image" /> */}
+            <LogoShadow/>
+
+          </div>
         </div>
 
     </>

@@ -1,5 +1,7 @@
 body {
-    background-color: var(--bg)
+    background-color: var(--bg);
+    overflow-x: hidden;
+    
 }
 *{
     padding: 0; margin: 0;

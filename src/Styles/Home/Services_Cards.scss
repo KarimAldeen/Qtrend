@@ -56,18 +56,18 @@
 }
 
 .Card_1_Hovered{
-    transform: translateY(-190px);
-    height: 250px;
+    transform: translateY(-19vw);
+    height: 25vw;
     box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.4);
     transition: .4s ease-in-out;
     -webkit-transition: .4s ease-in-out;
     -moz-transition: .4s ease-in-out;
     -ms-transition: .4s ease-in-out;
     -o-transition: .4s ease-in-out;
-    -webkit-transform: translateY(-190px);
-    -moz-transform: translateY(-190px);
-    -ms-transform: translateY(-190px);
-    -o-transform: translateY(-190px);
+    -webkit-transform: translateY(-19vw);
+    -moz-transform: translateY(-19vw);
+    -ms-transform: translateY(-19vw);
+    -o-transform: translateY(-19vw);
 }
 }
 .Key_1,.Key_3,.Key_5,.Key_7{
@@ -133,11 +133,11 @@ button{
     outline: none;
     height: 3.7vw;
     width: 10vw;
-    border-radius:30px ;
-    -webkit-border-radius:30px ;
-    -moz-border-radius:30px ;
-    -ms-border-radius:30px ;
-    -o-border-radius:30px ;
+    border-radius:3vw;
+    -webkit-border-radius:3vw;
+    -moz-border-radius:3vw;
+    -ms-border-radius:3vw;
+    -o-border-radius:3vw;
     font-size: 1vw;
     letter-spacing: .2vw;
     text-transform: uppercase;
