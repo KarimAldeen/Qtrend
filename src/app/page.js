@@ -4,6 +4,7 @@ import { FaFacebookF, FaTiktok, FaWhatsapp, FaSnapchatGhost, FaInstagram, FaLink
 import NavBar from '@/Components/NavBar';
 import Home3 from '../Components/Home/Home3'
 import LogoShadow from '@/Components/Home/LogoShadow';
+import Footer from '@/Components/Footer';
 const Page = () => {
   return (
     <>
@@ -113,6 +114,7 @@ const Page = () => {
 
       </div>
 
+<Footer/>
     </>
 
   )

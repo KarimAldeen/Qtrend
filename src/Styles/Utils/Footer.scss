@@ -1,0 +1,47 @@
+.Footer_SocialMedia{
+    a{
+        color: black;
+        background-color: #0085D2;
+        padding: .5vw;
+        margin-inline: .5vw;
+        border-radius: .6vw;
+    }
+}
+.Footer{
+    border-top: 1.3vw solid #C7F36C;
+    margin-top: 10vw;
+    background: black;
+    color: white;
+    display: flex; 
+    justify-content: space-between;
+    padding: 5vw;
+    img{
+        width: 8vw;
+        margin-bottom: 1vw;
+    }
+    p{
+        width: 70%;
+        color :#8E8E8E;
+        margin-bottom: 1.5vw;
+    }
+    .Footer_Right{
+        display: flex;
+        gap: 4vw;
+        h3{
+            font-size: 1.2vw;
+            font-weight: 500;
+            margin-bottom: .5vw;
+            width: 100%;
+            white-space: nowrap;
+        }
+        a{
+            color :#8E8E8E;
+            margin-bottom: .3vw;
+            white-space: nowrap;
+
+            font-size: 1vw;
+            font-weight: 400;
+        }
+    }
+
+}
