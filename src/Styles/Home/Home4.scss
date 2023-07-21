@@ -13,7 +13,7 @@
         justify-content: space-between;
         padding-left: 5vw;
         align-items: start;
-        height: 27vw;
+        height: 20vw;
         svg{
             width: 40vw;
             transform: translateY(-10vw);
@@ -61,6 +61,22 @@
     }
     .Rectangle{
         width: 20vw;
+    }
+    .Home4_Text{
+    margin-top: 2vw;
+        width: 60%;
+        h3{
+            font-size: 2vw;
+            font-weight: bold;
+        }
+        p{
+            font-size: 1.3vw;
+            line-height: 1.7vw;
+            text-align: center;
+            margin-right: 1vw;
+            margin-top:     1vw;
+
+        }
     }
 }
 

@@ -94,7 +94,18 @@ const Page = () => {
     <img className='Home4_Sec2' src='../Home4_Image/Home4_Sec3.svg' alt='' />
 </div>  
 <img className='Rectangle' src='../Home4_Image/Rectangle.svg' alt='' />
+<div className='Home4_Text'>
+  <h3>
+  PLEASE NOTE
+  </h3>
+  <p>
+  This is a brief overview of our portfolio, and each project represents our capabilities in branding,
+   marketing, and video/photo production. We would be delighted to provide
+   more detailed information and showcase our work in a comprehensive portfolio presentation 
+   tailored to your specific requirements.
+  </p>
 
+</div>
           </div>
 
         </div>
