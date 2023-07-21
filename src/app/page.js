@@ -109,6 +109,8 @@ const Page = () => {
           </div>
 
         </div>
+        <img className='Home4_IbraDonkey' src="../Home4_Image/IbraDonkey.svg" alt="Image" />
+
       </div>
 
     </>
