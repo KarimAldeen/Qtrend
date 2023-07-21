@@ -11,17 +11,77 @@
     .Home4_Top{
         display: flex;
         justify-content: space-between;
-        padding-left: 15vw;
+        padding-left: 5vw;
         align-items: start;
-        height: 25vw;
+        height: 20vw;
         svg{
-            width: 45vw;
+            width: 40vw;
             transform: translateY(-10vw);
+            z-index: 1;
         }
         h1{
-            font-size: 3.4vw;
+            font-size: 4.4vw;
             white-space: nowrap;
 
         }
     }
+    .Home4_Down{
+        width: 100%;
+        display: flex; justify-content: space-between;
+    }
+    .Home4_Down_Right{
+        margin-right: 3vw;
+        
+        .ImageContainer {
+            display: flex;
+            gap: 15px;
+            width: 710px;
+            height: 254px;
+          }
+        img{
+            height: 100%;
+            flex: 1;
+            z-index: 99;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all .5s;
+            &:hover{
+                flex: 3;
+                z-index: 999;
+                margin-inline: 1vw;
+               
+          
+            }
+        }
+    }
+    .Home4_Down_Right{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .Rectangle{
+        width: 20vw;
+    }
+    .Home4_Text{
+    margin-top: 2vw;
+        width: 60%;
+        h3{
+            font-size: 2vw;
+            font-weight: bold;
+        }
+        p{
+            font-size: 1.3vw;
+            line-height: 1.7vw;
+            text-align: center;
+            margin-right: 1vw;
+            margin-top:     1vw;
+
+        }
+    }
 }
+
+  
+
+  
+  
+  
