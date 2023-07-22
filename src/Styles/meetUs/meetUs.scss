@@ -6,10 +6,12 @@
         }
     }
 }
+
 .MeetUs{
     font-family: 'Inter var', sans-serif;
     position: relative;
     max-width: 100vw;
+    
     
     .MeetUs_BG{
         img{
@@ -20,13 +22,14 @@
     }
     .MeetUs_mid_section{
         background-color: black;
-        position: absolute;
-        top: 50vw;
+      
         color: #fff;
-        padding: 3vw;
+        padding-inline: 3vw;
+        padding-top: 55vw;
         display: flex;
         justify-content: center;
         gap: 6vw;
+        height: 35vw;
         
         .MeetUs_info{
             display: flex;

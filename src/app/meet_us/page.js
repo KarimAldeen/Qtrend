@@ -50,9 +50,9 @@ const MeetUs = () => {
         </div>
 
     </div>
+    <Footer />
 
     </div>
-          {/* <Footer /> */}
 
 </>
   )

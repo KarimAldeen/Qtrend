@@ -16,7 +16,7 @@ const Page = () => {
     Url6 : "Services_Card/CARD6.png",
   }
   return (
-    <>
+    <div className='HOME_PAGE'>
       <div className='Home'>
       <NavBar />
 
@@ -126,7 +126,7 @@ const Page = () => {
       </div>
 
 <Footer/>
-    </>
+    </div>
 
   )
 }
