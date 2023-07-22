@@ -1,3 +1,11 @@
+
+.Home{
+    .Links{
+        a:nth-child(1){
+            color: #C7F36C !important;
+        }
+    }
+}
 .Gif{
     position: absolute;
     z-index: 999999999;
@@ -45,11 +53,11 @@
         -o-border-radius: .5vw;
 }
 }
-.Links{
-    a:first-child{
-        color: #C7F36C !important;
-    }
-}
+// .Links{
+//     a:first-child{
+//         color: #C7F36C;
+//     }
+// }
 .Home2_Contain{
     position: absolute;
     top:5vw;

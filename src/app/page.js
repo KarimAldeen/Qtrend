@@ -17,10 +17,11 @@ const Page = () => {
   }
   return (
     <>
-      <NavBar />
       <div className='Home'>
+      <NavBar />
 
         <img src="../HOMEBG_GIF.gif" alt="Image" />
+
 
       </div>
       <div className='Home2'>

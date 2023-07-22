@@ -13,7 +13,7 @@ function NavBar() {
             {
               NavLinks?.map((i, index) => (
                 // <Link key={index} href={i} className={router?.pathname === i ? "Active_Links" : ""} >{i}</Link>
-                <Link key={index} href={i}  >{i}</Link>
+                <Link key={index} href={i?.href}  >{i?.name}</Link>
 
               ))
             }
