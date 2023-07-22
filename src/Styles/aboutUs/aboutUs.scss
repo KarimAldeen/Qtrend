@@ -1,4 +1,29 @@
-.about-us-page{
+.AboutUs_page{
     background: #000000;
     height: 100vh;
+    position: relative;
+    max-width: 100vw;
+    p{
+        // transform: translateY(10vw);
+        margin-top: 50vw;
+        color: #000000;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 1.7vw;
+        font-style: normal;
+        font-weight: 545;
+        line-height: normal;
+        // letter-spacing: vw;
+        position: absolute;
+        margin-left: 13vw;
+        transform: translateY(-1.1vw);
+
+    }
+     .AboutUs_BG{
+        img{
+            max-width: 100vw;
+            width: 100%;
+            position: absolute;
+        }
+     }
 }
