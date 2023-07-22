@@ -7,7 +7,7 @@ const Footer = () => {
         <div className='Footer'>
             <div className='Footer_Left'>
                 <img src='../Logo_Qtrend.svg' alt='logo'  />
-                <p>
+                <p className='p'>
 
                     Qtrend is a creative design agency that specializes in delivering the best full creative branding
                     , logo creation, and posts creation digital design solutions. With a passion for visual
