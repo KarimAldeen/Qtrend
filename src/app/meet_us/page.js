@@ -15,7 +15,7 @@ const MeetUs = () => {
     <div className='MeetUs'> 
     <NavBar/>
     <div className='MeetUs_BG'>
-      <img src='../MeatUS/MeatUS_BG.png' alt=''/>
+      <img src='../MeatUS/MEATUS_GIF.gif' alt=''/>
     </div>
     <div className='MeetUs_mid_section'>
         <div className='MeetUs_mid_section_left'>
@@ -50,9 +50,9 @@ const MeetUs = () => {
         </div>
 
     </div>
+    <Footer />
 
     </div>
-          {/* <Footer /> */}
 
 </>
   )

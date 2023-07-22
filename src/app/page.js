@@ -16,14 +16,16 @@ const Page = () => {
     Url6 : "Services_Card/CARD6.png",
   }
   return (
-    <>
-      <NavBar />
+    <div className='HOME_PAGE'>
       <div className='Home'>
+      <NavBar />
 
-        <img src="../HomeBG.png" alt="Image" />
+        <img src="../HOMEBG_GIF.gif" alt="Image" />
+
+
       </div>
       <div className='Home2'>
-        <img src="../HomeBG23.png" alt="Image" />
+          <img src="../HomeBG23.png" alt="Image" />
         <div className='Home2_Contain'>
           <div className='Home2_Text'>
             <h2>Welcome</h2>
@@ -124,7 +126,7 @@ const Page = () => {
       </div>
 
 <Footer/>
-    </>
+    </div>
 
   )
 }
