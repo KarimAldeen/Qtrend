@@ -1,88 +1,61 @@
 import NavBar from '@/Components/NavBar'
 import React from 'react'
-import HUMAN from "../../../public/works/human.png";
-import Image from "next/image";
-import {Poppins} from 'next/font/google'
 import {LuMail} from 'react-icons/lu'
 import{BiMobile}from 'react-icons/bi'
 import {MdLocationOn} from 'react-icons/md'
-const poppins = Poppins({
-    weight: '900',
-    subsets: ['latin'],
-  })
-function MeetUs() {
+import {Inter} from 'next/font/google'
+import Footer from '@/Components/Footer'
+
+const inter = Inter({
+     subsets: ['latin'] ,
+     weight:['400']})
+const MeetUs = () => {
   return (
-    <div className='meet-us-page'>
+    <>
+    <div className='MeetUs'> 
     <NavBar/>
-      <div className='meet-us-mid-section'>
-        <div className='meet-us-first-mid-section'>
-        <p>MEET</p>
-        <p>US</p>
-        <Image
-              width={702}
-              height={582}
-              className="human"
-              src={HUMAN}
-              alt="image f"
-            />
+    <div className='MeetUs_BG'>
+      <img src='../MeatUS/MeatUS_BG.png' alt=''/>
+    </div>
+    <div className='MeetUs_mid_section'>
+        <div className='MeetUs_mid_section_left'>
+        <h3>Contact us</h3>
+        <h1>Don't hesitate to get in touch - we're here to answer<br/> your questions and provide guidance.</h1>
+        <h6>Getting in touch with our company is the first step towards unlocking new possibilities <br/>for your business. Whether you're seeking innovative solutions, exploring collaboration opportunities, or simply looking for expert guidance, our team is here to help.</h6>
+        <div className='MeetUs_info'>
+          <div className='MeetUs_info_1'>
+          <BiMobile/>
+          <p>+(974)31111291 <br/>+(974)33330282 </p>
+          </div>
+          <div className='MeetUs_info_2'>
+          <LuMail/>
+          <p>Qtrend-qatar@gmail.com</p>
+          </div>
+          <div className='MeetUs_info_3'>
+          <MdLocationOn/>
+          <p>Um Slal</p>
+          </div>
+          
         </div>
-        <div className='meet-us-second-mid-section'> 
-           <div>
-               <p>Contact us</p>
-               <p>Don't hesitate to get in touch - we're here to answer your questions and provide guidance.</p>
-               <p>Getting in touch with our company is the first step towards unlocking new possibilities for your business. Whether you're seeking innovative solutions, exploring collaboration opportunities, or simply looking for expert guidance, our team is here to help.</p>
-                <div>
-                <BiMobile/>
-                <p>+(974)31111291 <br/>+(974)33330282 </p>
-                <LuMail/>
-                <p>Qtrend-qatar@gmail.com</p>
-                <MdLocationOn/>
-                <p>Um Slal</p>
-                </div>
-           </div>
-
-            <div>
-              <div>
-              <input type="text"  placeholder='Company Name'/>
-              </div>
-
-              <div>
-              <input type="email"  placeholder='email'/>
-              </div>
-
-              <div>
-              <input type="password"  placeholder='Password'/>
-              </div>
-
-              <div>
-              <input type="text"  placeholder='Message'/>
-              </div>
-            </div>
-
         </div>
-
-
-
-
-        </div> 
-
-      {/* <div className='meet-us-mid-section'>
-        <div className='meet-us-mid-left-section'>
-          <span className={"meet "+ poppins.className}>MEET</span>
-            <br/>
-            <span className={"us "+ poppins.className}>US</span></div>
-            <Image
-              width={702}
-              height={582}
-              className="human"
-              src={HUMAN}
-              alt="image f"
-            />
-      </div> */}
-
     
 
-  </div>  )
+        <div className='MeetUs_mid_section_right'>
+            <input type='text' placeholder='Company Name'></input>
+            <input type='eamil' placeholder='Email'></input>
+            <input type='password' placeholder='Password'></input>
+            <textarea type='text' placeholder='Message'></textarea>
+
+
+        </div>
+
+    </div>
+
+    </div>
+          {/* <Footer /> */}
+
+</>
+  )
 }
 
 export default MeetUs
