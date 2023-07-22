@@ -34,7 +34,7 @@ function AboutUs() {
           <h6>If you're seeking a trusted digital marketing partner to elevate your online presence and drive business growth, look no further than <br/> Qtrend. With our unwavering focus on innovation, data-driven strategies, and client success, we are here to help you unlock the full <br/> potential of digital marketing. Contact us today to embark on an exciting journey toward digital success.</h6>
         </div>
         </div>
-        <Footer/>
+        {/* <Footer/> */}
     </div>
   )
 }
