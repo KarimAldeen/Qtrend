@@ -31,13 +31,18 @@
     justify-content: space-between;
     z-index: 9999999999;
     
-    img{
+     .Logo svg{
         width: 10vw !important;
+      
+        path{
+            fill: white;
+        }
     }
     a{
         color: white;
         font-size: 1.1vw;
         margin-inline: 2vw;
+        font-weight: 900;
 
     }
     span{

@@ -2,13 +2,14 @@ import { NavLinks } from '@/config/NavBarConfig'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import Logo from './Logo'
 
 function NavBar() {
   return (
     <div className='NavBar'>
-          <Image src='../Logo_Qtrend.svg' alt='logo' width={30} height={30} />
+          {/* <Image src='../Logo_Qtrend.svg' alt='logo' width={30} height={30} /> */}
           {/* <img src='../Logo_Qtrend.svg' alt='logo'  /> */}
-
+          <Logo/>
           <div className='Links'>
             {
               NavLinks?.map((i, index) => (
