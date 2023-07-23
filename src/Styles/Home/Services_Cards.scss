@@ -1,13 +1,14 @@
-.Services_Cards{
+.Services_Cards {
     display: flex;
     height: 15vw;
     width: 20vw;
-   
-    
-    .Main_Card{
+
+
+    .Main_Card {
         position: relative;
     }
-    .Card_2{
+
+    .Card_2 {
         position: absolute;
         background: red;
         height: 15vw;
@@ -18,7 +19,7 @@
         -ms-border-radius: 2vw;
         -o-border-radius: 2vw;
         display: flex;
-        align-items: center ;
+        align-items: center;
         cursor: pointer;
         transition: .4s ease-in-out;
         -webkit-transition: .4s ease-in-out;
@@ -26,174 +27,269 @@
         -ms-transition: .4s ease-in-out;
         -o-transition: .4s ease-in-out;
         box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.4);
-}
-.Card_1{
-    position: absolute;
-    background: white;
-    height: 15vw;
-     width: 18vw;
-    left: 1vw;
-    border-radius: 2vw;
-    -webkit-border-radius: 2vw;
-    -moz-border-radius: 2vw;
-    -ms-border-radius: 2vw;
-    -o-border-radius: 2vw;
-    display: flex;
-    align-items: center ;
-    justify-content: center;
-    cursor: pointer;
-    transition: .4s ease-in-out;
-    -webkit-transition: .4s ease-in-out;
-    -moz-transition: .4s ease-in-out;
-    -ms-transition: .4s ease-in-out;
-    -o-transition: .4s ease-in-out;
-    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.4);
-    img{
-        display: none;
-        width: 11vw;
+    }
+
+    .Card_1 {
+        position: absolute;
+        background: white;
+        height: 15vw;
+        width: 18vw;
+        left: 1vw;
+        border-radius: 2vw;
+        -webkit-border-radius: 2vw;
+        -moz-border-radius: 2vw;
+        -ms-border-radius: 2vw;
+        -o-border-radius: 2vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: .4s ease-in-out;
+        -webkit-transition: .4s ease-in-out;
+        -moz-transition: .4s ease-in-out;
+        -ms-transition: .4s ease-in-out;
+        -o-transition: .4s ease-in-out;
+        box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.4);
+
+        img {
+            display: none;
+            width: 11vw;
+
+        }
 
     }
 
-}
-.Card_2{
-    background-color: #C7F36C;
-    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.4);
+    .Card_2 {
+        background-color: #C7F36C;
+        box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.4);
 
-}
+    }
 
-.Card_1_Hovered{
-    transform: translateY(-19vw);
-    height: 25vw;
-    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.4);
-    transition: .4s ease-in-out;
-    -webkit-transition: .4s ease-in-out;
-    -moz-transition: .4s ease-in-out;
-    -ms-transition: .4s ease-in-out;
-    -o-transition: .4s ease-in-out;
-    -webkit-transform: translateY(-19vw);
-    -moz-transform: translateY(-19vw);
-    -ms-transform: translateY(-19vw);
-    -o-transform: translateY(-19vw);
-    display: flex; justify-content: center; align-items: center;
-    img{
-        display: block;
-        width: fit-content;
-        max-width: 13vw;
+    .Card_1_Hovered {
+        transform: translateY(-19vw);
+        height: 25vw;
+        box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.4);
+        transition: .4s ease-in-out;
+        -webkit-transition: .4s ease-in-out;
+        -moz-transition: .4s ease-in-out;
+        -ms-transition: .4s ease-in-out;
+        -o-transition: .4s ease-in-out;
+        -webkit-transform: translateY(-19vw);
+        -moz-transform: translateY(-19vw);
+        -ms-transform: translateY(-19vw);
+        -o-transform: translateY(-19vw);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            display: block;
+            width: fit-content;
+            max-width: 13vw;
+        }
     }
 }
-}
-.Key_1,.Key_3,.Key_5{
-    .Card_1{
+
+.Key_1,
+.Key_3,
+.Key_5 {
+    .Card_1 {
         background-color: #C7F36C !important;
 
     }
-    .Card_2{
+
+    .Card_2 {
         background-color: white !important;
     }
 }
-.Key_2,.Key_4,.Key_6{
-    .Card_1{
+
+.Key_2,
+.Key_4,
+.Key_6 {
+    .Card_1 {
         background-color: white !important;
 
     }
-    .Card_2{
+
+    .Card_2 {
         background-color: #C7F36C !important;
     }
 }
 
-.Services_Cards{
-    h1{
-        font-size:7vw;
+.Services_Cards {
+    h1 {
+        font-size: 7vw;
         font-weight: 900;
         color: #3E4349;
     }
-    .Card_2_Top{
+
+    .Card_2_Top {
         display: flex;
-        text-align: center; justify-content: center;
+        text-align: center;
+        justify-content: center;
         padding-top: 1.8vw;
 
     }
-    .Card_2_Top_Word{
-        display: flex; flex-direction: column; align-items: start; justify-content: center;
-        h2{
-            
-            font-size:1.8vw;
+
+    .Card_2_Top_Word {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+
+        h2 {
+
+            font-size: 1.8vw;
             font-weight: 950;
             color: #3E4349;
             margin-bottom: 0;
 
-            
+
         }
-        h3{
-            font-size:2.7vw;
+
+        h3 {
+            font-size: 2.7vw;
             font-weight: 950;
             color: #3E4349;
-            transform: translateY(-1vw);
-            -webkit-transform: translateY(-10px);
-            -moz-transform: translateY(-10px);
-            -ms-transform: translateY(-10px);
-            -o-transform: translateY(-10px);
+            transform: translateY(-.6vw);
 
-}
+
+        }
     }
-    .Key_4,.Key_5{
-       
-            h3,h2,h1{
-                text-shadow: 12px 12px 5px #0000003d;
-    
-                
-            }
-        
+
+    .Key_4,
+    .Key_5 {
+
+        h3,
+        h2,
+        h1 {
+            text-shadow: 1vw 1vw .5vw #0000003d;
+
+
+        }
+
     }
-    .Key_2{
-        .Card_2_Top_Word
-        {
-            h3{
-                font-size:2vw ;
-    
-                
+
+    .Key_2 {
+        .Card_2_Top_Word {
+            h3 {
+                font-size: 2vw;
+
+
             }
         }
     }
-    .Key_5{
-        .Card_2_Top_Word
-        {
-            h2{
-                font-size:1.5vw ;
+
+    .Key_5 {
+        .Card_2_Top_Word {
+            h2 {
+                font-size: 1.5vw;
 
             }
-            h3{
-                font-size:1.7vw ;
-    
-                
+
+            h3 {
+                font-size: 1.7vw;
+
+
             }
         }
     }
 }
-.Card_2{
-    display: flex; flex-direction: column; justify-content: space-between;
-} 
-.Card_2_Down{
-   width: 100%; text-align: end; margin-bottom:1vw; margin-right: 2.5vw;
-button{
-    background-color: #312C2C;
-    color: white;
-    outline: none;
-    height: 3.3vw;
-    width: 11vw;
-    border-radius:3vw;
-    -webkit-border-radius:3vw;
-    -moz-border-radius:3vw;
-    -ms-border-radius:3vw;
-    -o-border-radius:3vw;
-    font-size: 1vw;
-    letter-spacing: .1vw;
-    text-transform: uppercase;
-    font-weight: bold;
-    position: relative;
-    z-index: 88;
-    -webkit-box-shadow: 9px 0px 0px 0px #D9D9D9;
-    -moz-box-shadow: 9px 0px 0px 0px #D9D9D9;
-    box-shadow: 9px 0px 0px 0px #D9D9D9;
+
+.Card_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.Card_2_Down {
+    width: 100%;
+    text-align: end;
+    margin-bottom: 1vw;
+    margin-right: 2.5vw;
+
+    button {
+        background-color: #312C2C;
+        color: white;
+        outline: none;
+        height: 3.3vw;
+        width: 11vw;
+        border-radius: 3vw;
+        -webkit-border-radius: 3vw;
+        -moz-border-radius: 3vw;
+        -ms-border-radius: 3vw;
+        -o-border-radius: 3vw;
+        font-size: 1vw;
+        letter-spacing: .1vw;
+        text-transform: uppercase;
+        font-weight: bold;
+        position: relative;
+        z-index: 88;
+        box-shadow: .5vw 0px 0px 0px #D9D9D9;
+    }
+}
+
+@include devices(Taplet) {
+    .Services_Cards {
+        max-height: 12vw;
+        width: 16vw;
+
+        h1 {
+            font-size: 4vw !important;
+        }
+        h2{
+            font-size: 1.5vw !important;
+
+        }
+        h3{
+            font-size: 1.7vw !important;
+            transform: translateY(-.3vw) !important;
+
+        }
+
+        .Key_2 h3 {
+            font-size: 1.7vw !important;
+        }
+
+        .Key_5 {
+            h2 {
+                font-size: 1.4vw !important;
+            }
+
+            h3 {
+                font-size: 1.5vw !important;
+            }
+        }
+    
+
+    .Card_2 {
+
+        max-height: 12vw;
+        width: 16vw;
+
+    }
+
+    .Card_1 {
+
+        max-height: 12vw;
+        width: 14vw;
+
+        img {
+            width: 8vw;
+
+        }
+
+    }
+
+    .Card_1_Hovered {
+        transform: translateY(-11vw);
+        height: 25vw;
+
+        img {
+
+            max-width: 13vw;
+        }
+    }
+}
+
 }
