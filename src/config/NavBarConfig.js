@@ -7,12 +7,12 @@ export const NavLinks = [
     },
     {
         name:"OUR SERVICES",
-        href:"/our_services"
+        href:"/services/FirstService"
     }
     ,
     {
         name:"OUR WORKS",
-        href:"/our_works"
+        href:"/works"
     }
     
     ,
@@ -26,6 +26,7 @@ export const NavLinks = [
         name:"MEET US",
         href:"/meet_us"
     }
+    
     
 
 ]
