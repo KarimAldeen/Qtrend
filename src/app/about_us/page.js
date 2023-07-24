@@ -1,6 +1,5 @@
 import NavBar from '@/Components/NavBar'
 import React from 'react'
-import HUMAN from "../../../public/works/human.png";
 import Image from "next/image";
 import { FaFacebookF, FaTiktok, FaWhatsapp, FaSnapchatGhost, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import Footer from '@/Components/Footer';
