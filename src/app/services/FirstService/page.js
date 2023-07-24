@@ -7,7 +7,7 @@ function FirstService() {
   return (
     <>
     <div className='FirstService_page'>
-      <FirstServiceBG/>
+      {/* <FirstServiceBG/> */}
       <NavBar/>
       <img className='FirstService_page' src='../Services/FirstService/FirstService_BG.' alt=''/>
 
