@@ -1,10 +1,7 @@
 import NavBar from "@/Components/NavBar";
 import Image from "next/image";
 import React from "react";
-import HUMAN from "../../../public/works/human.png";
-
-import {Inter , Roboto} from 'next/font/google'
-import Line from "@/Components/works/Line";
+import Footer from "@/Components/Footer";
 
 function Works() {
   return (
@@ -30,18 +27,18 @@ function Works() {
 
         <div className="img_first">
         <div className="img1">
-          <img src="../Works/Works1.jpg" alt=""/>
+          <img src="../Works/1.svg" alt=""/>
         </div>
         <div className="img4">
-          <img src="../Works/Works4.jpg" alt=""/>
+          <img src="../Works/2.svg" alt=""/>
         </div>
         </div>
         <div className="img_second">
         <div className="img3">
-          <img src="../Works/WorksImg3.png" alt=""/>
+          <img src="../Works/1.svg" alt=""/>
         </div>
         <div className="img2">
-          <img src="../Works/Works2.jpg" alt=""/>
+          <img src="../Works/2.svg" alt=""/>
         </div>
 
           </div>
