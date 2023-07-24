@@ -1,8 +1,8 @@
 import React from 'react'
 
-const FirstService = () => {
+const FirstServiceBG = () => {
   return (
-    <div className='FirstService'> 
+    <div className='FirstServiceBG'> 
         <svg
   width={1440}
   height={2183}
@@ -159,4 +159,4 @@ const FirstService = () => {
   )
 }
 
-export default FirstService
+export default FirstServiceBG
