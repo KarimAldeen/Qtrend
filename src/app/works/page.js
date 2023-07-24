@@ -6,40 +6,50 @@ import HUMAN from "../../../public/works/human.png";
 import {Inter , Roboto} from 'next/font/google'
 import Line from "@/Components/works/Line";
 
-const inter = Inter({ subsets: ['latin'] ,
-weight:['400']})
-const roboto = Roboto({
-    weight: '400',
-    subsets: ['latin'],
-  })
 function Works() {
   return (
-    <div className="work-page">
+    <div className="work_page">
       <NavBar />
-      <Image
-        width={702}
-        height={582}
-        className="human"
-        src={HUMAN}
-        alt="image f"
-      />
-      <div className="text-works">
-        <p className="text-first"> OvereAll</p>
-        <p className={"text-second " + roboto.className}>
-         Extend Your Market Reach by Establishing a Distinct Brand
-          Identity and Creating Appealing Marketing Content
-          </p>
-          <p className={"text-third " + inter.className}>
+      <img className="works_img" src="../Works/Works_BG.jpg" alt=""/>
+
+      <div className="text_works">
+        <p className="text_first"> OverAll</p>
+        <p className="text_second">
+         Extend Your Market Reach by Establishing a Distinct<br/> Brand
+          Identity and Creating Appealing Marketing <br/> Content
+          </p>  
+          <p className="text_third">
             Engage a Larger Customer Base with a Compelling Brand Identity and a
             Collection of <br/>Visually Striking Marketing Material s.Reach a Broader
             Customer Segment by Crafting a<br/> Standout Brand Identity and
             Compelling Visual Marketing Materials
           </p>
       </div>
-      <Line />
-      <div className="image-line-con">
-            gggggggggggggggggggggggg
+
+      <div className="works_img" >
+
+        <div className="img_first">
+        <div className="img1">
+          <img src="../Works/Works1.jpg" alt=""/>
+        </div>
+        <div className="img4">
+          <img src="../Works/Works4.jpg" alt=""/>
+        </div>
+        </div>
+        <div className="img_second">
+        <div className="img3">
+          <img src="../Works/WorksImg3.png" alt=""/>
+        </div>
+        <div className="img2">
+          <img src="../Works/Works2.jpg" alt=""/>
+        </div>
+
+          </div>
+          
       </div>
+
+      <Footer/>
+
     </div>
   );
 }
