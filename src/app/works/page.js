@@ -1,10 +1,10 @@
-import NavBar from "@/components/NavBar";
+import NavBar from "@/Components/NavBar";
 import Image from "next/image";
 import React from "react";
 import HUMAN from "../../../public/works/human.png";
 
 import {Inter , Roboto} from 'next/font/google'
-import Line from "@/components/works/Line";
+import Line from "@/Components/works/Line";
 
 const inter = Inter({ subsets: ['latin'] ,
 weight:['400']})
