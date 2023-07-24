@@ -1,4 +1,9 @@
-<svg
+import React from 'react'
+
+const FirstService = () => {
+  return (
+    <div className='FirstService'> 
+        <svg
   width={1440}
   height={2183}
   viewBox="0 0 1440 2183"
@@ -149,3 +154,9 @@
     </clipPath>
   </defs>
 </svg>
+
+    </div>
+  )
+}
+
+export default FirstService
