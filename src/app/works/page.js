@@ -7,7 +7,8 @@ function Works() {
   return (
     <div className="work_page">
       <NavBar />
-      <img className="works_img" src="../Works/Works_BG.jpg" alt=""/>
+      {/* <img className="works_img" src="../Works/Works_BG.jpg" alt=""/> */}
+      <img className="works_img" src="../Works/OurWorks.png" alt=""/>
 
       <div className="text_works">
         <p className="text_first"> OverAll</p>
