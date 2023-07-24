@@ -27,18 +27,18 @@ function Works() {
 
         <div className="img_first">
         <div className="img1">
-          <img src="../Works/1.svg" alt=""/>
+          <img src="../Works/1.png" alt=""/>
         </div>
         <div className="img4">
-          <img src="../Works/2.svg" alt=""/>
+          <img src="../Works/4.png" alt=""/>
         </div>
         </div>
         <div className="img_second">
         <div className="img3">
-          <img src="../Works/1.svg" alt=""/>
+          <img src="../Works/3.png" alt=""/>
         </div>
         <div className="img2">
-          <img src="../Works/2.svg" alt=""/>
+          <img src="../Works/5.png" alt=""/>
         </div>
 
           </div>
