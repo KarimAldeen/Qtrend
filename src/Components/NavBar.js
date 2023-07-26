@@ -9,7 +9,7 @@ function NavBar() {
     <div className='NavBar'>
           {/* <Image src='../Logo_Qtrend.svg' alt='logo' width={30} height={30} /> */}
           {/* <img src='../Logo_Qtrend.svg' alt='logo'  /> */}
-          <Logo/>
+          <Logo />
           <div className='Links'>
             {
               NavLinks?.map((i, index) => (
