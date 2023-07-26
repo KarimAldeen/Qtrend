@@ -10,8 +10,8 @@
     -ms-transform: translateY(72vw);
     -o-transform: translateY(72vw);
     display: flex;
-    .Services_MIcon
-{
+    
+    .Services_MIcon{
     padding: .4vw;
     background-color: #C7F36C;
     color: white;
@@ -61,6 +61,14 @@
 }
 }
 }
+i{
+    border-radius: 50%;
+    background: black;
+    display: flex;justify-content: center; align-items: center;
+    padding:1vw;
+
+    
+}
 svg{
     transform: rotate(-60deg);
     -webkit-transform: rotate(-60deg);
@@ -68,13 +76,7 @@ svg{
     -ms-transform: rotate(-60deg);
     -o-transform: rotate(-60deg);
     font-size: 3vw;
-    background: black;
-    padding: 1vw 1vw 1vw 1vw;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+
   
 }
 
@@ -91,7 +93,7 @@ svg{
         }
     }
 
-    svg{
+    i{
         background: #C7F36C !important;
       
         &:hover{
