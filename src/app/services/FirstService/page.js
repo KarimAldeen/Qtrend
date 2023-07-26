@@ -2,6 +2,7 @@
 
 import NavBar from '@/Components/NavBar'
 import React from 'react'
+import Image from './Image'
 
 function FirstService() {  
     const Transtion = () => {
@@ -38,8 +39,9 @@ function FirstService() {
   
     <div className='SecondService_page'>
     <div className='SecondService_Images'>
-    <img src='../Services2/Wing.png' alt='' className='Wing' id='Wing'/>
+    {/* <img src='../Services2/Wing.png' alt='' className='Wing' id='Wing'/> */}
     {/* <img src='../Services1/Haje.png' alt='' className='Haje'/> */}
+    <Image/>
 
     </div>
     <div className='SecondService_Body'>
