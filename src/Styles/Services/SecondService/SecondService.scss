@@ -1,20 +1,50 @@
 .SecondService_page{
     max-width: 100vw;
     position: relative;
-    transform: translateX(50vw);
     transition: .4s ease-in-out;
     opacity: 0;
 }
 
 .SecondService_Images{
-    position: absolute;
     width: 100%; 
-    .Wing{
-        padding-top: 5vw;
-        width: 22vw;
-        float: right;
-        transition: .4s ease-in-out;
-        transform: translateX(-70vw);
-        opacity: .4;
+ 
+
+}
+
+.Transion_page{
+    background: #474B4E;
+    .FirstService_Body{
+        display: none;
     }
+    .FirstService_Images{
+        background: #474B4E;
+        // display: none;
+
+    }
+    .Hajeat_Moaz{
+        padding-top: 10vw;
+        transform: translateX(10vw);
+        transition: .4s ease-in-out;
+        z-index: 4;
+       }
+       .Haje{
+        transition: 1s ease-in-out;
+        transform: translateX(-100vw);
+
+       }
+       .SecondService_page{
+
+        transform: translateX(0vw);
+        transition: .4s ease-in-out;
+        opacity: 1;
+    }
+ 
+    
+}
+.None{
+    display: none;
+}
+
+.Wing{
+    
 }

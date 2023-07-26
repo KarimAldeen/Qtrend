@@ -18,35 +18,52 @@
 .FirstService_Body{
     position: absolute;
     top: 0;
-    padding-top: 43vw;
+    padding-top: 42vw;
     width: 100%;
     .Services1_Elements{
         display: flex; justify-content: space-between; align-items: center;
         .Element1{
-            padding-left: 3vw;
+            padding-left: 5vw;
         }
     }
+    .Element2{
+        padding-right: 2vw;
+    }
+
     img{
         width: 23vw;
         cursor: pointer;
     }
 }
 .FirstService_Images{
-    position: absolute;
+    position: relative;
     background: #BAC3C7;
     width: 100%;
 
+        min-height: 150vw;
 
    img{
     display: block;
    }
    .Hajeat_Moaz{
-    padding-top: 10vw;
-    padding-left: 10vw;
-    width: 50vw;
+    padding-top: 4vw;
+    transform: translateX(-3vw);
+    width: 60vw;
    }
    .Haje{
     float: right;
    width: 40vw;
+   transform: translateY(-17vw);
+   
    }
 }
+
+.Services_Pages{
+    position: relative;
+          background: #BAC3C7;
+          min-height: 100vh;
+}
+.Group_Logo { 
+    transform: translate(581.914px, -1147.587px) 
+                translate(12vw, .4vw);
+  }
