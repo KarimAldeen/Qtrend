@@ -3,32 +3,26 @@
     max-width: 100vw;
     position: relative;
     background: #BAC3C7;
-}
-.FirstService_page{
 
-    .Links{
-        a:nth-child(2){
-            color: #C7F36C !important;
-        }
-    }
-    .NavBar{
-        background: #BAC3C7;
-    }
 }
+
 .FirstService_Body{
     position: absolute;
+    z-index: 99999999;
     top: 0;
     padding-top: 42vw;
     width: 100%;
     .Services1_Elements{
+        width: 100%;
         display: flex; justify-content: space-between; align-items: center;
         .Element1{
             padding-left: 5vw;
         }
+        .Element2{
+            padding-right: 2vw;
+        }
     }
-    .Element2{
-        padding-right: 2vw;
-    }
+   
 
     img{
         width: 23vw;
@@ -39,8 +33,11 @@
     position: relative;
     background: #BAC3C7;
     width: 100%;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
 
-        min-height: 150vw;
+
 
    img{
     display: block;
@@ -48,13 +45,18 @@
    .Hajeat_Moaz{
     padding-top: 4vw;
     transform: translateX(-3vw);
+    transition: .5s ease-in-out;
+
     width: 60vw;
+    height: 45vw;
    }
    .Haje{
     float: right;
    width: 40vw;
-   transform: translateY(-17vw);
-   
+   transform: translate(0vw,-16vw) !important;
+   transition: .5s ease-in-out; 
+   display: block;  
+   align-self: flex-end;
    }
 }
 
@@ -64,12 +66,22 @@
           min-height: 100vh;
 }
 .Group_Logo { 
-    transform: translate(581.914px, -1147.587px) 
+
+    transform: translate(81.914px, -367.625px) 
                 translate(12vw, .4vw);
+                transition: .5s ease-in-out;
+
   }
   
 .Wing{
-    transform: translate(487px, -1308px) 
-    translate(120vw, 0vw);
+    transform: translate(-448px, -1018px) 
+    translate(260vw, 0vw);
 
+    transition: .5s ease-in-out;
+    
+
+
+}
+.Element1,.Element3,.Element2{
+    cursor: pointer;
 }
