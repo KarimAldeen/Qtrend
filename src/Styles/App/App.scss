@@ -102,8 +102,6 @@ button,svg{
 }
 
 .Group_Logo {
-    /* Existing transformation from SVG */
     transform: translate(581.914px, -1147.587px) 
-                /* Additional transformation using CSS */
-                translate(50px, 20px);
+                translate(80px, 20px);
   }
