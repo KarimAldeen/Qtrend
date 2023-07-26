@@ -3,28 +3,28 @@ export const NavLinks = [
     
     {
         name:"HOME",
-        href:"/1"
+        href:"/"
     },
     {
         name:"OUR SERVICES",
-        href:"/services/FirstService1"
+        href:"/services/FirstService"
     }
     ,
     {
         name:"OUR WORKS",
-        href:"/works1"
+        href:"/works"
     }
     
     ,
     {
         name:"ABOUT US",
-        href:"/about_us1"
+        href:"/about_us"
     }
     
     ,
     {
         name:"MEET US",
-        href:"/meet_us1"
+        href:"/meet_us"
     }
     
     
