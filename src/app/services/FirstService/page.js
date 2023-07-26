@@ -21,7 +21,10 @@ function FirstService() {
             <NavBar/>
     <div className='FirstService_page'>
     <div className='FirstService_Images'>
-    <img src='../Services1/Hajeat_Moaz.png' alt='' className='Hajeat_Moaz' id='Hajeat_Moaz'/>
+    {/* <img src='../Services1/Hajeat_Moaz.png' alt='' className='Hajeat_Moaz' id='Hajeat_Moaz'/> */}
+
+    <Image/>
+
     <img src='../Services1/Haje.png' alt='' className='Haje'/>
 
     </div>
@@ -39,9 +42,7 @@ function FirstService() {
   
     <div className='SecondService_page'>
     <div className='SecondService_Images'>
-    {/* <img src='../Services2/Wing.png' alt='' className='Wing' id='Wing'/> */}
     {/* <img src='../Services1/Haje.png' alt='' className='Haje'/> */}
-    <Image/>
 
     </div>
     <div className='SecondService_Body'>
