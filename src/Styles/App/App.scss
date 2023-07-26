@@ -47,6 +47,7 @@ button,svg{
     }
     .FirstService_Images{
         background: #474B4E;
+        display: none;
 
     }
     .Hajeat_Moaz{
@@ -66,9 +67,19 @@ button,svg{
         transition: .4s ease-in-out;
         opacity: 1;
     }
-    
+    .SecondService_Images{
+        padding-top: 10vw;
+        padding-left: 10vw;
+    }
     
 }
 .None{
     display: none;
 }
+
+.Group_Logo {
+    /* Existing transformation from SVG */
+    transform: translate(581.914px, -1147.587px) 
+                /* Additional transformation using CSS */
+                translate(50px, 20px);
+  }
