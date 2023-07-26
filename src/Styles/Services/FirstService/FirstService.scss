@@ -1,20 +1,52 @@
 
 .FirstService_page{
-    background: #BAC3C7;
+    max-width: 100vw;
     position: relative;
+    background: #BAC3C7;
+}
+.FirstService_page{
+
     .Links{
         a:nth-child(2){
             color: #C7F36C !important;
         }
     }
-    .FirstServiceBG{
-        position: absolute;
-        padding-right: 50vw !important;
-        width: 100%;
-        height: 100vw;
-        max-width: 100%;
-    }
     .NavBar{
         background: #BAC3C7;
     }
+}
+.FirstService_Body{
+    position: absolute;
+    top: 0;
+    padding-top: 43vw;
+    width: 100%;
+    .Services1_Elements{
+        display: flex; justify-content: space-between; align-items: center;
+        .Element1{
+            padding-left: 3vw;
+        }
+    }
+    img{
+        width: 23vw;
+        cursor: pointer;
+    }
+}
+.FirstService_Images{
+    position: absolute;
+    background: #BAC3C7;
+    width: 100%;
+
+
+   img{
+    display: block;
+   }
+   .Hajeat_Moaz{
+    padding-top: 10vw;
+    padding-left: 10vw;
+    width: 50vw;
+   }
+   .Haje{
+    float: right;
+   width: 40vw;
+   }
 }

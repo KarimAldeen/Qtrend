@@ -1,6 +1,7 @@
 body {
     background-color: var(--bg);
     overflow-x: hidden;
+    // transition: .3s ease-in-out;
     
 }
 *{
@@ -29,4 +30,45 @@ button,svg{
         @content;
       }
     }
+
 }  
+
+
+
+.Services_Pages{
+    position: relative;
+          background: #BAC3C7;
+          min-height: 100vh;
+}
+.Transion_page{
+    background: #474B4E;
+    .FirstService_Body{
+        display: none;
+    }
+    .FirstService_Images{
+        background: #474B4E;
+
+    }
+    .Hajeat_Moaz{
+        padding-top: 10vw;
+        width: 50vw;
+        transform: translateX(10vw);
+        transition: .4s ease-in-out;
+        
+       }
+       .Haje{
+        transition: .4s ease-in-out;
+        transform: translateX(-100vw);
+       }
+       .SecondService_page{
+
+        transform: translateX(0vw);
+        transition: .4s ease-in-out;
+        opacity: 1;
+    }
+    
+    
+}
+.None{
+    display: none;
+}
