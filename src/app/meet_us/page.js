@@ -1,21 +1,42 @@
+"use client"
+
 import NavBar from '@/Components/NavBar'
-import React from 'react'
+import React, { useEffect } from 'react'
 import {LuMail} from 'react-icons/lu'
 import{BiMobile}from 'react-icons/bi'
 import {MdLocationOn} from 'react-icons/md'
 import {Inter} from 'next/font/google'
 import Footer from '@/Components/Footer'
-
+import Gradian from './Gradian'
 const inter = Inter({
      subsets: ['latin'] ,
      weight:['400']})
+  
+    
 const MeetUs = () => {
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      const gradian = document.getElementById('MeetUs_BG').classList;
+      if (gradian.contains('Geadian_On_1')) {
+        gradian.remove('Geadian_On_1');
+        gradian.add('Geadian_On_2');
+      } else if (gradian.contains('Geadian_On_2')) {
+        gradian.remove('Geadian_On_2');
+        gradian.add('Geadian_On_3');
+      } else if (gradian.contains('Geadian_On_3')) {
+        gradian.remove('Geadian_On_3');
+        gradian.add('Geadian_On_1');
+      }
+    }, 4000);
+    return () => clearInterval(intervalId);
+  }, []);
   return (
     <>
     <div className='MeetUs'> 
     <NavBar/>
-    <div className='MeetUs_BG'>
+    <div className='MeetUs_BG Geadian_On_1' id='MeetUs_BG'>
       <img src='../MeatUS/MEATUS_GIF.gif' alt=''/>
+      <Gradian/>
     </div>
     <div className='MeetUs_mid_section'>
         <div className='MeetUs_mid_section_left'>
