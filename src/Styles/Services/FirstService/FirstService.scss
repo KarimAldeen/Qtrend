@@ -5,47 +5,12 @@
     // background: #BAC3C7;
 
 }
-
 .FirstService_Body{ 
     position: absolute;
     z-index: 99999999;
     top: 0;
     padding-top: 42vw;
     width: 100%;
-    .FirstService_text{
-        margin-top: 2vw;
-        width: 60vw;
-        .title{
-            color: #000;
-            text-align: center;
-            // font-family: Roboto;
-            font-size: 2.5vw;
-            font-weight: 700;
-        }
-        .description{
-            color: #666;
-            text-align: center;
-            // font-family: Inter;
-            font-size: 1.2vw;
-            font-weight: 400;
-            line-height: 1.7vw;
-            width: 56vw;
-            margin-left: 3vw;
-
-        }
-    }
-
-        .FirstService_p{
-            color: #777;
-            // font-family: Inter;
-            font-size: 1.7vw;
-            font-style: normal;
-            font-weight: 400;
-            letter-spacing: .7vw;
-            text-transform: uppercase;
-            margin-left: 7vw;
-        }
-   
     .Services1_Elements{
         width: 100%;
         display: flex; justify-content: space-between; align-items: center;
@@ -57,13 +22,12 @@
         }
        
     }
-   
-
     img{
         width: 23vw;
         cursor: pointer;
     }
 }
+
 .FirstService_Images{
     position: relative;
     background: #BAC3C7;
@@ -121,14 +85,44 @@
     cursor: pointer;
 }
 
-.SecondService_page{
-        .FirstServiceFourInfo{
-            background: #fafafa !important;
-            // position: absolute;
-            // margin-top: -20vw;
-            margin-bottom: 10vw !important;
-            .FirstServiceFourInfo_First{
-                // background: #000;
-            }
+
+
+
+.FirstService_Body{ 
+    .FirstService_text{
+        margin-top: 2vw;
+        width: 60vw;
+        .title{
+            color: #000;
+            text-align: center;
+            // font-family: Roboto;
+            font-size: 2.5vw;
+            font-weight: 700;
+        }
+        .description{
+            color: #666;
+            text-align: center;
+            // font-family: Inter;
+            font-size: 1.2vw;
+            font-weight: 400;
+            line-height: 1.7vw;
+            width: 56vw;
+            margin-left: 3vw;
+
+        }
     }
+
+        .FirstService_p{
+            color: #777;
+            // font-family: Inter;
+            font-size: 1.7vw;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: .7vw;
+            text-transform: uppercase;
+            margin-left: 7vw;
+        }
+   
+ 
 }
+
