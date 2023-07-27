@@ -2,26 +2,39 @@
     max-width: 100vw;
     position: relative;
     transition: .4s ease-in-out;
-    opacity: 0;
+display: none;    
+    
 }
 
 .SecondService_Images{
     width: 100%; 
+    display: flow-root;
  
 
+}
+.SecondService_Body{
+    position: absolute;
+    z-index: 99999999;
+    top: -5.5vw;
+    width: 100%;
+    display: flex;
+    .Services2_Elements{
+        display: flex; justify-content: space-between; align-items: center;
+        width: 100%; padding-inline: 1%;
+    }
 }
 
 .Transion_page{
     .Group_Logo { 
-        transform: translate(581.914px, -1147.587px) 
-                    translate(0vw, .4vw);
-                    transition: 1s ease-in-out;
+    transform: translate(81.914px, -367.625px) 
+        translate(0vw, .4vw);
+                    transition: .5s ease-in-out;
       }
       
     .Wing{
-        transform: translate(487px, -1308px) 
+    transform: translate(-448px, -1018px) 
         translate(0vw, 0vw);
-        transition: 1s ease-in-out;
+        transition: .5s ease-in-out;
 
     
     }
@@ -32,28 +45,73 @@
     .FirstService_Images{
         background: #474B4E;
         // display: none;
+        height: fit-content;
+
 
     }
     .Hajeat_Moaz{
         // padding-top: 10vw;
-        transform: translateX(8vw);
+        transform: translateX(14vw);
         transition: .4s ease-in-out;
         z-index: 4;
        }
        .Haje{
-        transition: 1s ease-in-out;
-        transform: translateX(-100vw);
+        transition: .5s ease-in-out;
+        transform: translate(-100vw,-16vw) !important;
+
+        display: none;
 
        }
        .SecondService_page{
 
         transform: translateX(0vw);
         transition: .4s ease-in-out;
-        opacity: 1;
+        display: block;
     }
  
     
 }
-.None{
-    display: none;
+
+.Polygon_Right{
+    float: right;
+
+}
+.SecondService_Images{
+    transform: translateY(-15vw);
+    transition: .5s ease-in-out;
+
+
+}
+
+.SecondService_Body{
+    .Elements_2_1{
+        display: flex;
+        flex-direction: column;
+        .Element1{
+            padding: 2vw 0vw 0vw 4vw;
+            width: 14vw;
+        }
+        .Element2{
+            width: 25vw;
+        }
+    }
+    .Element3{
+        padding-right: 1.7vw;
+        width: 22vw;
+        transform: translateY(-4vw) !important;
+       }
+}
+.Back_page{
+    .SecondService_page{
+        display: none;
+        transition: 03s ease;
+    }
+}
+.Girl{
+    width: 47vw;
+    height: 83vw;
+}
+.Polygon_Right{
+    width: 24vw;
+    // height: 83vw;
 }
