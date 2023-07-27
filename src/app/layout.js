@@ -1,4 +1,3 @@
-import NavBar from '@/Components/NavBar'
 import '../Styles/App/Import.scss'
 import { Inter } from 'next/font/google'
 
@@ -13,6 +12,7 @@ export default function RootLayout({ children }) {
       <head>
           <link rel="preconnect" href="https://rsms.me/"/>
          <link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
+         <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'/>
 
       </head>
 

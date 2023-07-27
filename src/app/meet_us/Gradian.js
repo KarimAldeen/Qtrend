@@ -28,7 +28,7 @@ const Gradian = () => {
         <image
           id="Default"
           className='Geadian_1'
-          xlinkHref="../MeatUS/11.png"
+          xlinkHref="../MeatUS/1.png"
         />
       </g>
     </svg>
