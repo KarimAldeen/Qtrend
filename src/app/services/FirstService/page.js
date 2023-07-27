@@ -4,6 +4,7 @@ import NavBar from '@/Components/NavBar'
 import React from 'react'
 import Image from './Image'
 import Girl from './Girl'
+import Footer from '@/Components/Footer'
 
 function FirstService() {
   const Transtion_Page2 = () => {
@@ -55,13 +56,49 @@ function FirstService() {
         <div className='FirstService_Body'>
           <div className='Services1_Elements'>
 
-            <img src='../Services_Elements/1_Section1.svg' alt='' className='Element1' />
+            <img  src='../Services_Elements/1_Section1.svg' alt='' className='Element1' />
+
+            <div></div>
             <div onClick={() => Transtion_Page2()}>
               <img src='../Services_Elements/1_Section2.svg' alt='' className='Element2' />
             </div>
 
           </div>
+            <p className='FirstService_p'>Branding and Identity:</p>
+          <div className='FirstService_info'>
+            <div className='FirstSection_info'>
+                <div>
+                  <h6>LOGOS</h6>
+                  <h5>Our company is dedicated to delivering the best unique logos by combining our expertise in design, creativity, and strategic thinking. We follow a comprehensive process that ensures each logo we create is tailored to our clients' needs and exceeds their expectations.</h5>
+                </div> 
+                <div>
+                  <h6>BROCHURES</h6>
+                  <h5>By combining our collaborative approach, research-driven insights, meticulous design process, and dedication to meeting clients' objectives, we ensure that our company delivers the best unique brochures.</h5>
+                </div> 
+            </div>
+
+            <div className='SecondSection_info'>
+              <div>
+                  <h6>CONTENT WRITING</h6>
+                  <h5>Our company is dedicated to delivering the best unique logos by combining our expertise in design, creativity, and strategic thinking. We follow a comprehensive process that ensures each logo we create is tailored to our clients' needs and exceeds their expectations.</h5>
+              </div> 
+              <div>
+                  <h6>POST DESIGNS</h6>
+                  <h5>Our company is dedicated to delivering the best unique logos by combining our expertise in design, creativity, and strategic thinking. We follow a comprehensive process that ensures each logo we create is tailored to our clients' needs and exceeds their expectations.</h5>
+              </div> 
+            </div>
+          </div>
+
+          <div className='FirstService_text'>
+            <h3 className='title'>Branding and Identity:</h3>
+            <p className='description'>We help businesses build strong and memorable brand identities. Our team of talented designers and strategists will work closely with you to develop a unique brand identity that reflects your values, resonates with your target audience, and sets you apart from the competition. From logo design to brand guidelines, we'll ensure your brand stands out in a crowded marketplace.</p>
+            <h3 className='title'>Graphic Design:</h3>
+            <p className='description'>Our creative designers have an eye for detail and a passion for creating visually stunning designs. Whether you need eye-catching brochures, engaging social media graphics, impactful packaging, or stunning print materials, we'll bring your vision to life and create designs that leave a lasting impression.</p>
         </div>
+
+        </div>
+        <Footer/>
+ 
       </div>
 
       <div className='SecondService_page'>
