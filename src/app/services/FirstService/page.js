@@ -25,12 +25,20 @@ function FirstService() {
 
   }
   const Back_Page1 = (e) => {
-    // if(){
+    const Src = e.target.src ;
+    if (Src.includes('2_Section1')) {
+      document.getElementById("Transion_page").classList.remove("Transion_page")
+      document.getElementById("Transion_page").classList.add("Back_page")
+        console.log('1');
+    } else {
+      document.getElementById("Transion_page").classList.remove("Back_page")
+      document.getElementById("Transion_page").classList.add("Transion_page")
 
-    // }
-    document.getElementById("Transion_page").classList.remove("Transion_page")
-    document.getElementById("Transion_page").classList.add("Back_page")
-    console.log(e?.target.src);
+      document.getElementById("Transion_page").classList.remove("Transion_page3")
+    document.getElementById("Element1").src = "../Services_Elements/2_Section1.svg"
+    document.getElementById("Element2").src = "../Services_Elements/2_Section2.svg"
+    }
+   
 
   }
   return (
