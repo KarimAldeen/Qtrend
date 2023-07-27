@@ -5,141 +5,12 @@
     // background: #BAC3C7;
 
 }
-
-.FirstService_Body{
-    .FirstService_text{
-        margin-top: 2vw;
-        width: 60vw;
-        .title{
-            color: #000;
-            text-align: center;
-            // font-family: Roboto;
-            font-size: 2.5vw;
-            font-weight: 700;
-        }
-        .description{
-            color: #666;
-            text-align: center;
-            // font-family: Inter;
-            font-size: 1.2vw;
-            font-weight: 400;
-            line-height: 1.7vw;
-            width: 56vw;
-            margin-left: 3vw;
-
-        }
-    }
+.FirstService_Body{ 
     position: absolute;
     z-index: 99999999;
     top: 0;
     padding-top: 42vw;
     width: 100%;
-        .FirstService_p{
-            color: #777;
-            // font-family: Inter;
-            font-size: 1.7vw;
-            font-style: normal;
-            font-weight: 400;
-            letter-spacing: .7vw;
-            text-transform: uppercase;
-            margin-left: 7vw;
-        }
-        .FirstService_info{
-            width: 100%;
-            .FirstSection_info{
-                display: flex;
-                align-items: center;
-                margin-top: 1vw ;
-                margin-left: 15vw;
-              
-                div{
-                    background: #D9D9D9;
-                    width: 24vw;
-                    height: 11vw;  
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    padding: 1vw;
-                    border-radius:1vw ;
-                    margin-left: 1vw;
-                    h6{
-                        width: 18vw;
-                        height: 5.5vw;
-                        background: #C7F36C;
-                        color: #000;
-                        // font-family: Poppins;
-                        font-size: 2.2vw;
-                        font-style: normal;
-                        font-weight: 900;
-                        letter-spacing: -.1vw;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        margin-top: -1vw;
-                        border-radius: 0 0 2.5vw 2.5vw;
-                        margin-bottom:.3vw ;
-                    }
-                    h5{
-                        height: 7vw;
-                        color: #000;
-                        // font-family: Poppins;
-                        font-size: .9vw;
-                        font-style: normal;
-                        font-weight: 700;
-                        line-height:1.3vw;
-                    }
-
-                }
-            }
-            .SecondSection_info{
-                display: flex;
-                align-items: center;
-                margin-left:3vw;
-                
-                
-                div{
-                    background: #D9D9D9;
-                    width: 32vw;
-                    height: 11vw;  
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    padding: 1vw;
-                    border-radius:1vw ;
-                    margin-left: 1vw;
-                    margin-top: 1vw;
-                    h6{
-                        width: 25vw;
-                        height: 5.5vw;
-                        background: #C7F36C;
-                        color: #000;
-                        // font-family: Poppins;
-                        font-size: 2.2vw;
-                        font-style: normal;
-                        font-weight: 900;
-                        letter-spacing: -.1vw;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        margin-top: -1vw;
-                        border-radius: 0 0 2.5vw 2.5vw;
-                        margin-bottom:.7vw ;                         
-                    }
-                    h5{
-                        height: 7vw;
-                        color: #000;
-                        // font-family: Poppins;
-                        font-size: .9vw;
-                        font-style: normal;
-                        font-weight: 700;
-                        line-height:1.3vw;
-                    }
-                }
-            }
-        }
-
     .Services1_Elements{
         width: 100%;
         display: flex; justify-content: space-between; align-items: center;
@@ -151,13 +22,12 @@
         }
        
     }
-   
-
     img{
         width: 23vw;
         cursor: pointer;
     }
 }
+
 .FirstService_Images{
     position: relative;
     background: #BAC3C7;
@@ -214,3 +84,45 @@
 .Element1,.Element3,.Element2{
     cursor: pointer;
 }
+
+
+
+
+.FirstService_Body{ 
+    .FirstService_text{
+        margin-top: 2vw;
+        width: 60vw;
+        .title{
+            color: #000;
+            text-align: center;
+            // font-family: Roboto;
+            font-size: 2.5vw;
+            font-weight: 700;
+        }
+        .description{
+            color: #666;
+            text-align: center;
+            // font-family: Inter;
+            font-size: 1.2vw;
+            font-weight: 400;
+            line-height: 1.7vw;
+            width: 56vw;
+            margin-left: 3vw;
+
+        }
+    }
+
+        .FirstService_p{
+            color: #777;
+            // font-family: Inter;
+            font-size: 1.7vw;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: .7vw;
+            text-transform: uppercase;
+            margin-left: 7vw;
+        }
+   
+ 
+}
+
