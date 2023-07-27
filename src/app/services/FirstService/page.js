@@ -4,8 +4,8 @@ import NavBar from '@/Components/Utils/NavBar'
 import React from 'react'
 import Image from './Image'
 import Girl from './Girl'
-import Footer from '@/Components/Footer'
-
+import Footer from '@/Components/Utils/Footer'
+import FirstServiceFourInfo from '@/Components/Services/FirstServiceFourInfo'
 function FirstService() {
   const Transtion_Page2 = () => {
     document.getElementById("Transion_page").classList.remove("Back_page")
@@ -94,6 +94,7 @@ function FirstService() {
               <img src='../Services/Services_Elements/2_Section1.svg'  alt='' id='Element1' className='Element1' onClick={(e) => Back_Page1(e)} />
             </div>
 
+            <FirstServiceFourInfo/>
 
             <div >
               <img src='../Services/Services_Elements/2_Section3.svg' alt='' className='Element3'onClick={() => Transtion_Page3()}  />
@@ -103,7 +104,6 @@ function FirstService() {
           </div>
 
         </div>
-        <FirstServiceFourInfo/>
 
       </div>
    
