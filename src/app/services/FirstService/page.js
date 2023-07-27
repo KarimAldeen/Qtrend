@@ -5,6 +5,7 @@ import React from 'react'
 import Image from './Image'
 import Girl from './Girl'
 import Footer from '@/Components/Footer'
+import FirstServiceFourInfo from '@/Components/Services/FirstServiceFourInfo'
 
 function FirstService() {
   const Transtion_Page2 = () => {
@@ -65,29 +66,8 @@ function FirstService() {
 
           </div>
             <p className='FirstService_p'>Branding and Identity:</p>
-          <div className='FirstService_info'>
-            <div className='FirstSection_info'>
-                <div>
-                  <h6>LOGOS</h6>
-                  <h5>Our company is dedicated to delivering the best unique logos by combining our expertise in design, creativity, and strategic thinking. We follow a comprehensive process that ensures each logo we create is tailored to our clients' needs and exceeds their expectations.</h5>
-                </div> 
-                <div>
-                  <h6>BROCHURES</h6>
-                  <h5>By combining our collaborative approach, research-driven insights, meticulous design process, and dedication to meeting clients' objectives, we ensure that our company delivers the best unique brochures.</h5>
-                </div> 
-            </div>
-
-            <div className='SecondSection_info'>
-              <div>
-                  <h6>CONTENT WRITING</h6>
-                  <h5>Our company is dedicated to delivering the best unique logos by combining our expertise in design, creativity, and strategic thinking. We follow a comprehensive process that ensures each logo we create is tailored to our clients' needs and exceeds their expectations.</h5>
-              </div> 
-              <div>
-                  <h6>POST DESIGNS</h6>
-                  <h5>Our company is dedicated to delivering the best unique logos by combining our expertise in design, creativity, and strategic thinking. We follow a comprehensive process that ensures each logo we create is tailored to our clients' needs and exceeds their expectations.</h5>
-              </div> 
-            </div>
-          </div>
+            <FirstServiceFourInfo/>
+         
 
           <div className='FirstService_text'>
             <h3 className='title'>Branding and Identity:</h3>
@@ -97,7 +77,7 @@ function FirstService() {
         </div>
 
         </div>
-        {/* <Footer/> */}
+
  
       </div>
 
@@ -120,10 +100,12 @@ function FirstService() {
               <img src='../Services_Elements/2_Section3.svg' alt='' className='Element3'onClick={() => Transtion_Page3()}  />
 
             </div>
-
-          
+       
           </div>
+
         </div>
+        <FirstServiceFourInfo/>
+
       </div>
       {/* <div className='ThirdService_page'>
         <div className='ThirdService_Images'>
