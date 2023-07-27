@@ -1,7 +1,7 @@
-import NavBar from "@/Components/NavBar";
+import NavBar from "@/Components/Utils/NavBar";
 import Image from "next/image";
 import React from "react";
-import Footer from "@/Components/Footer";
+import Footer from "@/Components/Utils/Footer";
 
 function Works() {
   return (

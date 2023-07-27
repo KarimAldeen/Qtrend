@@ -1,12 +1,12 @@
 "use client"
 
-import NavBar from '@/Components/NavBar'
+import NavBar from '@/Components/Utils/NavBar'
 import React, { useEffect } from 'react'
 import {LuMail} from 'react-icons/lu'
 import{BiMobile}from 'react-icons/bi'
 import {MdLocationOn} from 'react-icons/md'
 import {Inter} from 'next/font/google'
-import Footer from '@/Components/Footer'
+import Footer from '@/Components/Utils/Footer'
 import Gradian from './Gradian'
 const inter = Inter({
      subsets: ['latin'] ,

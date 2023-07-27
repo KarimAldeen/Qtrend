@@ -1,31 +1,31 @@
 import React from 'react'
-import Services_Cards from '@/Components/Services_Cards'
+import Services_Cards from '@/Components/Utils/Services_Cards'
 import { FaFacebookF, FaTiktok, FaWhatsapp, FaSnapchatGhost, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import NavBar from '@/Components/NavBar';
-import Home3 from '../Components/Home/Home3'
+import NavBar from '@/Components/Utils/NavBar';
+import Home4 from '../Components/Home/Home4'
 import LogoShadow from '@/Components/Home/LogoShadow';
-import Footer from '@/Components/Footer';
+import Footer from '@/Components/Utils/Footer';
 
 const Page = () => {
   const Cards = {
-    Url1: "Services_Card/CARD1.png",
-    Url2: "Services_Card/CARD2.png",
-    Url3: "Services_Card/CARD3.png",
-    Url4: "Services_Card/CARD4.png",
-    Url5: "Services_Card/CARD5.png",
-    Url6: "Services_Card/CARD6.png",
+    Url1: "../Home/2+3/Services_Card/CARD1.png",
+    Url2: "../Home/2+3/Services_Card/CARD2.png",
+    Url3: "../Home/2+3/Services_Card/CARD3.png",
+    Url4: "../Home/2+3/Services_Card/CARD4.png",
+    Url5: "../Home/2+3/Services_Card/CARD5.png",
+    Url6: "../Home/2+3/Services_Card/CARD6.png",
   }
   return (
     <div className='HOME_PAGE'>
       <div className='Home'>
         <NavBar />
 
-        <img src="../HOMEBG_GIF.gif" alt="Image" />
+        <img src="../Home/1/HOMEBG_GIF.gif" alt="Image" />
 
 
       </div>
       <div className='Home2'>
-        <img src="../HomeBG23.png" alt="Image" />
+        <img src="../Home/2+3/HomeBG23.png" alt="Image" />
         <div className='Home2_Contain'>
           <div className='Home2_Text'>
             <h2>Welcome</h2>
@@ -102,13 +102,12 @@ const Page = () => {
 
         </div>
       </div>
-      <Home3 />
+      <Home4 />
       <div className='Home4'>
 
-        <img className='Home4_BG_Image' src="../Home4_BG.png" alt="Image" />
+        <img className='Home4_BG_Image' src="../Home/5/Home5_Image/Home5_BG.png" alt="Image" />
         <div className='Home4_Top'>
           <h1>Our Awesome Portofolio</h1>
-          {/* <img src="../Home4_Image/Logo_Shadow.svg" alt="Image" /> */}
           <LogoShadow />
 
         </div>
@@ -119,11 +118,11 @@ const Page = () => {
           <div className='Home4_Down_Right'>
 
             <div class="ImageContainer">
-              <img className='Home4_Sec2' src='../Home4_Image/Home4_Sec3.svg' alt='' />
-              <img className='Home4_Sec2' src='../Home4_Image/Home4_Sec2.svg' alt='' />
-              <img className='Home4_Sec2' src='../Home4_Image/Home4_Sec3.svg' alt='' />
+              <img className='Home4_Sec2' src='../Home/5/Home5_Image/Home5_Sec3.svg' alt='' />
+              <img className='Home4_Sec2' src='../Home/5/Home5_Image/Home5_Sec2.svg' alt='' />
+              <img className='Home4_Sec2' src='../Home/5/Home5_Image/Home5_Sec3.svg' alt='' />
             </div>
-            <img className='Rectangle' src='../Home4_Image/Rectangle.svg' alt='' />
+            <img className='Rectangle' src='../Home/5/Home5_Image/Rectangle.svg' alt='' />
             <div className='Home4_Text'>
               <h3>
                 PLEASE NOTE
@@ -139,7 +138,7 @@ const Page = () => {
           </div>
 
         </div>
-        <img className='Home4_IbraDonkey' src="../Home4_Image/IbraDonkey.svg" alt="Image" />
+        <img className='Home4_IbraDonkey' src="../Home/5/Home5_Image/IbraDonkey.svg" alt="Image" />
 
       </div>
 
