@@ -104,7 +104,6 @@ function FirstService() {
       <div className='SecondService_page'>
         <div className='SecondService_Images'>
           <Girl/>
-          {/* <img src='../Services/Services2/Girl_Logo.png' alt='' className='Girl_Logo' /> */}
           <img src='../Services/Services2/Polygon_Right.png' alt='' className='Polygon_Right ' />
 
         </div>
@@ -114,6 +113,7 @@ function FirstService() {
               <img src='../Services/Services_Elements/2_Section2.svg' alt='' id='Element2' className='Element2' />
               <img src='../Services/Services_Elements/2_Section1.svg'  alt='' id='Element1' className='Element1' onClick={(e) => Back_Page1(e)} />
             </div>
+            
 
 
             <div >
