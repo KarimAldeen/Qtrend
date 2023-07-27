@@ -97,7 +97,7 @@ function FirstService() {
         </div>
 
         </div>
-        <Footer/>
+        {/* <Footer/> */}
  
       </div>
 
@@ -121,6 +121,7 @@ function FirstService() {
 
             </div>
 
+          
           </div>
         </div>
       </div>
@@ -146,6 +147,7 @@ function FirstService() {
           </div>
         </div>
       </div> */}
+      <Footer/>
     </div>
   )
 }
