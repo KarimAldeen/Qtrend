@@ -3,7 +3,6 @@
 import NavBar from '@/Components/NavBar'
 import Link from 'next/link';
 import React from 'react'
-import { FaFacebookF, FaTiktok, FaWhatsapp, FaSnapchatGhost, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 function FirstService() {  
   const Transtion = () => {
