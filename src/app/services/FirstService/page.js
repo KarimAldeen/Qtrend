@@ -6,6 +6,7 @@ import Image from './Image'
 import Girl from './Girl'
 import Footer from '@/Components/Utils/Footer'
 import FirstServiceFourInfo from '@/Components/Services/FirstServiceFourInfo'
+import ServiceOverAll from '@/Components/Services/ServiceOverAll'
 function FirstService() {
   const Transtion_Page2 = () => {
     document.getElementById("Transion_page").classList.remove("Back_page")
@@ -95,7 +96,7 @@ function FirstService() {
             
 
             <FirstServiceFourInfo/>
-
+            <ServiceOverAll/>
             <div >
               <img src='../Services/Services_Elements/2_Section3.svg' alt='' className='Element3'onClick={() => Transtion_Page3()}  />
 
@@ -104,9 +105,31 @@ function FirstService() {
           </div>
 
         </div>
+        {/* <div className='ThirdService_page'>
+          <div className='Services3_Elements'>
+            
+              hhhhhhhhhhhhhhh
+            
+          </div>
+        <div className='ThirdService_Body'>
+
+        </div>
+      </div>   */}
+
 
       </div>
-   
+
+
+      <div className='ThirdService_page'>
+          <div className='Services3_Elements'>
+            
+              hhhhhhhhhhhhhhhhhhhhhhh
+            
+          </div>
+        <div className='ThirdService_Body'>
+
+        </div>
+      </div>  
       <Footer/>
     </div>
   )

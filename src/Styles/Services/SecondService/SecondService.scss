@@ -2,7 +2,7 @@
     max-width: 100vw;
     position: relative;
     transition: .4s ease-in-out;
-display: none;    
+    display: none;  
     
 }
 
@@ -121,5 +121,10 @@ display: none;
         position: absolute;
         padding: 30vw 0vw 0vw 20vw;
     }
+    .ServiceOverAll{
+        position: absolute;
+        padding: 100vw 0vw 0vw 40vw;   
+        width: 57vw;
+       }
 
 }

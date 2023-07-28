@@ -41,6 +41,9 @@ function Works() {
         <div className="img2">
           <img src="../Works/5.png" alt=""/>
         </div>
+        <div className="img5">
+          <img src="../Works/5.png" alt=""/>
+        </div>
 
           </div>
           
