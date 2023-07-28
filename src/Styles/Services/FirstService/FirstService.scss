@@ -1,15 +1,17 @@
-
+.Services_Pages{
+    .NavBar{
+        .Links{
+            a:nth-child(2){
+                color: #C7F36C !important;
+            }
+        }
+    }
+}
 .FirstService_page{
     max-width: 100vw;
     position: relative;
     // background: #BAC3C7;
-//     .NavBar{
-//     .Links{
-//         a:nth-child(2){
-//             color: #C7F36C !important;
-//         }
-//     }
-// }
+    
 }
 .FirstService_Body{ 
     position: absolute;
