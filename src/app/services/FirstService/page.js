@@ -7,7 +7,11 @@ import Girl from './Girl'
 import Footer from '@/Components/Utils/Footer'
 import FirstServiceFourInfo from '@/Components/Services/FirstServiceFourInfo'
 import ServiceOverAll from '@/Components/Services/ServiceOverAll'
+import ThirdPageService from '@/components/Services/ThirdPageService'
 function FirstService() {
+
+
+  
   const Transtion_Page2 = () => {
     document.getElementById("Transion_page").classList.remove("Back_page")
     document.getElementById("Transion_page").classList.add("Transion_page")
@@ -21,6 +25,7 @@ function FirstService() {
   }
   const Transtion_Page3 = () => {
     document.getElementById("Transion_page").classList.add("Transion_page3")
+    document.getElementById('ThirdService_page').style.display ='block'
     document.getElementById("Element1").src = "../Services/Services_Elements/3_Section2.svg"
     document.getElementById("Element2").src = "../Services/Services_Elements/3_Section3.svg"
 
@@ -41,7 +46,7 @@ function FirstService() {
     document.getElementById("Element2").src = "../Services/Services_Elements/2_Section2.svg"
     }
    
-
+   
   }
   return (
     <div className='Services_Pages' id='Transion_page'>
@@ -94,8 +99,9 @@ function FirstService() {
               <img src='../Services/Services_Elements/2_Section1.svg'  alt='' id='Element1' className='Element1' onClick={(e) => Back_Page1(e)} />
             </div>
             
-
             <FirstServiceFourInfo/>
+
+
             <ServiceOverAll/>
             <div >
               <img src='../Services/Services_Elements/2_Section3.svg' alt='' className='Element3'onClick={() => Transtion_Page3()}  />
@@ -105,32 +111,13 @@ function FirstService() {
           </div>
 
         </div>
-        {/* <div className='ThirdService_page'>
-          <div className='Services3_Elements'>
-            
-              hhhhhhhhhhhhhhh
-            
-          </div>
-        <div className='ThirdService_Body'>
-
-        </div>
-      </div>   */}
+      </div> 
+      {/* End Section Two  */}
 
 
-      </div>
-
-
-      <div className='ThirdService_page'>
-          <div className='Services3_Elements'>
-            
-              hhhhhhhhhhhhhhhhhhhhhhh
-            
-          </div>
-        <div className='ThirdService_Body'>
-
-        </div>
-      </div>  
-      <Footer/>
+        {/* Start Third Section Service */}
+        <ThirdPageService />
+        {/* End Third Section  Service */}
     </div>
   )
 }
