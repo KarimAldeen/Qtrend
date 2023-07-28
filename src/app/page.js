@@ -19,10 +19,11 @@ const Page = () => {
     <div className='HOME_PAGE'>
       <div className='Home'>
         <NavBar />
+        <h2 className='HomeCenter_h'>We Boost Businesses Success</h2>
+        <button className='HomeCenter_button'>Lets get in touch!</button>
 
         <img src="../Home/1/HOMEBG_GIF.gif" alt="Image" />
-
-
+       
       </div>
       <div className='Home2'>
         <img src="../Home/2+3/HomeBG23.png" alt="Image" />
