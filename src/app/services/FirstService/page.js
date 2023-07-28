@@ -7,7 +7,11 @@ import Girl from './Girl'
 import Footer from '@/Components/Utils/Footer'
 import FirstServiceFourInfo from '@/Components/Services/FirstServiceFourInfo'
 import ServiceOverAll from '@/Components/Services/ServiceOverAll'
+import ThirdPageService from '@/components/Services/ThirdPageService'
 function FirstService() {
+
+
+  
   const Transtion_Page2 = () => {
     document.getElementById("Transion_page").classList.remove("Back_page")
     document.getElementById("Transion_page").classList.add("Transion_page")
@@ -42,7 +46,7 @@ function FirstService() {
     document.getElementById("Element2").src = "../Services/Services_Elements/2_Section2.svg"
     }
    
-
+   
   }
   return (
     <div className='Services_Pages' id='Transion_page'>
@@ -107,22 +111,13 @@ function FirstService() {
           </div>
 
         </div>
-        {/* <div className='ThirdService_page'>
-          <div className='Services3_Elements'>
-            
-              hhhhhhhhhhhhhhh
-            
-          </div>
-        <div className='ThirdService_Body'>
-
-        </div>
-      </div>   */}
+      </div> 
+      {/* End Section Two  */}
 
 
-      </div>
-      <div className='ThirdService_page' id='ThirdService_page'>
-        hello world
-        </div>
+        {/* Start Third Section Service */}
+        <ThirdPageService />
+        {/* End Third Section  Service */}
     </div>
   )
 }

@@ -24,6 +24,7 @@
             padding-left: 5vw;
         }
         .Element2{
+
             padding-right: 2vw;
         }
        
@@ -54,6 +55,7 @@
 
     width: 60vw;
     height: 45vw;
+    z-index: 0;
    }
    .Haje{
     float: right;
@@ -132,3 +134,16 @@
  
 }
 
+
+
+
+
+.Element2{
+z-index: 99999;
+}
+.Element1{
+z-index: 9999;
+}
+.Element3{
+    z-index: 999999;
+}
