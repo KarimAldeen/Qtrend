@@ -33,6 +33,36 @@ display: none;
     .Normal_Girl{
     opacity: 0;
     }
+    .remove-in-page-three{
+        display: none;
+    }
 }
 
 
+.ThirdService_page{
+    max-width: 100vw;
+    position: relative;
+    transition: .4s ease-in-out;
+display: none;    
+    
+position: absolute;
+top: 0;
+}
+
+.ThirdService_Images{
+    width: 100%; 
+    display: flow-root;
+ 
+
+}
+.ThirdService_Body{
+    position: absolute;
+    z-index: 99999999;
+    top: -5.5vw;
+    width: 100%;
+    display: flex;
+    .Services2_Elements{
+        display: flex; justify-content: space-between; align-items: center;
+        width: 100%; padding-inline: 1%;
+    }
+}

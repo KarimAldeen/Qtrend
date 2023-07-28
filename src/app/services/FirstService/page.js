@@ -20,6 +20,7 @@ function FirstService() {
   }
   const Transtion_Page3 = () => {
     document.getElementById("Transion_page").classList.add("Transion_page3")
+    document.getElementById('ThirdService_page').style.display ='block'
     document.getElementById("Element1").src = "../Services/Services_Elements/3_Section2.svg"
     document.getElementById("Element2").src = "../Services/Services_Elements/3_Section3.svg"
 
@@ -93,8 +94,8 @@ function FirstService() {
               <img src='../Services/Services_Elements/2_Section1.svg'  alt='' id='Element1' className='Element1' onClick={(e) => Back_Page1(e)} />
             </div>
             
-
             <FirstServiceFourInfo/>
+
 
             <div >
               <img src='../Services/Services_Elements/2_Section3.svg' alt='' className='Element3'onClick={() => Transtion_Page3()}  />
@@ -106,8 +107,9 @@ function FirstService() {
         </div>
 
       </div>
-   
-      <Footer/>
+      <div className='ThirdService_page' id='ThirdService_page'>
+        hello world
+        </div>
     </div>
   )
 }
