@@ -2,15 +2,20 @@
     a{
         color: black;
         background-color: #0085D2;
-        padding: .5vw;
+        padding: .8vw;
         margin-inline: .5vw;
         border-radius: .6vw;
         display: inline-flex;
         align-items: center;
         justify-content: center;
         margin-bottom: .8vw !important;
-        width: 3vw;
-        max-width: 20px;
+        // width: 3vw;
+        height: 2vw;
+        width: 2vw;
+        // max-width: 1.2vw;
+        svg{
+            font-size: 2vw;
+        }
 
     }
 
@@ -40,19 +45,24 @@
     }
     .Footer_Right{
         display: flex;
-        gap: 4vw;
+        gap: 5vw;
         h3{
             font-size: 1.2vw;
             font-weight: 500;
-            margin-bottom: .5vw;
+
+            text-align: center;
+            margin-bottom: .9vw;
             width: 100%;
             white-space: nowrap;
         }
         a{
             color :#8E8E8E;
+            text-align: center;
             white-space: nowrap;
             font-size: 1vw;
+            margin-bottom: .8vw;
             font-weight: 400;
+            display: block;
         }
     }
 
