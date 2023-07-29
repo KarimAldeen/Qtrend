@@ -8,6 +8,7 @@ import Footer from '@/Components/Utils/Footer'
 import FirstServiceFourInfo from '@/Components/Services/FirstServiceFourInfo'
 import ServiceOverAll from '@/Components/Services/ServiceOverAll'
 import ThirdPageService from '@/Components/Services/ThirdPageService'
+import Hajeat from './Hajeat'
 function FirstService() {
 
 
@@ -62,7 +63,8 @@ function FirstService() {
       <div className='FirstService_page'>
         <div className='FirstService_Images'>
 
-          <Image />
+          {/* <Image /> */}
+          <Hajeat/>
 
           <img src='../Services/Services1/Haje.png' alt='' className='Haje' />
 

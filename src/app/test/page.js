@@ -1,11 +1,11 @@
 import React from 'react'
-import Test from './Test'
+import Hajeat from '../services/FirstService/Hajeat'
 
 const page = () => {
   return (
     <div className='Test'>
         
-        <Test/>
+        <Hajeat/>
     </div>
   )
 }
