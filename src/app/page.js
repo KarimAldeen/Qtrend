@@ -20,7 +20,12 @@ const Page = () => {
       <div className='Home'>
         <NavBar />
 
-        <img src="../Home/1/HOMEBG_GIF.gif" alt="Image" />
+        {/* <img src="../Home/1/Home_BG2.png" alt="Image" /> */}
+        {/* <img src="../Home/1/Home_BG.png" alt="Image" /> */}
+
+         {/* <img src="../Home/1/HOMEBG_GIF.gif" alt="Image" /> */}
+
+        <img src="../Home/1/HOME_BG.gif" alt="Image" />
 
 
       </div>
@@ -117,7 +122,7 @@ const Page = () => {
           </div>
           <div className='Home4_Down_Right'>
 
-            <div class="ImageContainer">
+            <div className="ImageContainer">
               <img className='Home4_Sec2' src='../Home/5/Home5_Image/Home5_Sec3.svg' alt='' />
               <img className='Home4_Sec2' src='../Home/5/Home5_Image/Home5_Sec2.svg' alt='' />
               <img className='Home4_Sec2' src='../Home/5/Home5_Image/Home5_Sec3.svg' alt='' />

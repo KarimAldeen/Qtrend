@@ -8,7 +8,7 @@ function Works() {
     <div className="work_page">
       <NavBar />
       {/* <img className="works_img" src="../Works/Works_BG.jpg" alt=""/> */}
-      <img className="works_img" src="../Works/OurWorks.png" alt=""/>
+      <img className="works_img" src="../Works/OurWorks.webp" alt=""/>
 
       <div className="text_works">
         <p className="text_first"> OverAll</p>
@@ -28,18 +28,21 @@ function Works() {
 
         <div className="img_first">
         <div className="img1">
-          <img src="../Works/1.png" alt=""/>
+          <img src="../Works/1.webp" alt=""/>
         </div>
         <div className="img4">
-          <img src="../Works/4.png" alt=""/>
+          <img src="../Works/4.webp" alt=""/>
         </div>
         </div>
         <div className="img_second">
         <div className="img3">
-          <img src="../Works/3.png" alt=""/>
+          <img src="../Works/3.webp" alt=""/>
+        </div>
+        <div className="img5">
+          <img src="../Works/6.webp" alt=""/>
         </div>
         <div className="img2">
-          <img src="../Works/5.png" alt=""/>
+          <img src="../Works/5.webp" alt=""/>
         </div>
 
           </div>

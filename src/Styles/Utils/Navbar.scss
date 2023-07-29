@@ -10,3 +10,68 @@
         background: #BAC3C7;
     }
 }
+
+.Home{
+    .Links{
+        a:nth-child(1){
+            color: #C7F36C !important;
+        }
+    }
+}
+
+@font-face {
+    font-family: Popping;
+    src: url('../../Utils/Fonts/Poppins-Regular.ttf');
+    font-display: swap;
+ 
+  }
+.NavBar{
+    position: absolute;
+    width: fill;
+    padding: 2vw 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999999999;
+    font-family: Popping;
+    font-display: swap;
+        .Links{
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+        }
+     .Logo{
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        svg{
+            width: 10vw !important;
+                height: 5vw;
+            path{
+                fill: white;
+            }
+        }
+     }
+     
+   
+    a{
+        color: white;
+        font-size: 1.1vw;
+        margin-inline: 1.8vw;
+        font-weight: 900;
+
+    }
+    span{
+        background: black;
+        color: white;
+       padding: .6vw;
+       
+        font-weight: bold;
+        font-size: 1.4vw;
+        margin-left: 2vw;
+        border-radius: .4vw;
+        position: relative;
+        top: .2vw;
+     
+}
+}

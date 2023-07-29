@@ -1,11 +1,4 @@
 
-.Home{
-    .Links{
-        a:nth-child(1){
-            color: #C7F36C !important;
-        }
-    }
-}
 .Gif{
     position: absolute;
     z-index: 999999999;
@@ -22,48 +15,8 @@
     }
     
 }
-.NavBar{
-    position: absolute;
-    width: fill;
-    padding: 21px 5vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 9999999999;
-    
-     .Logo svg{
-        width: 10vw !important;
-      
-        path{
-            fill: white;
-        }
-    }
-    a{
-        color: white;
-        font-size: 1.1vw;
-        margin-inline: 2vw;
-        font-weight: 900;
 
-    }
-    span{
-        background: black;
-        color: white;
-        padding: .6vw;
-        font-weight: bold;
-        font-size: 1vw;
-        margin-left: 2vw;
-        border-radius: .5vw;
-        -webkit-border-radius: .5vw;
-        -moz-border-radius: .5vw;
-        -ms-border-radius: .5vw;
-        -o-border-radius: .5vw;
-}
-}
-// .Links{
-//     a:first-child{
-//         color: #C7F36C;
-//     }
-// }
+
 .Home2_Contain{
     position: absolute;
     top:5vw;

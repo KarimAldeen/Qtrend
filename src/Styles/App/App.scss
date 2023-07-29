@@ -1,11 +1,19 @@
 
+@font-face {
+  font-family: Inter;
+  src: url('../../Utils/Fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
 body {
     background-color: var(--bg);
     overflow-x: hidden;
-    // transition: .3s ease-in-out;
+    font-family: Inter;
+    font-display: swap;
+
 
 
   }
+  
 *{
     padding: 0; margin: 0; 
     transition: .5s ease-in-out;
@@ -66,4 +74,12 @@ button,svg{
     transform: translate(52.4vw,23.3vw);
     width: 12.5vw;
     z-index: 9999999999999;
+}
+@keyframes Ibra_Is_Trash {
+  0%   {opacity: 0;}
+  25%  {opacity: 0;}
+  50%  {opacity: 0;}
+  75%  {opacity: 0;}
+  85%  {opacity: 0;}
+  100% {opacity: 1;}
 }

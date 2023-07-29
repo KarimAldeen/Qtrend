@@ -7,13 +7,10 @@ import Logo from './Logo'
 function NavBar() {
   return (
     <div className='NavBar'>
-          {/* <Image src='../Logo_Qtrend.svg' alt='logo' width={30} height={30} /> */}
-          {/* <img src='../Logo_Qtrend.svg' alt='logo'  /> */}
           <Logo />
           <div className='Links'>
             {
               NavLinks?.map((i, index) => (
-                // <Link key={index} href={i} className={router?.pathname === i ? "Active_Links" : ""} >{i}</Link>
                 <Link key={index} href={i?.href}  >{i?.name}</Link>
 
               ))
