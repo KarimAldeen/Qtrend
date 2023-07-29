@@ -14,6 +14,8 @@ function FirstService() {
   
   const Transtion_Page2 = () => {
     document.getElementById("Transion_page").classList.remove("Back_page")
+    document.getElementById('ThirdService_page').style.display ='none'
+
     document.getElementById("Transion_page").classList.add("Transion_page")
     setTimeout(() => {
 
@@ -36,8 +38,12 @@ function FirstService() {
     if (Src.includes('2_Section1')) {
       document.getElementById("Transion_page").classList.remove("Transion_page")
       document.getElementById("Transion_page").classList.add("Back_page")
+      
         console.log('1');
     } else {
+      console.log('2');
+      document.getElementById('ThirdService_page').style.display ='none'
+
       document.getElementById("Transion_page").classList.remove("Back_page")
       document.getElementById("Transion_page").classList.add("Transion_page")
 
