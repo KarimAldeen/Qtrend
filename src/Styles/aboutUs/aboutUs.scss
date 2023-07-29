@@ -1,6 +1,7 @@
 .AboutUs_page{
     min-height: max(120vw , 0);
     position: relative;
+    
     max-width: 100vw;
     background:#bac3c7 !important;
     .NavBar{
@@ -41,7 +42,6 @@
         top: 0;
 
         .AboutUs_p{
-            // background: red;
             padding-top: 50vw;
             max-width: 77vw;
             position: relative;

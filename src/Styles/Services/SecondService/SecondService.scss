@@ -2,7 +2,7 @@
     max-width: 100vw;
     position: relative;
     transition: .4s ease-in-out;
-display: none;    
+    display: none;  
     
 }
 
@@ -53,7 +53,7 @@ display: none;
         // padding-top: 10vw;
         transform: translateX(14vw);
         transition: .4s ease-in-out;
-        z-index: 4;
+        z-index: 0;
        }
        .Haje{
         transition: .5s ease-in-out;
@@ -121,5 +121,10 @@ display: none;
         position: absolute;
         padding: 30vw 0vw 0vw 20vw;
     }
+    .ServiceOverAll{
+        position: absolute;
+        padding: 100vw 0vw 0vw 40vw;   
+        width: 57vw;
+       }
 
 }

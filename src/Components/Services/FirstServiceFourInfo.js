@@ -2,7 +2,7 @@ import React from 'react'
 
 const FirstServiceFourInfo = () => {
   return (
-         <div className='FirstService_info'>
+         <div className='FirstService_info remove-in-page-three'>
             <div className='FirstServiceFourInfo_First'>
                 <div>
                   <h6>LOGOS</h6>
