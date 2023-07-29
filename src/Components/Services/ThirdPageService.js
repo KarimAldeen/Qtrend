@@ -6,14 +6,16 @@ import CardThirdService from './CardThirdService'
 function ThirdPageService() {
 
 
-
+    console.log("Has REnder")
     useEffect(()=>{
-        const IMages = ['/AboutUS/AboutUS_BG.png' , '/Works/1.png' , '/Works/3.png']
+        const IMages = ['/AboutUS/About_US.webp' , '/works/1.webp' , '/works/3.webp']
         let i = 0 ; 
         setInterval(()=>{
             let index = i
     
-            document.getElementById('dynmic-image').src =IMages[index]
+            if( document.getElementById('dynmic-image')){
+                document.getElementById('dynmic-image').src =IMages[index]
+            }
             i= (i +1)%IMages.length
          
             
@@ -22,7 +24,7 @@ function ThirdPageService() {
         // return  clearInterval(data)
     },[])
   return (
-    <div className='ThirdService_page' id='ThirdService_page'>
+    <div className='ThirdService_page' id='ThirdService_page' >
             
         <div className='images'>
             <div className='img-service-container down-image'>
