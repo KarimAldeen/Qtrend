@@ -1,0 +1,89 @@
+$primary:#67B4C6 ;
+.six-component{
+
+    height: 95vh;
+    width: 100vw;
+    background: $primary;
+    padding-inline: 15vw;
+    padding-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.six-part-card{
+    width: 67vw;
+    border-radius: 15vw;    
+    background: black;
+    min-height: 10vw;
+    margin-top: 3vw;
+    display: flex;
+    align-items: center;
+
+    .icon-container{
+        background: $primary;
+        width: 8vw;
+        height: 8vw;
+        margin-inline: 1.3vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+
+        .icon{
+            color: white;
+            font-size: 6vw;
+        }
+    }
+    @include devices(mobile){
+        &{
+            padding: 2vw;
+        }
+        .icon-container{
+            height: 10vw;
+            width: 10vw;
+            .icon{
+                font-size: 7.5vw;
+            }
+        }
+        p{
+            font-size: 1.5vw !important;
+        }
+    }
+    p{
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 1vw;
+        font-style: normal;
+        padding-inline: 1.5vw;
+        margin-top: 1vw;
+        font-weight: 500;
+        // line-height: 1.5vw; /* 147.368% */
+        letter-spacing: -0.16px;   
+        word-break: normal;
+        width: 50vw;
+        // margin-top: 2vw;
+     }
+}
+
+
+.transformToTop{
+
+    transition: 2.5s ease-in-out;
+    transform: translate(0 , -800px);
+    
+
+}
+
+
+
+.AddDisplayNone{
+    display: none;
+}
+
+.dddd{
+    width: 100vw ;
+    height: 100vh;
+    background: red;
+}
