@@ -1,0 +1,62 @@
+.FifthService_page{
+    position: relative;
+    width: 100%;
+    .FifthService_top_sec{
+        height: 60vw;
+        background: #000;
+    }
+    .FifthService_mid_sec{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        .FifthService_mid_sec_left{
+            width: 50%;
+            display: flex;
+            // justify-content: center;
+            // align-items: center;
+            flex-direction: column;
+            margin-left: 5vw;
+            margin-bottom: 20vw;
+
+            .FifthService_title{
+                width: 70%;
+                color: #000;
+                // font-family: Montserrat;
+                font-size: 3.4vw;
+                font-style: italic;
+                font-weight: 800;
+                line-height: 3.3vw;
+                align-items: start;
+            }
+            .FifthService_desc{
+                width: 87%;
+                color: #818C96;
+                // font-family: Roboto;
+                font-size: 1.6vw;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 2.5vw;
+                letter-spacing: -.04vw;
+            }
+            .FifthService_button{
+                width: 30%;
+                height: 4.5vw;
+                border-radius: 2vw;
+                background: #AFEF2C;
+                color: #1E1E1E;
+                text-align: center;
+                // font-family: Montserrat;
+                font-size: 2.2vw;
+                font-style: italic;
+                font-weight: 700;
+                line-height: 2.5vw;
+                border: none;
+                margin:2.7vw 0vw 0vw 2.1vw ;
+            }
+        }
+        .FifthService_mid_sec_right{
+            width: 50%;
+        }
+    }
+}
