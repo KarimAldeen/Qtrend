@@ -21,12 +21,6 @@ const Page = () => {
         <NavBar />
         <h2 className='HomeCenter_h'>We Boost Businesses Success</h2>
         <button className='HomeCenter_button'>Lets get in touch!</button>
-
-        {/* <img src="../Home/1/Home_BG2.png" alt="Image" /> */}
-        {/* <img src="../Home/1/Home_BG.png" alt="Image" /> */}
-
-         {/* <img src="../Home/1/HOMEBG_GIF.gif" alt="Image" /> */}
-
         <img src="../Home/1/HOME_BG.gif" alt="Image" />
 
 
