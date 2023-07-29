@@ -4,7 +4,8 @@ const Logo = () => {
   return (
     <div className='Logo'>
         <svg
-
+  width="10vw"
+  height="5vw"
   viewBox="0 0 135 41"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"

@@ -21,9 +21,9 @@ const Page = () => {
         <NavBar />
         <h2 className='HomeCenter_h'>We Boost Businesses Success</h2>
         <button className='HomeCenter_button'>Lets get in touch!</button>
+        <img src="../Home/1/HOME_BG.gif" alt="Image" />
 
-        <img src="../Home/1/HOMEBG_GIF.gif" alt="Image" />
-       
+
       </div>
       <div className='Home2'>
         <img src="../Home/2+3/HomeBG23.png" alt="Image" />
@@ -118,7 +118,7 @@ const Page = () => {
           </div>
           <div className='Home4_Down_Right'>
 
-            <div class="ImageContainer">
+            <div className="ImageContainer">
               <img className='Home4_Sec2' src='../Home/5/Home5_Image/Home5_Sec3.svg' alt='' />
               <img className='Home4_Sec2' src='../Home/5/Home5_Image/Home5_Sec2.svg' alt='' />
               <img className='Home4_Sec2' src='../Home/5/Home5_Image/Home5_Sec3.svg' alt='' />
