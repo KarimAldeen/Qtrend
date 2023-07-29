@@ -118,6 +118,7 @@ function FirstService() {
         {/* Start Third Section Service */}
         <ThirdPageService />
         {/* End Third Section  Service */}
+        <Footer/>
     </div>
   )
 }

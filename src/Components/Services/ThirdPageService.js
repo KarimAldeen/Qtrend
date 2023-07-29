@@ -1,8 +1,26 @@
+'use client'
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect } from 'react'
 import CardThirdService from './CardThirdService'
 
 function ThirdPageService() {
+
+
+
+    useEffect(()=>{
+        const IMages = ['/AboutUS/AboutUS_BG.png' , '/Works/1.png' , '/Works/3.png']
+        let i = 0 ; 
+        setInterval(()=>{
+            let index = i
+    
+            document.getElementById('dynmic-image').src =IMages[index]
+            i= (i +1)%IMages.length
+         
+            
+        },3000)
+
+        // return  clearInterval(data)
+    },[])
   return (
     <div className='ThirdService_page' id='ThirdService_page'>
             
@@ -55,13 +73,14 @@ function ThirdPageService() {
          visual identity and guidelines. The videos will 
          reflect the same aesthetics, style, and tone that your
           brand is known for, creating a consistent and recognizable
-           brand presence across all your video content. ddddddddddddddddddddddddddddddddddddddd  dddddddddddddddd dddddddddd`}
+           brand presence across all your video content. `}
            classNameForDescription={'card-service-third-row-p'}
            
           />
 
     <div className='img-service-container-third-row '>
                 <img 
+                id='dynmic-image'
                 alt='/service'
                 className='img-service'
                 src={'/Services/Services3/first.png'}
