@@ -7,7 +7,7 @@ import Girl from './Girl'
 import Footer from '@/Components/Utils/Footer'
 import FirstServiceFourInfo from '@/Components/Services/FirstServiceFourInfo'
 import ServiceOverAll from '@/Components/Services/ServiceOverAll'
-import ThirdPageService from '@/components/Services/ThirdPageService'
+import ThirdPageService from '@/Components/Services/ThirdPageService'
 function FirstService() {
 
 
@@ -41,6 +41,8 @@ function FirstService() {
       document.getElementById("Transion_page").classList.remove("Back_page")
       document.getElementById("Transion_page").classList.add("Transion_page")
 
+
+      
       document.getElementById("Transion_page").classList.remove("Transion_page3")
     document.getElementById("Element1").src = "../Services/Services_Elements/2_Section1.svg"
     document.getElementById("Element2").src = "../Services/Services_Elements/2_Section2.svg"

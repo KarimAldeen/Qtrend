@@ -8,12 +8,12 @@ import Footer from '@/Components/Utils/Footer';
 
 const Page = () => {
   const Cards = {
-    Url1: "../Home/2+3/Services_Card/CARD1.png",
-    Url2: "../Home/2+3/Services_Card/CARD2.png",
-    Url3: "../Home/2+3/Services_Card/CARD3.png",
-    Url4: "../Home/2+3/Services_Card/CARD4.png",
-    Url5: "../Home/2+3/Services_Card/CARD5.png",
-    Url6: "../Home/2+3/Services_Card/CARD6.png",
+    Url1: "../Home/2+3/Services_Card/CARD1.webp",
+    Url2: "../Home/2+3/Services_Card/CARD2.webp",
+    Url3: "../Home/2+3/Services_Card/CARD3.webp",
+    Url4: "../Home/2+3/Services_Card/CARD4.webp",
+    Url5: "../Home/2+3/Services_Card/CARD5.webp",
+    Url6: "../Home/2+3/Services_Card/CARD6.webp",
   }
   return (
     <div className='HOME_PAGE'>
@@ -26,7 +26,7 @@ const Page = () => {
 
       </div>
       <div className='Home2'>
-        <img src="../Home/2+3/HomeBG23.png" alt="Image" />
+        <img src="../Home/2+3/HomeBG23.webp" alt="Image" />
         <div className='Home2_Contain'>
           <div className='Home2_Text'>
             <h2>Welcome</h2>
