@@ -29,13 +29,6 @@ const FifthService = () => {
 
             <div className='FifthService_mid_sec_right'>
               <div className='FifthServiceSquare_first'>
-              <FifthServiceSquare
-              classNameForSquare={"FifthService_square"} 
-              title={"Website Design and Layout:"}
-              desc={"This involves creating the overall visual design of the website, including the color scheme, typography, graphics, and layout. It focuses on creating an aesthetically pleasing and engaging user interface (UI) design."}
-              last={"Discover Expenses"}
-              icon={<BsArrowRight/>}
-              />
               <FifthServiceSquare 
               classNameForSquare={"FifthService_square2"}
               title={"Website Design and Layout:"}
@@ -43,7 +36,17 @@ const FifthService = () => {
               last={"Discover Expenses"}
               icon={<BsArrowRight/>}
               />
+            
+              
               </div>
+              <span className='scale_span'>
+                <FifthServiceSquare
+              classNameForSquare={"FifthService_square1"} 
+              title={"Website Design and Layout:"}
+              desc={"This involves creating the overall visual design of the website, including the color scheme, typography, graphics, and layout. It focuses on creating an aesthetically pleasing and engaging user interface (UI) design."}
+              last={"Discover Expenses"}
+              icon={<BsArrowRight/>}
+              />
               <div className='FifthServiceSquare_second'>
               <FifthServiceSquare 
               classNameForSquare={"FifthService_square"}
@@ -53,13 +56,14 @@ const FifthService = () => {
               icon={<BsArrowRight/>}
               />
               <FifthServiceSquare 
-              classNameForSquare={"FifthService_square"}
+              classNameForSquare={"FifthService_square4"}
               title={"Website Design and Layout:"}
               desc={"This involves creating the overall visual design of the website, including the color scheme, typography, graphics, and layout. It focuses on creating an aesthetically pleasing and engaging user interface (UI) design."}
               last={"Discover Expenses"}
               icon={<BsArrowRight/>}
               />
               </div>
+              </span>
             </div>
         </div>
 

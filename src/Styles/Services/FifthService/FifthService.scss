@@ -69,7 +69,7 @@
                     margin-left: 15vw;
                     display: flex;
                     transform: translateX(10vw);
-                    transition: 1s ease-in-out;
+                    transition: 1s ease-in-out; 
                 }
             }
                .FifthService_button_hover{
@@ -99,20 +99,48 @@
 
 
         }
+        
         .FifthService_mid_sec_right{
             &:hover{
-                transition: 10s ease-in-out ;
+                .scale_span{
+                    transform: scale(0.7);
+                    transition: 1.5s ease-in-out;
+                    // transform: scaleY(-2);
+                    // margin-top: .9vw !important;
+                    // margin-right: .9vw !important;  
+                }     
                 .FifthService_square2{
-                    // width: 50vw;
-                    // height: 50vw;
-                    transition: 1s ease-in-out ;
-                    padding: 10vw 10vw 2vw 2vw ;
+                    margin-left: 28vw;
+                    // margin-right: 1vw;
+                    margin-bottom: .01vw;
+                    // padding: 1vw 1vw 0vw 0vw ;
+                    transition: 1.5s ease-in-out ;
+                    transform: scale(1.2);
+                    // display: flex ;
+                    // justify-content: center;
+                    // align-items: center ;
+                    background: #000;
+                    // padding-left: 2vw;
+                    .square_title{
+                        color: #fff;
+                    }
+                    .square_desc{
+                        color: #868585;
+                    }
+                    .square_last_sec{
+                        .square_more{
+                            color: green;
+                        }
+                        .square_icon{
+                            color: green;
+                        }
+                    }
                 }
             }
             width: 50%;
             display: flex;
             flex-direction: column;
-            margin-right: 2vw;
+            margin-right: 5vw;
             // padding: 2vw;
             .FifthServiceSquare_first{
                 display: flex;
@@ -124,16 +152,34 @@
                 display: flex;
                 justify-content: space-around;
             }
-           
-            .FifthService_square,.FifthService_square2{
+            .FifthService_square1{
+                margin-bottom: 2vw;
+                margin-left: .8vw;
+            }
+            .FifthService_square2{
+                margin-left: 25.5vw;
+                margin-right: 1vw;
+                margin-bottom: -2vw;
+
+            }
+            .FifthService_square4{
+                margin-left: 1.2vw;
+            }
+            .scale_span{
+                margin-top: -20vw;
+            }
+            .FifthService_square,.FifthService_square2,.FifthService_square1,.FifthService_square4{
                 display: flex;
                 flex-direction: column;
+                align-items: center;
+                justify-content: center;
                 border-radius: 1vw;
                 background: #D7D7D7;
                 height: 20vw;
                 width: 20vw;
-                padding-left: 1vw;
+                padding-left: 2vw;
                 .square_title{
+                    align-self: start;
                     color: #161618;
                     // font-family: Inter;
                     font-size: 1.3vw;
@@ -143,6 +189,7 @@
                     margin-top: 3vw;
                 }
                 .square_desc{
+                    align-self: start;
                     color: #1E1E1E;
                     // font-family: Roboto;
                     font-size: .9vw;
@@ -153,6 +200,7 @@
                     margin-top: .4vw;
                 }
                 .square_last_sec{
+                    align-self: start;
                     display: flex;
                     margin: 4vw 10vw 0vw 0vw;
                     justify-content: space-evenly;
