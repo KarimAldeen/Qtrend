@@ -1,50 +1,58 @@
 'use client'
-import NavBar from '@/Components/Utils/NavBar'
-import FifthComponent from '@/components/Drag/FifthComponent'
-import FirstComponent from '@/components/Drag/FirstComponent'
-import FourComponent from '@/components/Drag/FourComponent'
-import SecondComponent from '@/components/Drag/SecondComponent'
-import SixComponent from '@/components/Drag/SixPart/SixComponent'
-import ThirdComponent from '@/components/Drag/ThirdComponent'
-import React, { useRef, useState } from 'react'
-import NextComponent from './NextComponent'
-import CurrentComponent from './CurrentComponent'
+import React, { useRef, useState } from 'react';
+import CurrentComponent from './CurrentComponent';
+import NextComponent from './NextComponent';
+import FirstComponent from '@/Components/Drag/FirstComponent';
+import SecondComponent from '@/Components/Drag/SecondComponent';
+import ThirdComponent from '@/Components/Drag/ThirdComponent';
+import FourComponent from '@/Components/Drag/FourComponent';
+import FifthComponent from '@/Components/Drag/FifthComponent';
+import SixComponent from '@/Components/Drag/SixPart/SixComponent';
 
-const Parts = [0, FirstComponent , SecondComponent , ThirdComponent , FourComponent , FifthComponent, SixComponent]
 function DragPage() {
-    const [currentPart , setCurrentPart] = useState(1)
+  
 
-    const Current = Parts[currentPart]
-    const Next = Parts[currentPart+1]
-    const currentDiv = useRef(null);
-    const nextDiv = useRef(null);
+  
 
-    const handelDrag = ()=> {
-            console.log(currentDiv.current)
-        currentDiv.current.classList.add('transformToTop')
-          setTimeout(()=>{
-            currentDiv.current.classList.add('AddDisplayNone')
-          },2200)
-      
-          setTimeout(()=>{
-            setCurrentPart(c => c+1) 
 
-          },2200)
-        //   nextDiv.classList.add('transformToTop')
-          
-        }
   
   return (
     <div>
-        <CurrentComponent div={currentDiv} handelDrag={handelDrag} >
-            {Current}
-        </CurrentComponent>
-        <NextComponent div={nextDiv} IncreamentCurrent={setCurrentPart}  >
-            {Next}
-        </NextComponent>
+        <FirstComponent />
+        <SecondComponent />
+        <ThirdComponent />
+        <FourComponent/>
+        <FifthComponent/>
+        {/* <SixComponent/> */}
     </div>
-  )
+  );
 }
 
-export default DragPage
+export default DragPage;
+
+
+
+
+
+
+
+
+
+
+
+// const handleDragStart = () => {
+//     console.log('hello world')
+//     currentDiv.current.classList.add('transformToTop');
+//     setTimeout(() => {
+//         setCurrentPart(c => c+1)
+//     //   currentDiv.current.classList.add('AddDisplayNone');
+//     }, 2200);
+
+
+//     // setTimeout(()=>{
+//     //   setCurrentPart(c => c+1)
+
+//     // },3000)
+//     // nextDiv.current.classList.add('AddDisplayBlock');
+//   };
 

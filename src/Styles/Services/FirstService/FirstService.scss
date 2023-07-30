@@ -50,11 +50,10 @@
    img{
     display: block;
    }
+
    .Hajeat_Moaz{
     padding-top: 4vw;
-    transform: translateX(-3vw);
     transition: .5s ease-in-out;
-
     width: 60vw;
     height: 45vw;
     z-index: 0;
@@ -81,16 +80,15 @@
                 transition: .5s ease-in-out;
 
   }
+ 
   
 .Wing{
     transform: translate(-448px, -1018px) 
     translate(260vw, 0vw);
-
     transition: .5s ease-in-out;
-    
-
 
 }
+
 .Element1,.Element3,.Element2{
     cursor: pointer;
 }
@@ -149,3 +147,22 @@ z-index: 9999;
 .Element3{
     z-index: 999999;
 }
+.Logo_Big{
+    transform: translate(236px, 221px) 
+    translate(12vw, .4vw);
+    transition: .5s ease-in-out;
+  }
+.Feather_wing{
+    transform: translate(185px, 82px) 
+    translate(260vw, 0vw);
+    transition: .5s ease-in-out;
+}
+.Hajeat{
+    transition: .5s ease-in-out;
+    width: 60vw;
+    height: 50vw;
+   }
+   .Womans{
+    mix-blend-mode: luminosity;
+
+   }

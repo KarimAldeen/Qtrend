@@ -10,7 +10,6 @@ const MeatUS_BG = () => {
       <image
          className='BigLogo'
         xlinkHref="../MeatUS/BG/BigLogo.webp"
-        
       />
       <image
         className='MEETUS'

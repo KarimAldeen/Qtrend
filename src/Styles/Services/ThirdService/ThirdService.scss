@@ -1,15 +1,21 @@
 .Transion_page3 {
     background: #E59926;
 
-    .Hajate_Orange{
-        opacity: 1 !important;
+   
+    .Feather_wing{
+        mix-blend-mode: luminosity;
     }
-    .Path_1{
+    .SocialMedia_Icon{
+        .Social_Icon_BG{
+            fill: #FFD439 !important;
+
+        }
+    }
+    .paper{
         fill: #FFD439 !important;
+
     }
-    .Normal_Hajat{
-        opacity: 0;
-    }
+  
     .FirstService_Images {
         background: #E59926;
 
@@ -141,6 +147,7 @@ display: none;
             object-fit: fill;
             border-radius:3vw ;
             background: black;
+            
             img{
                 width: 95%;
                 height: 85%;
