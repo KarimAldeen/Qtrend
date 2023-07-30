@@ -5,36 +5,41 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import Arrow from './Arrow';
 
-const Services4_Images = () => {
+const Services4_Images = ({ Word, Data }) => {
+  const Number = []
+
+  const FN = () => {
+
+    for (let index = 1; index <= Data; index++) {
+      Number.push(index)
+
+    }
+  }
+  FN()
+
   return (
     <div className='Services4_Images'>
       <div className='Swiper_Image'>
-      <Swiper
-      spaceBetween={50}
-      slidesPerView={3}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
-      <SwiperSlide>
-      <img  src='../Services/Services4/Swiper/Swiper_image1.png' alt='' className='Swiper_image1' />
+        <img alt=' ' src={`../Services/Services4/${Word}.svg`} className='Swiper_Words' />
 
-      </SwiperSlide>
-      <SwiperSlide>
-      <img  src='../Services/Services4/Swiper/Swiper_image1.png' alt='' className='Swiper_image1' />
+        <Swiper
+          spaceBetween={50}
+          slidesPerView={3}>
+          {
+            Number?.map((i) => (
+              <>
+                <SwiperSlide>
+                  <img src={`../Services/Services4/Swiper/${Word}/${Word.slice(0,1)}${i}.png`} alt='' className='Swiper_image1' />
+                </SwiperSlide>
+              </>
+            ))
 
-      </SwiperSlide>
-      <SwiperSlide>
-      <img  src='../Services/Services4/Swiper/Swiper_image1.png' alt='' className='Swiper_image1' />
+          }
 
-      </SwiperSlide>
-      <SwiperSlide>
-      <img  src='../Services/Services4/Swiper/Swiper_image1.png' alt='' className='Swiper_image1' />
 
-      </SwiperSlide>
-    </Swiper>
+        </Swiper>
       </div>
-    {/* <img  src='../Services/Services4/Arrow.svg' alt='' className='Arrow' /> */}
-    <Arrow/>
+      <Arrow />
 
     </div>
   )

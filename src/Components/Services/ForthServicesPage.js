@@ -1,22 +1,26 @@
 import React from 'react'
 import GirlMedia from './GirlMedia'
 import Services4_Images from './Services4_Images'
+import Word_animation from './Word_animation'
 
 export const ForthServicesPage = () => {
+    const Back_To_page3 = () => {
+        document.getElementById("Transion_page").classList.remove("Transion_page4")
+
+    }
     return (
         <div className='ForthServicesPage'>
             <img src='../Services/Services4/Ibrahem.webp' alt='' className='Ibrahem' />
             <div className='ForthServices_Body'>
                 <div className='First_Section'>
                     <img src='../Services/Services4/Logo&Words.svg' alt='' className='Logo_Words' />
-                    <img src='../Services/Services4/Word_animation.svg' alt='' className='Word_animation' />
-
-                </div>
+                        <Word_animation/>
+                </div>  
                 <div className='Second_Section'>
                     <div className='Section_Section_Left'>
                         <div className='First_LeftSection'>
                         <img  src='../Services/Services_Elements/4_Section4.svg' alt='' className='Element4_4' />
-                        <img  src='../Services/Services_Elements/4_Section3.svg' alt='' className='Element4_3' />
+                        <img  src='../Services/Services_Elements/4_Section3.svg' alt='' className='Element4_3' onClick={()=>Back_To_page3()} />
 
                         </div>
                         <div className='Second_LeftSection'>
@@ -31,9 +35,9 @@ export const ForthServicesPage = () => {
                     <div className='Section_Section_Rigth'>
 
                         <div className='Section_Rigth_Top'>
-                                <Services4_Images/>
-                                <Services4_Images/>
-                                <Services4_Images/>
+                                <Services4_Images Word={`female`} Data={6}/>
+                                <Services4_Images Word={`male`}Data={5}/>
+                                <Services4_Images Word={`kids`}Data={5}/>
                         </div>
                         <div className='Section_Rigth_Down'>
                             <h3>
