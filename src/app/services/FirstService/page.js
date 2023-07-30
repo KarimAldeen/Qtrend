@@ -1,8 +1,6 @@
 "use client"
-
 import NavBar from '@/Components/Utils/NavBar'
 import React from 'react'
-import Image from './Image'
 import Girl from './Girl'
 import Footer from '@/Components/Utils/Footer'
 import FirstServiceFourInfo from '@/Components/Services/FirstServiceFourInfo'
@@ -63,10 +61,9 @@ function FirstService() {
       <div className='FirstService_page'>
         <div className='FirstService_Images'>
 
-          {/* <Image /> */}
           <Hajeat/>
 
-          <img src='../Services/Services1/Haje.png' alt='' className='Haje' />
+          <img src='../Services/Services1/Haje.webp' alt='' className='Haje' />
 
         </div>
         <div className='FirstService_Body'>

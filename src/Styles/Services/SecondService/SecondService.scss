@@ -29,7 +29,9 @@
     transform: translate(81.914px, -367.625px) 
         translate(0vw, .4vw);
                     transition: .5s ease-in-out;
+
       }
+
       
     .Wing{
     transform: translate(-448px, -1018px) 
@@ -37,6 +39,21 @@
         transition: .5s ease-in-out;
 
     
+    }
+    .Hajeat{
+        padding-left: 14vw;
+        transition: .4s ease-in-out;
+
+    }
+    .Logo_Big{
+        transform: translate(236px, 221px) 
+        translate(0vw, .4vw);
+        transition: .5s ease-in-out;
+      }
+    .Feather_wing{
+        transform: translate(185px, 82px) 
+        translate(0vw, 0vw);
+        transition: .5s ease-in-out;
     }
     background: #474B4E;
     .FirstService_Body{
