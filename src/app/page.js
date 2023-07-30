@@ -5,6 +5,7 @@ import NavBar from '@/Components/Utils/NavBar';
 import Home4 from '../Components/Home/Home4'
 import LogoShadow from '@/Components/Home/LogoShadow';
 import Footer from '@/Components/Utils/Footer';
+import Home1_BG from '@/Components/Home/Home1_BG';
 
 const Page = () => {
   const Cards = {
@@ -21,8 +22,8 @@ const Page = () => {
         <NavBar />
         <h2 className='HomeCenter_h'>We Boost Businesses Success</h2>
         <button className='HomeCenter_button'>Lets get in touch!</button>
-        <img src="../Home/1/HOME_BG.gif" alt="Image" />
-
+        {/* <img src="../Home/1/HOME_BG.gif" alt="Image" /> */}
+          <Home1_BG/>
 
       </div>
       <div className='Home2'>
