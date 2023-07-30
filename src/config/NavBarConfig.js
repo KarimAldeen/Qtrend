@@ -26,17 +26,4 @@ export const NavLinks = [
         name:"MEET US",
         href:"/meet_us"
     }
-    
-    
-
-    
-    
-    // ,
-    // {
-    //     name:"FifthService",
-    //     href:"/services/FifthService"
-    // }
-    
-    
-
 ]

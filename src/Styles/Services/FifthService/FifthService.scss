@@ -10,6 +10,7 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        
         .FifthService_mid_sec_left{
             width: 50%;
             display: flex;
@@ -50,13 +51,149 @@
                 font-size: 2.2vw;
                 font-style: italic;
                 font-weight: 700;
-                line-height: 2.5vw;
                 border: none;
                 margin:2.7vw 0vw 0vw 2.1vw ;
+                flex-wrap: nowrap;
+                display: flex;
+                flex-direction: column;
+                align-items: center !important;
+                justify-content: center !important;
+
+                
+                &:hover{
+                    // background: #000;
+                    // z-index: 0;
+                    // margin-top: 0vw;
+               .FifthService_button_hover{
+                    background: #0a0707;
+                    margin-left: 15vw;
+                    display: flex;
+                    transform: translateX(10vw);
+                    transition: 1s ease-in-out;
+                }
             }
+               .FifthService_button_hover{
+                    
+                    height: 3vw;    
+                    width: 3vw;
+                    margin-left: 5vw;
+                    padding: 1vw;
+                    color: #fff;
+                    border-radius: 50%;
+                    background: #000;
+                    display: none;
+                    margin-top: -3vw;
+
+                }
+            } 
+
+
+
+
+
+
+
+
+
+
+
+
         }
         .FifthService_mid_sec_right{
+            &:hover{
+                transition: 10s ease-in-out ;
+                .FifthService_square2{
+                    // width: 50vw;
+                    // height: 50vw;
+                    transition: 1s ease-in-out ;
+                    padding: 10vw 10vw 2vw 2vw ;
+                }
+            }
             width: 50%;
+            display: flex;
+            flex-direction: column;
+            margin-right: 2vw;
+            // padding: 2vw;
+            .FifthServiceSquare_first{
+                display: flex;
+                // margin-left: 2vw;
+                justify-content: space-around;
+                margin-bottom: 2vw;
+            }
+            .FifthServiceSquare_second{
+                display: flex;
+                justify-content: space-around;
+            }
+           
+            .FifthService_square,.FifthService_square2{
+                display: flex;
+                flex-direction: column;
+                border-radius: 1vw;
+                background: #D7D7D7;
+                height: 20vw;
+                width: 20vw;
+                padding-left: 1vw;
+                .square_title{
+                    color: #161618;
+                    // font-family: Inter;
+                    font-size: 1.3vw;
+                    font-weight: 600;
+                    line-height: 2vw;
+                    width: 19vw;
+                    margin-top: 3vw;
+                }
+                .square_desc{
+                    color: #1E1E1E;
+                    // font-family: Roboto;
+                    font-size: .9vw;
+                    font-weight: 400;
+                    line-height: 1.3vw;
+                    letter-spacing: -.05vw;
+                    width: 18vw;
+                    margin-top: .4vw;
+                }
+                .square_last_sec{
+                    display: flex;
+                    margin: 4vw 10vw 0vw 0vw;
+                    justify-content: space-evenly;
+                .square_more{
+                    color: #161618;
+                    // font-family: Roboto;
+                    font-size: .9vw;
+                    font-weight: 600;
+                    letter-spacing: -.05vw;
+                } 
+                .square_icon{
+                    color: #161618;
+                    width: 1vw;
+                    font-size: 1.4vw;
+                    // font-weight: bolder;
+                    // size: 3vw;
+                }  
+                }
+                  
+            }
+           
+        }
+    }
+    .FifthService_icons{
+            display: flex;
+            justify-content: space-evenly;
+            color: #fff;
+            // margin-left: 5vw;
+            width: 40vw;
+            margin:0vw 0vw 0vw 58vw;
+            height: 6vw;
+            // padding-top:max(4vw ,3vh);
+            
+    
+            svg{
+                z-index: 99;
+                background: #000000;
+                border-radius: 50%;
+                color: rgb(255, 255, 255);
+                font-size:2.7vw;
+                padding: 1.3vw;
         }
     }
 }
