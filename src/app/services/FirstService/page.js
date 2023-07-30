@@ -7,6 +7,7 @@ import FirstServiceFourInfo from '@/Components/Services/FirstServiceFourInfo'
 import ServiceOverAll from '@/Components/Services/ServiceOverAll'
 import ThirdPageService from '@/Components/Services/ThirdPageService'
 import Hajeat from './Hajeat'
+import { ForthServicesPage } from '@/Components/Services/ForthServicesPage'
 function FirstService() {
 
 
@@ -58,6 +59,9 @@ function FirstService() {
   return (
     <div className='Services_Pages' id='Transion_page'>
       <NavBar />
+      <div className='Services123'>
+
+     
       <div className='FirstService_page'>
         <div className='FirstService_Images'>
 
@@ -119,12 +123,10 @@ function FirstService() {
 
         </div>
       </div> 
-      {/* End Section Two  */}
-
-
-        {/* Start Third Section Service */}
         <ThirdPageService />
-        {/* End Third Section  Service */}
+        </div>
+<ForthServicesPage/>
+
         <Footer/>
     </div>
   )
