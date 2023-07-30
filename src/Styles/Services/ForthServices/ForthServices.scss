@@ -63,10 +63,13 @@
 
     .Element4_4 {
         width: 21vw;
+        cursor: pointer;
     }
 
     .Element4_3 {
         width: 13vw;
+        cursor: pointer;
+
     }
 
     .Second_LeftSection {
@@ -141,27 +144,10 @@
             width: 5vw;
         }
     }
-   svg{
-    .Arrow1{
-        transition: .5s ease-in-out;
-        animation: Arrow 1s infinite;
+ 
 
-
-}
-.Arrow2{
-    transition: .5s ease-in-out;
-    animation: Arrow 1.5s infinite;
-
-
-}
-.Arrow3{
-    transition: .5s ease-in-out;
-    animation: Arrow 2s infinite;
-
-
-}
    }
-}
+
 
 @keyframes Arrow {
     0%   {opacity: 1;}
@@ -169,5 +155,38 @@
     50%  {opacity: 0.6;}
     75%  {opacity: 0.8;}
     100% {opacity: 1;}
+  }
+  
+  .Word1{
+    animation: Word1 1.7s infinite;
+
+  }
+  .Word2{
+    animation: Word2 1.5s infinite;
+
+  }
+  .Word3{
+    animation: Word3 1.5s infinite;
+
+  }
+  @keyframes Word1 {
+    
+    0%   {transform: translateY(0vw);}
+    25%  {transform: translateY(3vw);} 
+    50%  {transform: translateY(9vw);}   
+    100% {transform: translateY(0vw);}
+  }
+  @keyframes Word2 {
+    
+    0%   {transform: translate(0vw);}
+    50%  {    transform: translate(-13vw , 6.6vw);}   
+    100% {transform: translate(0vw);}
+  }
+  
+  @keyframes Word3 {
+    
+    0%   {transform: translate(0vw);}
+    50%  {    transform: translate(13vw , -6.6vw);}   
+    100% {transform: translate(0vw);}
   }
   
