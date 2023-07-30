@@ -141,4 +141,33 @@
             width: 5vw;
         }
     }
+   svg{
+    .Arrow1{
+        transition: .5s ease-in-out;
+        animation: Arrow 1s infinite;
+
+
 }
+.Arrow2{
+    transition: .5s ease-in-out;
+    animation: Arrow 1.5s infinite;
+
+
+}
+.Arrow3{
+    transition: .5s ease-in-out;
+    animation: Arrow 2s infinite;
+
+
+}
+   }
+}
+
+@keyframes Arrow {
+    0%   {opacity: 1;}
+    25%  {opacity: 0.4;}
+    50%  {opacity: 0.6;}
+    75%  {opacity: 0.8;}
+    100% {opacity: 1;}
+  }
+  

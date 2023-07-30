@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
+import Arrow from './Arrow';
 
 const Services4_Images = () => {
   return (
@@ -32,7 +33,8 @@ const Services4_Images = () => {
       </SwiperSlide>
     </Swiper>
       </div>
-    <img  src='../Services/Services4/Arrow.svg' alt='' className='Arrow' />
+    {/* <img  src='../Services/Services4/Arrow.svg' alt='' className='Arrow' /> */}
+    <Arrow/>
 
     </div>
   )
