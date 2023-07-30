@@ -31,28 +31,28 @@ function ThirdPageService() {
                 <img 
                 alt='/service'
                 className='img-service'
-                src={'/Services/Services3/first.png'}
+                src={'/Services/Services3/first.webp'}
                 />
             </div>
             <div className='img-service-container'>
                 <img 
                 alt='/service'
                 className='img-service'
-                src={'/Services/Services3/first.png'}
+                src={'/Services/Services3/first.webp'}
                 />
             </div>
             <div className='img-service-container'>
                 <img 
                 alt='/service'
                 className='img-service'
-                src={'/Services/Services3/first.png'}
+                src={'/Services/Services3/first.webp'}
                 />
             </div>
             <div className='img-service-container down-image'>
                 <img 
                 alt='/service'
                 className='img-service'
-                src={'/Services/Services3/first.png'}
+                src={'/Services/Services3/first.webp'}
                 />
             </div>
         </div>
@@ -85,7 +85,7 @@ function ThirdPageService() {
                 id='dynmic-image'
                 alt='/service'
                 className='img-service'
-                src={'/Services/Services3/first.png'}
+                src={'../Services/Services3/first.webp'}
                 />
             </div>
         </div>

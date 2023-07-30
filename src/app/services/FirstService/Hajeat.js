@@ -2,7 +2,10 @@ import React from 'react'
 
 const Hajeat = () => {
   return (
-    <svg  className='Hajeat' viewBox="0 0 1100 700"  width="70%" height="45vw" >
+    <svg  
+    className='Hajeat'
+    viewBox="200 70 900 650"
+       >
       
         <image
         className='Feather_wing'
@@ -35,12 +38,13 @@ const Hajeat = () => {
             fill="#fff"
           />
         </g>
-        <g className="paper" data-name="Group 3" transform="translate(-447 874)">
+        <g className="SocialMedia_Icon" data-name="Group 3" transform="translate(-447 874)">
           <g id="SocialMedia_Icon" transform="translate(826 -364)">
             <path
               id="Path_3"
               data-name="Path 3"
               d="M207.88,69.5a34.75,34.75,0,1,0-34.75-34.75A34.75,34.75,0,0,0,207.88,69.5Z"
+              className='Social_Icon_BG'
               fill="#3fb4c3"
             />
             <path
@@ -65,6 +69,7 @@ const Hajeat = () => {
               id="Path_7"
               data-name="Path 7"
               d="M289.9,69.5a34.75,34.75,0,1,0-34.75-34.75A34.75,34.75,0,0,0,289.9,69.5Z"
+              className='Social_Icon_BG'
               fill="#3fb4c3"
             />
             <path
@@ -78,6 +83,7 @@ const Hajeat = () => {
               id="Path_9"
               data-name="Path 9"
               d="M379.62,69.5a34.75,34.75,0,1,0-34.75-34.75A34.75,34.75,0,0,0,379.62,69.5Z"
+              className='Social_Icon_BG'
               fill="#3fb4c3"
             />
             <path
@@ -102,6 +108,7 @@ const Hajeat = () => {
               id="Path_13"
               data-name="Path 13"
               d="M463.03,69.5a34.75,34.75,0,1,0-34.75-34.75A34.75,34.75,0,0,0,463.03,69.5Z"
+              className='Social_Icon_BG'
               fill="#3fb4c3"
             />
             <path
@@ -114,6 +121,7 @@ const Hajeat = () => {
               id="Path_15"
               data-name="Path 15"
               d="M69.51,34.75A34.755,34.755,0,1,0,29.32,69.09V44.8H20.5V34.75h8.82V27.1c0-8.71,5.19-13.52,13.13-13.52a53.4,53.4,0,0,1,7.78.68v8.55H45.85c-4.32,0-5.66,2.68-5.66,5.43v6.52h9.64L48.28,44.8h-8.1V69.09A34.771,34.771,0,0,0,69.51,34.75Z"
+              className='Social_Icon_BG'
               fill="#3fb4c3"
             />
             <path
@@ -126,6 +134,7 @@ const Hajeat = () => {
               id="Path_17"
               data-name="Path 17"
               d="M124.47,69.5A34.75,34.75,0,1,0,89.72,34.75,34.75,34.75,0,0,0,124.47,69.5Z"
+              className='Social_Icon_BG'
               fill="#3fb4c3"
             />
             <path
@@ -140,6 +149,7 @@ const Hajeat = () => {
           <g id="Group_1" data-name="Group 1" clipPath="url(#clip-path)">
             <path
               id="Path_19"
+              className="paper"
               data-name="Path 19"
               d="M470.1,8.88C451.634,18.546,409.166,44.595,387,71.4,443.052,83.308,558.341,87.469,571,8.88,553.191,2.179,508.082-7.192,470.1,8.88Z"
               fill="#3fb4c3"
