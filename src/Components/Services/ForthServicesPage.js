@@ -14,7 +14,6 @@ export const ForthServicesPage = () => {
             <div className='ForthServices_Body'>
                 <div className='First_Section'>
                     <img src='../Services/Services4/Logo&Words.svg' alt='' className='Logo_Words' />
-                    {/* <img src='../Services/Services4/Word_animation.svg' alt='' className='Word_animation' /> */}
                         <Word_animation/>
                 </div>  
                 <div className='Second_Section'>
@@ -36,9 +35,9 @@ export const ForthServicesPage = () => {
                     <div className='Section_Section_Rigth'>
 
                         <div className='Section_Rigth_Top'>
-                                <Services4_Images/>
-                                <Services4_Images/>
-                                <Services4_Images/>
+                                <Services4_Images Word={`female`} Data={6}/>
+                                <Services4_Images Word={`male`}Data={5}/>
+                                <Services4_Images Word={`kids`}Data={5}/>
                         </div>
                         <div className='Section_Rigth_Down'>
                             <h3>

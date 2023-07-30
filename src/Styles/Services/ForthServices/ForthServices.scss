@@ -3,12 +3,14 @@
 
 }
 
+
 .Transion_page4 {
+    background-color: black;
     .Services123 {
         display: none;
 
     }
-
+   
     .ForthServicesPage {
         display: block;
 
@@ -32,10 +34,12 @@
         .Logo_Words {
 
             width: 50vw;
+            max-height: 35vw;
         }
 
         .Word_animation {
             width: 35vw;
+            max-height: 35vw;
         }
     }
 
@@ -86,6 +90,7 @@
 
     .GirlMedia {
         width: 35vw;
+        height: 35vw;
     }
 
     .Woman_C {
@@ -134,17 +139,21 @@
         justify-content: space-between;
         align-items: center;
         .Swiper_Image{
-            width: 49vw;
+            width: 51vw;
         }
         img{
             width: 15vw;
             border-radius: 2vw;
         }
         .Arrow{
-            width: 5vw;
+            svg{
+                width: 4vw;
+
+            }
         }
     }
    svg{
+
     .Arrow1{
         transition: .5s ease-in-out;
         animation: Arrow 1s infinite;
@@ -163,6 +172,16 @@
 
 
 }
+   }
+   .Swiper_Image{
+    position: relative;
+    .Swiper_Words{
+        position: absolute;
+        bottom: .5vw;
+        left: 0;
+        z-index: 9999999999;
+        width: 10vw;
+    }
    }
 }
 
@@ -210,5 +229,10 @@
     75%  {    transform: translate(11.7vw  , -7vw);}  
     100% {transform: translate(0vw);
     }
+    
   }
+
   
+.swiper-wrapper{
+    cursor: pointer;
+}
