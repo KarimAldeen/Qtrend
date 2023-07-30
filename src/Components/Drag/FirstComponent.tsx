@@ -13,7 +13,7 @@ function FirstComponent():ReactNode {
     nextEle.classList.add('AddDisplayBlock');
   };
 
-
+  
   return (
     <div className='page-six-service-drag' onDrag={handleDragStart} draggable  id='first-part'>FirstComponent</div>
   )
