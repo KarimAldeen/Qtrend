@@ -144,10 +144,27 @@
             width: 5vw;
         }
     }
- 
+   svg{
+    .Arrow1{
+        transition: .5s ease-in-out;
+        animation: Arrow 1s infinite;
 
+
+}
+.Arrow2{
+    transition: .5s ease-in-out;
+    animation: Arrow 1.5s infinite;
+
+
+}
+.Arrow3{
+    transition: .5s ease-in-out;
+    animation: Arrow 2s infinite;
+
+
+}
    }
-
+}
 
 @keyframes Arrow {
     0%   {opacity: 1;}
@@ -156,18 +173,18 @@
     75%  {opacity: 0.8;}
     100% {opacity: 1;}
   }
-  
+   
   .Word1{
     animation: Word1 1.7s infinite;
 
   }
   .Word2{
-    animation: Word2 1.5s infinite;
-
+    animation: Word2 3s infinite;
+    // transform: translate(-11vw , 7vw);
   }
   .Word3{
-    animation: Word3 1.5s infinite;
-
+    animation: Word3 3s infinite;
+    // transform: translate(11.7vw , -7vw);
   }
   @keyframes Word1 {
     
@@ -179,14 +196,19 @@
   @keyframes Word2 {
     
     0%   {transform: translate(0vw);}
-    50%  {    transform: translate(-13vw , 6.6vw);}   
+    25%  {    transform: translate(-11vw , 7vw);}   
+    50%  {    transform: translate(-11vw , 7vw);}   
+    75%  {    transform: translate(-11vw , 7vw);}   
     100% {transform: translate(0vw);}
   }
   
   @keyframes Word3 {
     
     0%   {transform: translate(0vw);}
-    50%  {    transform: translate(13vw , -6.6vw);}   
-    100% {transform: translate(0vw);}
+    25%  {    transform: translate(11.7vw  , -7vw);}  
+    50%  {    transform: translate(11.7vw  , -7vw);}  
+    75%  {    transform: translate(11.7vw  , -7vw);}  
+    100% {transform: translate(0vw);
+    }
   }
   
