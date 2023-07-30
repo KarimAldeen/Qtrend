@@ -72,6 +72,7 @@ display: none;
         overflow: hidden;
         object-fit: cover;
         border-radius: 3vw;
+        z-index: 999999;
 
         img{
          
@@ -158,6 +159,33 @@ display: none;
             }
         }
     }
+    .Services3_Elements{
+position: absolute;
+top: -12vw;
+right: -5vw;
+
+
+    }
+    .Services3_Elements_Container{
+        position: relative;
+    }
+    .Elements3{
+        
+        position: absolute;
+        top: 4vw;
+        left: 4vw;
+        width: 20vw;
+        z-index: 9999999999;
+        cursor: pointer;
+
+    }
+
+    .Polygon4_Right{
+        width: 27vw;
+
+    }
+
+
 }
 
 
