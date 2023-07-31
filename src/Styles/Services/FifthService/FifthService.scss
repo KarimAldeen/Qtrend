@@ -212,7 +212,10 @@
   @keyframes Cards {
     
     0%   {transform: translateY(0vw);}
+    20% {transform: translateY(0vw);}
     50% {transform: translateY(20vw);}
+    80% {transform: translateY(0vw);}
+
     100% {transform: translateY(0vw);}
 
     
