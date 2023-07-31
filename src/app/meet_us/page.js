@@ -76,7 +76,6 @@ const MeetUs = () => {
             <textarea type='text' placeholder='Message' />
           </form>
         </div>
-
         <Footer />
       </div>
     </>

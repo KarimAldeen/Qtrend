@@ -69,12 +69,12 @@ const FifthService = () => {
 
         <div className='FifthService_last_sec'>
             <div className='FifthService_icons'>
-            <FaFacebookF/>
-            <FaTiktok/>
-            <FaInstagram/>
-            <FaWhatsapp/>
-            <FaLinkedinIn/>
-            <FaSnapchatGhost/>
+            <div className='single_icon'><FaFacebookF/></div>
+            <div className='single_icon'><FaTiktok/></div>
+            <div className='single_icon'><FaInstagram/></div>
+            <div className='single_icon'><FaWhatsapp/></div>
+            <div className='single_icon'><FaLinkedinIn/></div>
+            <div className='single_icon'><FaSnapchatGhost/></div>
             </div>
         </div>
           <Footer/>

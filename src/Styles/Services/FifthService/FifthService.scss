@@ -9,19 +9,15 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
-        
+        width: 100%;       
         .FifthService_mid_sec_left{
-            width: 50%;
+            width: 38%;
             display: flex;
-            // justify-content: center;
-            // align-items: center;
             flex-direction: column;
             margin-left: 5vw;
-            margin-bottom: 20vw;
-
+            margin-top: -10vw;
             .FifthService_title{
-                width: 70%;
+                width: 90%;
                 color: #000;
                 // font-family: Montserrat;
                 font-size: 3.4vw;
@@ -29,19 +25,20 @@
                 font-weight: 800;
                 line-height: 3.3vw;
                 align-items: start;
+                margin-bottom: 1vw;
             }
             .FifthService_desc{
-                width: 87%;
+                width: 100%;
                 color: #818C96;
                 // font-family: Roboto;
-                font-size: 1.6vw;
+                font-size: 1.5vw;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 2.5vw;
                 letter-spacing: -.04vw;
             }
             .FifthService_button{
-                width: 30%;
+                width: 35%;
                 height: 4.5vw;
                 border-radius: 2vw;
                 background: #AFEF2C;
@@ -56,24 +53,20 @@
                 flex-wrap: nowrap;
                 display: flex;
                 flex-direction: column;
-                align-items: center !important;
-                justify-content: center !important;
-
-                
+                align-items: center;
+                justify-content: center;   
                 &:hover{
-                    // background: #000;
-                    // z-index: 0;
-                    // margin-top: 0vw;
+                    transition: 4s ease-in-out !important; 
                .FifthService_button_hover{
                     background: #0a0707;
                     margin-left: 15vw;
                     display: flex;
-                    transform: translateX(10vw);
-                    transition: 1s ease-in-out; 
+                    transform: translateX(2vw);
+                    transform: scale(1);
+                    transition: 4s ease-in-out !important; 
                 }
             }
                .FifthService_button_hover{
-                    
                     height: 3vw;    
                     width: 3vw;
                     margin-left: 5vw;
@@ -83,44 +76,31 @@
                     background: #000;
                     display: none;
                     margin-top: -3vw;
-
                 }
             } 
-
-
-
-
-
-
-
-
-
-
-
-
         }
         
+        
+
         .FifthService_mid_sec_right{
+            margin-bottom: 12vw ;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            margin-right: 5vw;
+            margin-top: 3.4vw;
             &:hover{
                 .scale_span{
                     transform: scale(0.7);
                     transition: 1.5s ease-in-out;
-                    // transform: scaleY(-2);
-                    // margin-top: .9vw !important;
-                    // margin-right: .9vw !important;  
                 }     
                 .FifthService_square2{
+                    flex: 13    ;
                     margin-left: 28vw;
-                    // margin-right: 1vw;
                     margin-bottom: .01vw;
-                    // padding: 1vw 1vw 0vw 0vw ;
                     transition: 1.5s ease-in-out ;
                     transform: scale(1.2);
-                    // display: flex ;
-                    // justify-content: center;
-                    // align-items: center ;
                     background: #000;
-                    // padding-left: 2vw;
                     .square_title{
                         color: #fff;
                     }
@@ -137,14 +117,8 @@
                     }
                 }
             }
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            margin-right: 5vw;
-            // padding: 2vw;
             .FifthServiceSquare_first{
                 display: flex;
-                // margin-left: 2vw;
                 justify-content: space-around;
                 margin-bottom: 2vw;
             }
@@ -215,33 +189,33 @@
                     color: #161618;
                     width: 1vw;
                     font-size: 1.4vw;
-                    // font-weight: bolder;
-                    // size: 3vw;
+                    margin-left: .4vw;
+                    }  
                 }  
-                }
-                  
             }
            
         }
     }
     .FifthService_icons{
+        .single_icon{
+            background: #000000;
+            border-radius: 50%;
+            width: 5vw;
+            height: 5vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
             display: flex;
             justify-content: space-evenly;
             color: #fff;
-            // margin-left: 5vw;
             width: 40vw;
             margin:0vw 0vw 0vw 58vw;
-            height: 6vw;
-            // padding-top:max(4vw ,3vh);
-            
-    
+            height: 6vw;    
+            z-index: 1;   
             svg{
-                z-index: 99;
-                background: #000000;
-                border-radius: 50%;
                 color: rgb(255, 255, 255);
-                font-size:2.7vw;
-                padding: 1.3vw;
+                font-size:3.5vw;
         }
     }
 }
