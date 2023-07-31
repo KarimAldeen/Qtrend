@@ -14,11 +14,11 @@
         padding-left: 5vw;
         align-items: start;
         height: 20vw;
-        svg{
-            width: 40vw;
-            transform: translateY(-10vw);
-            z-index: 1;
-        }
+        // svg{
+        //     width: 40vw;
+        //     transform: translateY(-10vw);
+        //     z-index: 1;
+        // }
         h1{
             font-size: 4.4vw;
             white-space: nowrap;
@@ -89,5 +89,34 @@
     top: 10vw;
     width: 45vw;
 }
+.Ibrahem{
+    position: absolute;
+    top: 8vw;
+    width: 45vw;
+    height: 60vw;
+}
   
+  
+.LogoAnimation{
+    width: 35vw;
+    height: 28vw;
+    padding-right: 2vw;
+    transform: translateY(-3vw);
+    z-index: 1;
+
+}
+.Ibra_helmets2,.Logo_Animation2{
+    opacity: 0;
+    animation: Ibra_Is_Trash2 6s infinite;
+    transition: 1s ease-in-out;
+
+}
+
+@keyframes Ibra_Is_Trash2 {
+    0%   {opacity: 0;}
+  20%  {opacity: 1;}
+  80%  {opacity: 1;}
+  100% {opacity: 0;}
+    
+  }
   
