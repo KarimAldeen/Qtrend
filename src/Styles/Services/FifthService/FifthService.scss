@@ -1,0 +1,221 @@
+.FifthService_page{
+    position: relative;
+    width: 100%;
+    .FifthService_top_sec{
+        height: 60vw;
+        background: #000;
+    }
+    .FifthService_mid_sec{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;       
+        .FifthService_mid_sec_left{
+            width: 38%;
+            display: flex;
+            flex-direction: column;
+            margin-left: 5vw;
+            margin-top: -10vw;
+            .FifthService_title{
+                width: 90%;
+                color: #000;
+                // font-family: Montserrat;
+                font-size: 3.4vw;
+                font-style: italic;
+                font-weight: 800;
+                line-height: 3.3vw;
+                align-items: start;
+                margin-bottom: 1vw;
+            }
+            .FifthService_desc{
+                width: 100%;
+                color: #818C96;
+                // font-family: Roboto;
+                font-size: 1.5vw;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 2.5vw;
+                letter-spacing: -.04vw;
+            }
+            .FifthService_button{
+                width: 35%;
+                height: 4.5vw;
+                border-radius: 2vw;
+                background: #AFEF2C;
+                color: #1E1E1E;
+                text-align: center;
+                // font-family: Montserrat;
+                font-size: 2.2vw;
+                font-style: italic;
+                font-weight: 700;
+                border: none;
+                margin:2.7vw 0vw 0vw 2.1vw ;
+                flex-wrap: nowrap;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;   
+                &:hover{
+                    transition: 4s ease-in-out !important; 
+               .FifthService_button_hover{
+                    background: #0a0707;
+                    margin-left: 15vw;
+                    display: flex;
+                    transform: translateX(2vw);
+                    transform: scale(1);
+                    transition: 4s ease-in-out !important; 
+                }
+            }
+               .FifthService_button_hover{
+                    height: 3vw;    
+                    width: 3vw;
+                    margin-left: 5vw;
+                    padding: 1vw;
+                    color: #fff;
+                    border-radius: 50%;
+                    background: #000;
+                    display: none;
+                    margin-top: -3vw;
+                }
+            } 
+        }
+        
+        
+
+        .FifthService_mid_sec_right{
+            margin-bottom: 12vw ;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            margin-right: 5vw;
+            margin-top: 3.4vw;
+            &:hover{
+                .scale_span{
+                    transform: scale(0.7);
+                    transition: 1.5s ease-in-out;
+                }     
+                .FifthService_square2{
+                    flex: 13    ;
+                    margin-left: 28vw;
+                    margin-bottom: .01vw;
+                    transition: 1.5s ease-in-out ;
+                    transform: scale(1.2);
+                    background: #000;
+                    .square_title{
+                        color: #fff;
+                    }
+                    .square_desc{
+                        color: #868585;
+                    }
+                    .square_last_sec{
+                        .square_more{
+                            color: green;
+                        }
+                        .square_icon{
+                            color: green;
+                        }
+                    }
+                }
+            }
+            .FifthServiceSquare_first{
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 2vw;
+            }
+            .FifthServiceSquare_second{
+                display: flex;
+                justify-content: space-around;
+            }
+            .FifthService_square1{
+                margin-bottom: 2vw;
+                margin-left: .8vw;
+            }
+            .FifthService_square2{
+                margin-left: 25.5vw;
+                margin-right: 1vw;
+                margin-bottom: -2vw;
+
+            }
+            .FifthService_square4{
+                margin-left: 1.2vw;
+            }
+            .scale_span{
+                margin-top: -20vw;
+            }
+            .FifthService_square,.FifthService_square2,.FifthService_square1,.FifthService_square4{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border-radius: 1vw;
+                background: #D7D7D7;
+                height: 20vw;
+                width: 20vw;
+                padding-left: 2vw;
+                .square_title{
+                    align-self: start;
+                    color: #161618;
+                    // font-family: Inter;
+                    font-size: 1.3vw;
+                    font-weight: 600;
+                    line-height: 2vw;
+                    width: 19vw;
+                    margin-top: 3vw;
+                }
+                .square_desc{
+                    align-self: start;
+                    color: #1E1E1E;
+                    // font-family: Roboto;
+                    font-size: .9vw;
+                    font-weight: 400;
+                    line-height: 1.3vw;
+                    letter-spacing: -.05vw;
+                    width: 18vw;
+                    margin-top: .4vw;
+                }
+                .square_last_sec{
+                    align-self: start;
+                    display: flex;
+                    margin: 4vw 10vw 0vw 0vw;
+                    justify-content: space-evenly;
+                .square_more{
+                    color: #161618;
+                    // font-family: Roboto;
+                    font-size: .9vw;
+                    font-weight: 600;
+                    letter-spacing: -.05vw;
+                } 
+                .square_icon{
+                    color: #161618;
+                    width: 1vw;
+                    font-size: 1.4vw;
+                    margin-left: .4vw;
+                    }  
+                }  
+            }
+           
+        }
+    }
+    .FifthService_icons{
+        .single_icon{
+            background: #000000;
+            border-radius: 50%;
+            width: 5vw;
+            height: 5vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            display: flex;
+            justify-content: space-evenly;
+            color: #fff;
+            width: 40vw;
+            margin:0vw 0vw 0vw 58vw;
+            height: 6vw;    
+            z-index: 1;   
+            svg{
+                color: rgb(255, 255, 255);
+                font-size:3.5vw;
+        }
+    }
+}
