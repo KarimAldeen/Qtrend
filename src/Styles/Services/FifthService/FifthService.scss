@@ -76,19 +76,24 @@
             width: 50%;
             display: flex;
             flex-direction: column;
-            margin-right: 5vw;
+            margin-right: 2.5vw;
+            z-index: 9999;
             &:hover{
                 .scale_span{
                     transform: scale(0.7);
-                    transition: 1.2s ease-in-out;
+                    transition: 1.2s ease-in;
+                    margin-left: -2vw;
+                    margin-bottom: -10vw;
+
                 }     
                 .FifthService_square2{
-                    flex: 13    ;
-                    margin-left: 28vw;
+                    margin-left: 26vw;
                     margin-bottom: .01vw;
-                    transition: 1.5s ease-in-out ;
-                    transform: scale(1.2);
+                    transition: 1.5s ease-in ;
+                    transform: scale(1.3) !important;
                     background: #000;
+                    // margin-left: -2vw;
+                    margin-bottom: .5vw;
                     .square_title{
                         color: #fff;
                     }
@@ -116,9 +121,9 @@
             }
             .FifthService_square2{
                 margin-left: 25.5vw;
-                margin-right: 1vw;
+                // margin-right: 1vw;
                 margin-bottom: -2vw;
-                margin: 0vw 25.5vw -2vw 25.5vw ;
+                // margin: 0vw 25.5vw -2vw 25.5vw ;
             }
             .FifthService_square4{
                 margin-left: 2.3vw;

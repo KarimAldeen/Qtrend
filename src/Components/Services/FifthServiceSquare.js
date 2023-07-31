@@ -8,7 +8,7 @@ const FifthServiceSquare = ({classNameForSquare,title, desc,last,icon}) => {
                 <h2 className='square_desc'>{desc}</h2>
                 <div className='square_last_sec'>
                 <h3 className='square_more'>{last} </h3>
-                <span className='square_icon'> {icon}</span>
+                <span className='square_icon'>{icon}</span>
                 </div>
     </div>
   )
