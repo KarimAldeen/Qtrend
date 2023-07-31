@@ -1,41 +1,43 @@
 .FifthService_page{
     position: relative;
     width: 100%;
-    .FifthService_top_sec{
-        height: 60vw;
-        background: #000;
+    .FifthService_page_BG{
+        img{
+            width: 100%;
+            height: 150vw;
+            position: absolute;
+        }
     }
+    // .FifthService_top_sec{
+    //     height: 60vw;
+    //     background: #000;
+    // }
     .FifthService_mid_sec{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        padding-top: 60vw;
+        margin-top: 6%;
+        position: absolute;
+        display: flex; justify-content: space-between; align-items: center;
         width: 100%;       
         .FifthService_mid_sec_left{
             width: 38%;
-            display: flex;
-            flex-direction: column;
-            margin-left: 5vw;
-            margin-top: -10vw;
+            margin: -10vw 0vw 0vw 4vw;
             .FifthService_title{
                 width: 90%;
                 color: #000;
                 // font-family: Montserrat;
                 font-size: 3.4vw;
                 font-style: italic;
-                font-weight: 800;
+                font-weight: 900;
                 line-height: 3.3vw;
-                align-items: start;
                 margin-bottom: 1vw;
             }
             .FifthService_desc{
                 width: 100%;
                 color: #818C96;
                 // font-family: Roboto;
-                font-size: 1.5vw;
-                font-style: normal;
-                font-weight: 500;
+                font-size: 1.4vw;
+                font-weight: 600;
                 line-height: 2.5vw;
-                letter-spacing: -.04vw;
             }
             .FifthService_button{
                 width: 35%;
@@ -43,27 +45,19 @@
                 border-radius: 2vw;
                 background: #AFEF2C;
                 color: #1E1E1E;
-                text-align: center;
                 // font-family: Montserrat;
                 font-size: 2.2vw;
                 font-style: italic;
                 font-weight: 700;
                 border: none;
                 margin:2.7vw 0vw 0vw 2.1vw ;
-                flex-wrap: nowrap;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;   
                 &:hover{
-                    transition: 4s ease-in-out !important; 
+                    // transition: 1s ease-in-out !important;
                .FifthService_button_hover{
                     background: #0a0707;
-                    margin-left: 15vw;
                     display: flex;
-                    transform: translateX(2vw);
-                    transform: scale(1);
-                    transition: 4s ease-in-out !important; 
+                    transform: translateX(10vw) !important;
+                    // transition: 1s ease-in-out !important; 
                 }
             }
                .FifthService_button_hover{
@@ -75,13 +69,10 @@
                     border-radius: 50%;
                     background: #000;
                     display: none;
-                    margin-top: -3vw;
+                    margin-top: -3vw;    
                 }
             } 
         }
-        
-        
-
         .FifthService_mid_sec_right{
             margin-bottom: 12vw ;
             width: 50%;
@@ -92,7 +83,7 @@
             &:hover{
                 .scale_span{
                     transform: scale(0.7);
-                    transition: 1.5s ease-in-out;
+                    transition: 1.2s ease-in-out;
                 }     
                 .FifthService_square2{
                     flex: 13    ;
@@ -109,10 +100,10 @@
                     }
                     .square_last_sec{
                         .square_more{
-                            color: green;
+                            color: #9FED61;
                         }
                         .square_icon{
-                            color: green;
+                            color: #9FED61;
                         }
                     }
                 }
@@ -134,7 +125,6 @@
                 margin-left: 25.5vw;
                 margin-right: 1vw;
                 margin-bottom: -2vw;
-
             }
             .FifthService_square4{
                 margin-left: 1.2vw;
@@ -160,7 +150,6 @@
                     font-weight: 600;
                     line-height: 2vw;
                     width: 19vw;
-                    margin-top: 3vw;
                 }
                 .square_desc{
                     align-self: start;
@@ -175,9 +164,9 @@
                 }
                 .square_last_sec{
                     align-self: start;
-                    display: flex;
-                    margin: 4vw 10vw 0vw 0vw;
-                    justify-content: space-evenly;
+                    display: flex; 
+                    margin: 3vw 10vw 0vw 0vw;
+                    width: 17vw;
                 .square_more{
                     color: #161618;
                     // font-family: Roboto;
@@ -189,33 +178,35 @@
                     color: #161618;
                     width: 1vw;
                     font-size: 1.4vw;
-                    margin-left: .4vw;
+                    margin-left: .7vw;
                     }  
                 }  
             }
-           
         }
     }
     .FifthService_icons{
+        position: absolute;
+        display: flex; justify-content: space-evenly;
+        color: #fff;
+        width: 40vw;
+        margin:70vw 0vw 0vw 58vw;
+        height: 6vw;    
+        padding-top: 60vw;
         .single_icon{
             background: #000000;
             border-radius: 50%;
             width: 5vw;
             height: 5vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display: flex; justify-content: center; align-items: center;
         }
-            display: flex;
-            justify-content: space-evenly;
-            color: #fff;
-            width: 40vw;
-            margin:0vw 0vw 0vw 58vw;
-            height: 6vw;    
-            z-index: 1;   
             svg{
                 color: rgb(255, 255, 255);
                 font-size:3.5vw;
         }
+    }
+    .Footer{
+        position: absolute;
+        margin-top: 137vw;
+        // padding-top: 77vw;
     }
 }

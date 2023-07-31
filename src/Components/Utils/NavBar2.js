@@ -6,7 +6,7 @@ import Link from 'next/link'
 const NavBar2 = () => {
   return (
     <div className='NavBar'>
-          <Image src={Logo2}/>
+          <Image style={{width:"9vw",height:"3vw"}} src={Logo2}/>
           <div className='Links'>
             {
               NavLinks?.map((i, index) => (
