@@ -2,7 +2,7 @@
 
 import useHover from "@/hooks/useHover";
 
-const Services_Cards = ({Key,Word1,Word2,Url}) => {
+const Services_Cards = ({Key,Word1,Word2}) => {
     const { isHovered, handleMouseEnter, handleMouseLeave } = useHover();
     const isHoveredClassName = isHovered ? `Card_1 Card_1_Hovered` : `Card_1`;
 
@@ -15,7 +15,7 @@ const Services_Cards = ({Key,Word1,Word2,Url}) => {
                     onMouseLeave={handleMouseLeave}
                 >
                     {/* <h4>Ibra is Trash</h4> */}
-                    <img  src={Url}  alt="" />
+                    <img  src={`../Home/2+3/Services_Card/CARD${Key}.webp`}  alt="" />
                 </div>
                 <div
                     className="Card_2"
