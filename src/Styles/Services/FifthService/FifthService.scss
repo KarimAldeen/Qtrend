@@ -9,8 +9,7 @@
         }
     }
     .FifthService_mid_sec{
-        padding-top: 60vw;
-        margin-top: 6%;
+        padding-top: 70vw;
         position: absolute;
         display: flex; justify-content: space-between; align-items: center;
         width: 100%;       
@@ -38,7 +37,7 @@
             .Shit_div{
                 display:flex;
                 margin-top:2vw ;
-                transform: translateX(3vw);
+                transform: translateX(2vw);
                 width: 30%;
                 &:hover{
                .FifthService_button_hover{
@@ -47,7 +46,7 @@
                           }
                       }
             .FifthService_button{
-                width: 100%;
+                width: 120%;
                 height: 4.5vw;
                 border-radius: 2.1vw;
                 background: #AFEF2C;
@@ -71,21 +70,13 @@
                 font-size: 2vw;
             }
             }
-            
-
         }
-
-
-
-
-
         .FifthService_mid_sec_right{
             margin-bottom: 12vw ;
             width: 50%;
             display: flex;
             flex-direction: column;
             margin-right: 5vw;
-            margin-top: 3.4vw;
             &:hover{
                 .scale_span{
                     transform: scale(0.7);
@@ -115,41 +106,36 @@
                 }
             }
             .FifthServiceSquare_first{
-                display: flex;
-                justify-content: space-around;
                 margin-bottom: 2vw;
             }
             .FifthServiceSquare_second{
-                display: flex;
-                justify-content: space-around;
+                display: flex; 
             }
             .FifthService_square1{
                 margin-bottom: 2vw;
-                margin-left: .8vw;
             }
             .FifthService_square2{
                 margin-left: 25.5vw;
                 margin-right: 1vw;
                 margin-bottom: -2vw;
+                margin: 0vw 25.5vw -2vw 25.5vw ;
             }
             .FifthService_square4{
-                margin-left: 1.2vw;
+                margin-left: 2.3vw;
             }
             .scale_span{
                 margin-top: -20vw;
+                margin-left: 1vw;
+
             }
             .FifthService_square,.FifthService_square2,.FifthService_square1,.FifthService_square4{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
+                display: flex; justify-content: center; flex-direction: column;
                 border-radius: 1vw;
                 background: #D7D7D7;
                 height: 20vw;
                 width: 20vw;
                 padding-left: 2vw;
                 .square_title{
-                    align-self: start;
                     color: #161618;
                     // font-family: Inter;
                     font-size: 1.3vw;
@@ -158,7 +144,6 @@
                     width: 19vw;
                 }
                 .square_desc{
-                    align-self: start;
                     color: #1E1E1E;
                     // font-family: Roboto;
                     font-size: .9vw;
@@ -169,7 +154,6 @@
                     margin-top: .4vw;
                 }
                 .square_last_sec{
-                    align-self: start;
                     display: flex; 
                     margin: 3vw 10vw 0vw 0vw;
                     width: 17vw;
@@ -213,6 +197,5 @@
     .Footer{
         position: absolute;
         margin-top: 137vw;
-        // padding-top: 77vw;
     }
 }
