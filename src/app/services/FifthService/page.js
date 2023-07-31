@@ -5,6 +5,7 @@ import React from 'react'
 import {BsArrowRight} from "react-icons/bs"
 import { FaFacebookF, FaTiktok, FaWhatsapp, FaSnapchatGhost, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import {BiSolidRightArrow} from 'react-icons/bi'
+import Services5_BG from '@/Components/Services/Services5_BG';
 const FifthService = () => {
   return (
       // Main Dev Page
@@ -13,7 +14,8 @@ const FifthService = () => {
         <NavBar2/>
       {/* BG Image */}
         <div className='FifthService_page_BG'>
-          <img src='../Services/Services5/FifthService.png' alt='www'/>
+          {/* <img src='../Services/Services5/FifthService.png' alt='www'/> */}
+          <Services5_BG/>
         </div>
       {/* Mid Section */}
         <div className='FifthService_mid_sec'>
