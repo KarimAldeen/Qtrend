@@ -4,7 +4,7 @@ import NavBar2 from '@/Components/Utils/NavBar2'
 import React from 'react'
 import {BsArrowRight} from "react-icons/bs"
 import { FaFacebookF, FaTiktok, FaWhatsapp, FaSnapchatGhost, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-
+import {BiSolidRightArrow} from 'react-icons/bi'
 const FifthService = () => {
   return (
       // Main Dev Page
@@ -21,10 +21,12 @@ const FifthService = () => {
             <div className='FifthService_mid_sec_left'>
                 <h1 className='FifthService_title'>Looking For a Modern Web/App design?</h1>
                 <h2 className='FifthService_desc'>You can count on us to provide you with cutting-edge and visually appealing website designs. Our team of skilled designers specializes in creating modern and sleek designs that align with the latest design trends and industry standards. Here are some key aspects of our modern web design services:</h2>
+                <div className="Shit_div">
                 <button className='FifthService_button'>
                   Contact us
-                  <span className='FifthService_button_hover'>ok</span>
                 </button>
+                <span className='FifthService_button_hover'><BiSolidRightArrow/></span>
+                </div>
             </div>
       {/* Right Sec */}
             <div className='FifthService_mid_sec_right'>
