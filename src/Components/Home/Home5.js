@@ -1,6 +1,6 @@
 import React from 'react'
-import LogoShadow from '@/Components/Home/LogoShadow';
 import LogoAnimation from './LogoAnimation';
+import Ibrahem from './Ibrahem';
 
 const Home5 = () => {
   return (
@@ -9,8 +9,7 @@ const Home5 = () => {
     <img className='Home4_BG_Image' src="../Home/5/Home5_Image/Home5_BG.png" alt="Image" />
     <div className='Home4_Top'>
       <h1>Our Awesome Portofolio</h1>
-      <LogoShadow />
-      {/* <LogoAnimation/> */}
+      <LogoAnimation/>
 
     </div>
     <div className='Home4_Down'>
@@ -40,8 +39,7 @@ const Home5 = () => {
       </div>
 
     </div>
-    <img className='Home4_IbraDonkey' src="../Home/5/Home5_Image/IbraDonkey.svg" alt="Image" />
-
+      <Ibrahem/>
   </div>
   )
 }
