@@ -3,24 +3,18 @@
         transform: translateX(-.4vw); 
         color: black;
         background-color: #0085D2;
-        padding: .8vw;
         margin-inline: .3vw;
-        border-radius: .6vw;
+        border-radius: .5vw;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        // margin-bottom: .8vw !important;
-        // width: 3vw;
-        height: .7vw !important; 
-        width: .7vw !important;
-        // margin-top: -10vw !important;
-        // max-width: 1.2vw;
+        height:1.6vw ; 
+        width: 1.6vw ;
+        // margin-top: -2vw !important;
         svg{
-            font-size: 2vw;
+            font-size: .8vw ;
         }
-
     }
-
 }
 .HOME_PAGE{
     .Footer{
@@ -36,7 +30,6 @@
     padding: 4vw 5vw 2vw 5vw ;
     img{
         width: 6vw;
-        // margin-bottom: 1vw;
     }
     .p{
         width: 58%;
@@ -44,26 +37,28 @@
         margin-bottom: 1.4vw;
         font-size: 1vw;
     }
+
     .Footer_Right{
         display: flex;
         gap: 5vw;
+        // margin-top: .5vw;
         h3{
-            font-size: 1.2vw;
-            font-weight: 500;
-
-            text-align: center;
+            font-size: 1vw;
+            font-weight: 400;
+            text-align: start;
             margin-bottom: .9vw;
             width: 100%;
             white-space: nowrap;
         }
         a{
             color :#8E8E8E;
-            text-align: center;
+            text-align: start;
             white-space: nowrap;
             font-size: 1vw;
             margin-bottom: .8vw;
             font-weight: 400;
             display: block;
+
         }
     }
 

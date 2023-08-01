@@ -2,13 +2,20 @@
 .work_page{
     max-width: 100vw;
     position: relative;
+    // width: 100vw;
+    // overflow: hidden;    
+    // margin: 0vw !important;
+    // padding: 0vw !important;
     .Links{
         a:nth-child(3){
             color: #FFD339 !important;
         }
     }
     .works_img{
-        max-width: 100vw;
+        // margin: 0vw !important;
+        // padding: 0vw !important;
+        // max-width: 100vw;
+        // overflow: hidden !important;
         position: absolute;
         width: 100%;
     }
