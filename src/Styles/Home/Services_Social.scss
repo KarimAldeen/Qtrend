@@ -1,8 +1,11 @@
 .Home2{
     
+
 .Services_Social{
     position: absolute;
     left: 35vw;
+    // background: red;
+    padding-top: 1vw;
     max-width: 100%;
     transform: translateY(72vw);
     -webkit-transform: translateY(71.2vw);
@@ -11,6 +14,7 @@
     -o-transform: translateY(72vw);
     display: flex;
     .Services_MIcon{
+
     padding: .4vw;
     background-color: #C7F36C;
     color: white;
@@ -80,6 +84,14 @@ svg{
 }
 
 
+}
+@include devices(tablet){
+       
+    .Services_Social{
+        // padding: -0.5vw;
+        padding: 0 
+    }
+ 
 }
 }
 .MIcon2,.MIcon4,.MIcon6{
