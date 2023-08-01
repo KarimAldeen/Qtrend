@@ -1,17 +1,19 @@
 .Footer_SocialMedia{
     a{
+        transform: translateX(-.4vw); 
         color: black;
         background-color: #0085D2;
         padding: .8vw;
-        margin-inline: .5vw;
+        margin-inline: .3vw;
         border-radius: .6vw;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: .8vw !important;
+        // margin-bottom: .8vw !important;
         // width: 3vw;
-        height: 2vw;
-        width: 2vw;
+        height: .7vw !important; 
+        width: .7vw !important;
+        // margin-top: -10vw !important;
         // max-width: 1.2vw;
         svg{
             font-size: 2vw;
@@ -27,21 +29,20 @@
 }
 .Footer{
     border-top: 1.3vw solid #C7F36C;
-    
     background: black;
     color: white;
     display: flex; 
     justify-content: space-between;
-    padding: 5vw;
+    padding: 4vw 5vw 2vw 5vw ;
     img{
-        width: 8vw;
-        margin-bottom: 1vw;
+        width: 6vw;
+        // margin-bottom: 1vw;
     }
     .p{
-        width: 70%;
+        width: 58%;
         color :#8E8E8E;
-        margin-bottom: 2vw;
-        font-size: 1.2vw;
+        margin-bottom: 1.4vw;
+        font-size: 1vw;
     }
     .Footer_Right{
         display: flex;
