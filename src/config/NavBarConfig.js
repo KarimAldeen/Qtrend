@@ -7,7 +7,7 @@ export const NavLinks = [
     },
     {
         name:"OUR SERVICES",
-        href:"/services/FirstService1"
+        href:"/soon"
     }
     ,
     {
@@ -24,6 +24,6 @@ export const NavLinks = [
     ,
     {
         name:"MEET US",
-        href:"/meet_us1"
+        href:"/soon"
     }
 ]
