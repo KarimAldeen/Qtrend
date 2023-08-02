@@ -1,10 +1,12 @@
 import React from 'react'
 import Services_Cards from '@/Components/Utils/Services_Cards'
 import { FaFacebookF, FaTiktok, FaWhatsapp, FaSnapchatGhost, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import Home23_BG from './Home23_BG';
 const Home2 = () => {
   return (
     <div className='Home2'>
-        <img src="../Home/2+3/HomeBG23.webp" alt="Image" />
+        {/* <img src="../Home/2+3/HomeBG23.webp" alt="Image" /> */}
+        <Home23_BG/>
         <div className='Home2_Contain'>
           <div className='Home2_Text'>
             <h2>Welcome</h2>
@@ -32,7 +34,7 @@ const Home2 = () => {
           <div className='Home2_Services2'>
             <Services_Cards Key={4} Word1={"MODELING"} Word2={" SERVICES"} />
             <Services_Cards Key={5} Word1={"APPS & WEB"} Word2={" DEVELOPMENT"} />
-            <Services_Cards Key={6} Word1={"BLOGGERS"} Word2={"  SERVICES"} />
+            <Services_Cards Key={6} Word1={"SOCIAL MEDIA ACCOUNTS VERIFICATION & BLOGGERS"} Word2={"SERVICES"} />
 
 
           </div>

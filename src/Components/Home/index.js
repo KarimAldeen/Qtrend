@@ -1,5 +1,4 @@
 import Home4 from './Home4'
-import Home1_BG from './Home1_BG'
 import Home1 from './Home1';
 import Home5 from './Home5';
 import Home2 from './Home2';
@@ -17,7 +16,7 @@ import Footer from '@/Components/Utils/Footer';
 
 export {
     Home4,
-    Home1_BG,
+   
     Home5,
     Home2,
     NavBar,

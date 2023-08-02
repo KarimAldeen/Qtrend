@@ -1,87 +1,27 @@
 .Services_Cards {
     display: flex;
-    height: 16vw;
-    width: 20vw;
-
-
-    .Main_Card {
-        position: relative;
-    }
-
-    .Card_2 {
+    height: 18vw;
+    width: 19vw;
+    .Main_Card {   position: relative;}
+    .Card_2,.Card_1 {
         position: absolute;
-        background: red;
-        height: 16vw;
-        width: 20vw;
+        height: 17vw;
+        width: 19vw;
         border-radius: 2vw;
-        -webkit-border-radius: 2vw;
-        -moz-border-radius: 2vw;
-        -ms-border-radius: 2vw;
-        -o-border-radius: 2vw;
-        display: flex;
-        align-items: center;
         cursor: pointer;
         transition: .4s ease-in-out;
-        -webkit-transition: .4s ease-in-out;
-        -moz-transition: .4s ease-in-out;
-        -ms-transition: .4s ease-in-out;
-        -o-transition: .4s ease-in-out;
-        box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.4);
-    }
-
-    .Card_1 {
-        position: absolute;
-        background: white;
-        height: 16vw;
-        width: 18vw;
-        left: 1vw;
-        border-radius: 2vw;
-        -webkit-border-radius: 2vw;
-        -moz-border-radius: 2vw;
-        -ms-border-radius: 2vw;
-        -o-border-radius: 2vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        transition: .4s ease-in-out;
-        -webkit-transition: .4s ease-in-out;
-        -moz-transition: .4s ease-in-out;
-        -ms-transition: .4s ease-in-out;
-        -o-transition: .4s ease-in-out;
-        box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.4);
-
+        box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.1);
+        display: flex; align-items: center;
         img {
-            display: none;
-            width: 11vw;
-
+            display: none;  width: 11vw;
         }
-
     }
-
-    .Card_2 {
-        background-color: #C7F36C;
-        box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.4);
-
-    }
-
     .Card_1_Hovered {
         transform: translateY(-19vw);
-        height: 25vw;
-        box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.4);
+        height: 23vw;
+        box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.1);
         transition: .4s ease-in-out;
-        -webkit-transition: .4s ease-in-out;
-        -moz-transition: .4s ease-in-out;
-        -ms-transition: .4s ease-in-out;
-        -o-transition: .4s ease-in-out;
-        -webkit-transform: translateY(-19vw);
-        -moz-transform: translateY(-19vw);
-        -ms-transform: translateY(-19vw);
-        -o-transform: translateY(-19vw);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
+        @include Flex ;
         img {
             display: block;
             width: fit-content;
@@ -90,37 +30,22 @@
     }
 }
 
-.Key_1,
-.Key_3,
-.Key_5 {
-    .Card_1 {
-        background-color: #C7F36C !important;
-
-    }
-
-    .Card_2 {
-        background-color: white !important;
-    }
-}
-
-.Key_2,
-.Key_4,
-.Key_6 {
-    .Card_1 {
-        background-color: white !important;
-
-    }
-
-    .Card_2 {
-        background-color: #C7F36C !important;
-    }
-}
+.Key_1,.Key_3,.Key_5 {
+.Card_1 { background-color: #BBE76B !important;}
+.Card_2 { background-color: white !important;}}
+.Key_2,.Key_4,.Key_6 {
+.Card_1 { background-color: white !important;}
+.Card_2 {background-color: #BBE76B !important;}}
 
 .Services_Cards {
     h1 {
-        font-size: 7vw;
-        font-weight: 900;
         color: #3E4349;
+        text-shadow: 8px 13px 7px 0px rgba(0, 0, 0, 0.2);
+        font-family: Poppins;
+        font-size: 6vw;
+        font-style: normal;
+        font-weight: 900;
+   
     }
 
     .Card_2_Top {
@@ -139,19 +64,25 @@
 
         h2 {
 
-            font-size: 1.8vw;
-            font-weight: 950;
             color: #3E4349;
-            margin-bottom: 0;
-
+            text-shadow: 8px 13px 7px 0px rgba(0, 0, 0, 0.2);
+            font-family: Poppins;
+            font-size:2vw;
+            font-style: normal;
+            font-weight: 900;
+            line-height:2.2vw; /* 135.782% */
+            letter-spacing: -.1vw;
 
         }
 
         h3 {
-            font-size: 2.7vw;
-            font-weight: 950;
             color: #3E4349;
-            transform: translateY(-.6vw);
+            font-family: Poppins;
+            font-size: 3.1vw;
+            font-style: normal;
+            font-weight: 900;
+            line-height:2.2vw;
+            letter-spacing: -.1vw;
 
 
         }
@@ -172,8 +103,12 @@
 
     .Key_2 {
         .Card_2_Top_Word {
+            h2{
+                font-size: 2.7vw;
+
+            }
             h3 {
-                font-size: 2vw;
+                font-size: 2.4vw;
 
 
             }
@@ -183,15 +118,35 @@
     .Key_5 {
         .Card_2_Top_Word {
             h2 {
-                font-size: 1.5vw;
+                font-size: 1.8vw;
 
             }
 
             h3 {
-                font-size: 1.7vw;
-
+                font-size: 2.1vw;
+                line-height: 14.176px;
 
             }
+        }
+    }
+    .Key_6 {
+        h1{
+            padding-left: 1vw;
+        }
+        .Card_2_Top_Word {
+           
+            h2 {
+                font-size: 1vw;
+                line-height:1vw; 
+                text-align: left;
+              
+            }
+            h3{
+                font-size: 2.8vw;
+                line-height: 2.7vw;
+            }
+
+          
         }
     }
 }
@@ -215,10 +170,6 @@
         height: 3.3vw;
         width: 10vw;
         border-radius: 3vw;
-        -webkit-border-radius: 3vw;
-        -moz-border-radius: 3vw;
-        -ms-border-radius: 3vw;
-        -o-border-radius: 3vw;
         font-size: 1vw;
         letter-spacing: .1vw;
         text-transform: uppercase;

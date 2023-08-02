@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from '../Utils/NavBar'
-import Home1_BG from './Home1_BG'
+import Home_BG from './Home_BG'
 
 const Home1 = () => {
   return (
@@ -8,7 +8,7 @@ const Home1 = () => {
     <NavBar />
     <h2 className='HomeCenter_h'>We Boost Businesses Success</h2>
     <button className='HomeCenter_button'>Lets get in touch!</button>
-    <Home1_BG />
+    <Home_BG/>
 
   </div>
   )
