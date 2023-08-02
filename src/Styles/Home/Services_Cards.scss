@@ -18,7 +18,7 @@
     }
     .Card_1_Hovered {
         transform: translateY(-19vw);
-        height: 25vw;
+        height: 23vw;
         box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.1);
         transition: .4s ease-in-out;
         @include Flex ;
