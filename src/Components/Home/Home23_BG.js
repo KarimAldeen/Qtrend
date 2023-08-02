@@ -27,7 +27,7 @@ const Home23_BG = () => {
       height="100%"
       viewBox="0 0 4096 4096"
     >
-      <image width={4096} height={4096} xlinkHref="../Home/2+3/Home23-image2.webp" />
+      <image width={4096} height={4096} xlinkHref="../Home/2+3/Face.webp" />
     </pattern>
     <pattern
       id="pattern_Home23-3"
