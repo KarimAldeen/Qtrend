@@ -4,7 +4,7 @@ import Home3_Sections from './Home3_Sections'
 const Home4 = () => {
   const Data1=
     {
-      src: `../Home/4/Home4_Image/Home3_Image1.png`,
+      src: `../Home/4/Home4_Image/production.gif`,
       h1: "How to learn Javascript by yourself",
       p: "Ac aliquet vitae sem quis turpis neque. Nec ut urna consectetur vitae nunc sed elit lacus."
     }
@@ -19,7 +19,7 @@ const Home4 = () => {
   const Data3 = 
 
     {
-      src: `../Home/4/Home4_Image/Home3_Image3.png`,
+      src: `../Home/4/Home4_Image/video.gif`,
       h1: "How can you re-use any source code in  your projects",
       p: "Ac aliquet vitae sem quis turpis neque. Nec ut urna consectetur vitae nunc sed elit lacus."
     }
