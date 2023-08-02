@@ -24,10 +24,12 @@ const FifthService = () => {
                 <h1 className='FifthService_title'>Looking For a Modern Web/App design?</h1>
                 <h2 className='FifthService_desc'>You can count on us to provide you with cutting-edge and visually appealing website designs. Our team of skilled designers specializes in creating modern and sleek designs that align with the latest design trends and industry standards. Here are some key aspects of our modern web design services:</h2>
                 <div className="Shit_div">
+                <a href='../../meet_us' className='ContactUS_a'>
                 <button className='FifthService_button'>
                   Contact us
                 </button>
                 <span className='FifthService_button_hover'><BiSolidRightArrow/></span>
+                </a>
                 </div>
             </div>
       {/* Right Sec */}

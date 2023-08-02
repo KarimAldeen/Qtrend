@@ -45,30 +45,35 @@
                     transition: 0.4s ease-in-out !important; 
                           }
                       }
-            .FifthService_button{
-                width: 120%;
-                height: 4.5vw;
-                border-radius: 2.1vw;
-                background: #AFEF2C;
-                color: #1E1E1E;
-                // font-family: Montserrat;
-                font-size: 2.1vw;
-                font-style: italic;
-                font-weight: 800;
-                border: none;
-                z-index: 9999;
-             } 
-             .FifthService_button_hover{
-                height: 2.5vw;    
-                width: 2.5vw;
-                margin-left: -8vw; margin-top: .3vw;
-                padding: .8vw;
-                color: #fff;
-                border-radius: 50%;
-                background: #000;
-                display: flex; justify-content: center; align-items: center;
-                font-size: 2vw;
-             }
+            .ContactUS_a{
+                display: flex;
+                width: 10vw;
+                .FifthService_button{
+                    width: 120%;
+                    height: 4.5vw;
+                    border-radius: 2.1vw;
+                    background: #AFEF2C;
+                    color: #1E1E1E;
+                    // font-family: Montserrat;
+                    font-size: 2.1vw;
+                    font-style: italic;
+                    font-weight: 800;
+                    border: none;
+                    z-index: 9999;
+                 } 
+                 .FifthService_button_hover{
+                    height: 2.5vw;    
+                    width: 2.5vw;
+                    margin-left: -8vw; margin-top: .3vw;
+                    padding: .8vw;
+                    color: #fff;
+                    border-radius: 50%;
+                    background: #000;
+                    display: flex; justify-content: center; align-items: center;
+                    font-size: 2vw;
+                 }
+            }
+            
             }
         }
         .FifthService_mid_sec_right{
