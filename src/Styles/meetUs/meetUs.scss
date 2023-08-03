@@ -38,18 +38,26 @@
                 display: flex;
                 align-items: center;
                 margin-inline: 1vw;
-
-                svg{
-                    font-size: 2.5vw;
-                    padding: 1vw;
+                // background: inherit;
+                a{
+                    // background: #ffffff;
                     border-radius: 50%;
+                    height: 5vw;
+                    width: 5vw;
+                    display: flex; align-items: center; justify-content: center;
+                    // background: inherit;
+                    border: .3vw white solid;
+                }
+                svg{
+                    font-size: 3vw;
                     color: #000;
-                    background: #ffffff;
+                    // background: inherit;
+                    color: inherit;
                 }
                 p{
                     white-space: nowrap;
                     font-size: .8vw;
-                    // font-family: Roboto;
+                    font-family: Roboto;
                     font-style: normal;
                     font-weight: 600;
                     line-height: normal;
@@ -123,10 +131,11 @@
         }
        
     }
-    // .Footer{
-    //     // height: 10vw ;
-    //     // margin-top: .1vw !important;
-    // }
+}
+.Geadian{
+    svg{
+        color: inherit !important;
+    }
 }
 .Geadian{
     position: absolute;
@@ -135,9 +144,6 @@
     top: 0;
     height: 97.2vw;
     cursor: auto;
-    // margin-bottom: -2vw !important;
-    // margin-top: -.3vw;
-    // animation: Ibrahem_Is_Trash 6s infinite;
     transition: .5s ease-in-out;
     .Geadian_1,.Geadian_2,.Geadian_3{
         width: 150%;
