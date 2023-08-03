@@ -4,7 +4,11 @@
     width: 100vw;
     height: 62.5vw;
 }
-
+.Footer{
+    transition: 2s ease-in-out;
+    bottom: -100vw; 
+  
+   }
 /////////// strat Transtion
 .S6_T5{
     position: relative;
