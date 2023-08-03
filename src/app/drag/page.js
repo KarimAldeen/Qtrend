@@ -1,11 +1,11 @@
 'use client'
 import React, { useRef, useState } from 'react';
-import FirstComponent from '@/components/Drag/FirstComponent';
-import SecondComponent from '@/components/Drag/SecondComponent';
-import ThirdComponent from '@/components/Drag/ThirdComponent';
-import FourComponent from '@/components/Drag/FourComponent';
-import FifthComponent from '@/components/Drag/FifthComponent';
-import SixComponent from '@/components/Drag/SixPart/SixComponent';
+import FirstComponent from '../../Components/Drag/FirstComponent';
+import SecondComponent from '../../Components/Drag/SecondComponent';
+import ThirdComponent from '../../Components/Drag/ThirdComponent';
+import FourComponent from '../../Components/Drag/FourComponent';
+import FifthComponent from '../../Components/Drag/FifthComponent';
+import SixComponent from '../../Components/Drag/SixPart/SixComponent';
 
 function DragPage() {
   

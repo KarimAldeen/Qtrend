@@ -15,7 +15,7 @@ function FirstComponent():ReactNode {
 
   
   return (
-    <div className='page-six-service-drag' onDrag={handleDragStart} draggable  id='first-part'>FirstComponent</div>
+    <div className='page-six-service-drag ' onDrag={handleDragStart} draggable  id='first-part'>FirstComponent</div>
   )
 }
 

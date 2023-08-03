@@ -93,6 +93,7 @@ const Home23_BG = () => {
         transform="translate(-464 802)"
         fill="url(#pattern_Home23)"
       />
+      <g className='Facess'>
       <rect
         id="Face_1"
         data-name="Face 1"
@@ -111,6 +112,8 @@ const Home23_BG = () => {
         fill="url(#pattern_Home23-3)"
         style={{ mixBlendMode: "color-dodge", isolation: "isolate" }}
       />
+      </g>
+      
       <g id="HandShake" opacity="0.34">
         <g
           id="Rectangle_9545-2"

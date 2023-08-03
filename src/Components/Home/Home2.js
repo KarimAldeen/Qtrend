@@ -1,5 +1,5 @@
 import React from 'react'
-import Services_Cards from '@/Components/Utils/Services_Cards'
+import Services_Cards from '../../Components/Utils/Services_Cards'
 import { FaFacebookF, FaTiktok, FaWhatsapp, FaSnapchatGhost, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import Home23_BG from './Home23_BG';
 const Home2 = () => {

@@ -1,0 +1,82 @@
+
+.Services6_3_BG{
+    transform: translateY(-62.5vw);
+    transition: 2s ease-in-out;
+    width: 100vw;
+    height: 62.5vw;
+
+ }
+.S6_3_Images {
+    scale: .5;
+    transform-origin: 48vw 18vw;
+    transition: 3.5s ease-in-out;
+}
+.Star{
+    opacity: 0;
+    transform: translate(805px, 100px) ;
+    scale: 1.4;
+    transform-origin: 70%;
+}
+
+.Media_Box {
+    transform: translateY(100vw);
+    transition: 2s ease-in-out;
+}
+
+.Drage4_Word {
+    transform: translate(224px, 761px) translateY(100vw);
+    transition: 2s ease-in-out;
+}
+
+.Drage4_Left_Rectangel {
+    transform: translate(-8.3px, 173.5px) translateX(-100vw);
+    transition: 2s ease-in-out;
+
+}
+   ////////////// Transtion Start
+
+.S6_T3 {
+    .Services6_3_BG{
+        transform: translateY(-125.8vw);     
+     
+ 
+     }
+    .Services6_2_BG{
+        transform: translateY(-125.8vw);      
+
+     }
+    
+
+
+    .S6_3_Images {
+        scale: 1;
+    }
+    .Media_Box {
+        transform: translateY(0);
+        transition: 2s ease-in-out;
+    }
+    .Drage4_Left_Rectangel {
+        transform: translate(-8.3px, 173.5px) translateX(0vw);
+        transition: 2s ease-in-out;
+    
+    }
+    .Drage4_Word {
+        transform: translate(224px, 761px) translateY(0vw);
+        transition: 2s ease-in-out;
+    }
+    .Star{
+        opacity: 1;
+        transition: 4s ease-in-out;
+
+        transform: translate(805px, 551px) ;
+        scale: 1;
+    }
+    .Drag_4_Page_Down {
+        position: absolute;
+        bottom: 0vw;
+        height: 6vw;
+        width: 100vw;
+        cursor: pointer;
+      }
+
+}

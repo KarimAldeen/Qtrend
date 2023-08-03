@@ -1,13 +1,13 @@
-import { NavLinks } from '@/config/NavBarConfig'
-import Image from 'next/image'
+import { NavLinks } from '../..//config/NavBarConfig'
 import Link from 'next/link'
 import React from 'react'
-import Logo from './Logo'
+import Logo6 from './Logo6'
 
-function NavBar() {
+function NavBar6() {
   return (
-    <div className={`NavBar`}>
-          <Logo />
+    <div className={`NavBar NavBar6`}>
+          <Logo6 />
+          
           <div className='Links'>
             {
               NavLinks?.map((i, index) => (
@@ -22,4 +22,4 @@ function NavBar() {
   )
 }
 
-export default NavBar
+export default NavBar6
