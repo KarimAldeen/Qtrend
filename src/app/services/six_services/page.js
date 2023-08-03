@@ -8,7 +8,7 @@ import React, { useState } from 'react'
 import NavBar6 from '../../../Components/Services6/NavBar6'
 import { Footer } from '../../../Components/Home'
 const page = () => {
-  const [ClassName, setClassName] = useState("Drag_Page S6_T1 S6_T2 S6_T3 S6_T4 S6_T5")
+  const [ClassName, setClassName] = useState("Drag_Page")
   const handleDragStart = () => {
     setClassName("Drag_Page S6_T1")
   };
