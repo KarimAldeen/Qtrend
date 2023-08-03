@@ -145,8 +145,9 @@ const Home23_BG = () => {
                     transform="translate(60 659)"
                     fill="#404130"
                     fontSize="39.071"
-                    fontFamily="Lalezar-Regular, Lalezar"
+                    fontFamily="Lalezar, Lalezar"
                     letterSpacing="-0.05em"
+                    fontWeight={400}
                   >
                     <tspan x={0} y={38}>
                       OUR SERVICES
@@ -165,7 +166,7 @@ const Home23_BG = () => {
                     data-name="WHAT WE DO"
                     transform="translate(55 1441)"
                     fontSize={55}
-                    fontFamily="Poppins-Black, Poppins"
+                    fontFamily=""
                     fontWeight={800}
                     letterSpacing="-0.05em"
                   >

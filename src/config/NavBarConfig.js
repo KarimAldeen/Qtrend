@@ -24,6 +24,6 @@ export const NavLinks = [
     ,
     {
         name:"MEET US",
-        href:"/soon"
+        href:"/meet_us"
     }
 ]
