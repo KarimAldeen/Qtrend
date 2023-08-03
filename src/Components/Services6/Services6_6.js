@@ -22,7 +22,7 @@ const Services6_6 = () => {
         <image width={220} height={220} xlinkHref="../Services/Services6/Drag6/Drage6-image2.webp" />
       </pattern>
       <pattern
-        id="patterns6_6-2"
+        id="pattern6_6_2"
         preserveAspectRatio="xMidYMid slice"
         width="100%"
         height="100%"
@@ -59,7 +59,7 @@ const Services6_6 = () => {
               height={824}
               transform="translate(-20 -144.564)"
               opacity="0.25"
-              fill="url(#pattern)"
+              fill="url(#pattern6_6)"
               style={{ mixBlendMode: "overlay", isolation: "isolate" }}
             />
           </g>
@@ -181,7 +181,7 @@ const Services6_6 = () => {
         width={433}
         height={496}
         transform="translate(31 123)"
-        fill="url(#pattern-2)"
+        fill="url(#pattern6_6_2)"
       />
       <g id="Content_S6_6">
         <text

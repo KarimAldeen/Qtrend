@@ -54,7 +54,7 @@ const page = () => {
       </div>
       <div className=' Drag5_Page_Body'>
         <Services6_6_BG />
-        {/* <Footer/> */}
+        <Footer/>
 
       </div>
     </div>
