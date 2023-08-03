@@ -4,8 +4,8 @@ import React, { useEffect, useState } from 'react';
 import {LuMail} from 'react-icons/lu'
 import{FaMobileAlt}from 'react-icons/fa'
 import {MdLocationOn} from 'react-icons/md'
-import NavBar from '@/Components/Utils/NavBar';
-import Footer from '@/Components/Utils/Footer';
+import NavBar from '../../Components/Utils/NavBar';
+import Footer from '../../Components/Utils/Footer';
 import Gradian from './Gradian';
 import MeatUS_BG from './MeatUS_BG';
 

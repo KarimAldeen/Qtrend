@@ -1,13 +1,13 @@
 "use client"
-import NavBar from '@/Components/Utils/NavBar'
+import NavBar from '../../../Components/Utils/NavBar'
 import React from 'react'
 import Girl from './Girl'
-import Footer from '@/Components/Utils/Footer'
-import FirstServiceFourInfo from '@/Components/Services/FirstServiceFourInfo'
-import ServiceOverAll from '@/Components/Services/ServiceOverAll'
-import ThirdPageService from '@/Components/Services/ThirdPageService'
+import Footer from '../../../Components/Utils/Footer'
+import FirstServiceFourInfo from '../../../Components/Services/FirstServiceFourInfo'
+import ServiceOverAll from '../../../Components/Services/ServiceOverAll'
+import ThirdPageService from '../../../Components/Services/ThirdPageService'
 import Hajeat from './Hajeat'
-import { ForthServicesPage } from '@/Components/Services/ForthServicesPage'
+import { ForthServicesPage } from '../../../Components/Services/ForthServicesPage'
 function FirstService() {
 
 

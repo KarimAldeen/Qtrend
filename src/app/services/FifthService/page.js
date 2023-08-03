@@ -1,11 +1,11 @@
-import FifthServiceSquare from '@/Components/Services/FifthServiceSquare';
-import Footer from '@/Components/Utils/Footer'
-import NavBar2 from '@/Components/Utils/NavBar2'
+import FifthServiceSquare from '../../../Components/Services/FifthServiceSquare';
+import Footer from '../../../Components/Utils/Footer'
+import NavBar2 from '../../../Components/Utils/NavBar2'
 import React from 'react'
 import {BsArrowRight} from "react-icons/bs"
 import { FaFacebookF, FaTiktok, FaWhatsapp, FaSnapchatGhost, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import {BiSolidRightArrow} from 'react-icons/bi'
-import Services5_BG from '@/Components/Services/Services5_BG';
+import Services5_BG from '../../../Components/Services/Services5_BG';
 const FifthService = () => {
   return (
       // Main Dev Page

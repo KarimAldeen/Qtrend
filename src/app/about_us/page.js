@@ -1,7 +1,7 @@
-import NavBar from '@/Components/Utils/NavBar'
+import NavBar from '../../Components/Utils/NavBar'
 import React from 'react'
 import { FaFacebookF, FaTiktok, FaWhatsapp, FaSnapchatGhost, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import Footer from '@/Components/Utils/Footer';
+import Footer from '../../Components/Utils/Footer';
 import { Frist_Section } from './AboutUS_Words';
 
 

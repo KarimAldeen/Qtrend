@@ -1,4 +1,4 @@
-import Services5_BG from '@/Components/Services/Services5_BG'
+import Services5_BG from '../../Components/Services/Services5_BG'
 import React from 'react'
 
 const test = () => {
