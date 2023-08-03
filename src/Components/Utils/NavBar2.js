@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo2 from '../../../public/Logo_Qtrend2.png'
-import { NavLinks } from '@/config/NavBarConfig'
+import { NavLinks } from '../../config/NavBarConfig'
 import Image from 'next/image'
 import Link from 'next/link'
 const NavBar2 = () => {
