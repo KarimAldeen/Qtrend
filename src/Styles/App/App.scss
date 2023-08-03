@@ -2,6 +2,19 @@
 @font-face {
   font-family: Inter;
   src: url('../../Utils/Fonts/Inter-VariableFont_slnt\,wght.ttf');
+  font-display: swap;
+}
+@font-face {
+  font-family: Roboto;
+  src: url('../../Utils/Fonts/Roboto-Bold.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Popping;
+  src: url('../../Utils/Fonts/Poppins-Regular.ttf');
+  font-display: swap;
+
 }
 
 body {
@@ -81,5 +94,27 @@ button,svg{
   50%  {opacity: 0;}
   75%  {opacity: 0;}
   85%  {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@mixin Flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes Face_Animation {
+    
+  0%   {  scale: 1;}
+  100%   {  scale: .7;}
+
+
+  
+}
+@keyframes Arrow2 {
+  0%   {opacity: 1;}
+  25%  {opacity: 0.4;}
+  50%  {opacity: 0.6;}
+  75%  {opacity: 0.8;}
   100% {opacity: 1;}
 }

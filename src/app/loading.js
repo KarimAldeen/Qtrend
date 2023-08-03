@@ -1,8 +1,10 @@
+'use client'
+import Preloader from '@/components/soon/Preloader'
 import React from 'react'
 
 function LoadingPage () {
   return (
-    <div>Loading ....</div>
+    <Preloader />
   )
 }
 

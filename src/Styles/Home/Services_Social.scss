@@ -7,11 +7,7 @@
     // background: red;
     padding-top: 1vw;
     max-width: 100%;
-    transform: translateY(72vw);
-    -webkit-transform: translateY(71.2vw);
-    -moz-transform: translateY(72vw);
-    -ms-transform: translateY(72vw);
-    -o-transform: translateY(72vw);
+    transform: translateY(75vw);
     display: flex;
     .Services_MIcon{
 
@@ -26,41 +22,19 @@
     -o-border-radius: 1vw;
     rotate: 130px;   
     transform: rotate(60deg);
-    -webkit-transform: rotate(60deg);
-    -moz-transform: rotate(60deg);
-    -ms-transform: rotate(60deg);
-    -o-transform: rotate(60deg);
     display: flex; justify-content: center; align-items: center;
-    transition: .4s ease-in-out;
-    -webkit-transition: .4s ease-in-out;
-    -moz-transition: .4s ease-in-out;
-    -ms-transition: .4s ease-in-out;
-    -o-transition: .4s ease-in-out;
+  
     &:hover{
         background-color: black;
         color: #C7F36C;
         border: .5vw solid black;
         transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transition: .4s ease-in-out;
-        -webkit-transition: .4s ease-in-out;
-        -moz-transition: .4s ease-in-out;
-        -ms-transition: .4s ease-in-out;
-        -o-transition: .4s ease-in-out;
+
+
         svg{
             transform: rotate(-0deg) !important;
-            -webkit-transform: rotate(-0deg) !important;
-            -moz-transform: rotate(-0deg) !important;
-            -ms-transform: rotate(-0deg) !important;
-            -o-transform: rotate(-0deg) !important;
-            transition: .4s ease-in-out;
-            -webkit-transition: .4s ease-in-out;
-            -moz-transition: .4s ease-in-out;
-            -ms-transition: .4s ease-in-out;
-            -o-transition: .4s ease-in-out;
+    
+           
 }
 }
 }
@@ -74,10 +48,6 @@ i{
 }
 svg{
     transform: rotate(-60deg);
-    -webkit-transform: rotate(-60deg);
-    -moz-transform: rotate(-60deg);
-    -ms-transform: rotate(-60deg);
-    -o-transform: rotate(-60deg);
     font-size: 3vw;
 
   

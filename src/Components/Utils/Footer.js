@@ -25,8 +25,8 @@ const Footer = () => {
                 <div className='Footer_Row'>
                     <h3>Company</h3>
                     <Link aria-label='About' href="about_us">About</Link> 
-                     <Link aria-label='Meet US' href="meet_us">Meet US</Link>
-                      <Link aria-label='Support' href="FirstService">Support</Link>
+                     <Link aria-label='Meet US' href="soon">Meet US</Link>
+                      <Link aria-label='Support' href="soon">Support</Link>
                        <Link aria-label='Our work' href="works">Our work</Link>
                 </div>
                 <div className='Footer_Row'>

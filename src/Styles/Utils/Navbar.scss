@@ -19,16 +19,10 @@
     }
 }
 
-@font-face {
-    font-family: Popping;
-    src: url('../../Utils/Fonts/Poppins-Regular.ttf');
-    font-display: swap;
- 
-  }
 .NavBar{
     position: absolute;
     width: fill;
-    padding: 2vw 4vw;
+    padding: 1vw 4.5vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,7 +39,7 @@
         justify-content: center; 
         align-items: center;
         svg{
-            width: 10vw !important;
+            width: 9vw !important;
             height: 5vw;
             path{
                 fill: white;
@@ -72,6 +66,14 @@
         border-radius: .4vw;
         position: relative;
         top: .2vw;
+     
+}
+}
+.NavBar6{
+    span{
+        background: white;
+        color: black;
+     
      
 }
 }

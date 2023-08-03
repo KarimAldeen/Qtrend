@@ -1,0 +1,63 @@
+.Top_Images{
+    scale: .5;
+    transform-origin: 48vw 18vw;
+    transition: 3.5s ease-in-out;
+
+ }
+ .Services6_2_Text{
+    transform: translateY(60vw);
+    transition: 2s ease-in-out;
+
+ }
+
+ .Services_6_2_Left_Rectangle{
+    transform: translate(-9.1px, 440px)
+                 translate(-120vw, 0);
+
+    transition: 2s ease-in-out;
+ }
+
+
+ ////////////// Transtion Start
+.S6_T2{
+    .Top_Images{
+        scale: 1;
+     }
+    .Drag2_Page_Body{
+        display: block;
+      
+    
+    
+    }
+    .Services6_1_BG{
+            transform: translateY(-62.9vw);   
+            transition: 2s ease-in-out;
+     
+        }
+   .Services6_2_BG{
+    width: 100vw;
+    height: 62.6vw;
+    transform: translateY(-62.9vw);   
+    transition: 2s ease-in-out;
+  
+
+   }
+
+   .Services6_2_Text{
+    transform: translateY(0vw);
+ }
+
+ .Services_6_2_Left_Rectangle{
+    transform: translate(-9.1px, 440px)
+                 translate(0vw, 0);
+ }
+ .Drag_3_Page_Down {
+   position: absolute;
+   bottom: 0vw;
+   height: 6vw;
+   width: 100vw;
+   cursor: pointer;
+   // background-color: red;
+
+ }
+}
