@@ -7,7 +7,7 @@ import Services6_1_BG from '../../../Components/Services6/Services6_1_BG'
 import React, { useState } from 'react'
 import NavBar6 from '../../../Components/Services6/NavBar6'
 import { Footer } from '../../../Components/Home'
-const page = () => {
+const SixPage = () => {
   const [ClassName, setClassName] = useState("Drag_Page")
   const handleDragStart = () => {
     setClassName("Drag_Page S6_T1")
@@ -61,4 +61,4 @@ const page = () => {
   )
 }
 
-export default page
+export default SixPage
