@@ -12,6 +12,7 @@
     position: relative;
     max-width: 100vw;
     overflow: hidden;
+    cursor: auto;
     .MeetUs_BG{
         img{
             max-width: 100vw;
@@ -123,7 +124,8 @@
        
     }
     // .Footer{
-    //     z-index: 99999 !important;
+    //     // height: 10vw ;
+    //     // margin-top: .1vw !important;
     // }
 }
 .Geadian{
@@ -131,7 +133,10 @@
     max-width: 100vw;
     width: 100vw;
     top: 0;
-    height: 98vw;
+    height: 97.2vw;
+    cursor: auto;
+    // margin-bottom: -2vw !important;
+    // margin-top: -.3vw;
     // animation: Ibrahem_Is_Trash 6s infinite;
     transition: .5s ease-in-out;
     .Geadian_1,.Geadian_2,.Geadian_3{
