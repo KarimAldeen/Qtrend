@@ -1,0 +1,22 @@
+{
+    
+    "arabic":"ภาษาอาหรับ",
+    "english":"ภาษาอังกฤษ",
+    "thailand":"ประเทศไทย",
+    "home": "บ้าน",
+    "service":"บริการ",
+    "about_us":"เกี่ยวกับเรา",
+    "contact_us":"ติดต่อเรา",
+    "get_started":"เริ่ม",
+    "learn_more":"เรียนรู้เพิ่มเติม",
+    "explore":"สำรวจ",
+    "get_in_touch":"ได้รับการติดต่อ",
+    "phone":"โทรศัพท์",
+    "email":"อีเมล",
+    "location":"ที่ตั้ง",
+    "your_name":"ชื่อของคุณ",
+    "subject":"เรื่อง",
+    "say_something":"พูดอะไรสักอย่าง",
+    "send_message":"ส่งข้อความ"
+
+}
