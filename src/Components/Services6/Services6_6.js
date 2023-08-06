@@ -1,6 +1,9 @@
+"use client"
+
 import React from 'react'
 
 const Services6_6 = () => {
+  const Karim = "2";
   return (
     <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +109,7 @@ const Services6_6 = () => {
               fontFamily="SegoeUI, Segoe UI"
             >
               <tspan x={0} y={47}>
-                2M+
+                {Karim}M+
               </tspan>
             </text>
             <text
