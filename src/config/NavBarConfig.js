@@ -7,7 +7,7 @@ export const NavLinks = [
     },
     {
         name:"OUR SERVICES",
-        href:"/services/FirstService"
+        href:"/services?param=1"
     }
     ,
     {
