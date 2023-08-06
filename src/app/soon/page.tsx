@@ -1,8 +1,8 @@
 'use client'
 import React, { ReactNode } from 'react'
-import Timer from '../../components/soon/Timer'
-import Optin from '../../components/soon/Optin'
-import Preloader from '../../components/soon/Preloader'
+import Timer from '../../Components/soon/Timer'
+import Optin from '../../Components/soon/Optin'
+import Preloader from '../../Components/soon/Preloader'
 function Soon():ReactNode {
     return (
         <div className='all'>
