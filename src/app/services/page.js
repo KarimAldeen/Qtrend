@@ -133,8 +133,8 @@ function FirstService(props) {
         </div>
       </div> 
         <ThirdPageService />
-        </div>
-<ForthServicesPage/>
+        </div>  
+        {/* <ForthServicesPage/> */}
 
         <Footer/>
     </div>

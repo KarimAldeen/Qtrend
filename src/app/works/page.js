@@ -5,6 +5,8 @@ import Footer from "../../Components/Utils/Footer";
 
 function Works() {
   return (
+    <>
+    
     <div className="work_page">
       <NavBar />
       {/* <img className="works_img" src="../Works/Works_BG.jpg" alt=""/> */}
@@ -53,8 +55,11 @@ function Works() {
       </div>
 
       <Footer/>
-
     </div>
+    
+
+</>
+
   );
 }
 
