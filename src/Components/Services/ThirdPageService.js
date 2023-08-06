@@ -5,7 +5,7 @@ import CardThirdService from './CardThirdService'
 
 function ThirdPageService() {
     useEffect(() => {
-        const IMages = ['/AboutUS/About_US.webp', '/works/1.webp', '/works/3.webp']
+        const IMages = ['/Services/Services3/5.png', '/Services/Services3/6.png', '/Services/Services3/7.png']
         let i = 0;
         setInterval(() => {
             let index = i
@@ -38,28 +38,28 @@ function ThirdPageService() {
                     <img
                         alt='/service'
                         className='img-service'
-                        src={'/Services/Services3/first.webp'}
+                        src={'/Services/Services3/1.png'}
                     />
                 </div>
                 <div className='img-service-container'>
                     <img
                         alt='/service'
                         className='img-service'
-                        src={'/Services/Services3/first.webp'}
+                        src={'/Services/Services3/2.png'}
                     />
                 </div>
                 <div className='img-service-container'>
                     <img
                         alt='/service'
                         className='img-service'
-                        src={'/Services/Services3/first.webp'}
+                        src={'/Services/Services3/3.png'}
                     />
                 </div>
                 <div className='img-service-container down-image'>
                     <img
                         alt='/service'
                         className='img-service'
-                        src={'/Services/Services3/first.webp'}
+                        src={'/Services/Services3/4.png'}
                     />
                 </div>
             </div>
