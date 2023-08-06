@@ -122,8 +122,8 @@ function FirstService() {
         </div>
       </div> 
         <ThirdPageService />
-        </div>
-<ForthServicesPage/>
+        </div>  
+        {/* <ForthServicesPage/> */}
 
         <Footer/>
     </div>
