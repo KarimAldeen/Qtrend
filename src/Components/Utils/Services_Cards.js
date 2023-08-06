@@ -1,13 +1,29 @@
 "use client"
-
+import { useRouter } from 'next/navigation'
 // import useHover from "@/hooks/useHover";
 import useHover from "../../hooks/useHover"
 
 
-const Services_Cards = ({Key,Word1,Word2}) => {
+const Services_Cards = ({ Key, Word1, Word2 }) => {
     const { isHovered, handleMouseEnter, handleMouseLeave } = useHover();
     const isHoveredClassName = isHovered ? `Card_1 Card_1_Hovered` : `Card_1`;
+    const router = useRouter()
+    const GoTOServicse = () => {
+        if(Key < 5){
+            router.push(`/services?param=${Key}`)
 
+        }
+        if(Key == 5){
+            router.push(`/services/FifthService`)
+  
+        }
+        if(Key == 6){
+            router.push(`/services/six_services`)
+  
+        }
+
+      
+    }
     return (
         <div className='Services_Cards'>
             <div className={`Main_Card Key_${Key}`}>
@@ -17,7 +33,7 @@ const Services_Cards = ({Key,Word1,Word2}) => {
                     onMouseLeave={handleMouseLeave}
                 >
                     {/* <h4>Ibra is Trash</h4> */}
-                    <img  src={`../Home/2+3/Services_Card/CARD${Key}.webp`}  alt="" />
+                    <img src={`../Home/2+3/Services_Card/CARD${Key}.webp`} alt="" />
                 </div>
                 <div
                     className="Card_2"
@@ -33,7 +49,7 @@ const Services_Cards = ({Key,Word1,Word2}) => {
                         </div>
                     </div>
                     <div className="Card_2_Down">
-                    <button>Know More</button>
+                        <button onClick={GoTOServicse}>Know More</button>
                     </div>
 
                 </div>

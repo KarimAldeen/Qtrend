@@ -10,7 +10,7 @@ import { Footer } from '../../../Components/Home'
 const SixPage = () => {
   const [ClassName, setClassName] = useState("Drag_Page")
   const handleDragStart = () => {
-    setClassName("Drag_Page S6_T1")
+    setClassName("Drag_Page S6_T1") 
   };
   const handleDrag2Start = () => {
     setClassName("Drag_Page S6_T1 S6_T2")

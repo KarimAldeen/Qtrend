@@ -1,27 +1,38 @@
 "use client"
-import NavBar from '../../../Components/Utils/NavBar'
-import React from 'react'
-import Girl from './Girl'
-import Footer from '../../../Components/Utils/Footer'
-import FirstServiceFourInfo from '../../../Components/Services/FirstServiceFourInfo'
-import ServiceOverAll from '../../../Components/Services/ServiceOverAll'
-import ThirdPageService from '../../../Components/Services/ThirdPageService'
-import Hajeat from './Hajeat'
-import { ForthServicesPage } from '../../../Components/Services/ForthServicesPage'
-function FirstService() {
+import NavBar from '../../Components/Utils/NavBar'
+import React, { useLayoutEffect } from 'react'
+import Girl from './FirstService/Girl'
+import Footer from '../../Components/Utils/Footer'
+import FirstServiceFourInfo from '../../Components/Services/FirstServiceFourInfo'
+import ServiceOverAll from '../../Components/Services/ServiceOverAll'
+import ThirdPageService from '../../Components/Services/ThirdPageService'
+import Hajeat from './FirstService/Hajeat'
+import { ForthServicesPage } from '../../Components/Services/ForthServicesPage'
 
-
+function FirstService(props) {
+  const Params =  props?.searchParams?.param
+  useLayoutEffect(() => {
+      if(Params == 2 ){
+        Transtion_Page2()
+      }      
+      if(Params == 3 ){
+        Transtion_Page2()
+        Transtion_Page3()
+      }
+      if(Params == 4 ){
+        Transtion_Page2()
+        Transtion_Page3()
+        document.getElementById("Transion_page").classList.add("Transion_page4")
+      }
+     
+  }, [Params])
   
   const Transtion_Page2 = () => {
     document.getElementById("Transion_page").classList.remove("Back_page")
     document.getElementById('ThirdService_page').style.display ='none'
-
     document.getElementById("Transion_page").classList.add("Transion_page")
     setTimeout(() => {
-
       document.getElementById("Transion_page").classList.add("Timer")
-      
-
     }, "500");
 
   }
