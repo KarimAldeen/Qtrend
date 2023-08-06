@@ -96,9 +96,9 @@ function FirstService(props) {
 
           <div className='FirstService_text'>
             <h3 className='title'>Branding and Identity:</h3>
-            <p className='description'>We help businesses build strong and memorable brand identities. Our team of talented designers and strategists will work closely with you to develop a unique brand identity that reflects your values, resonates with your target audience, and sets you apart from the competition. From logo design to brand guidelines, we'll ensure your brand stands out in a crowded marketplace.</p>
+            <p className='description'>We help businesses build strong and memorable brand identities. Our team of talented designers and strategists will work closely with you to develop a unique brand identity that reflects your values, resonates with your target audience, and sets you apart from the competition. From logo design to brand guidelines, we will ensure your brand stands out in a crowded marketplace.</p>
             <h3 className='title'>Graphic Design:</h3>
-            <p className='description'>Our creative designers have an eye for detail and a passion for creating visually stunning designs. Whether you need eye-catching brochures, engaging social media graphics, impactful packaging, or stunning print materials, we'll bring your vision to life and create designs that leave a lasting impression.</p>
+            <p className='description'>Our creative designers have an eye for detail and a passion for creating visually stunning designs. Whether you need eye-catching brochures, engaging social media graphics, impactful packaging, or stunning print materials, we will bring your vision to life and create designs that leave a lasting impression.</p>
         </div>
 
         </div>

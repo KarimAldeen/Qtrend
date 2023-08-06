@@ -36,12 +36,12 @@ const MeetUs = () => {
           <div className='MeetUs_mid_section_left'>
             <h1>Contact us</h1>
             <h2>
-              Don't hesitate to get in touch - we're here to answer<br /> your questions and provide guidance.
+              Don not hesitate to get in touch - we are here to answer<br /> your questions and provide guidance.
             </h2>
             <h3>
               Getting in touch with our company is the first step towards unlocking new possibilities
               <br />
-              for your business. Whether you're seeking innovative solutions, exploring collaboration opportunities,
+              for your business. Whether you a9re seeking innovative solutions, exploring collaboration opportunities,
               or simply looking for expert guidance, our team is here to help.
             </h3>
             <div className='MeetUs_info'>
