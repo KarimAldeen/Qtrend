@@ -1,21 +1,27 @@
+'use client'
 import { NavLinks } from '../../config/NavBarConfig'
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import Logo from './Logo'
-
+import BtnTranslate from './BtnTranslate'
+import { useTranslation } from 'react-i18next'
 function NavBar() {
+  const [t] = useTranslation();
+
   return (
     <div className={`NavBar`}>
           <Logo />
           <div className='Links'>
+            <div className='In_Link'> 
             {
               NavLinks?.map((i, index) => (
-                <Link key={index} href={i?.href}  >{i?.name}</Link>
+                <Link key={index} href={i?.href}  >{t(i?.name)}</Link>
 
               ))
             }
-            <span>AR</span>
+            </div>
+           
+            <BtnTranslate/>
           </div>
 
         </div>

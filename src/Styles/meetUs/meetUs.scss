@@ -211,15 +211,10 @@
 .MEETUS{
     width: 16.7vw;
     height: 13.7vw;
-    
-
 transform: translate(6.7vw, 29vw) 
 
 }
-.MeatUS_BG{
-    position: absolute;
 
-}
 .BigLogo{
     width: 48.6vw;
     height: 35.5vw;
@@ -229,6 +224,23 @@ transform: translate(6.7vw, 29vw)
 
 }
 .MeatUS_BG{
+    position: absolute;
     width: 106vw;
     height: 66.2vw;   
+}
+
+
+
+@include devices(BreakPoints){
+.MeetUs_mid_section{
+    flex-direction: column;
+}
+.MeetUs_mid_section_left{
+    margin-bottom: 15vw;
+}
+.MeetUs_mid_section_right{
+    @include Flex;
+    padding-right: 0 !important;
+    flex-direction: column;
+}
 }

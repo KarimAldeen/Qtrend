@@ -79,6 +79,12 @@ button,svg{
         }
       
     }
+    @if $breakpoint == BreakPoints {
+      @media only screen and (max-width: 550px) {
+        @content;
+      }
+    
+  }
   }
 
   .Yallow{
