@@ -241,6 +241,8 @@
 }
 @media screen and (max-width: 420px) {
    .Transion_page4{
+    overflow-x: hidden;
+    width: 100vw;
     .Footer{
         position: absolute !important;
         bottom: 0;
