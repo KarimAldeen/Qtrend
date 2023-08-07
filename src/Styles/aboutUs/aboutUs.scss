@@ -134,7 +134,9 @@
 }
 @include devices(frshan){
     .AboutUs_BG{
-        height: 100vh !important;
+        background:#bac3c7 !important;
+
+        min-height: 100vh !important;
     }
 }
 //MeatUS/BG/Womans_Gray.Webp
