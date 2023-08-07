@@ -17,7 +17,7 @@ const MeatUS_BG = () => {
       />
       <image
         className='Womans_Gray'
-        xlinkHref="../MeatUS/BG/Womans_Gray.Webp"
+        xlinkHref="../MeatUS/BG/Womans_Gray.webp"
       />
       <image
         className='Womans_Gray2'
