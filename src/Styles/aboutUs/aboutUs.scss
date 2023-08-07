@@ -1,5 +1,5 @@
 .AboutUs_page{
-    min-height: 120vw;
+    min-height: 130vw;
     position: relative;
     
     max-width: 100vw;
@@ -126,11 +126,15 @@
         // display: none;
     }
     .AboutUs_page{
-        height: max(100vh , 130vw) !important;
         .Footer{
             margin-top: 20vw;
         }
     }
 
+}
+@include devices(frshan){
+    .AboutUs_BG{
+        height: 100vh !important;
+    }
 }
 //MeatUS/BG/Womans_Gray.Webp
