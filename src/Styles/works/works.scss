@@ -83,3 +83,25 @@
     }
   
 }
+.work_page{
+    @media screen and (max-width: 370px) {
+      .text_works{
+        position: absolute;
+        top: 80vw;
+        margin-left:5vw;
+        font-size: 3vw;
+
+      }
+      .text_first{
+        font-size:6vw;
+      }
+      .text_second{
+        font-size:2vw;
+        margin-block: 2vw;
+      }
+      .text_third{
+        font-size:2vw;
+        line-height: 3vw;
+      }
+      }
+}

@@ -106,7 +106,7 @@
 }
 
 
-
+.AboutUs_page{
 @include  devices(mobile){
     .AboutUs_p{
         font-size: 1.5vw !important;
@@ -127,10 +127,10 @@
     }
   }
   @media screen and (max-width: 420px) {
-    .AboutUs_page{
+   
         background: #bac3c7;
             min-height: 100vh;
-    }
+    
     .AboutUs_info{
             background: #bac3c7;
             min-height: 20vh;
@@ -165,3 +165,4 @@
     }
    
   }
+}
