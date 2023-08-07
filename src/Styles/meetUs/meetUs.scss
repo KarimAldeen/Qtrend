@@ -237,30 +237,44 @@ transform: translate(6.7vw, 29vw)
     }
 }
 
-@include devices(BreakPoints){
-.MeetUs_mid_section{
-    flex-direction: column;
-    padding-top: 65vw !important;
-
-
-}
-.MeetUs_mid_section_left{
-    margin-bottom: 12vw;
-}
-.MeetUs_mid_section_right{
-    @include Flex;
-    padding-right: 0 !important;
-    flex-direction: column;
-}
-.Geadian{
-
-    height: 197.2vw;
-
-}
-.ar{
-    .MeetUs_info_1, .MeetUs_info_2 ,.MeetUs_info_3{
-        transform: translateX(7vw);
+.MeetUs{
+    @include devices(BreakPoints){
+        min-height: 100vh;
+    .MeetUs_mid_section{
+        flex-direction: column;
+        padding-top: 65vw !important;
+    
+    
     }
+    .MeetUs_mid_section_left{
+        margin-bottom: 12vw;
+    }
+    .MeetUs_mid_section_right{
+        @include Flex;
+        padding-right: 0 !important;
+        flex-direction: column;
+    }
+    .Geadian{
+    
+        height: 197.2vw;
+    
+    }
+    .ar{
+        .MeetUs_info_1, .MeetUs_info_2 ,.MeetUs_info_3{
+            transform: translateX(7vw);
+        }
+    }
+   
+    }
+    
+    
+    @media screen and (max-width: 370px) {
+            background-color: black;
+            min-height: 100vh;
+        .Footer{
+            position: absolute;
+            bottom: 0;
+        }
+        
+        }
 }
-}
-
