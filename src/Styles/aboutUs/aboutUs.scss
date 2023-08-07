@@ -40,7 +40,7 @@
         position: absolute;
         top: 0;
         .AboutUs_p{
-            padding-top: 50vw;
+            padding-top: 47vw;
             max-width: 75vw;
             position: relative;
             left: 11vw;
@@ -107,36 +107,61 @@
 
 
 
-@include  devices(S_mobile){
- 
+@include  devices(mobile){
+    .AboutUs_p{
+        font-size: 1.5vw !important;
+    }
+}
+@media screen and (max-width: 480px) {
     .AboutUs_info{
-        line-height: 2.5  !important;
-        h1{
-            font-size: 2vw !important;
-            
 
+        h1{
+            font-size: 3vw !important;
+            margin-bottom: 2vw !important;
         }
         h6{
-            font-size: 1.8vw !important;
-            line-height: 3 !important;
-            margin-bottom: 20vw;
+            font-size: 2vw !important;
+            line-height: 4vw !important;
+         
         }
-        // background: black;
-        // padding-bottom: 20vw;
-        // display: none;
     }
+  }
+  @media screen and (max-width: 420px) {
     .AboutUs_page{
-        .Footer{
-            margin-top: 20vw;
+        background: #bac3c7;
+            min-height: 100vh;
+    }
+    .AboutUs_info{
+            background: #bac3c7;
+            min-height: 20vh;
+        h1{
+            font-size: 4vw !important;
+            margin-bottom: 3vw !important;
+        }
+        h6{
+            font-size: 2vw !important;
+            line-height: 4vw !important;
+         
         }
     }
-
-}
-@include devices(frshan){
-    .AboutUs_BG{
-        background:#bac3c7 !important;
-
-        min-height: 100vh !important;
+    .Footer{
+        position: absolute;
+        bottom: 0;
     }
-}
-//MeatUS/BG/Womans_Gray.Webp
+  }
+  @media screen and (max-width: 370px) {
+  
+    .AboutUs_info{
+          
+        h1{
+            font-size: 5vw !important;
+            margin-bottom: 6vw !important;
+        }
+        h6{
+            font-size: 2.5vw !important;
+            line-height: 5vw !important;
+         
+        }
+    }
+   
+  }
