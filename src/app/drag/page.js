@@ -4,7 +4,7 @@ import Drage_Bg from './Drage_Bg'
 import NavBar6 from '../../Components/Services6/NavBar6'
 import { Footer } from '../../Components/Home'
 
-const page = () => {
+const Page = () => {
   const [ClassName, setClassName] = useState("")
   const handleDragStart = (e) => {
     setClassName(e) 
@@ -33,4 +33,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
