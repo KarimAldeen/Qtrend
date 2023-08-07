@@ -6,6 +6,9 @@
 
 .Transion_page4 {
     background-color: black;
+    .Footer{
+        position: relative;
+    }
     .Services123 {
         display: none;
 
@@ -235,4 +238,28 @@
   
 .swiper-wrapper{
     cursor: pointer;
+}
+@media screen and (max-width: 420px) {
+   .Transion_page4{
+    .Footer{
+        position: absolute !important;
+        bottom: 0;
+    }
+    .Ibrahem {
+        width: 100vw;
+        min-height: 100vh;
+    }
+    .First_Section{
+        padding-top: 15vh;
+    }
+    
+    .Second_Section {
+     
+        transform: translateY(-4vw);
+
+
+    }
+   }
+  
+
 }
