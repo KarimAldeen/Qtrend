@@ -1,8 +1,7 @@
 
 .work_page{
-    min-height: max(120vw, 0);
+    min-height: max(130vw, 100vh);
     position: relative;
-    
     max-width: 100%;
     background: #27aaa3 ;
     .Links{
@@ -75,150 +74,12 @@
             justify-content: center;
             padding-top: 1vw;
             margin-left: 8vw;
-            .img3{
-            }
-            .img2{
-                    // margin-left: 2vw;
-
-            }
-            .img5{
-                // margin-left: 2vw;
-            }
+         
           }
         }
     .Footer{
-        position: relative;
-        transform: translateY(10vw);
-        // padding-top: 100vw;
-        // margin-top: 100vw;
-        transition: 0s;
+        position: absolute;
+        bottom: 0;
     }
   
-
-@include devices (Minlaptop){
-    height: 100vh !important;
-    // min-height: 140vh !important;
-    .text_works{
-        padding-top: 6vw;
-        .text_first{
-            font-size: 3vw;
-        }
-        .text_second{
-            font-size: 2.5vw;
-            line-height: 4vw;
-        }
-        .text_third{
-            line-height: 2.5vw;
-        }
-    }
-    .works_img{
-        padding-top: 11vw;
-    }
-    .Footer{
-        // margin-top: 10vw;
-        position: relative;
-        transform: translateY(23vw);
-        padding-top: 5vw;
-    }
-
-}
-@include devices(tablet){
-    height: 110vh !important;
-    max-height: 120vh !important;
-    .text_works{
-        padding-top: 6vw;
-        .text_first{
-            font-size: 3vw;
-        }
-        .text_second{
-            font-size: 2.5vw;
-            line-height: 4vw;
-        }
-        .text_third{
-            line-height: 2.5vw;
-        }
-    }
-    .works_img{
-        padding-top: 11vw;
-    }
-    .Footer{
-        // margin-top: 10vw;
-        position: relative;
-        transform: translateY(30vw);
-        padding-top: 5vw;
-    }
-
-
-  }
-
-  @include devices(mobile){
-    height: 120vh  !important;
-    background: #27aaa3;
-    .NavBar{
-        height: 7vh !important;
-    }
-     .text_works{
-        padding-top: 17vw;
-        .text_first{
-            font-size: 3vw;
-        }
-        .text_second{
-            font-size: 2.5vw;
-            line-height: 5.5vw;
-        }
-        .text_third{
-            line-height: 4vw;
-        }
-    }
-    .works_img{
-        padding-top: 30vw;
-    }
-    .Footer{
-        position: relative;
-        transform: translateY(65vw);
-        padding-top: 7vw ;
-        padding-bottom: 7vw ;
-    }
-
-  }
-  @include devices (S_mobile){
-    // min-height: 80vh !important;
-    height: 102vh !important;
-    // min-height: 120vh  !important;
-    // min-height: 10vh !important;
-    max-height: 140vh  !important;
-    background: #27aaa3;
-    .NavBar{
-        height: 7vh !important;
-        // display: none;
-    }
-    .text_works{
-        padding-top: 27vw !important;
-        // margin-bottom: 100vw !important;
-        // padding-bottom: 100vw !important;
-        .text_first{
-            font-size: 3vw;
-        }
-        .text_second{
-            font-size: 2.5vw;
-            line-height: 5.5vw;
-        }
-        .text_third{
-            line-height: 4.5vw;
-        }
-    }
-    .works_img{
-        padding-top: 42vw;
-        
-        // padding-bottom: 100vw !important;
-        // margin-bottom: 100vw !important;
-    }
-    .Footer{
-        // margin-top: 10vw;
-        // position: relative;
-        transform: translateY(76vw);
-        padding-top: 9vw;
-        padding-bottom:11vw ;
-    }
-  }
 }
