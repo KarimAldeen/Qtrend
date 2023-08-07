@@ -33,11 +33,12 @@
             align-items: center;
             width: 60%;
             margin-top: 3.7vw;
-            margin-left: 5vw;
+            text-align: center;
             .MeetUs_info_1, .MeetUs_info_2 ,.MeetUs_info_3{
                 display: flex;
                 align-items: center;
                 margin-inline: 1vw;
+                
                 // background: inherit;
                 a{
                     // background: #ffffff;
@@ -66,6 +67,7 @@
                 }
             }
         }
+       
         .MeetUs_mid_section_left{
             display: flex;
             align-items: center;
@@ -73,7 +75,7 @@
             transform: translateY(-5vw);
             margin-left: 1vw;
             line-height: 2.7vw;
-
+                text-align: center;
              h2,h3{
             width: 90%;
             text-align: center;
@@ -229,18 +231,36 @@ transform: translate(6.7vw, 29vw)
     height: 66.2vw;   
 }
 
-
+.ar{
+    .MeetUs_info_1, .MeetUs_info_2 ,.MeetUs_info_3{
+        transform: translateX(-7vw);
+    }
+}
 
 @include devices(BreakPoints){
 .MeetUs_mid_section{
     flex-direction: column;
+    padding-top: 65vw !important;
+
+
 }
 .MeetUs_mid_section_left{
-    margin-bottom: 15vw;
+    margin-bottom: 12vw;
 }
 .MeetUs_mid_section_right{
     @include Flex;
     padding-right: 0 !important;
     flex-direction: column;
 }
+.Geadian{
+
+    height: 197.2vw;
+
 }
+.ar{
+    .MeetUs_info_1, .MeetUs_info_2 ,.MeetUs_info_3{
+        transform: translateX(7vw);
+    }
+}
+}
+

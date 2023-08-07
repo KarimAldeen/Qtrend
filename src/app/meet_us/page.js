@@ -8,10 +8,11 @@ import NavBar from '../../Components/Utils/NavBar';
 import Footer from '../../Components/Utils/Footer';
 import Gradian from './Gradian';
 import MeatUS_BG from './MeatUS_BG';
+import { useTranslation } from 'react-i18next';
 
 const MeetUs = () => {
   const [gradianClass, setGradianClass] = useState('Geadian_On_1');
-
+    const [t] = useTranslation()
   useEffect(() => {
     const intervalId = setInterval(() => {
       setGradianClass((prevClass) => {
@@ -34,15 +35,15 @@ const MeetUs = () => {
 
         <div className='MeetUs_mid_section'>
           <div className='MeetUs_mid_section_left'>
-            <h1>Contact us</h1>
+            <h1>{t("Contact us")}</h1>
             <h2>
-              Don not hesitate to get in touch - we are here to answer<br /> your questions and provide guidance.
+              {t("Don not hesitate to get in touch - we are here to answer")}<br /> {t("your questions and provide guidance.")}
             </h2>
             <h3>
-              Getting in touch with our company is the first step towards unlocking new possibilities
+              {t("Getting in touch with our company is the first step towards unlocking new possibilities")}
               <br />
-              for your business. Whether you a9re seeking innovative solutions, exploring collaboration opportunities,
-              or simply looking for expert guidance, our team is here to help.
+              {t("for your business. Whether you a9re seeking innovative solutions, exploring collaboration opportunities")}
+            {t("or simply looking for expert guidance, our team is here to help.")}
             </h3>
             <div className='MeetUs_info'>
           <div className='MeetUs_info_1'>
@@ -50,30 +51,30 @@ const MeetUs = () => {
             <FaMobileAlt/>
             </a>
          
-          <p>+(974)31111291 <br/>+(974)33330282 </p>
+          <p>{t("+(974)31111291")} <br/>{t("+(974)33330282 ")}</p>
           </div>
           <div className='MeetUs_info_2'>
           <a href='https://www.LuMail.com/' aria-label="LuMail" target="_blank" rel="noopener">
           <LuMail/>
             </a>
          
-          <p>Qtrend-qatar@gmail.com</p>
+          <p>{t("Qtrend-qatar@gmail.com")}</p>
           </div>
           <div className='MeetUs_info_3'>
           <a  href='https://www.MdLocationOn.com/' aria-label="MdLocationOn" target="_blank" rel="noopener">
           <MdLocationOn/>
             </a>
          
-          <p>Um Slal</p>
+          <p>{t("Um Slal")}</p>
           </div>
           
         </div>
           </div>
           <form className='MeetUs_mid_section_right'>
-            <input type='text' placeholder='Company Name' />
-            <input type='email' placeholder='Email' />
-            <input type='password' placeholder='Password' autoComplete='on' />
-            <textarea type='text' placeholder='Message' />
+            <input type='text' placeholder={t('Company Name')} />
+            <input type='email' placeholder={t('Email')} />
+            <input type='password' placeholder={t('Password')} autoComplete='on' />
+            <textarea type='text' placeholder={t('Message')} />
           </form>
         </div>
         <Footer />
