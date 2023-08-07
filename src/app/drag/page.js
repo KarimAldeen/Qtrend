@@ -1,56 +1,36 @@
 'use client'
-import React, { useRef, useState } from 'react';
-import FirstComponent from '../../Components/Drag/FirstComponent';
-import SecondComponent from '../../Components/Drag/SecondComponent';
-import ThirdComponent from '../../Components/Drag/ThirdComponent';
-import FourComponent from '../../Components/Drag/FourComponent';
-import FifthComponent from '../../Components/Drag/FifthComponent';
-import SixComponent from '../../Components/Drag/SixPart/SixComponent';
+import React, { useState } from 'react'
+import Drage_Bg from './Drage_Bg'
+import NavBar6 from '../../Components/Services6/NavBar6'
+import { Footer } from '../../Components/Home'
 
-function DragPage() {
-  
+const page = () => {
+  const [ClassName, setClassName] = useState("")
+  const handleDragStart = (e) => {
+    setClassName(e) 
+    if(e==1){setClassName("T6_1")}
+    if(e==2){setClassName("T6_1 T6_2")}
+    if(e==3){setClassName("T6_1 T6_2 T6_3")}
+    if(e==4){setClassName("T6_1 T6_2 T6_3 T6_4")}
+    if(e==5){setClassName("T6_1 T6_2 T6_3 T6_4 T6_5")}
+    if(e==6){setClassName("T6_1 T6_2 T6_3 T6_4 T6_5 T6_6")}
+  };
 
-  
 
-
-  
   return (
-    <div>
-        <FirstComponent />
-        <SecondComponent />
-        <ThirdComponent />
-        <FourComponent/>
-        <FifthComponent/>
-        {/* <SixComponent/> */}
+    <div className={` Drag_Pages ${ClassName}`}>
+         <NavBar6 />
+      <Drage_Bg/>
+      <div className='Drag_Down_1' onDrag={()=>handleDragStart(1)} draggable />
+      <div className='Drag_Down_2' onDrag={()=>handleDragStart(2)} draggable />
+      <div className='Drag_Down_3' onDrag={()=>handleDragStart(3)} draggable />
+      <div className='Drag_Down_4' onDrag={()=>handleDragStart(4)} draggable />
+      <div className='Drag_Down_5' onDrag={()=>handleDragStart(5)} draggable />
+      <div className='Drag_Down_6' onDrag={()=>handleDragStart(6)} draggable />
+<Footer/>
+
     </div>
-  );
+  )
 }
 
-export default DragPage;
-
-
-
-
-
-
-
-
-
-
-
-// const handleDragStart = () => {
-//     console.log('hello world')
-//     currentDiv.current.classList.add('transformToTop');
-//     setTimeout(() => {
-//         setCurrentPart(c => c+1)
-//     //   currentDiv.current.classList.add('AddDisplayNone');
-//     }, 2200);
-
-
-//     // setTimeout(()=>{
-//     //   setCurrentPart(c => c+1)
-
-//     // },3000)
-//     // nextDiv.current.classList.add('AddDisplayBlock');
-//   };
-
+export default page

@@ -79,6 +79,12 @@ button,svg{
         }
       
     }
+    @if $breakpoint == frshan {
+      @media only screen and (max-width: 400px) {
+        @content;
+      }
+    
+  }
   }
 
   .Yallow{

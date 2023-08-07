@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Home23_BG = () => {
+const Home23_BG = ({t}) => {
   return (
     <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -150,7 +150,7 @@ const Home23_BG = () => {
                     fontWeight={400}
                   >
                     <tspan x={0} y={38}>
-                      OUR SERVICES
+                      {t("OUR SERVICES")}
                     </tspan>
                   </text>
                 </g>
@@ -171,11 +171,11 @@ const Home23_BG = () => {
                     letterSpacing="-0.05em"
                   >
                     <tspan x={0} y={58}>
-                      WHAT WE
+                      {t("WHAT WE")}
                     </tspan>
                     <tspan fontSize="75.789">
-                      <tspan x={0} y={119}>
-                        DO
+                      <tspan className='Svg_DO' x={0} y={119}>
+                       {t("DO")}
                       </tspan>
                     </tspan>
                   </text>

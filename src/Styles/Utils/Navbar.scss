@@ -18,7 +18,11 @@
         }
     }
 }
-
+.ar{
+    .In_Link{
+        direction: rtl;
+    }
+}
 .NavBar{
     position: absolute;
     width: fill;
@@ -59,7 +63,7 @@
         background: black;
         color: white;
        padding: .6vw;
-       
+       cursor: pointer;
         font-weight: bold;
         font-size: 1.4vw;
         margin-left: 2vw;

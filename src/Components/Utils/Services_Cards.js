@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation'
 import useHover from "../../hooks/useHover"
 
 
-const Services_Cards = ({ Key, Word1, Word2 }) => {
+const Services_Cards = ({ Key, Word1, Word2 ,t}) => {
     const { isHovered, handleMouseEnter, handleMouseLeave } = useHover();
     const isHoveredClassName = isHovered ? `Card_1 Card_1_Hovered` : `Card_1`;
     const router = useRouter()
@@ -18,7 +18,7 @@ const Services_Cards = ({ Key, Word1, Word2 }) => {
   
         }
         if(Key == 6){
-            router.push(`/services/six_services`)
+            router.push(`/drag`)
   
         }
 
@@ -43,13 +43,13 @@ const Services_Cards = ({ Key, Word1, Word2 }) => {
                     <div className="Card_2_Top">
                         <h1>{Key}</h1>
                         <div className="Card_2_Top_Word">
-                            <h2>{Word1}</h2>
-                            <h3>{Word2}</h3>
+                            <h2>{t(Word1)}</h2>
+                            <h3>{t(Word2)}</h3>
 
                         </div>
                     </div>
                     <div className="Card_2_Down">
-                        <button onClick={GoTOServicse}>Know More</button>
+                        <button onClick={GoTOServicse}>{t("Know More")}</button>
                     </div>
 
                 </div>
