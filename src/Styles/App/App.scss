@@ -79,8 +79,8 @@ button,svg{
         }
       
     }
-    @if $breakpoint == BreakPoints {
-      @media only screen and (max-width: 550px) {
+    @if $breakpoint == frshan {
+      @media only screen and (max-width: 400px) {
         @content;
       }
     
