@@ -109,7 +109,7 @@
 .AboutUs_page{
 @include  devices(mobile){
     .AboutUs_p{
-        line-height: 1.7 !important;
+        // line-height: 1.7 !important;
         font-size: 1.4vw !important;
     }
 }
@@ -173,7 +173,9 @@
 @media screen and (max-width: 690px) {
 
     .AboutUs_p{
-        margin-bottom: 3vw !important;
+        font-weight: 500 !important;
+        line-height: 1.9 !important;
+        // margin-bottom: 3vw !important;
     }
 
 
