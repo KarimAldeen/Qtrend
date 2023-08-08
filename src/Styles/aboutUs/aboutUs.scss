@@ -40,7 +40,7 @@
         position: absolute;
         top: 0;
         .AboutUs_p{
-            padding-top: 47vw;
+            padding-top: 48vw;
             max-width: 75vw;
             position: relative;
             left: 11vw;
@@ -48,7 +48,7 @@
             color: #000000;
             text-align: center;
             font-family: Montserrat;
-            font-size: 1.7vw;
+            font-size: 1.65vw;
             font-weight: 545;
             line-height:1.6 ;
         }
@@ -139,12 +139,12 @@
             background: #bac3c7;
             min-height: 20vh;
         h1{
-            font-size: 4vw !important;
-            margin-bottom: 3vw !important;
+            font-size: 3.5vw !important;
+            margin-bottom: 2.5vw !important;
         }
         h6{
-            font-size: 2vw !important;
-            line-height: 4vw !important;
+            font-size: 1.5vw !important;
+            line-height: 3vw !important;
          
         }
     }
@@ -169,4 +169,12 @@
     }
    
   }
+}
+@media screen and (max-width: 690px) {
+
+    .AboutUs_p{
+        margin-bottom: 3vw !important;
+    }
+
+
 }
