@@ -6,7 +6,7 @@
             margin-top: 1vw ;
             margin-left: 15vw;
             font-family: Popping;
-          
+            
             div{
                 background: #D9D9D9;
                 width: 24vw;
@@ -27,6 +27,7 @@
                     font-size: 2.2vw;
                     font-style: normal;
                     font-weight: 900;
+                    font-family: Poppins;
                     letter-spacing: -.1vw;
                     display: flex;
                     justify-content: center;
@@ -38,9 +39,11 @@
                 h5{
                     height: 7vw;
                     color: #000;
-                    // font-family: Poppins;
+                    font-family: Poppins;
                     font-size: .9vw;
                     font-style: normal;
+                    // font-family: Popping;
+                   
                     font-weight: 700;
                     line-height:1.3vw;
                 }
@@ -70,7 +73,7 @@
                     height: 5.5vw;
                     background: #C7F36C;
                     color: #000;
-                    // font-family: Poppins;
+                    font-family: Poppins;
                     font-size: 2.2vw;
                     font-style: normal;
                     font-weight: 900;
@@ -85,7 +88,7 @@
                 h5{
                     height: 7vw;
                     color: #000;
-                    // font-family: Poppins;
+                    font-family: Poppins;
                     font-size: .9vw;
                     font-style: normal;
                     font-weight: 700;
