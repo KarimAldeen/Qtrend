@@ -240,9 +240,23 @@
             transform: translateY(-5px);
           }
           .FifthService_mid_sec_left{
-            max-height: 40vw;
+            max-height: 45vw;
           }
-        
+          .FifthService_mid_sec_left{
+            width: 70% !important;
+     
+            .FifthService_title{
+         
+                font-size: 5vw !important;
+                line-height: 6vw !important;
+              
+            }
+        }
+        .FifthService_desc{
+            font-size: 2.2vw !important;
+            line-height: 4vw !important;
+
+        }
     }
    
   }
