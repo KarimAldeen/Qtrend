@@ -84,7 +84,8 @@
   
 }
 .work_page{
-    @media screen and (max-width: 370px) {
+    @media screen and (max-width: 435px) {
+    // @media screen and (max-width: 370px) {
       .text_works{
         position: absolute;
         top: 80vw;
