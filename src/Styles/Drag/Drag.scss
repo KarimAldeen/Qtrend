@@ -1,3 +1,17 @@
+.Big_Arrow{
+   transition: .5s ease-in-out;
+        animation: Arrow 1s infinite;
+}
+.Mid_Arrow{
+    transition: .5s ease-in-out;
+    animation: Arrow 1.5s infinite;
+}
+.Small_Arrow{
+  transition: .5s ease-in-out;
+    animation: Arrow 2s infinite;
+}
+
+
 .Drag_Down_1,
 .Drag_Down_2,
 .Drag_Down_3,
@@ -302,5 +316,120 @@ opacity: .1;
     transition: 2s ease-in-out;
 
   }
+}
+
+
+.Drag_Pages{
+  @media screen and (max-width: 1000px) {
+    overflow: visible;
+    .Drag_Down_1,
+.Drag_Down_2,
+.Drag_Down_3,
+.Drag_Down_4,
+.Drag_Down_5,
+.Drag_Down_6{
+  display: none;
+    }
+    .Drag1_OP {
+      opacity: 0 !important;
+      transition: 1s ease-in-out;
+    }
+    .Drag_Down_1{
+      display: none;
+    }
+    .Drag_Down_2{
+      display: block !important;
+    }
+  
+      .Word_Section {
+      transform: translateY(0);
+      transition: 1s ease-in-out;
+  
+  
+    }
+  
+    .Looking {
+      transform: translatex(0);
+      transition: 1s ease-in-out;
+  
+  
+    }
+  
+    .Right_triangle {
+      transform: translate(1166.604px, 489.538px) translate(0, 0);
+      transition: 1s ease-in-out;
+  
+    }
+    .Services6_2_Text{
+      opacity: 1;
+      transform: translate(-17px, 899px)
+      translate(0, 0);
+   }
+  
+   .Services_6_2_Left_Rectangle{
+    transform: translate(-17px, 899px)
+    translate(0, 0);
+  
+   }
+   .Top_Images{
+              scale: 1;
+           }
+           .S6_3_Images{
+            scale: 1;
+           
+          }
+          .Star{
+            opacity: 1;
+            transform: translate(805px, 551px) ;
+            scale: 1;
+        }
+        .Media_Box {
+          transform: translate(0.525px ,1800px) translateX(0vw);
+        }
+        .Drage4_Left_Rectangel {
+          transform: translate(-7.833px ,1973.52px) translateX(0vw);
+          opacity: 1;
+          
+        }
+        .Drage4_Word {
+          transform: translate(224.526px, 2561px) translateY(0vw);
+        }
+        .S6_5_G{
+          scale: 1;
+         
+        }  
+      
+        .Path_15_2{
+          transform: translate(1150px ,270px)
+          rotate(-23deg) scale(.7);
+        }
+        .Mobile_image9{
+          transform: translateX(0vw);
+        }
+        
+   
+          .Footer{
+           position: relative;
+           bottom: 26vw;
+          }
+          .Path_15_2{
+            transform: translate(1150px ,270px)
+            rotate(-23deg) scale(.7);
+            transition: 2s ease-in-out;
+      
+          }
+          .Mobile_image9{
+            transform: translateX(0vw);
+            transition: 2s ease-in-out;
+      
+          }
+          .Content_S6_6{
+            transform: translateX(0vw);
+            transition: 2s ease-in-out;
+      
+          
+          }
+
+}
 }
 

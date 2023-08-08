@@ -1,6 +1,9 @@
+"use client"
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const Drage_Bg = () => {
+  const [t] = useTranslation()
   return (
     <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -633,7 +636,7 @@ const Drage_Bg = () => {
         letterSpacing="0.01em"
       >
         <tspan x={0} y={33}>
-          Drag up
+          {t("Drag up")}
         </tspan>
       </text>
     </g>
@@ -657,10 +660,10 @@ const Drage_Bg = () => {
         fontStyle="italic"
       >
         <tspan x={0} y={53}>
-          Looking For an
+          {t("Looking For an")}
         </tspan>
         <tspan x={0} y={104}>
-          Influencer ?
+          {t("Influencer ?")}
         </tspan>
       </text>
       <text
@@ -674,20 +677,19 @@ const Drage_Bg = () => {
         letterSpacing="-0.007em"
       >
         <tspan x={0} y={23}>
-          You can count on us to provide you with cutting-edge and visually
-          appealing{" "}
+          {t("You can count on us to provide you with cutting-edge and visually appealing")}{" "}
         </tspan>
         <tspan x={0} y={58}>
-          website designs. Our team of skilled designers specializes in creating{" "}
+          {t("website designs. Our team of skilled designers specializes in creating")}{" "}
         </tspan>
         <tspan x={0} y={93}>
-          modern and sleek designs that align with the latest design trends and{" "}
+         {t("modern and sleek designs that align with the latest design trends and")}{" "}
         </tspan>
         <tspan x={0} y={128}>
-          industry standards. Here are some key aspects of our modern web design{" "}
+          {t("industry standards. Here are some key aspects of our modern web design")}{" "}
         </tspan>
         <tspan x={0} y={163}>
-          services:
+          {t("services")}
         </tspan>
       </text>
     </g>
@@ -730,7 +732,7 @@ const Drage_Bg = () => {
           fontStyle="italic"
         >
           <tspan x={0} y={53}>
-            Maria
+            {t("Maria")}
           </tspan>
         </text>
       </g>
@@ -763,7 +765,7 @@ const Drage_Bg = () => {
           fontStyle="italic"
         >
           <tspan x={0} y={53}>
-            Nada
+            {t("Nada")}
           </tspan>
         </text>
       </g>
@@ -797,7 +799,7 @@ const Drage_Bg = () => {
           fontStyle="italic"
         >
           <tspan x={0} y={53}>
-            Aicha
+            {t("Aicha")}
           </tspan>
         </text>
       </g>
