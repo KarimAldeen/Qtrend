@@ -14,11 +14,11 @@ const Services_Cards = ({ Key, Word1, Word2 ,t}) => {
 
         }
         if(Key == 5){
-            router.push(`/services/FifthService`)
+            // router.push(`/services/FifthService`)
   
         }
         if(Key == 6){
-            router.push(`/drag`)
+            // router.push(`/drag`)
   
         }
 

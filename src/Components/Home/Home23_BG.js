@@ -142,12 +142,12 @@ const Home23_BG = ({t}) => {
                   <text
                     id="OUR_SERVICES-2"
                     data-name="OUR SERVICES"
-                    transform="translate(60 659)"
+                    transform="translate(55 659)"
                     fill="#404130"
-                    fontSize="39.071"
-                    fontFamily="Lalezar, Lalezar"
-                    letterSpacing="-0.05em"
-                    fontWeight={400}
+                    fontSize="39"
+                    fontFamily="Popping"
+                    letterSpacing="-0.09999em"
+                    fontWeight={900}
                   >
                     <tspan x={0} y={38}>
                       {t("OUR SERVICES")}
