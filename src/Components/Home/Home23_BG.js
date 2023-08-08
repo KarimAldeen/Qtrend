@@ -144,9 +144,9 @@ const Home23_BG = ({t}) => {
                     data-name="OUR SERVICES"
                     transform="translate(55 659)"
                     fill="#404130"
-                    fontSize="39"
+                    fontSize="38"
                     fontFamily="Popping"
-                    letterSpacing="-0.09999em"
+                    letterSpacing="-0.08em"
                     fontWeight={900}
                   >
                     <tspan x={0} y={38}>
