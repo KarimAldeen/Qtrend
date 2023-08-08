@@ -2,13 +2,7 @@
     position: relative;
     width: 100%;
     background: #f8f8f8;
-    // .NavBar2{
-    //     .Links{
-    //         a:nth-child(2){
-    //             color: #C7F36C !important;
-    //         }
-    //     }
-    // }
+ 
     .FifthService_mid_sec{
         display: flex; justify-content: space-between; align-items: center;
         width: 100%;    
@@ -203,6 +197,7 @@
 .Services5_BG{
     width: 100vw;
     height: 69.4vw;
+ 
   } 
   .C{
     transition: 1s ease-in-out;
@@ -225,4 +220,51 @@
     0%   { rotate: 0deg;}
     50%   { rotate: 45deg;}
     100%   { rotate: 0deg;}  
+
+
+    
+  }
+  .FifthService_page{
+    @media screen and (max-width: 450px) and (min-height: 700px){
+        // background-color: black;
+        min-height: 100vh;
+       
+        .Footer {
+            position: absolute;
+            bottom: 0;
+        }
+        .FifthService_mid_sec {
+            flex-direction: column;
+            background-color: #f8f8f8;
+            padding-top: 15vw;
+            transform: translateY(-5px);
+          }
+          .FifthService_mid_sec_left{
+            max-height: 40vw;
+          }
+        
+    }
+   
+  }
+
+
+ 
+  .FifthService_page{
+    @media screen and (max-width: 450px) and (max-height: 700px){
+        // background-color: black;
+        min-height: 100vh;
+       
+        // .Footer {
+        //     position: absolute;
+        //     bottom: 0;
+        // }
+        .FifthService_mid_sec {
+            background-color: #f8f8f8;
+            padding-top: 2vw;
+            transform: translateY(-5px);
+          }
+    }
+    
+    
+    
   }

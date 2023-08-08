@@ -58,11 +58,11 @@ const Services5_BG = () => {
         <image width={983} height={871} xlinkHref="../Services/Services5/Rectangle_3.webp" />
       </pattern>
       <clipPath id="clip-Services5">
-        <rect width={1440} height={1000} />
+        <rect width={1440} height={1100} />
       </clipPath>
     </defs>
     <g id="Services5" clipPath="url(#clip-Services5)">
-      <rect width={1440} height={1000} />
+      <rect width={1440} height={1000} className='Tototo' />
       <g id="Mask_Group_1" data-name="Mask Group 1" clipPath="url(#clip-path)">
         <g id="Sercul" transform="translate(830.5 118.5)" opacity="0.6">
           <circle
