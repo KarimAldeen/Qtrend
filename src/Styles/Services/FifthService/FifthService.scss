@@ -292,19 +292,44 @@
     
   }
   .FifthService_page{
-    @media screen and (max-width: 400px) and (max-height: 700px){
+    @media screen and (max-width: 400px) and (min-height: 500px){
         // background-color: black;
-        min-height: 100vh;
-       
-        // .Footer {
-        //     position: absolute;
-        //     bottom: 0;
-        // }
+        min-height: 100vh !important;
+        // display: none;
         .FifthService_mid_sec {
+            flex-direction: column;
             background-color: #f8f8f8;
-            padding-top: 2vw;
+            padding-top: 15vw;
             transform: translateY(-5px);
           }
+          .FifthService_mid_sec_left{
+            .FifthService_button{
+                height: 6vw !important;
+                width: 15vw !important; 
+            }
+            height: 60vw !important;
+          }
+          .FifthService_mid_sec_left{
+            width: 70% !important;
+     
+            .FifthService_title{
+         
+                font-size: 4vw !important;
+                line-height: 6vw !important;
+              
+            }
+        }
+        .FifthService_desc{
+            font-size: 2vw !important;
+            line-height: 3.3vw !important;
+
+        }
+        .FifthService_mid_sec_right{
+            min-height: 50vw;
+        }
+        .Footer{
+            padding-bottom: 4vw !important;
+        }
     }
     
     
