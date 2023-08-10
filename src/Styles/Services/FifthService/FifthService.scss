@@ -282,7 +282,7 @@
             transform: translateY(-5px);
           }
     }
-    @media screen and (max-width: 450px) and (max-height: 1000px){
+    @media screen and (max-width: 500px) and (max-height: 1000px){
         .Footer{
             padding-bottom: 6vw !important;
         }
@@ -337,7 +337,7 @@
     
   }
   .FifthService_page{
-    @media screen and (max-width: 255px) and (max-height: 750px){
+    @media screen and (max-width: 355px) and (max-height: 850px){
         min-height: 120vw !important;
         .FifthService_mid_sec_left{
             // height: 60vw !important;
