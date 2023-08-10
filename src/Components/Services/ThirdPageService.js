@@ -2,8 +2,9 @@
 import Image from 'next/image'
 import React, { useEffect } from 'react'
 import CardThirdService from './CardThirdService'
-
+import { useTranslation } from 'react-i18next'
 function ThirdPageService() {
+    const [t] = useTranslation()
     useEffect(() => {
         const IMages = ['/Services/Services3/5.png', '/Services/Services3/6.png', '/Services/Services3/7.png']
         let i = 0;
@@ -63,7 +64,7 @@ function ThirdPageService() {
                     />
                 </div>
             </div>
-            <CardThirdService title={'PHOTOS'}
+            <CardThirdService title={('PHOTOS')}
                 style={{
                     margin: "auto",
                     marginTop: "1.5vw"
@@ -77,12 +78,12 @@ function ThirdPageService() {
             <div className='third-row-service-third'>
 
                 <CardThirdService title={'VIDEO TAPING'} description={
-                    `Having our company in charge of video taping
+               t(`Having our company in charge of video taping
          ensures that the videos align with your brand's 
          visual identity and guidelines. The videos will 
          reflect the same aesthetics, style, and tone that your
           brand is known for, creating a consistent and recognizable
-           brand presence across all your video content. `}
+           brand presence across all your video content.`)}
                     classNameForDescription={'card-service-third-row-p'}
 
                 />

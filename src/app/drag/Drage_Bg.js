@@ -417,7 +417,7 @@ const Drage_Bg = () => {
         fontStyle="italic"
       >
         <tspan x={0} y={53}>
-          Looking For
+         {t("Looking For")}
         </tspan>
       </text>
       <g id="BLOGGERS-2" data-name="BLOGGERS" transform="translate(932 207)">
@@ -440,7 +440,7 @@ const Drage_Bg = () => {
             letterSpacing="-0.05em"
           >
             <tspan x={0} y={58}>
-              BLOGGERS
+              {t("BLOGGERS")}
             </tspan>
           </text>
         </g>
@@ -475,7 +475,7 @@ const Drage_Bg = () => {
           letterSpacing="-0.05em"
         >
           <tspan x={0} y={81}>
-            SERVICES
+            {t("SERVICES")}
           </tspan>
         </text>
         <text
@@ -489,7 +489,7 @@ const Drage_Bg = () => {
           letterSpacing="-0.05em"
         >
           <tspan x={0} y={58}>
-            BLOGGERS
+            {t("BLOGGERS")}
           </tspan>
         </text>
       </g>
@@ -504,15 +504,17 @@ const Drage_Bg = () => {
         letterSpacing="-0.007em"
       >
         <tspan x={0} y={23}>
-          If you're in search of a reliable blogger or influencer to promote
-          your business, you've come to the right place! We{" "}
+        {t("If you're in search of a reliable blogger or influencer to promote your business, you've come to the right place! We")}
+          {/* If you're in search of a reliable blogger or influencer to promote
+          your business, you've come to the right place! We{" "} */}
         </tspan>
         <tspan x={0} y={58}>
-          specialize in connecting you with Qatar's most active and successful
-          profiles, ensuring you get the exposure and reach{" "}
+        {t("specialize in connecting you with Qatar's most active and successful profiles, ensuring you get the exposure and reach")}
+          {/* specialize in connecting you with Qatar's most active and successful
+          profiles, ensuring you get the exposure and reach{" "} */}
         </tspan>
         <tspan x={0} y={93}>
-          you need to grow your brand.
+          {t("you need to grow your brand.")}
         </tspan>
       </text>
       <g id="Contact_us" data-name="Contact us" transform="translate(436 759)">
@@ -549,7 +551,7 @@ const Drage_Bg = () => {
           letterSpacing="0.006em"
         >
           <tspan  y={27}>
-            Contact us
+            {t("Contact us")}
           </tspan>
         </text>
       </g>
@@ -850,7 +852,7 @@ const Drage_Bg = () => {
             fontStyle="italic"
           >
             <tspan x={0} y={43}>
-              Saad
+              {t("Saad")}
             </tspan>
           </text>
         </g>
@@ -880,7 +882,7 @@ const Drage_Bg = () => {
             fontStyle="italic"
           >
             <tspan x={0} y={43}>
-              Ahmed
+              {t("Ahmed")}
             </tspan>
           </text>
         </g>
@@ -910,7 +912,7 @@ const Drage_Bg = () => {
             fontStyle="italic"
           >
             <tspan x={0} y={43}>
-              Ali
+              {t("Ali")}
             </tspan>
           </text>
         </g>
@@ -1129,10 +1131,11 @@ const Drage_Bg = () => {
         fontStyle="italic"
       >
         <tspan x={0} y={47}>
-          Social Media{" "}
+          {t("Social Media")}
+          {/* Social Media{" "} */}
         </tspan>
         <tspan x={0} y={91}>
-          Accounts Verification
+          {t("Accounts Verification")}
         </tspan>
       </text>
       <g id="Star" transform="translate(805 551)" className='Star'>
@@ -1178,16 +1181,15 @@ const Drage_Bg = () => {
       letterSpacing="-0.007em"
     >
       <tspan x={0} y={23}>
-        Social media account verification is a process through which social
-        media platforms authenticate the{" "}
+        {t("Social media account verification is a process through which social media platforms authenticate the")}
+        {/* {" "} */}
       </tspan>
       <tspan x={0} y={58}>
-        identity of a user or entity to confirm that the account is genuine and
-        belongs to the claimed individual or{" "}
+        {t("identity of a user or entity to confirm that the account is genuine and belongs to the claimed individual or")}
+        {/* {" "} */}
       </tspan>
       <tspan x={0} y={93}>
-        organization. Verification badges or ticks are commonly used to signify
-        that an account has been verified.
+        {t("organization. Verification badges or ticks are commonly used to signify that an account has been verified.")}
       </tspan>
     </text>
     <g id="Group_8" data-name="Group 8" transform="translate(0 2699)" >
@@ -1259,20 +1261,19 @@ const Drage_Bg = () => {
             letterSpacing="-0.007em"
           >
             <tspan x={0} y={19}>
-              If you are looking for a third-party account verification service
-              that specializes in verifying{" "}
+              {t("If you are looking for a third-party account verification service that specializes in verifying")}
+              {/* {" "} */}
             </tspan>
             <tspan x={0} y={47}>
-              social media accounts, there are various companies and services
-              available. These{" "}
+              {t("social media accounts, there are various companies and services available. These")}
+              {/* {" "} */}
             </tspan>
             <tspan x={0} y={75}>
-              services are typically used by businesses, influencers, or
-              individuals who want to{" "}
+              {t("services are typically used by businesses, influencers, or individuals who want to")}
+              {" "}
             </tspan>
             <tspan x={0} y={103}>
-              establish credibility and trust by verifying their social media
-              accounts.
+              {t("establish credibility and trust by verifying their social media accounts.")}
             </tspan>
           </text>
         </g>
@@ -1325,20 +1326,19 @@ const Drage_Bg = () => {
           letterSpacing="-0.007em"
         >
           <tspan x={0} y={19}>
-            If you are looking for a third-party account verification service
-            that specializes in verifying{" "}
+            {t("If you are looking for a third-party account verification service that specializes in verifying")}
+            {/* {" "} */}
           </tspan>
           <tspan x={0} y={47}>
-            social media accounts, there are various companies and services
-            available. These{" "}
+            {t("social media accounts, there are various companies and services available. These")}
+            {/* {" "} */}
           </tspan>
           <tspan x={0} y={75}>
-            services are typically used by businesses, influencers, or
-            individuals who want to{" "}
+            {t("services are typically used by businesses, influencers, or individuals who want to")}
+            {/* {" "} */}
           </tspan>
           <tspan x={0} y={103}>
-            establish credibility and trust by verifying their social media
-            accounts.
+            {t("establish credibility and trust by verifying their social media accounts.")}
           </tspan>
         </text>
       </g>
@@ -1390,20 +1390,19 @@ const Drage_Bg = () => {
           letterSpacing="-0.007em"
         >
           <tspan x={0} y={19}>
-            If you are looking for a third-party account verification service
-            that specializes in verifying{" "}
+            {t("If you are looking for a third-party account verification service that specializes in verifying")}
+            {/* {" "} */}
           </tspan>
           <tspan x={0} y={47}>
-            social media accounts, there are various companies and services
-            available. These{" "}
+            {t("social media accounts, there are various companies and services available. These")}
+            {/* {" "} */}
           </tspan>
           <tspan x={0} y={75}>
-            services are typically used by businesses, influencers, or
-            individuals who want to{" "}
+            {t("services are typically used by businesses, influencers, or individuals who want to")}
+            {/* {" "} */}
           </tspan>
           <tspan x={0} y={103}>
-            establish credibility and trust by verifying their social media
-            accounts.
+            {t("establish credibility and trust by verifying their social media accounts.")}
           </tspan>
         </text>
       </g>
@@ -1506,7 +1505,7 @@ const Drage_Bg = () => {
               fontFamily="Inter-Regular, Inter"
             >
               <tspan x={0} y={13}>
-                Tickets Delivered This Month
+                {t("Tickets Delivered This Month")}
               </tspan>
             </text>
           </g>
@@ -1532,7 +1531,7 @@ const Drage_Bg = () => {
               fontFamily="Inter-Regular, Inter"
             >
               <tspan x={0} y={13}>
-                Active Customers Rate
+                {t("Active Customers Rate")}
               </tspan>
             </text>
           </g>
@@ -1558,7 +1557,7 @@ const Drage_Bg = () => {
               fontFamily="Inter-Regular, Inter"
             >
               <tspan x={0} y={13}>
-                Customer Satisfaction Rate
+                {t("Customer Satisfaction Rate")}
               </tspan>
             </text>
           </g>
@@ -1582,10 +1581,11 @@ const Drage_Bg = () => {
           fontFamily="SegoeUI, Segoe UI"
         >
           <tspan x={0} y={65}>
-            Numbers are{" "}
+            {t("Numbers are")}
+            {/* {" "} */}
           </tspan>
           <tspan x={0} y={131}>
-            telling our story
+            {t("telling our story")}
           </tspan>
         </text>
         <text
@@ -1596,13 +1596,15 @@ const Drage_Bg = () => {
           fontFamily="Inter-Regular, Inter"
         >
           <tspan x={0} y={17}>
-            Amet minim mollit non deserunt ullamco est sit{" "}
+            {t("Amet minim mollit non deserunt ullamco est sit")}
+            {/* {" "} */}
           </tspan>
           <tspan x={0} y={45}>
-            aliqua dolor do amet sint. Velit officia consequat{" "}
+            {t("aliqua dolor do amet sint. Velit officia consequat")}
+            {/* {" "} */}
           </tspan>
           <tspan x={0} y={73}>
-            duis enim velit mollit.
+            {t("duis enim velit mollit.")}
           </tspan>
         </text>
       </g>
