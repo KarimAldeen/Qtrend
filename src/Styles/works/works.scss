@@ -20,8 +20,9 @@
         align-items: center;
         flex-direction: column;
         position: absolute;  
-        // width: 100vw;
-        margin-left: 35vw;
+        width: 100%;
+        margin-left: 18vw;
+        margin-top: 4vw;
         overflow: hidden;
     }
     .text_first{
@@ -31,7 +32,6 @@
       padding-top: 32vw;
       text-transform: uppercase;
       letter-spacing: .7vw;
-      margin-bottom: 1.2vw;
     }
     .text_second{
         color: #3B3D3E;
@@ -39,6 +39,7 @@
         // font-family: Roboto; 
         font-weight: 700;
         font-size: 2.3vw;
+        width: 90vw;
     }
     .text_third{
         color: #FFF;
@@ -47,11 +48,10 @@
         font-size: 1.3vw ;
         font-weight: 300;
         line-height:1.8vw ;
-        margin-left:7vw ; 
+        width: 80vw;
     }
     .works_img{
         width: 100%; 
-        // margin-left: 2vw;
         img{
                     width: 23vw;
                     margin-left: 1.5vw;

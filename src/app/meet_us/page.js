@@ -32,10 +32,14 @@ const MeetUs = () => {
           <MeatUS_BG />
           <Gradian />
         </div>
-
+        <div className='MEET_US_WORD'>
+            <h6 className='Meet_WORD'>{t("MEET")}</h6>
+            <h6 className='US_WORD'>{t("US")}</h6>
+        </div>
         <div className='MeetUs_mid_section'>
+          
           <div className='MeetUs_mid_section_left'>
-            <h1>{t("Contact us")}</h1>
+            <h1>{t("Contact us")} </h1>
             <h2>
               {t("Don not hesitate to get in touch - we are here to answer")}<br /> {t("your questions and provide guidance.")}
             </h2>
