@@ -20,7 +20,7 @@ const Services4_Images = ({ Word, Data }) => {
   return (
     <div className='Services4_Images'>
       <div className='Swiper_Image'>
-        <img alt=' ' src={`../Services/Services4/${Word}.svg`} className='Swiper_Words' />
+        {/* <img alt=' ' src={`../Services/Services4/${Word}.svg`} className='Swiper_Words' /> */}
 
         <Swiper
           spaceBetween={50}

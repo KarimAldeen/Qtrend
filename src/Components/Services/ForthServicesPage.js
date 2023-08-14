@@ -13,6 +13,20 @@ export const ForthServicesPage = () => {
     }
     return (
         <div className='ForthServicesPage'>
+            <div className='modles_div'>
+                <div className='female'>
+                    <div className='female_models'>{t("female")}</div>
+                    <span>{t("models")}</span>
+                </div>
+                <div className='male'>
+                    <div className='male_models'>{t("male")}</div>
+                    <span>{t("models")}</span>
+                </div>
+                <div className='kids'>
+                    <div className='Kids_models'>{t("kids")}</div>
+                    <span>{t("models")}</span>
+                </div>
+            </div>
             <img src='../Services/Services4/Ibrahem.webp' alt='' className='Ibrahem' />
             <div className='ForthServices_Body'>
                 <div className='First_Section'>

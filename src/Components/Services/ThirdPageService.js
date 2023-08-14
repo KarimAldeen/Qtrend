@@ -64,27 +64,18 @@ function ThirdPageService() {
                     />
                 </div>
             </div>
-            <CardThirdService title={('PHOTOS')}
+            <CardThirdService title={t('PHOTOS')}
                 style={{
                     margin: "auto",
                     marginTop: "1.5vw"
 
-                }} description={
-                    `Leverage your in-depth brand knowledge,
-        seamless integration capabilities, cost savings, and collaborative spirit to
-         create visuals that authentically represent your brand and resonate with your target audience.`} />
+                }} description={t("Leverage your in-depth brand knowledge, seamless integration capabilities, cost savings, and collaborative spirit to create visuals that authentically represent your brand and resonate with your target audience.")} />
 
 
             <div className='third-row-service-third'>
 
-                <CardThirdService title={'VIDEO TAPING'} description={
-               t(`Having our company in charge of video taping
-         ensures that the videos align with your brand's 
-         visual identity and guidelines. The videos will 
-         reflect the same aesthetics, style, and tone that your
-          brand is known for, creating a consistent and recognizable
-           brand presence across all your video content.`)}
-                    classNameForDescription={'card-service-third-row-p'}
+                <CardThirdService title={t('VIDEO TAPING')} description={t("Having our company in charge of video taping ensures that the videos align with your brand's visual identity and guidelines. The videos will reflect the same aesthetics, style, and tone that your brand is known for, creating a consistent and recognizable brand presence across all your video content.")}
+                classNameForDescription={'card-service-third-row-p'}
 
                 />
 
