@@ -196,6 +196,26 @@
                 font-size:3.5vw;
         }
     } 
+    .First{
+        // display: none;
+        position: absolute;
+        // background: #014e54;
+        margin: 26.8vw 0vw 0vw 8vw;
+        line-height: 2.7vw;
+        .APPS{
+            font-size: 4.5vw;
+            font-weight: 900;
+            color: #AFEF2C;
+            letter-spacing: -.1vw;
+        }
+        .DEVELOPMENT{
+            font-size: 2vw;
+            font-weight: 900;
+            color: #AFEF2C; 
+            letter-spacing: -.1vw;
+            // margin-left: -.1vw;
+        }
+    }
 }
 .Services5_BG{
     width: 100vw;

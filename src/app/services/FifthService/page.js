@@ -14,6 +14,18 @@ const FifthService = () => {
   return (
       // Main Dev Page
     <div className='FifthService_page'>
+      <div className='First'>
+        <h1 className='APPS'>{t("APPS")}</h1>
+        <h2 className='DEVELOPMENT'>{t("DEVELOPMENT")}</h2>
+      </div>  
+      {/* <div className='Second'>  
+        <h1 className='WEB'>WEB</h1>
+        <h2 className='DEVELOPMENT'>DEVELOPMENT</h2>
+      </div> 
+      <div className='Third'>
+        <h1 className='APPS_&_WEB'>APPS & WEB</h1>
+        <h2 className='DEVELOPMENT'>DEVELOPMENT</h2>
+      </div>   */}
       {/* NavBar */}
         <NavBar2/>
       {/* BG Image */}
