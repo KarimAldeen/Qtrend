@@ -167,7 +167,7 @@ const Services5_BG = () => {
 
         {/* apps and webs */}
 
-        <g id="APPS_WEB" transform="translate(45 655)">
+        {/* <g id="APPS_WEB" transform="translate(45 655)">
           <g id="Group_2" data-name="Group 2" clipPath="url(#clip-path-2)">
             <path
               id="Path_5"
@@ -184,7 +184,7 @@ const Services5_BG = () => {
               fill="#fff"
             />
           </g>
-        </g>
+        </g> */}
         <image
           id="Mobile"
           width={288}
@@ -192,7 +192,8 @@ const Services5_BG = () => {
           transform="translate(377 159)"
           xlinkHref="../Services/Services5/Mobile.webp"
         />
-        <g
+            {/* WEB DEVELOPMENT */}
+        {/* <g
           id="Web_Developer"
           data-name="Web Developer"
           transform="translate(946.572 143.828)"
@@ -209,7 +210,7 @@ const Services5_BG = () => {
             d="M67.75,12.171,57.492,57H40.017L34.825,31.546,29.633,57H12.157L1.9,12.171H17.032l4.052,28.24,6.078-28.24H42.486l6.079,28.24,4.052-28.24ZM83.681,23.378v5.509h13.93V39.461H83.681v6.332H99.511V57H69.625V12.171H99.511V23.378Zm47.974,10.637a10.487,10.487,0,0,1,6.268,3.926,10.676,10.676,0,0,1,2.28,6.775q0,5.889-3.926,9.118Q132.414,57,125.133,57H101.642V12.171H124.5q6.839,0,10.764,2.976t3.926,8.675a10.6,10.6,0,0,1-2.09,6.648A9.681,9.681,0,0,1,131.655,34.016ZM115.7,29.647h5.445a4.226,4.226,0,0,0,2.786-.76,2.82,2.82,0,0,0,.95-2.343,2.9,2.9,0,0,0-.95-2.406,4,4,0,0,0-2.786-.823H115.7Zm6.4,16.083a4.506,4.506,0,0,0,2.786-.7,2.9,2.9,0,0,0,.949-2.406q0-3.229-3.735-3.229h-6.4v6.332Z"
             fill="#afef2c"
           />
-        </g>
+        </g> */}
         <g id="Mid_Resercul"className='Mid_Resercul' transform="translate(568 701)">
           <path
             id="Path_10"

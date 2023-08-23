@@ -18,14 +18,14 @@ const FifthService = () => {
         <h1 className='APPS'>{t("APPS")}</h1>
         <h2 className='DEVELOPMENT'>{t("DEVELOPMENT")}</h2>
       </div>  
-      {/* <div className='Second'>  
-        <h1 className='WEB'>WEB</h1>
-        <h2 className='DEVELOPMENT'>DEVELOPMENT</h2>
+      <div className='Second'>  
+        <h1 className='WEB'>{t("WEB")}</h1>
+        <h2 className='DEVELOPMENT'>{t("DEVELOPMENT")}</h2>
       </div> 
       <div className='Third'>
-        <h1 className='APPS_&_WEB'>APPS & WEB</h1>
-        <h2 className='DEVELOPMENT'>DEVELOPMENT</h2>
-      </div>   */}
+        <h1 className='APPS_and_WEB'>{t("APPS & WEB")}</h1>
+        <h2 className='DEVELOPMENT'>{t("DEVELOPMENT")}</h2>
+      </div>  
       {/* NavBar */}
         <NavBar2/>
       {/* BG Image */}
@@ -54,7 +54,7 @@ const FifthService = () => {
               <FifthServiceSquare 
               classNameForSquare={"FifthService_square2"}
               title={t("User Experience (UX) Design:")}
-              desc={t("UX design focuses on creating a positive and intuitive user experience for website visitors. It involves designing the website's navigation, interaction elements, and user flows to ensure ease of use and satisfaction.")}
+              desc={t("UX design focuses on creating a positive and intuitive user experience for website visitors. It involves designing the website's navigation, interaction elements, and user flows to ensure ease of use and satisfaction. ")}
               last={t("Learn more about Exchanges")}
               icon={<BsArrowRight/>}
               />  

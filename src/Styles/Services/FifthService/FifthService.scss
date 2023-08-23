@@ -5,7 +5,7 @@
  
     .FifthService_mid_sec{
         display: flex; justify-content: space-between; align-items: center;
-        width: 100%;    
+        // width: 100%;    
         .FifthService_mid_sec_left{
             width: 38%;
             margin: -10vw 0vw 0vw 6vw;
@@ -136,7 +136,7 @@
                 display: flex; justify-content: center; flex-direction: column;
                 border-radius: 1vw;
                 background: #D7D7D7;
-                height: 20vw;
+                min-height: 20vw;
                 width: 20vw;
                 padding-left: 2vw;
                 .square_title{
@@ -197,9 +197,7 @@
         }
     } 
     .First{
-        // display: none;
         position: absolute;
-        // background: #014e54;
         margin: 26.8vw 0vw 0vw 8vw;
         line-height: 2.7vw;
         .APPS{
@@ -213,7 +211,40 @@
             font-weight: 900;
             color: #AFEF2C; 
             letter-spacing: -.1vw;
-            // margin-left: -.1vw;
+        }
+    }
+    .Second{
+        position: absolute;
+        margin: 10.8vw 0vw 0vw 65.7vw;
+        line-height: 2.7vw;
+        .WEB{
+            font-size: 4.4vw;
+            font-weight: 900;
+            color: #AFEF2C;
+            letter-spacing: -.1vw;
+        }
+        .DEVELOPMENT{
+            font-size: 2vw;
+            font-weight: 900;
+            color: #AFEF2C; 
+            letter-spacing: -.1vw;
+        }
+    }
+    .Third{
+        position: absolute;
+        margin: 48.5vw 0vw 0vw 3.5vw;
+        line-height: 3.6vw;
+        .APPS_and_WEB{
+            font-size: 3.7vw;
+            font-weight: 900;
+            color: #ffffff;
+            letter-spacing: -.2vw;
+        }
+        .DEVELOPMENT{
+            font-size: 4.9vw;
+            font-weight: 900;
+            color: #ffffff; 
+            letter-spacing: -.2vw;
         }
     }
 }

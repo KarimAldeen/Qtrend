@@ -42,7 +42,7 @@ export const ForthServicesPage = () => {
                         </div>
                         <div className='Second_LeftSection'>
                             <h3>
-                            {t("We understand that every project is unique, and we pride ourselves on offering a wide range of models to meet your specific requirements. Whether you need fashion models, runway models, commercial models, or promotional models, we have a diverse pool of talent ready to fulfill your needs.")}
+                            {t("We understand that every project is unique, and we pride ourselves on offering a wide range of models to meet your specific requirements. Whether you need fashion models, runway models, commercial models, or promotional models, we have a diverse pool of talent ready to fulfill your needs. s, runway models, commercial models, or promotional models, we have a diverse pool of talent ready to fulfill your needs.")}
                             </h3>
                         </div>
                         <div className='Third_LeftSection'>
