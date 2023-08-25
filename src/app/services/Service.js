@@ -9,10 +9,16 @@ import ThirdPageService from '../../Components/Services/ThirdPageService'
 import Hajeat from './FirstService/Hajeat'
 import { ForthServicesPage } from '../../Components/Services/ForthServicesPage'
 import { useTranslation } from 'react-i18next'
+import { useRouter } from 'next/router'
+import { useSearchParams } from 'next/navigation'
 
-function FirstService({param}) {
+function FirstService() {
+  const router = useSearchParams();
+
+  
+  
   const [t] =useTranslation()
-  const Params =  param
+  const Params =  router.get('param') ?? 1
   useLayoutEffect(() => {
       if(Params == 2 ){
         Transtion_Page2()
