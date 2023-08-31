@@ -71,21 +71,24 @@
         width: 80vw;
     }
     .works_img{
-        // width: 100%;     
+        width: 100%;     
         img{
-                    width: 23vw;
-                    margin-left: 1.5vw;
+            width: 23vw;
+            margin-left: 1.5vw;
                 }
         .img_first{
-            display: flex;
-            justify-content: end;
+            display: flex; 
+            // justify-content: end;
+            // width: 74.4%;
             padding-top: 53vw;
-            margin-right: 8.5vw;
+            margin-left: 38.5vw !important;
         }
         .img_second{
             display: flex;
+            justify-content: start;
+            width: 80% !important;
             padding-top: 1vw;
-            margin-left: 15vw;
+            margin-left: 14vw;
           }
         }
     .Footer{

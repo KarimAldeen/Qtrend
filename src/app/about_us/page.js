@@ -16,10 +16,10 @@ function AboutUs() {
   return (
     <div className='AboutUs_page'>
       <NavBar/>
-      <div className='ABOUT_US_WORD'>
+      {/* <div className='ABOUT_US_WORD'>
         <p className='ABOUT'>{t("ABOUT")}</p>
         <p className='US'>{t("USs")}</p>
-      </div>
+      </div> */}
       <div className='AboutUs_BG'>      
         <img src='../AboutUs/About_US.webp' className='image-about-us' alt='image-about-us'/>
         </div>

@@ -54,7 +54,7 @@ const FifthService = () => {
               <FifthServiceSquare 
               classNameForSquare={"FifthService_square2"}
               title={t("User Experience (UX) Design:")}
-              desc={t("UX design focuses on creating a positive and intuitive user experience for website visitors. It involves designing the website's navigation, interaction elements, and user flows to ensure ease of use and satisfaction. ")}
+              desc={t("UX design focuses on creating a positive and intuitive user experience for website visitors. It involves designing the website's navigation, interaction elements, and user flows to ensure ease of use and satisfaction.")}
               last={t("Learn more about Exchanges")}
               icon={<BsArrowRight/>}
               />  
