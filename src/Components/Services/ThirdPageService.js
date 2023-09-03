@@ -3,16 +3,21 @@ import Image from 'next/image'
 import React, { useEffect } from 'react'
 import CardThirdService from './CardThirdService'
 import { useTranslation } from 'react-i18next'
-function ThirdPageService() {
+import { BaseURL, BaseURLImage } from '../../api/config'
+import { TranslateObject } from '../../Utils/TranslateObject'
+function ThirdPageService({data}) {
     const [t] = useTranslation()
+    const {i18n} = useTranslation()
+
     useEffect(() => {
-        const IMages = ['/Services/Services3/5.png', '/Services/Services3/6.png', '/Services/Services3/7.png']
+
+        const IMages = data?.at(1)?.images ||[]
         let i = 0;
         setInterval(() => {
             let index = i
 
             if (document.getElementById('dynmic-image')) {
-                document.getElementById('dynmic-image').src = IMages[index]
+                document.getElementById('dynmic-image').src =BaseURLImage+ IMages[index]?.path
             }
             i = (i + 1) % IMages.length
 
@@ -35,46 +40,32 @@ function ThirdPageService() {
 
             </div>
             <div className='images'>
-                <div className='img-service-container down-image'>
-                    <img
-                        alt='/service'
-                        className='img-service'
-                        src={'/Services/Services3/1.png'}
-                    />
-                </div>
-                <div className='img-service-container'>
-                    <img
-                        alt='/service'
-                        className='img-service'
-                        src={'/Services/Services3/2.png'}
-                    />
-                </div>
-                <div className='img-service-container'>
-                    <img
-                        alt='/service'
-                        className='img-service'
-                        src={'/Services/Services3/3.png'}
-                    />
-                </div>
-                <div className='img-service-container down-image'>
-                    <img
-                        alt='/service'
-                        className='img-service'
-                        src={'/Services/Services3/4.png'}
-                    />
-                </div>
+
+
+                  {
+                        data?.at(0)?.images?.map((img ,i)=>(
+                        <div className={`img-service-container ${(i %3 ==0 ? 'down-image' :null)}`  }  key={img?.id}>
+                            <img
+                                alt='/service'
+                                className='img-service'
+                                src={BaseURLImage + img.path}
+                            />
+                        </div>  
+                        ))
+                    }
             </div>
-            <CardThirdService title={t('PHOTOS')}
+            <CardThirdService title={TranslateObject(data?.at(0)?.translations, i18n.language ,'title')}
                 style={{
                     margin: "auto",
                     marginTop: "1.5vw"
 
-                }} description={t("Leverage your in-depth brand knowledge, seamless integration capabilities, cost savings, and collaborative spirit to create visuals that authentically represent your brand and resonate with your target audience.")} />
+                }}
+                 description={TranslateObject(data?.at(0)?.translations, i18n.language ,'description')} />
 
 
             <div className='third-row-service-third'>
 
-                <CardThirdService title={t('VIDEO TAPING')} description={t("Having our company in charge of video taping ensures that the videos align with your brand's visual identity and guidelines. The videos will reflect the same aesthetics, style, and tone that your brand is known for, creating a consistent and recognizable brand presence across all your video content.")}
+                <CardThirdService title={TranslateObject(data?.at(1)?.translations, i18n.language ,'title')} description={TranslateObject(data?.at(0)?.translations, i18n.language ,'description')}
                 classNameForDescription={'card-service-third-row-p'}
 
                 />

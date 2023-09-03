@@ -21,7 +21,7 @@ function NavBar() {
                 <Link  href={'/'}  >{t('HOME')}</Link>
                 <Link  href={'/services?param=1'}  onMouseEnter={()=>handleMouseEnter()} >{t('OUR SERVICES')}</Link>
                
-                <Link  href={'/work'}  >{t("OUR WORKS")}</Link>
+                <Link  href={'/works'}  >{t("OUR WORKS")}</Link>
 
                 {
                   isHovered &&

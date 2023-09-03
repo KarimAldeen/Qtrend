@@ -1,8 +1,9 @@
 import React from 'react'
 import Services_Cards from '../../Components/Utils/Services_Cards'
 import { FaFacebookF, FaTiktok, FaWhatsapp, FaSnapchatGhost, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import {DATASOCIALMEDIA} from '../../config/SOCIALMEDIA'
 import Home23_BG from './Home23_BG';
-const Home2 = ({t}) => {
+const Home2 = ({t ,data}) => {
   return (
     <div className='Home2'>
         <Home23_BG t={t}/>
@@ -37,45 +38,23 @@ const Home2 = ({t}) => {
 
           </div>
           <div className='Services_Social'>
-            <div className='Services_MIcon MIcon1 '>
-              <i>
-                <FaFacebookF />
-              </i>
+            
+            {
+              
+              DATASOCIALMEDIA.map((icon ,index) =>{
 
-            </div>
-            <div className='Services_MIcon MIcon2'>
-
-              <i>
-                <FaTiktok />
-              </i>
-            </div>
-            <div className='Services_MIcon MIcon3'>
-
-              <i>
-                <FaInstagram />
-              </i>
-
-            </div>
-            <div className='Services_MIcon MIcon4'>
-
-              <i>
-                <FaSnapchatGhost />
-              </i>
-
-            </div>
-            <div className='Services_MIcon MIcon5'>
-
-              <i>
-                <FaWhatsapp />
-              </i>
-
-            </div>
-            <div className='Services_MIcon MIcon6'>
-
-              <i>
-                <FaLinkedinIn />
-              </i>
-            </div>
+                const object_is_exist = data?.find(social => social.icon == icon.key)
+                return (
+                  <div className={`Services_MIcon MIcon${index+1}`} key={index} style={{display:object_is_exist? 'block' :"none"}}>
+                         <a href={object_is_exist?.link} target='_blank'>
+                           {icon.icon}
+                         </a>
+   
+                       </div>
+                 )
+              }
+              )
+            }
 
           </div>
 

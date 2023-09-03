@@ -13,24 +13,12 @@ import { useRouter } from 'next/router'
 import { useSearchParams } from 'next/navigation'
 import { BaseURL } from '../../api/config'
 
-const getService=  async ()=>{
 
 
-  const data = await fetch(BaseURL  + 'api/all-services?_start=0&_end=4') 
-  const res = await data.json()
-
-
-
-  return res.data
-}
-
-function FirstService() {
+function FirstService({data , data2 , data3}) {
   const router = useSearchParams();
 
   
-  
-  const data = getService()
-  console.log(data)
   const [t] =useTranslation()
   const Params =  router.get('param') ?? 1
   useLayoutEffect(() => {
@@ -114,7 +102,7 @@ function FirstService() {
 
           </div>
             <p className='FirstService_p'>{t("Branding and Identity:")}</p>
-            <FirstServiceFourInfo/>
+            <FirstServiceFourInfo data={data}/>
          
 
           <div className='FirstService_text'>
@@ -142,7 +130,7 @@ function FirstService() {
               <img src='../Services/Services_Elements/2_Section1.svg'  alt='' id='Element1' className='Element1' onClick={(e) => Back_Page1(e)} />
             </div>
             
-            <FirstServiceFourInfo/>
+            <FirstServiceFourInfo data={data}/>
 
 
             <ServiceOverAll/>
@@ -155,9 +143,9 @@ function FirstService() {
 
         </div>
       </div> 
-        <ThirdPageService />
+        <ThirdPageService data={data2} />
         </div>  
-        <ForthServicesPage/>
+        <ForthServicesPage data={data3}/>
 
         <Footer/>
     </div>

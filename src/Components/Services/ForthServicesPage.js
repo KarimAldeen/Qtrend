@@ -5,7 +5,9 @@ import GirlMedia from './GirlMedia'
 import Services4_Images from './Services4_Images'
 import Word_animation from './Word_animation'
 import { useTranslation } from 'react-i18next'
-export const ForthServicesPage = () => {
+export const ForthServicesPage = ({data}) => {
+
+    console.log(data)
     const [t] = useTranslation()
     const Back_To_page3 = () => {
         document.getElementById("Transion_page").classList.remove("Transion_page4")
@@ -52,9 +54,9 @@ export const ForthServicesPage = () => {
                     <div className='Section_Section_Rigth'>
 
                         <div className='Section_Rigth_Top'>
-                                <Services4_Images Word={`female`} Data={10}/>
-                                <Services4_Images Word={`male`}Data={10}/>
-                                <Services4_Images Word={`kids`}Data={10}/>
+                                <Services4_Images Word={`female`} Data={data?.at(0)?.images}/>
+                                <Services4_Images Word={`male`}Data={data?.at(1)?.images}/>
+                                <Services4_Images Word={`kids`}Data={data?.at(2)?.images}/>
                         </div>
                         <div className='Section_Rigth_Down'>
                             <h3>

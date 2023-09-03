@@ -4,8 +4,9 @@ import Link from 'next/link';
 import React from 'react'
 import { useTranslation } from 'react-i18next';
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { DATASOCIALMEDIA } from '../../config/SOCIALMEDIA';
 
-const Footer = () => {
+const Footer = ({data}) => {
     const [t] = useTranslation()
     return (
         <div className='Footer'>
@@ -16,9 +17,22 @@ const Footer = () => {
                   {t("Qtrend is a creative design agency that specializes in delivering the best full creative branding , logo creation, and posts creation digital design solutions. With a passion for visual aesthetics and a deep understanding of branding strategies, Qtrend aims to help businesses establish a strong and impactful brand presence.")}
                 </p>
                 <div className='Footer_SocialMedia'>
-                    <a className="btn btn-primary btn-lg btn-floating" aria-label="FaFacebookF" href="#!">  <FaFacebookF /></a>
-                    <a className="btn btn-primary btn-lg btn-floating" aria-label="FaInstagram" href="#!">  <FaInstagram /></a>
-                    <a className="btn btn-primary btn-lg btn-floating" aria-label="FaLinkedinIn" href="#!">  <FaLinkedinIn /></a>
+   
+            {
+              
+              DATASOCIALMEDIA.map((icon ,index) =>{
+
+                const object_is_exist = data?.find(social => social.icon == icon.key)
+                return (
+                         <a href={object_is_exist?.link} target='_blank' className='btn btn-primary btn-lg btn-floating' key={index} style={{display:object_is_exist? 'inline-flex' :"none"}}>
+                           {icon.icon}
+                         </a>
+   
+                 )
+              }
+              )
+            }
+    
                 </div>
             </div>
             <div className='Footer_Right'>
