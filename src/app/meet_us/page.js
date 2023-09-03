@@ -9,7 +9,7 @@ import Footer from '../../Components/Utils/Footer';
 import Gradian from './Gradian';
 import MeatUS_BG from './MeatUS_BG';
 import { useTranslation } from 'react-i18next';
-import { useSendMessage } from '../../api/ContactUs/Contact';
+import { useGetALlStatics, useSendMessage } from '../../api/ContactUs/Contact';
 import { errors,Field, Form, Formik } from "formik";
 import * as Yup from "yup";
 import { useRef } from 'react';
@@ -39,6 +39,9 @@ const MeetUs = () => {
     }, 4000);
     return () => clearInterval(intervalId);
   }, []);
+
+  const {data  , isError}  = useGetALlStatics()
+  console.log(data);
 
   const {mutate , isSuccess, isLoading} = useSendMessage()
   const ref = useRef()
@@ -85,21 +88,21 @@ const MeetUs = () => {
             <FaMobileAlt/>
             </a>
          
-          <p>{t("+(974)31111291")} <br/>{t("+(974)33330282 ")}</p>
+          <p>{data?.find(static_info => static_info.key == 'phone')?.value}</p>
           </div>
           <div className='MeetUs_info_2'>
           <a href='https://www.LuMail.com/' aria-label="LuMail" target="_blank" rel="noopener">
           <LuMail/>
             </a>
          
-          <p>{t("Qtrend-qatar@gmail.com")}</p>
+          <p>{data?.find(static_info => static_info.key == 'email')?.value}</p>
           </div>
           <div className='MeetUs_info_3'>
           <a  href='https://www.MdLocationOn.com/' aria-label="MdLocationOn" target="_blank" rel="noopener">
           <MdLocationOn/>
             </a>
          
-          <p>{t("Um Slal")}</p>
+          <p>{data?.find(static_info => static_info.key == 'location')?.value}</p>
           </div>
           
         </div>

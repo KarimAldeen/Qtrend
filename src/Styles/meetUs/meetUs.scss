@@ -153,10 +153,10 @@
                 width: 100%;
                 display: flex;
                 justify-content: center;
-                // margin-left: .5vw;
+                margin-left: .5vw;
                 button{
-                    background: #BB7AF5;
-                    border: none;
+                    background: inherit;
+                    border: .2vw solid white;
                     padding: 1vw 3vw ;
                     border-radius: 1vw;
                     color: white;

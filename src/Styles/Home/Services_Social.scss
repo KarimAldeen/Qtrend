@@ -1,6 +1,5 @@
 .Home2{
-    
-
+    margin-bottom: 5vw;
 .Services_Social{
     position: absolute;
     left: 35vw;
@@ -9,6 +8,7 @@
     max-width: 100%;
     transform: translateY(74vw);
     display: flex;
+    margin-top: 1vw;
     .Services_MIcon{
 
     padding: .4vw;
@@ -23,7 +23,6 @@
     rotate: 130px;   
     transform: rotate(60deg);
     display: flex; justify-content: center; align-items: center;
-  
     &:hover{
         background-color: black;
         color: #C7F36C;
