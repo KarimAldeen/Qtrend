@@ -153,8 +153,9 @@
                 width: 100%;
                 display: flex;
                 justify-content: center;
-                margin-left: .5vw;
+                // margin-left: .5vw;
                 button{
+                    width: 95%;
                     background: inherit;
                     border: .2vw solid white;
                     padding: 1vw 3vw ;
