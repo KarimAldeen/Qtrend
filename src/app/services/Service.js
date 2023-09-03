@@ -11,12 +11,26 @@ import { ForthServicesPage } from '../../Components/Services/ForthServicesPage'
 import { useTranslation } from 'react-i18next'
 import { useRouter } from 'next/router'
 import { useSearchParams } from 'next/navigation'
+import { BaseURL } from '../../api/config'
+
+const getService=  async ()=>{
+
+
+  const data = await fetch(BaseURL  + 'api/all-services?_start=0&_end=4') 
+  const res = await data.json()
+
+
+
+  return res.data
+}
 
 function FirstService() {
   const router = useSearchParams();
 
   
   
+  const data = getService()
+  console.log(data)
   const [t] =useTranslation()
   const Params =  router.get('param') ?? 1
   useLayoutEffect(() => {
@@ -53,6 +67,7 @@ function FirstService() {
 
   }
   const Back_Page1 = (e) => {
+
     const Src = e.target.src ;
     if (Src.includes('2_Section1')) {
       document.getElementById("Transion_page").classList.remove("Transion_page")

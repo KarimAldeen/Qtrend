@@ -1,7 +1,10 @@
 'use client'
+import { QueryClient, QueryClientProvider } from 'react-query'
 import i18n from '../../src/translate/Translate'
 import '../Styles/App/Import.scss'
 export default function RootLayout({ children }) {
+
+  const queryClient = new QueryClient()
 
   return (
     <html lang="en">
@@ -20,7 +23,9 @@ export default function RootLayout({ children }) {
 
 
       </head>
+      <QueryClientProvider client={queryClient}>
       <body>{children}</body>
+      </QueryClientProvider>
     </html>
   )
 }

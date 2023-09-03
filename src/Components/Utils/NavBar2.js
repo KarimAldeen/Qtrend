@@ -2,17 +2,15 @@
 import { NavLinks } from '../../config/NavBarConfig'
 import Link from 'next/link'
 import React from 'react'
-import Image from 'next/image'
 import BtnTranslate from './BtnTranslate'
 import { useTranslation } from 'react-i18next'
-import Logo2 from '../../../public/Logo_Qtrend2.png'
 
 function NavBar2() {
   const [t] = useTranslation();
 
   return (
     <div className={`NavBar`}>
-          <Image style={{width:"9vw",height:"3vw"}} src={Logo2}/>
+          <img alt='logo-image' style={{width:"9vw",height:"3vw"}} src={'/Logo_Qtrend2.png'}/>
           <div className='Links'>
             <div className='In_Link'> 
             {

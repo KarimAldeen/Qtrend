@@ -14,7 +14,7 @@
 .Home{
     .Links{
         a:nth-child(1){
-            color: #C7F36C !important;
+            color: #C7F36C;
         }
     }
 }
@@ -31,7 +31,7 @@
     align-items: center;
     justify-content: space-between;
     z-index: 9999999999;
-    font-family: Popping;
+    font-family: Poppins;
     font-display: swap;
         .Links{
             display: flex;
@@ -83,4 +83,31 @@
      
      
 }
+}
+.In_Link{
+    position: relative;
+
+
+    .dropdown-menu{
+        position: absolute; 
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+       left: 6.5vw;
+       text-align: left;
+
+       a{
+        color: white !important;
+       }
+    }
+}
+
+.ar{
+    .In_Link{
+        .dropdown-menu{
+            left: 0 !important;
+            right: -7.5vw;
+            text-align: left;
+        }
+    }
 }

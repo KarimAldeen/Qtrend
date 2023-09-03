@@ -145,7 +145,7 @@ const Home23_BG = ({t}) => {
                     transform="translate(55 659)"
                     fill="#404130"
                     fontSize="38"
-                    fontFamily="Popping"
+                    fontFamily="Poppins"
                     letterSpacing="-0.08em"
                     fontWeight={900}
                   >

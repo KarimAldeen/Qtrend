@@ -1,9 +1,17 @@
 import React from 'react'
-
 import FirstService from './Service'
-function Page(props) {
+
+
+
+ function  Page() {
   
+
+  
+  
+
+
   return (
+    
     <FirstService/>
   )
 }
