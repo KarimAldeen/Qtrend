@@ -7,6 +7,6 @@ export const useAxios = () => {
 
   return axios.create({
 
-    BaseURL,
+    baseURL:BaseURL,
   });
 };
