@@ -41,13 +41,14 @@ const MeetUs = () => {
   }, []);
 
   const {data  , isError}  = useGetALlStatics()
-  console.log(data);
+  // console.log(data);
 
   const {mutate , isSuccess, isLoading} = useSendMessage()
   const ref = useRef()
   const handelSubmit = (values) => {
 
     values['name'] = values['companyName']
+    values['phone'] = values['phoneNumber']
     values['content'] = values['message']
     let ValueContainer = {...values}
     mutate(ValueContainer)
@@ -55,7 +56,7 @@ const MeetUs = () => {
     values['email'] =""
     values['phoneNumber'] =""
     ref.current.value= "" 
-    // console.log(values);
+    console.log(values);
   };
   return (
     <>
