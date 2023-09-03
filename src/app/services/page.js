@@ -1,5 +1,8 @@
+'use client'
 import React from 'react'
 import FirstService from './Service'
+import { useGetFirstService } from '../../api/service/first_services'
+import LoadingPage from '../loading'
 
 
 
@@ -7,9 +10,13 @@ import FirstService from './Service'
   
 
   
-  
+    const {data , isLoading}  = useGetFirstService()  
 
 
+      if(isLoading){
+        return <LoadingPage />
+      }
+      console.log(data)
   return (
     
     <FirstService/>
