@@ -71,30 +71,24 @@
         width: 80vw;
     }
     .works_img{
-        width: 100%; 
+        width: 100%;     
         img{
-                    width: 23vw;
-                    margin-left: 1.5vw;
+            width: 23vw;
+            margin-left: 1.5vw;
                 }
         .img_first{
-            display: flex;
-            justify-content: center;
-            max-width:100vw ;
+            display: flex; 
+            // justify-content: end;
+            // width: 74.4%;
             padding-top: 53vw;
-            margin-left: 16vw;
-            .img1{          
-                margin-left: 15vw;
-        }
-            .img4{
-                // margin-left: 2vw;
-            }
+            margin-left: 38.5vw !important;
         }
         .img_second{
             display: flex;
-            justify-content: center;
+            justify-content: start;
+            width: 80% !important;
             padding-top: 1vw;
-            margin-left: 8vw;
-         
+            margin-left: 14vw;
           }
         }
     .Footer{

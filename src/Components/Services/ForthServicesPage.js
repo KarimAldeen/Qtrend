@@ -52,9 +52,9 @@ export const ForthServicesPage = () => {
                     <div className='Section_Section_Rigth'>
 
                         <div className='Section_Rigth_Top'>
-                                <Services4_Images Word={`female`} Data={6}/>
-                                <Services4_Images Word={`male`}Data={5}/>
-                                <Services4_Images Word={`kids`}Data={5}/>
+                                <Services4_Images Word={`female`} Data={10}/>
+                                <Services4_Images Word={`male`}Data={10}/>
+                                <Services4_Images Word={`kids`}Data={10}/>
                         </div>
                         <div className='Section_Rigth_Down'>
                             <h3>
