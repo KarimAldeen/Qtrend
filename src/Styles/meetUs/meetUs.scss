@@ -149,7 +149,21 @@
         .MeetUs_mid_section_right {
             padding-right: 4vw;
             transform: translateY(-18.5vw);
-
+            div{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                // margin-left: .5vw;
+                button{
+                    background: #BB7AF5;
+                    border: none;
+                    padding: 1vw 3vw ;
+                    border-radius: 1vw;
+                    color: white;
+                    font-size: 1.4vw;
+                    font-weight: 600;
+                }
+            }
             input,
             textarea {
                 padding: 2vw;

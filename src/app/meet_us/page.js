@@ -9,6 +9,22 @@ import Footer from '../../Components/Utils/Footer';
 import Gradian from './Gradian';
 import MeatUS_BG from './MeatUS_BG';
 import { useTranslation } from 'react-i18next';
+import { useSendMessage } from '../../api/ContactUs/Contact';
+import { errors,Field, Form, Formik } from "formik";
+import * as Yup from "yup";
+import { useRef } from 'react';
+import { toast } from "react-toastify";
+// import { Spinner } from "reactstrap";
+
+
+
+const validationSchema = Yup.object().shape({
+  companyName: Yup.string()
+  .required("Required"),
+  phoneNumber: Yup.string().required("Required"),
+  message: Yup.string().required("Required"),
+  email: Yup.string().email("Invalid email").required("Required"),
+});
 
 const MeetUs = () => {
   const [gradianClass, setGradianClass] = useState('Geadian_On_1');
@@ -24,6 +40,19 @@ const MeetUs = () => {
     return () => clearInterval(intervalId);
   }, []);
 
+  const {mutate , isSuccess, isLoading} = useSendMessage()
+  const ref = useRef()
+  const handelSubmit = (values) => {
+
+    values['content'] = values['message']
+    let ValueContainer = {...values}
+    mutate(ValueContainer)
+    values['companyName'] =""
+    values['email'] =""
+    values['phoneNumber'] =""
+    ref.current.value= "" 
+    // console.log(values);
+  };
   return (
     <>
       <div className='MeetUs'>
@@ -74,12 +103,38 @@ const MeetUs = () => {
           
         </div>
           </div>
-          <form className='MeetUs_mid_section_right'>
-            <input type='text' placeholder={t('Company Name')} />
-            <input type='email' placeholder={t('Email')} />
-            <input type='password' placeholder={t('Password')} autoComplete='on' />
-            <textarea type='text' placeholder={t('Message')} />
-          </form>
+          <Formik
+                initialValues={{
+                  // console.log(name);
+                  companyName: "",
+                  email: "",
+                  phoneNumber: "",
+                  message: "",
+                }}
+                onSubmit={handelSubmit}
+                validationSchema={validationSchema}
+              >
+                {({ errors, setFieldValue }) => (
+
+          <Form className='MeetUs_mid_section_right'>
+            <Field type='text'  placeholder={t('Company Name')} name='companyName' />
+            <Field type='email' placeholder={t('Email')} name='email'/>
+            <Field type='text' placeholder={t('phone_number')} name='phoneNumber' autoComplete='on' />
+               <textarea
+                    ref={ref}
+                    required="required"
+                    defaultValue={""}
+                    onChange={(e) =>
+                      setFieldValue("message", e.target.value)
+                    }            
+                 placeholder={t('Message')} 
+                />
+            <div>
+                {isLoading  ? "Loading..." :<button type='submit' >{t("send_message")}</button>}
+            </div>
+          </Form>
+            )}
+      </Formik>
         </div>
         <Footer />
       </div>

@@ -2,6 +2,7 @@
 import { QueryClient, QueryClientProvider } from 'react-query'
 import i18n from '../../src/translate/Translate'
 import '../Styles/App/Import.scss'
+import CustomToastContainer from './components/ToastCont';
 export default function RootLayout({ children }) {
 
   const queryClient = new QueryClient()
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
 
       </head>
       <QueryClientProvider client={queryClient}>
+        <CustomToastContainer/>
       <body>{children}</body>
       </QueryClientProvider>
     </html>
