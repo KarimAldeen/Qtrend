@@ -14,7 +14,7 @@ import { errors,Field, Form, Formik } from "formik";
 import * as Yup from "yup";
 import { useRef } from 'react';
 import { toast } from "react-toastify";
-// import { Spinner } from "reactstrap";
+import { Spinner } from "reactstrap";
 
 
 
@@ -44,6 +44,7 @@ const MeetUs = () => {
   const ref = useRef()
   const handelSubmit = (values) => {
 
+    values['name'] = values['companyName']
     values['content'] = values['message']
     let ValueContainer = {...values}
     mutate(ValueContainer)
@@ -130,7 +131,7 @@ const MeetUs = () => {
                  placeholder={t('Message')} 
                 />
             <div>
-                {isLoading  ? "Loading..." :<button type='submit' >{t("send_message")}</button>}
+                {isLoading  ? <Spinner/> :<button type='submit' >{t("send_message")}</button>}
             </div>
           </Form>
             )}
