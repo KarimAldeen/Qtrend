@@ -9,8 +9,15 @@ import { FaFacebookF, FaTiktok, FaWhatsapp, FaSnapchatGhost, FaInstagram, FaLink
 import {BiSolidRightArrow} from 'react-icons/bi'
 import Services5_BG from '../../Components/Services/Services5_BG';
 import { useTranslation } from 'react-i18next';
+import { useGetFifthService } from '../../api/service/first_services';
+import { TranslateObject } from '../../Utils/TranslateObject';
+import i18n from '../../translate/Translate';
+
 const FifthService = () => {
   const [t] = useTranslation()
+  const {i18n} = useTranslation()
+  const { data, isloading} = useGetFifthService();
+  // console.log(data);
   return (
       // Main Dev Page
     <div className='FifthService_page'>
@@ -53,8 +60,8 @@ const FifthService = () => {
               <div className='FifthServiceSquare_first'>
               <FifthServiceSquare 
               classNameForSquare={"FifthService_square2"}
-              title={t("User Experience (UX) Design:")}
-              desc={t("UX design focuses on creating a positive and intuitive user experience for website visitors. It involves designing the website's navigation, interaction elements, and user flows to ensure ease of use and satisfaction.")}
+              title={TranslateObject(data?.at(0)?.translations, i18n.language, 'title')}
+              desc={TranslateObject(data?.at(0)?.translations, i18n.language, 'description')}
               last={t("Learn more about Exchanges")}
               icon={<BsArrowRight/>}
               />  
@@ -62,23 +69,23 @@ const FifthService = () => {
               <span className='scale_span'>
                 <FifthServiceSquare
               classNameForSquare={"FifthService_square1"} 
-              title={t("Website Design and Layout:")}
-              desc={t("This involves creating the overall visual design of the website, including the color scheme, typography, graphics, and layout. It focuses on creating an aesthetically pleasing and engaging user interface (UI) design.")}
+              title={TranslateObject(data?.at(1)?.translations, i18n.language, 'title')}
+              desc={TranslateObject(data?.at(1)?.translations, i18n.language, 'description')}
               last={t("Discover Expenses")}
               icon={<BsArrowRight/>}
               />
               <div className='FifthServiceSquare_second'>
               <FifthServiceSquare 
               classNameForSquare={"FifthService_square"}
-              title={t("Responsive Design:")}
-              desc={t("With the increasing use of mobile devices, responsive design is crucial. It involves designing websites that adapt and display properly on various screen sizes and devices, providing an optimal user experience for both desktop and mobile users.")}
+              title={TranslateObject(data?.at(2)?.translations, i18n.language, 'title')}
+              desc={TranslateObject(data?.at(2)?.translations, i18n.language, 'description')}
               last={t("Get started")}
               icon={<BsArrowRight/>}
               />
               <FifthServiceSquare 
               classNameForSquare={"FifthService_square4"}
-              title={t("Wireframing and Prototyping:")}
-              desc={t("Before starting the actual design process, web designers often create wireframes and prototypes to outline the structure and functionality of the website. This helps visualize the layout, navigation, and content placement before moving on to the actual design phase.")}
+              title={TranslateObject(data?.at(3)?.translations, i18n.language, 'title')}
+              desc={TranslateObject(data?.at(3)?.translations, i18n.language, 'description')}
               last={t("Get started")}
               icon={<BsArrowRight/>}
               />

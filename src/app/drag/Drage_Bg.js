@@ -1,8 +1,9 @@
 "use client"
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import { BaseURLImage } from '../../api/config'
 
-const Drage_Bg = () => {
+const Drage_Bg = ({data}) => {
   const [t] = useTranslation()
   return (
     <svg
@@ -74,9 +75,11 @@ const Drage_Bg = () => {
       viewBox="0 0 3465 2500"
     >
       <image
-        width={3465}
+        width={3465}  
+      
         height={2500}
-        xlinkHref="../Drag/Artboard%20-%202-image2.webp"
+        
+        xlinkHref={BaseURLImage +data?.at(0)?.images.at(0)?.path}
       />
     </pattern>
     <filter
@@ -114,7 +117,7 @@ const Drage_Bg = () => {
       <image
         width={4096}
         height={2731}
-        xlinkHref="../Drag/Artboard%20-%202-image3.webp"
+        xlinkHref={BaseURLImage +data?.at(0)?.images.at(1)?.path}
       />
     </pattern>
     <filter
@@ -152,7 +155,7 @@ const Drage_Bg = () => {
       <image
         width={4096}
         height={2731}
-        xlinkHref="../Drag/Artboard%20-%202-image4.webp"
+        xlinkHref={BaseURLImage +data?.at(0)?.images.at(2)?.path}
       />
     </pattern>
     <filter
@@ -204,7 +207,7 @@ const Drage_Bg = () => {
       <image
         width={4096}
         height={2734}
-        xlinkHref="../Drag/Artboard%20-%202-image5.webp"
+        xlinkHref={BaseURLImage +data?.at(1)?.images.at(0)?.path}
       />
     </pattern>
     <filter
@@ -243,7 +246,7 @@ const Drage_Bg = () => {
         preserveAspectRatio="xMidYMid slice"
         width="590.941"
         height="394.008"
-        xlinkHref="../Drag/Artboard%20-%202-image6.webp"
+        xlinkHref={BaseURLImage +data?.at(1)?.images.at(1)?.path}
       />
     </pattern>
     <filter
@@ -281,7 +284,7 @@ const Drage_Bg = () => {
       <image
         width={4096}
         height={3266}
-        xlinkHref="../Drag/Artboard%20-%202-image7.webp"
+        xlinkHref={BaseURLImage +data?.at(1)?.images.at(2)?.path}
       />
     </pattern>
     <filter
@@ -390,7 +393,6 @@ const Drage_Bg = () => {
         width={3579}
         height={4086}
         xlinkHref="../Drag/Artboard - 2-image9.webp"
-
       />
     </pattern>
     <clipPath id="clip-Artboard_2">
@@ -550,7 +552,7 @@ const Drage_Bg = () => {
           fontStyle="italic"
           letterSpacing="0.006em"
         >
-          <tspan  y={27}>
+          <tspan  y={27} >
             {t("Contact us")}
           </tspan>
         </text>
@@ -1259,6 +1261,7 @@ const Drage_Bg = () => {
             fontFamily="Roboto-Medium, Roboto"
             fontWeight={500}
             letterSpacing="-0.007em"
+            // style={}
           >
             <tspan x={0} y={19}>
               {t("If you are looking for a third-party account verification service that specializes in verifying")}
@@ -1566,7 +1569,7 @@ const Drage_Bg = () => {
       <rect
         id="holding-smartphone"
         width={433}
-        height={496}
+        height={529}
         transform="translate(31 123)"
         fill="url(#patternDrage_Bg-10)"
         className='Mobile_image9'

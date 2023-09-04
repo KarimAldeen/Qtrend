@@ -1,4 +1,4 @@
-export const BaseURL  =  'http://api.qtrendqa.com/'
+export const BaseURL  =  'https://api.qtrendqa.com/'
 
 
-export const BaseURLImage  =  'http://api.qtrendqa.com'
+export const BaseURLImage  =  'https://api.qtrendqa.com'

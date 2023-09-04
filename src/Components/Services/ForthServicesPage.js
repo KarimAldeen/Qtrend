@@ -11,7 +11,6 @@ export const ForthServicesPage = ({data}) => {
     const [t] = useTranslation()
     const Back_To_page3 = () => {
         document.getElementById("Transion_page").classList.remove("Transion_page4")
-
     }
     return (
         <div className='ForthServicesPage'>
@@ -55,8 +54,8 @@ export const ForthServicesPage = ({data}) => {
 
                         <div className='Section_Rigth_Top'>
                                 <Services4_Images Word={`female`} Data={data?.at(0)?.images}/>
-                                <Services4_Images Word={`male`}Data={data?.at(1)?.images}/>
-                                <Services4_Images Word={`kids`}Data={data?.at(2)?.images}/>
+                                <Services4_Images Word={`male`} Data={data?.at(1)?.images}/>
+                                <Services4_Images Word={`kids`} Data={data?.at(2)?.images}/>
                         </div>
                         <div className='Section_Rigth_Down'>
                             <h3>
