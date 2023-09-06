@@ -12,7 +12,7 @@ import { useTranslation } from 'react-i18next'
 import { useRouter } from 'next/router'
 import { useSearchParams } from 'next/navigation'
 import { BaseURL } from '../../api/config'
-
+import  SocialMediaManagement  from '../../Components/Utils/SocialMediaManagement'
 
 
 function FirstService({data , data2 , data3}) {
@@ -79,6 +79,7 @@ function FirstService({data , data2 , data3}) {
   return (
     <div className='Services_Pages' id='Transion_page'>
       <NavBar />
+      {/* <SocialMediaManagement/> */}
       <div className='Services123'>
 
      
