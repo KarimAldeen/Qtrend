@@ -5,8 +5,11 @@ import React from 'react'
 import { useTranslation } from 'react-i18next';
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { DATASOCIALMEDIA } from '../../config/SOCIALMEDIA';
+import { useGetAllSocialMedia } from '../../api/social_media';
 
-const Footer = ({data}) => {
+const Footer = () => {
+
+    const {data} = useGetAllSocialMedia()
     const [t] = useTranslation()
     return (
         <div className='Footer'>
