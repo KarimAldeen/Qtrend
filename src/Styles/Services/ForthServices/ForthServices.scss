@@ -1,6 +1,5 @@
 .ForthServicesPage {
     display: none;
-
 }
 
 
@@ -8,15 +7,16 @@
     background-color: black;
     .Footer{
         position: relative;
+        // height: 50vw;
+        // transform: translateY(35vw);
+        margin-top: -1vw;
     }
     .Services123 {
         display: none;
-
     }
    
     .ForthServicesPage {
         display: block;
-
     }
 
     .Ibrahem {
@@ -82,7 +82,6 @@
     .Second_LeftSection {
         padding-left: 5vw;
         color: white;
-
         h3 {
             font-size: 1.4vw;
             font-weight: 200;
@@ -157,7 +156,6 @@
         }
     }
    svg{
-
     .Arrow1{
         transition: .5s ease-in-out;
         animation: Arrow 1s infinite;
@@ -275,11 +273,12 @@
     width: 100vw;
     .Footer{
         position: absolute !important;
-        bottom: 0;
+        bottom: 0 !important;
+        // transform: translateY(10vw);
     }
     .Ibrahem {
         width: 100vw;
-        min-height: 100vh;
+        height: 90vh !important;
     }
     .First_Section{
         padding-top: 15vh;

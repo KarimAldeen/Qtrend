@@ -4,6 +4,7 @@
     position: relative;
     max-width: 100%;
     background: #27aaa3 ;
+    overflow: hidden;
     .OUR_PROJECTS{
         position: absolute;
         margin: 30vw 0vw 0vw 5vw;
@@ -89,7 +90,7 @@
             display: flex;
             justify-content: flex-start;
             width: 80% !important;
-            padding-top: 1vw;
+            padding-top: 3vw;
             margin-left: 14vw;
           }
         }

@@ -5,13 +5,14 @@
         }
     }
 }
-
 .MeetUs {
     font-family: 'Inter var', sans-serif;
     position: relative;
     max-width: 100vw;
     overflow: hidden;
     cursor: auto;
+    // max-height: 200vh !important;
+    // height: 140vw;  
 
     .MeetUs_BG {
         img {
@@ -21,7 +22,6 @@
         }
     }
     .MEET_US_WORD{
-        // display: none;
         position: absolute;
         width: 100vw;
         // background: #ad2525;
@@ -47,6 +47,7 @@
     }
     .MeetUs_mid_section {
         background-color: black;
+        height: 72vw;
         color: #fff;
         padding-inline: 3vw;
         padding-top: 55vw;
@@ -150,12 +151,12 @@
             padding-right: 4vw;
             transform: translateY(-18.5vw);
             div{
-                width: 100%;
+                width: 27vw;
                 display: flex;
                 justify-content: center;
                 // margin-left: .5vw;
                 button{
-                    width: 90%;
+                    width: 24vw;
                     background: inherit;
                     border: .2vw solid white;
                     padding: 1vw 3vw ;
@@ -211,7 +212,7 @@
     height: 97.2vw;
     cursor: auto;
     transition: .5s ease-in-out;
-
+    height: 128vw !important;
     .Geadian_1,
     .Geadian_2,
     .Geadian_3 {
