@@ -135,7 +135,7 @@ const MeetUs = () => {
                  placeholder={t('Message')} 
                 />
             <div>
-                {isLoading  ? "..." :<button type='submit' >{t("send_message")}</button>}
+                {isLoading  ? ". . ." :<button type='submit' >{t("send_message")}</button>}
             </div>
           </Form>
             )}

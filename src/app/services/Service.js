@@ -14,7 +14,6 @@ import { useSearchParams } from 'next/navigation'
 import { BaseURL } from '../../api/config'
 
 
-
 function FirstService({data , data2 , data3}) {
   const router = useSearchParams();
 
