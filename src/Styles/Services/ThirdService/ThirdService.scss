@@ -1,27 +1,20 @@
 .Transion_page3 {
     background: #E59926;
-
     font-family: Poppins;
-
     .Feather_wing{
         mix-blend-mode: luminosity;
     }
     .SocialMedia_Icon{
         .Social_Icon_BG{
             fill: #FFD439 !important;
-            
-
         }
     }
     .paper{
         fill: #FFD439 !important;
-
     }
   
     .FirstService_Images {
         background: #E59926;
-
-
     }
     .Wing_Orange{
             opacity: 1 !important;
@@ -45,8 +38,6 @@ display: none;
         display: none;
     }
 }
-
-
 .ThirdService_page{
     max-width: 100vw;
     position: relative;
@@ -56,13 +47,11 @@ display: none;
     top: 39vw;
     right: 4vw;
     width: 65vw;
-
     .images{
         width: 100%;
         // background: red;
         height: 16vw;
         display: flex;
-
     }
     .down-image{
         margin-top: 7vw;
@@ -75,9 +64,7 @@ display: none;
         object-fit: cover;
         border-radius: 3vw;
         z-index: 999999;
-
         img{
-         
             width: 100%;
             object-fit: fill;
             height: 100%;
@@ -86,7 +73,6 @@ display: none;
                 transform: scale(1.2);
             }
         }
-
     }
     .second-row-third-service{
         text-align: center;
@@ -94,12 +80,9 @@ display: none;
         min-height: 10vw;
         border-radius: 1.5vw;
         background: #D9D9D9;
-
-
         padding-inline: 0.5vw;
         margin-top: 1.5vw;
         transform: translatex(.4vw);
-
         h2{
             background: #FFD339;
             font-size: 2vw;
@@ -109,8 +92,7 @@ display: none;
             font-weight: 900;
             border-bottom-left-radius:4vw ;
             border-bottom-right-radius:4vw ;
-            margin-bottom: 1vw;
-            
+            margin-bottom: 1vw;   
         }
         p{
             color: #000;
@@ -119,11 +101,8 @@ display: none;
             font-style: normal;
             font-weight: 600;
             line-height: 1.2vw; /* 137.423% */
-            
         }
-
     }
-
     .card-service-third-row-p{
         width: 90%;
         padding-bottom: 1vw;
@@ -136,7 +115,6 @@ display: none;
         align-items: flex-start;
         transform: translateX(1vw);
         position: relative;
-
         .img-service-container-third-row{
             width: 35vw;
             right: 2.2vw;
@@ -149,45 +127,34 @@ display: none;
             height: 13vw;
             object-fit: fill;
             border-radius:3vw ;
-            background: black;
-            
+            background: black; 
             img{
                 width: 95%;
                 height: 85%;
                 border-radius:3vw ;
-                
                 object-fit: contain;
-
             }
         }
     }
     .Services3_Elements{
-position: absolute;
-top: -12vw;
-right: -5vw;
-
-
+        position: absolute;
+        top: -12vw;
+        right: -5vw;
     }
     .Services3_Elements_Container{
         position: relative;
     }
-    .Elements3{
-        
+    .Elements3{        
         position: absolute;
         top: 4vw;
         left: 4vw;
         width: 20vw;
         z-index: 9999999999;
         cursor: pointer;
-
     }
-
     .Polygon4_Right{
         width: 27vw;
-
     }
-
-
 }
 
 
