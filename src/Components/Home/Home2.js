@@ -1,9 +1,14 @@
+'use client'
 import React from 'react'
 import Services_Cards from '../../Components/Utils/Services_Cards'
 import { FaFacebookF, FaTiktok, FaWhatsapp, FaSnapchatGhost, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import {DATASOCIALMEDIA} from '../../config/SOCIALMEDIA'
 import Home23_BG from './Home23_BG';
+import {useRouter} from 'next/navigation'
+
 const Home2 = ({t ,data}) => {
+  
+  const router  = useRouter()
   return (
     <div className='Home2'>
         <Home23_BG t={t}/>
@@ -21,7 +26,7 @@ const Home2 = ({t ,data}) => {
             <p>
              {t("Engage a Larger Customer Base with a Compelling Brand Identity and a Collection of Visually Striking Marketing Materials.Reach a Broader Customer Segment by Crafting a Standout Brand Identity and Compelling Visual Marketing Materials")}
             </p>
-            <button className="btn">{t("Let’s Talk")}</button>
+            <button className="btn" onClick={()=> router.replace('/meet_us')}>{t("Let’s Talk")}</button>
 
           </div>
           <div className='Home2_Services'>
