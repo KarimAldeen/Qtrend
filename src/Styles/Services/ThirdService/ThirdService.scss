@@ -74,6 +74,8 @@ display: none;
             }
         }
     }
+
+ 
     .second-row-third-service{
         text-align: center;
         width: 30vw;
@@ -158,3 +160,14 @@ display: none;
 }
 
 
+
+.ar{
+    .second-row-third-service{
+        h2{
+            font-family: BNoor !important;
+        }
+        p{
+            font-family:  Noor !important;
+        }
+    }
+}
