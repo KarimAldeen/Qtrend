@@ -4,6 +4,7 @@ import i18n from '../../src/translate/Translate'
 import '../Styles/App/Import.scss'
 import CustomToastContainer from '../Utils/ToastifyContainer'
 import Head from 'next/head'
+import LOGOBLACK from "../../public/LogoBlack.png"
 export default function RootLayout({ children }) {
 
   const queryClient = new QueryClient()
@@ -11,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-      <link rel='image_src' href='https://miro.medium.com/max/720/1*OlgqUIhvl5-9dZISlZ2-yQ.jpeg' />
+      <link rel='image_src' href='/LogoBlack.png' />
         <title>Qtrend Company</title>
         <meta 
         name='description' content='Protfolio that is my pesonal website with the best 
