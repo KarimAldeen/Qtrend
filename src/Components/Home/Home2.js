@@ -30,15 +30,15 @@ const Home2 = ({t ,data}) => {
 
           </div>
           <div className='Home2_Services'>
-            <Services_Cards  t={t} Key={1} Word1={"CREATIVE"} Word2={"DESIGNS"} />
+            <Services_Cards  t={t} Key={1} Word1={"CREATIVE"} Word2={"DESIGNSS"} />
             <Services_Cards  t={t} Key={2} Word1={"DIGITAL"} Word2={"MARKETING"} />
             <Services_Cards  t={t} Key={3} Word1={"PHOTOS"} Word2={"&VIDEOS"} />
 
           </div>
           <div className='Home2_Services2'>
-            <Services_Cards t={t} Key={4} Word1={"MODELING"} Word2={"SERVICES"} />
-            <Services_Cards t={t} Key={5} Word1={"APPS & WEB"} Word2={"DEVELOPMENT"} />
-            <Services_Cards t={t} Key={6} Word1={"SOCIAL MEDIA ACCOUNTS VERIFICATION & BLOGGERS"} Word2={"SERVICES"} />
+            <Services_Cards t={t} Key={4} Word1={"MODELINGG"} Word2={"SERVICESS"} />
+            <Services_Cards t={t} Key={5} Word1={"APPS & WEBB"} Word2={"DEVELOPMENTT"} />
+            <Services_Cards className="moazmoaz" t={t} Key={6} Word1={"SOCIAL MEDIA ACCOUNTS VERIFICATION & BLOGGERSS"} Word2={"SERVICESSS"} />
 
 
           </div>

@@ -141,6 +141,7 @@
                 font-size: 1vw;
                 line-height:1vw; 
                 text-align: left;
+                // display: none;
               
             }
             h3{
@@ -301,4 +302,25 @@
             } 
     }
  }   
+}
+
+
+.ar{
+    .Services_Cards{
+        
+        .moazmoaz{
+            h2{
+                font-size: 3vw !important; 
+                line-height: 2.7vw !important;  
+            }
+            h3{
+                font-size: 1.5vw !important;
+                line-height:1.5vw !important; 
+                text-align: left !important;
+                padding-left: 2.5vw;
+                letter-spacing: .01vw !important;
+
+            }
+        }
+    }
 }
