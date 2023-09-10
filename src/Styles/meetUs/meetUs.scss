@@ -149,6 +149,7 @@
 
         .MeetUs_mid_section_right {
             padding-right: 4vw;
+            direction: ltr;
             transform: translateY(-18.5vw);
             div{
                 width: 27vw;
@@ -391,3 +392,18 @@
     }
 
 }
+
+
+.ar{
+    .MEET_US_WORD{
+        h5 , h6{
+        line-height: 7vw;
+            
+            font-family: BNoor !important;
+        }
+    }
+    .MeetUs_mid_section_right{
+        direction: rtl !important;
+    }
+}
+
