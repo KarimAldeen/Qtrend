@@ -125,8 +125,8 @@
     "Get started":"البدء",
     "Wireframing and Prototyping:":"التخطيط الشبكي والنماذج الأولية:",
     "Before starting the actual design process, web designers often create wireframes and prototypes to outline the structure and functionality of the website. This helps visualize the layout, navigation, and content placement before moving on to the actual design phase.":"قبل البدء في عملية التصميم الفعلية ، غالبًا ما يقوم مصممو الويب بإنشاء إطارات سلكية ونماذج أولية لتوضيح هيكل ووظائف موقع الويب. يساعد هذا في تصور التخطيط والتنقل وموضع المحتوى قبل الانتقال إلى مرحلة التصميم الفعلية.",
-    
-    
+    "SERVICESs":"المدونون",
+    "BLOGGERSs":"خدمات",
     "Looking For":"البحث عن",
     "BLOGGERS":"المدونون",
     "If you're in search of a reliable blogger or influencer to promote your business, you've come to the right place! We":"إذا كنت تبحث عن مدون أو مؤثر موثوق به للترويج لعملك ، فقد وصلت إلى المكان الصحيح! نحن",
@@ -149,7 +149,7 @@
     "Active Customers Rate":"تقييم العملاء النشطين",
     "Customer Satisfaction Rate":"معدل رضا العملاء",
     "Numbers are":"الأرقام",
-    "telling our story":"يحكي قصتنا",
+    "telling our story":"تحكي قصتنا",
     "Amet minim mollit non deserunt ullamco est sit":"Amet minim mollit non deserunt ullamco est sit",
     "aliqua dolor do amet sint. Velit officia consequat":"aliqua dolor do amet sint. Velit officia consequat",
     "duis enim velit mollit.":"duis enim velit mollit.",
@@ -168,5 +168,11 @@
     "OUR":"",
     "PROJECTS":"مشاريعنا",
     "ABOUT":"معلومات عنا",
-    "USs":""    
+    "USs":"",
+    "APPSs":"تطوير",
+    "DEVELOPMENTt":"التطبيقات",
+    "DEVELOPMENTtt":"الويب",
+    "DEVELOPMENTttt":" التطبيقات و الويب",
+    "WEBb":"تطوير",
+    "APPS & WEBb":"تطوير"    
 }

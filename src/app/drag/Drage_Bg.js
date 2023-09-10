@@ -477,7 +477,7 @@ const Drage_Bg = ({data}) => {
           letterSpacing="-0.05em"
         >
           <tspan x={0} y={81}>
-            {t("SERVICES")}
+            {t("SERVICESs")}
           </tspan>
         </text>
         <text
@@ -491,7 +491,7 @@ const Drage_Bg = ({data}) => {
           letterSpacing="-0.05em"
         >
           <tspan x={0} y={58}>
-            {t("BLOGGERS")}
+            {t("BLOGGERSs")}
           </tspan>
         </text>
       </g>

@@ -22,16 +22,16 @@ const FifthService = () => {
       // Main Dev Page
     <div className='FifthService_page'>
       <div className='First'>
-        <h1 className='APPS'>{t("APPS")}</h1>
-        <h2 className='DEVELOPMENT'>{t("DEVELOPMENT")}</h2>
+        <h1 className='APPS'>{t("APPSs")}</h1>
+        <h2 className='DEVELOPMENT'>{t("DEVELOPMENTt")}</h2>
       </div>  
       <div className='Second'>  
-        <h1 className='WEB'>{t("WEB")}</h1>
-        <h2 className='DEVELOPMENT'>{t("DEVELOPMENT")}</h2>
+        <h1 className='WEB'>{t("WEBb")}</h1>
+        <h2 className='DEVELOPMENT'>{t("DEVELOPMENTtt")}</h2>
       </div> 
       <div className='Third'>
-        <h1 className='APPS_and_WEB'>{t("APPS & WEB")}</h1>
-        <h2 className='DEVELOPMENT'>{t("DEVELOPMENT")}</h2>
+        <h1 className='APPS_and_WEB'>{t("APPS & WEBb")}</h1>
+        <h2 className='DEVELOPMENT'>{t("DEVELOPMENTttt")}</h2>
       </div>  
       {/* NavBar */}
         <NavBar2/>
