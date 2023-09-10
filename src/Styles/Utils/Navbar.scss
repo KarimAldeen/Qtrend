@@ -38,6 +38,7 @@
     justify-content: space-between;
     z-index: 9999999999;
     font-family: Poppins;
+    font-weight: bolder !important;
     font-display: swap;
         .Links{
             display: flex;
@@ -65,7 +66,7 @@
         color: white;
         font-size: 1.1vw;
         margin-inline: 1.8vw;
-        font-weight: 100 !important ;
+        font-weight: 900 !important ;
 
     }
     span{
