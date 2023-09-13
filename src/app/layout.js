@@ -4,7 +4,6 @@ import i18n from '../../src/translate/Translate'
 import '../Styles/App/Import.scss'
 import CustomToastContainer from '../Utils/ToastifyContainer'
 import Head from 'next/head'
-import LOGOBLACK from "../../public/LogoBlack.png"
 export default function RootLayout({ children }) {
 
   const queryClient = new QueryClient()
