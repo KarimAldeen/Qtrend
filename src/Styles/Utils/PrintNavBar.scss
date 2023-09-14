@@ -1,6 +1,21 @@
 .PrintNavBar{
-    height: 16vh;
+    height: 10vh;
     background: #ffffff;
     margin-bottom: .2em;
-    
+    .print_links{
+        display: flex; justify-content: center; align-items: center;
+        margin-top: 3.8vw;
+        div{
+            .Link{
+                color: #323232;
+                // font-family: Tajawal;
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+       
+        .link_with_arrow{
+
+        }
+    }
 }
