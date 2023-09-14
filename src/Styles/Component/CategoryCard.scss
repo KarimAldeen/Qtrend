@@ -1,34 +1,35 @@
 .container{
     background: #3c00ff;
     width: 16vw;
-    height: 45vh;
+    height: 46vh;
     border-radius: .7em;
+    box-shadow: 0px 11px 13px 1px rgba(0, 0, 0, 0.25);
     //
     margin: 10vw ;
-    //
-    .polygon{
-        // z-index: 0;
-        width: 16vw;
-        height: 42vh;
-        background: #C4FD14;
-        margin-top: -1vw;
-        transform: translateY(-1vw);
-        clip-path: polygon(
-                  38% 00%,
-                  100% 14%,
-                 100% 85%,
-                  38% 40%
-        );
-        border-radius: 1vw ;
-        img{
-            // width: 20vw;
-            object-fit: fill;
-            background-image: none;
-        }
+    overflow-x: hidden;
+    overflow-y: visible;
+    .CategoryCardGreen{
+        transform: translate(60px ,-50px);
+        position: absolute;  
+        // height: 10vw ;
+        // width: 10vw ;      
+        // margin: -1vw 2vw ;
+    }
+    .CatCom_img{
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        margin-top: -15em !important;
+        z-index: 9999;
+        width: 7vw;
+        position: absolute;
+        margin-left:  8vw ;
+        background: #672020;
     }
     .mid_section{
         line-height: 2em;
-        margin-top: -9em;
+        margin-left: .5em;
+        margin-top: -9em !important;
         .first_word{
             color: #000;
             // font-family: Poppins;
@@ -38,7 +39,7 @@
         .second_word{
             color: #000;
             // font-family: Poppins;
-            font-size: 1em;
+            font-size: .9em;
             font-weight: 400;
             line-height: 1.1em;
             width: 12vw;
@@ -48,8 +49,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin-top: 3em;
-        // margin-top: -9em;
+        margin-top: 1.7em;
         button{
             background: #000;
             color: #fff;
@@ -64,10 +64,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 4.5vw;
+            width: 5vw;
            .left_arrow, .right_arrow{
-            width: 2vw;
-            height: 2vw;
+            width: 2.2vw;
+            height: 2.2vw;
             border-radius: 50%;
             background: #000;
             color: #EDF1F4;
