@@ -9,6 +9,7 @@ import { DragImages } from './DragImages'
 const Page = () => {
   const [ClassName, setClassName] = useState("")
   const handleDragStart = (e) => {
+    console.log(e);
     setClassName(e) 
     if(e==1){setClassName("T6_1")}
     if(e==2){setClassName("T6_1 T6_2")}
@@ -30,6 +31,12 @@ const Page = () => {
       <div className='Drag_Down_4' onDrag={()=>handleDragStart(4)} draggable />
       <div className='Drag_Down_5' onDrag={()=>handleDragStart(5)} draggable />
       <div className='Drag_Down_6' onDrag={()=>handleDragStart(6)} draggable />
+      {/* <div className='Drag_Up_1' onDrag={()=>handleDragStart(1)} draggable /> */}
+      <div className='Drag_Up_2' onDrag={()=>handleDragStart(0)} draggable />
+      <div className='Drag_Up_3' onDrag={()=>handleDragStart(1)} draggable />
+      <div className='Drag_Up_4' onDrag={()=>handleDragStart(2)} draggable />
+      <div className='Drag_Up_5' onDrag={()=>handleDragStart(3)} draggable />
+      <div className='Drag_Up_6' onDrag={()=>handleDragStart(4)} draggable />
 <Footer/>
 
     </div>
