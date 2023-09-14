@@ -14,7 +14,7 @@ function NavBar3() {
 
   return (
     <div className={`NavBar3`}>
-          <img alt='logo-image' style={{width:"9vw",height:"3vw"}} src={'/Logo_Qtrend2.png'}/>
+          <img alt='logo-image' style={{width:"6vw",height:"2vw"}} src={'/Logo_Qtrend2.png'}/>
           <div className='search_input'>
           <input></input>
           <BiSearch/>

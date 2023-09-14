@@ -7,15 +7,11 @@ type CategoryCardProps = {
    index:number
   };
 const CategoryCard = ({name, desc, image, index}:CategoryCardProps) => {
-  //  index%2
-  
-  const is_odd = index %2 ==1  ; 
 
+  const is_odd = index %2 ==1 ; 
   return (
     <div className='container' style={{background:is_odd ? 'white' :'#181818'}}>
-         {/* <div className='polygon'> */}
-          {/* <CategoryCardGreen/> */}
-        {/* </div> */}
+          <CategoryCardGreen/>
         <img className='CatCom_img' src={image} alt='categoryImage' style={{background:is_odd ? 'black' :'#272727'}}/>
         <div className='mid_section'>
             <p className='first_word' style={{color:is_odd ? 'black' :'white'}}>{name}</p>
@@ -33,3 +29,10 @@ const CategoryCard = ({name, desc, image, index}:CategoryCardProps) => {
 }
 
 export default CategoryCard
+
+{/* <CategoryCard
+index='1'
+image='../Print/Union.jpg'
+name='PAPER PRINTS'
+desc='Top quality paper prints in Qatar'
+/> */}

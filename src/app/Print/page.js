@@ -9,16 +9,13 @@ import NavBar3 from '../../Components/Utils/NavBar3'
 import IMG from '../../../public/works/4.webp'
 import Product from '../../Components/Print/product'
 import CategoryCard from '../../Components/Print/CategoryCard'
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import PrintNavBar from '../../Components/Print/PrintNavBar';
 const page = () => {
     const {data  , isError}  = useGetALlStatics()
 
   return (
-    // <CategoryCard
-    //     index='2'
-    //     image='../Print/Union.jpg'
-    //     name='PAPER PRINTS'
-    //     desc='Top quality paper prints in Qatar'
-    // />
+   
     <div className='print_page'>
         <div className='header_container'>
         <div className='header_left'>
@@ -32,18 +29,15 @@ const page = () => {
           <div className='Print_info_2'>
           {/* <a href='https://www.LuMail.com/' aria-label="LuMail" target="_blank" rel="noopener"> */}
           <LuMail/>
-            {/* </a>     */}
+            {/* </a> */}
          
           <p>{data?.find(static_info => static_info.key == 'email')?.value}</p>
           </div>
-          <div className='Print_info_3'>
-          {/* <a  href='https://www.MdLocationOn.com/' aria-label="MdLocationOn" target="_blank" rel="noopener"> */}
-          <MdLocationOn/>
-            {/* </a> */}
-         
-          <p>{data?.find(static_info => static_info.key == 'location')?.value}</p>
+          <div className='print_info_3'>
+            <FaInstagram/>
+            <FaFacebookF/>
+            <FaLinkedinIn/>
           </div>
-          
         </div>
             <div className='header_right'>
                 <BsPersonCircle/>
@@ -54,9 +48,7 @@ const page = () => {
         </div>
         <NavBar3/>
         <div className='home_section'>
-            <div className='home_first'>
-                hssssssssssssssss
-            </div>
+            <PrintNavBar/>
 
             <div className='home_second'>
                 <div className='home_second_left'>

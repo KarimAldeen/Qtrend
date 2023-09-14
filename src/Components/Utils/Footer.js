@@ -26,7 +26,7 @@ const Footer = () => {
               DATASOCIALMEDIA.map((icon ,index) =>{
 
                 const object_is_exist = data?.find(social => social.icon == icon.key)
-                return (
+                return (    
                          <a href={object_is_exist?.link} target='_blank' className='btn btn-primary btn-lg btn-floating' key={index} style={{display:object_is_exist? 'inline-flex' :"none"}}>
                            {icon.icon}
                          </a>

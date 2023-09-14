@@ -38,7 +38,9 @@
 }
 .NavBar3{
     img{
-        transform: translateX(15vw);
+        margin-top: .1em;
+        transform: translateX(12vw);
+        
     }
     background: #000;
     position: absolute;
@@ -51,24 +53,26 @@
     font-family: Poppins;
     font-weight: bolder !important;
     font-display: swap;
+    height: 4vh;
     .search_input{
         display: flex;
         align-content: center;
-        padding-top: 1vw;
+        // padding-top: .5vw;
         input{
+            display: flex;justify-content: center;align-items: center;
             width: 23vw;
-            height: 3.2vw;
-            margin-inline: 9vw;
+            height: 2.8vw;
+            margin-inline: 7vw;
             border-radius: 2vw;
             border: none;
-            transform: translateX(10vw);
+            transform: translateX(8vw);
             &:hover{
                 border: none;
             }
         }
         svg{
             color: #262626;
-            margin: .8vw 0vw 0vw -1.2vw ;
+            margin: .65vw 0vw 0vw -1.2vw ;
             font-size: 1.5vw;
             z-index: 999;
         }
@@ -77,38 +81,22 @@
             display: flex;
             justify-content: center; 
             align-items: center; 
+            margin-right: 9.5vw;
         }
-    //  .Logo{
-    //     // display: flex;
-    //     // justify-content: center; 
-    //     // align-items: center;
-    //     // width: 9vw !important;
-    //     // height: 5vw;
-    //     // padding-top: 1vw;
-    // //     svg{
-    // //         width: 9vw !important;
-    // //         height: 5vw;
-    // //         path{
-    // //             fill: white;
-    // //         }
-    // //     }
-    //  }
-     
-   
     a{
         color: rgb(119, 113, 113);
-        font-size: .8vw;
-        margin-inline: 1vw;
+        font-size: .65vw;
+        margin-inline: .8vw;
         font-weight: 900 !important ;
 
     }
     span{
         background: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
-        padding: .6vw;
+        padding: .4vw;
        cursor: pointer;
         font-weight: bold;
-        font-size: 1.4vw;
+        font-size: 1vw;
         margin-left: 2vw;
         border-radius: .4vw;
         position: relative;

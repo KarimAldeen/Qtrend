@@ -1,30 +1,20 @@
 .container{
-    background: #3c00ff;
     width: 16vw;
     height: 46vh;
-    border-radius: .7em;
+    border-radius: .4em;
     box-shadow: 0px 11px 13px 1px rgba(0, 0, 0, 0.25);
-    //
-    margin: 10vw ;
-    overflow-x: hidden;
-    overflow-y: visible;
     .CategoryCardGreen{
-        transform: translate(60px ,-50px);
-        position: absolute;  
-        // height: 10vw ;
-        // width: 10vw ;      
-        // margin: -1vw 2vw ;
+        transform: translate(12px ,-20px);
+        height: 20vw ;
+        width: 20vw ;      
     }
     .CatCom_img{
-        display: flex;
-        align-items: start;
-        justify-content: start;
+        display: flex; align-items: start; justify-content: start;
         margin-top: -15em !important;
         z-index: 9999;
         width: 7vw;
         position: absolute;
         margin-left:  8vw ;
-        background: #672020;
     }
     .mid_section{
         line-height: 2em;
@@ -46,9 +36,7 @@
         }
     }
     .last_section{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        display: flex; justify-content: space-around; align-items: center;
         margin-top: 1.7em;
         button{
             background: #000;
@@ -61,9 +49,7 @@
             font-weight: 600;
         }
         .left_and_right{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            display: flex; justify-content: space-between; align-items: center;
             width: 5vw;
            .left_arrow, .right_arrow{
             width: 2.2vw;
@@ -71,10 +57,7 @@
             border-radius: 50%;
             background: #000;
             color: #EDF1F4;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            // font-family: Font Awesome 5 Free;
+            display: flex; align-items: center; justify-content: center;
             font-size: 1em;
             font-weight: 900;
         } 

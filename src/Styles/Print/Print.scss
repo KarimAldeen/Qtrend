@@ -3,31 +3,42 @@
     height: 200vh;
     .header_container{
         width: 100%;
-        height: 10vh;
+        height: 5vh;
         display: flex; justify-content: space-between; align-items: center;
         background: #211e1e;
         .header_left{
-            display: flex; justify-content: space-around;align-items: center;
-            width: 70%;
+            display: flex; 
+            align-items: center;
+            width: 100vw;
             margin-inline: 10em;
+            height: 2vh;
             .Print_info_1, .Print_info_2, .Print_info_3{
-                // width: 25%;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
+                margin-left: 2em;
                 p{
                     padding-inline: .7em;
                     color: #fff;
-                    font-size: .8em;
+                    font-size: .5em;
                 }
                 svg{
                     color: #fff;
+                    width: .4em;
+                }
+            }
+            .print_info_3{
+                svg{
+                    color: #fff;
+                    margin-left: 1em;
+                    width: .6em;
                 }
             }
         }
         .header_right{
-            width: 40%;
+            width: 40vw;
             display: flex; justify-content: center; align-items: center;
+            margin-inline: 15em;
             svg{
                 color: #fff;
                 padding-inline: 1em;
@@ -35,20 +46,14 @@
             .sign_in_up{
                 p{
                     color: #fff;
-                    font-size: 1em;
+                    font-size: .6em;
                     font-weight: 500;
                 }
             }
         }
     }
     .home_section{
-        height: 100vh;
-        // background: #907c7c;
-        .home_first{
-            height: 25vh;
-            background: #ffffff;
-            margin-bottom: .3em;
-        }
+        height: 100vh;       
         .home_second{
             height: 120vh;
             background: #ffffff;
