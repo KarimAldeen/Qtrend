@@ -1,42 +1,46 @@
 
 .FirstService_page{
 
-    .Links{
+    .Links3{
         a:nth-child(2){
             color: #C7F36C !important;
         }
     }
-    .NavBar{
+    .NavBar3{
         background: #BAC3C7;
     }
 }
 
 .Home{
-    .Links{
+    .Links3{
         a:nth-child(1){
             color: #C7F36C;
         }
     }
 }
-.Print{
-    .Links{
+.print_page{
+    .Links3{
         a:nth-child(3){
-            color: #C7F36C;
+            color: #ffffff;
         }
     }
 }
 .ar{
-    .In_Link{
+    .In_Link3{
         direction: rtl;
     }
 }
 .ar{
-    .NavBar{
+    .NavBar3{
         font-weight:900  !important ;
         font-family: BNoor !important;
     }
 }
-.NavBar{
+.NavBar3{
+    img{
+        transform: translateX(15vw);
+    }
+    background: #000;
     position: absolute;
     width: fill;
     padding: 1vw 4.5vw;
@@ -47,39 +51,61 @@
     font-family: Poppins;
     font-weight: bolder !important;
     font-display: swap;
-        .Links{
+    .search_input{
+        display: flex;
+        align-content: center;
+        padding-top: 1vw;
+        input{
+            width: 23vw;
+            height: 3.2vw;
+            margin-inline: 9vw;
+            border-radius: 2vw;
+            border: none;
+            transform: translateX(10vw);
+            &:hover{
+                border: none;
+            }
+        }
+        svg{
+            color: #262626;
+            margin: .8vw 0vw 0vw -1.2vw ;
+            font-size: 1.5vw;
+            z-index: 999;
+        }
+    }
+        .Links3{
             display: flex;
             justify-content: center; 
             align-items: center; 
         }
-     .Logo{
-        display: flex;
-        justify-content: center; 
-        align-items: center;
-        width: 9vw !important;
-        height: 5vw;
-        padding-top: 1vw;
-        svg{
-            width: 9vw !important;
-            height: 5vw;
-            path{
-                fill: white;
-            }
-        }
-     }
+    //  .Logo{
+    //     // display: flex;
+    //     // justify-content: center; 
+    //     // align-items: center;
+    //     // width: 9vw !important;
+    //     // height: 5vw;
+    //     // padding-top: 1vw;
+    // //     svg{
+    // //         width: 9vw !important;
+    // //         height: 5vw;
+    // //         path{
+    // //             fill: white;
+    // //         }
+    // //     }
+    //  }
      
    
     a{
-        color: white;
-        font-size: 1.1vw;
-        margin-inline: 1.8vw;
+        color: rgb(119, 113, 113);
+        font-size: .8vw;
+        margin-inline: 1vw;
         font-weight: 900 !important ;
 
     }
     span{
-        background: black;
-        color: white;
-       padding: .6vw;
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        padding: .6vw;
        cursor: pointer;
         font-weight: bold;
         font-size: 1.4vw;
@@ -98,7 +124,7 @@
      
 }
 }
-.In_Link{
+.In_Link3{
     position: relative;
 
 

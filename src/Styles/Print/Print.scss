@@ -1,0 +1,149 @@
+.print_page{
+    background: rgb(194, 194, 194);
+    height: 200vh;
+    .header_container{
+        width: 100%;
+        height: 10vh;
+        display: flex; justify-content: space-between; align-items: center;
+        background: #211e1e;
+        .header_left{
+            display: flex; justify-content: space-around;align-items: center;
+            width: 70%;
+            margin-inline: 10em;
+            .Print_info_1, .Print_info_2, .Print_info_3{
+                // width: 25%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                p{
+                    padding-inline: .7em;
+                    color: #fff;
+                    font-size: .8em;
+                }
+                svg{
+                    color: #fff;
+                }
+            }
+        }
+        .header_right{
+            width: 40%;
+            display: flex; justify-content: center; align-items: center;
+            svg{
+                color: #fff;
+                padding-inline: 1em;
+            }
+            .sign_in_up{
+                p{
+                    color: #fff;
+                    font-size: 1em;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    .home_section{
+        height: 100vh;
+        // background: #907c7c;
+        .home_first{
+            height: 25vh;
+            background: #ffffff;
+            margin-bottom: .3em;
+        }
+        .home_second{
+            height: 120vh;
+            background: #ffffff;
+            display: flex; justify-content: center; align-items: start;
+            .home_second_left{
+                width: 80%;
+                height: 50vh;
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                line-height: 5em;
+                margin-inline: 10em;
+                .frist_p{
+                    margin-top: 2em;
+                    font-size: 5.5em;
+                    font-weight: 900;
+                    color: #272727;
+                    width: 80%;
+                    font-style: italic;
+                }
+                .second_p{
+                    font-size: 5.5em;
+                    font-weight: 900;
+                    color: #b3ec43;
+                    width: 80%;
+                    font-style: italic;
+                }
+                .third_p{
+                    font-size: 1em;
+                    font-weight: 500;
+                    color: #a6a6a6;
+                    width: 60%;
+                    line-height: 1.6em;
+                    display: flex;
+                    align-items: start !important;
+                    margin-left: .7em;
+                }
+                .request_button{
+                    margin-top: 1.5em;
+                    padding: .5em;
+                    border: none;
+                    border-radius: 3em;
+                    width: 24vw;
+                    color: #fff;
+                    font-weight: 900;
+                    font-size: 2em;
+                    background: linear-gradient(180deg,#6693f2, #000dff);
+                    font-style: italic;
+                }
+            }
+            .home_second_right{
+                width: 50%;
+                margin-top: 3em;
+                img{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 900px)  {
+    .header_container{
+         .header_left{
+            width: 55% !important;
+            margin-inline: 4em !important;
+            .Print_info_1, .Print_info_2, .Print_info_3{
+                // width: 25%;
+                p{
+                    font-size: .9em !important;
+                }
+            }
+        }
+        .header_right{
+            width: 40%;
+            .sign_in_up{
+                p{
+                    font-size: 1.1em !important;
+                }
+            }
+        }
+    }   
+    .NavBar3{
+        .search_input{
+            transform: translateX(-7em) !important;
+            input{
+                // width: 23vw !important;
+                // padding-left:1em !important;
+            }
+        }
+        img{
+            transform: translateX(2em) !important;
+        }
+        a{
+            width: 100% !important;
+            font-size: .7em !important;
+        }
+    }
+}

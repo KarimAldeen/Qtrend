@@ -1,0 +1,84 @@
+.container{
+    background: #3c00ff;
+    width: 16vw;
+    height: 45vh;
+    border-radius: .7em;
+    //
+    margin: 10vw ;
+    //
+    .polygon{
+        // z-index: 0;
+        width: 16vw;
+        height: 42vh;
+        background: #C4FD14;
+        margin-top: -1vw;
+        transform: translateY(-1vw);
+        clip-path: polygon(
+                  38% 00%,
+                  100% 14%,
+                 100% 85%,
+                  38% 40%
+        );
+        border-radius: 1vw ;
+        img{
+            // width: 20vw;
+            object-fit: fill;
+            background-image: none;
+        }
+    }
+    .mid_section{
+        line-height: 2em;
+        margin-top: -9em;
+        .first_word{
+            color: #000;
+            // font-family: Poppins;
+            font-size: 2em;
+            font-weight: 700;
+        }
+        .second_word{
+            color: #000;
+            // font-family: Poppins;
+            font-size: 1em;
+            font-weight: 400;
+            line-height: 1.1em;
+            width: 12vw;
+        }
+    }
+    .last_section{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 3em;
+        // margin-top: -9em;
+        button{
+            background: #000;
+            color: #fff;
+            border: none;
+            border-radius: .8em;
+            padding: .6em;
+            width: 7.5vw;
+            font-size: .8em;
+            font-weight: 600;
+        }
+        .left_and_right{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 4.5vw;
+           .left_arrow, .right_arrow{
+            width: 2vw;
+            height: 2vw;
+            border-radius: 50%;
+            background: #000;
+            color: #EDF1F4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // font-family: Font Awesome 5 Free;
+            font-size: 1em;
+            font-weight: 900;
+        } 
+        }
+        
+    }
+}

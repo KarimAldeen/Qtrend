@@ -6,19 +6,24 @@ import BtnTranslate from './BtnTranslate'
 import { useTranslation } from 'react-i18next'
 import MenuService from '../ui/Menu'
 import useHover from '../../hooks/useHover'
+import {BiSearch} from 'react-icons/bi'
 
-function NavBar2() {
+function NavBar3() {
   const [t] = useTranslation();
   const { isHovered ,handleMouseEnter , handleMouseLeave} = useHover()
 
   return (
-    <div className={`NavBar`}>
+    <div className={`NavBar3`}>
           <img alt='logo-image' style={{width:"9vw",height:"3vw"}} src={'/Logo_Qtrend2.png'}/>
-          <div className='Links'>
-            <div className='In_Link'> 
+          <div className='search_input'>
+          <input></input>
+          <BiSearch/>
+          </div>
+          <div className='Links3'>
+            <div className='In_Link3'> 
             <Link  href={'/'}  >{t('HOME')}</Link>
                 <Link  href={'/services?param=1'}  onMouseEnter={()=>handleMouseEnter()} >{t('OUR SERVICES')}</Link>
-                <Link href={'/Print'}  >{t("Print")}</Link> 
+                <Link href={'/Print'}  >{t("Print")}</Link>             
                 <Link  href={'/works'}  >{t("OUR WORKS")}</Link>
 
                 {
@@ -36,4 +41,4 @@ function NavBar2() {
   )
 }
 
-export default NavBar2
+export default NavBar3
