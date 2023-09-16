@@ -10,7 +10,7 @@ const Page = () => {
     <div className='print_page'>
       <TopHeader />
         <div className='home_section'>
-            <PrintNavBar/>
+        <PrintNavBar/>
 
             <div className='home_second'>
                 <div className='home_second_left'>

@@ -2,20 +2,47 @@
     height: 10vh;
     background: #ffffff;
     margin-bottom: .2em;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4vw;
+    width: 100%;
     .print_links{
-        display: flex; justify-content: center; align-items: center;
-        margin-top: 3.8vw;
+        width: 50%;
+        display: flex;
+        justify-content: center !important; 
+        align-items: center;
+        margin-left: 8em;
         div{
             .Link{
                 color: #323232;
                 // font-family: Tajawal;
-                font-size: 14px;
+                font-size: .5em;
                 font-weight: 700;
+                margin-left: 3em;
             }
         }
        
         .link_with_arrow{
-
+            svg{
+                transform: translateY(.6em);
+                color: #000;
+                margin-left: .3em;
+                font-size: 1.6em;
+                // width: em;
+            }
+        }
+    }
+    .print_icons{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: -4em;
+        svg{
+            margin: .7em 1em 0em 0em;
+            font-size: 1.4em;
         }
     }
 }
