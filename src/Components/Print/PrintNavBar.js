@@ -26,7 +26,7 @@ const PrintNavBar = () => {
         </div>
         <div className='print_icons'>
         <span className='notifictaion_circle'>99</span>
-            <a href='/Print/MyCart'>
+            <a href='/MyCart'>
             <MdOutlineShoppingBag/>
             </a>
             <FiMail/>
