@@ -1,5 +1,5 @@
 import React from 'react'
-
+import AllSquare from '../../../public/Print/AllSquare'
 const PrintLastSection = () => {
   return (
     <div className='PrintLastSection'>
@@ -9,7 +9,7 @@ const PrintLastSection = () => {
             <p className='description2'>Advertising products printing can involve printing a company's logo, slogan, contact information, or other marketing messages on a variety of items, including but not limited to:</p>
         </div>
         <div className='image_container'>
-            <img src={'../Print/Frame 162516.png'}/>   
+            <AllSquare/>
         </div>
     </div>
   )
