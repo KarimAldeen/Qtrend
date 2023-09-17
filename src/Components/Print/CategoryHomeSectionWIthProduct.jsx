@@ -11,6 +11,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import { BaseURLImage } from '../../api/config'
+import Arrow from '../Services/Arrow'
 function CategoryHoemSectionWithProduct({color , index , products}) {
     const is_odd = index %2 ==1 
     
@@ -27,22 +28,25 @@ function CategoryHoemSectionWithProduct({color , index , products}) {
           spaceBetween={50}
           slidesPerView={3}>
           {
-            data?.map((img) => (
+            products?.map((img) => (
               <>
                 <SwiperSlide>
                   <ProductCard 
 
                   {...img}
                 />
-                  
                 </SwiperSlide>
               </>
             ))
-
+            
           }
 
 
         </Swiper>
+        <div style={{marginInline:"10px"}}>
+
+          <Arrow color={is_odd ? "black" :'white'} />
+        </div>
     
       </div>
     </div>  
