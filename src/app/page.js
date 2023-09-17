@@ -15,14 +15,11 @@ const Page = () => {
  
   return (
     <div className='HOME_PAGE'>
-      {/* <Card /> */}
-      {/* <Main_Paper /> */}
-      <Section />
-      {/* <Home1 t={t}/>
+      <Home1 t={t}/>
       <Home2 t={t} data={data}/>
       <Home4 t={t}/>
       <Home5 t={t}/>
-      <Footer t={t} data={data} /> */}
+      <Footer t={t} data={data} />
     </div>
 
   )

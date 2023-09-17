@@ -2,9 +2,10 @@
 
 .category-product-page{
     width: 70vw;
-    
+        
     margin: auto;
     .header-category-product-page{
+
         display: flex;
         justify-content: space-between;
         .left{
@@ -31,8 +32,8 @@
 
       .simple-continer-row{
         width: 70%;
-        margin: auto;
-        display: flex;
+        // margin: auto;
+        display: flex; 
         justify-content: space-around;
       }
      

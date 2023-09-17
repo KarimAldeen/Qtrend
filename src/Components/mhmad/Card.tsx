@@ -80,7 +80,7 @@ const Card = () => {
             Car Wrap
           </tspan>
         </text>
-        <text
+        {/* <text
           id="Top_quality_brochures_in_Qatar"
           data-name="Top quality brochures in Qatar"
           transform="translate(21.6 250.611)"
@@ -94,7 +94,7 @@ const Card = () => {
           <tspan x={0} y={32}>
             in Qatar
           </tspan>
-        </text>
+        </text> */}
         <text
           id="From_130_Qr_to_15_QR"
           data-name="From 130 Qr to 15 QR"

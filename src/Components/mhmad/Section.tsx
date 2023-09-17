@@ -7,8 +7,8 @@ const Section = () => {
     <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
-    width={1351}
-    height={356}
+    width={900}
+    height={240}
     viewBox="0 0 1351 356"
   >
     <defs>
