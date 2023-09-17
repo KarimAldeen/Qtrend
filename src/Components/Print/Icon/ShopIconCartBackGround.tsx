@@ -5,8 +5,8 @@ function ShopIconCartBackGround() {
     <svg
     className='shop_icon_cart_back_ground'
     xmlns="http://www.w3.org/2000/svg"
-    width={209}
-    height={108}
+    width={180}
+    height={130}
     viewBox="0 0 209 108"
     fill="none"
   >

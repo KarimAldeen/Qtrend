@@ -3,8 +3,14 @@ import ProductCard from './ProductCard'
 import Main_Paper from '../mhmad/Main_Paper'
 import Card from '../mhmad/Card'
 import { Carousel } from 'react-responsive-carousel'
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import ProductCardNew from '../Print/ProductCardNew'
+
+import { data } from './data/Products'
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import { BaseURLImage } from '../../api/config'
 function CategoryHoemSectionWithProduct({color , index , products}) {
     const is_odd = index %2 ==1 
     
@@ -12,25 +18,32 @@ function CategoryHoemSectionWithProduct({color , index , products}) {
     <>
     <div style={{background:is_odd? "#EDF1F4" :color , display:products?.length == 0 ? 'none' :"flex"}} className='product_category_row'>
       <div className='simple-continer-row'>
+        <div >
+
         <Main_Paper />
-    <div className=''>
-    <ProductCardNew />
-        {/* <Carousel
-        autoPlay 
-        showArrows={false}
-        infiniteLoop
-        showStatus={false}
-        showThumbs={false}
-        dynamicHeight
-        >
-            {
-                products.map(product =>(
-                <ProductCardNew  key={product.id}/>
-                ))
-            }
-        </Carousel> */}
-      
-    </div>
+        </div>
+  
+        <Swiper
+          spaceBetween={50}
+          slidesPerView={3}>
+          {
+            data?.map((img) => (
+              <>
+                <SwiperSlide>
+                  <ProductCard 
+
+                  {...img}
+                />
+                  
+                </SwiperSlide>
+              </>
+            ))
+
+          }
+
+
+        </Swiper>
+    
       </div>
     </div>  
     </>

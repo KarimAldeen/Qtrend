@@ -7,6 +7,8 @@ import CategorySlider  from '../../Components/Print/CategorySlider'
 import ProductCategoryContainer  from '../../Components/Print/ProductCategoryContainer'
 import Section from '../../Components/mhmad/Section'
 import {data} from '../../Components/Print/data/Products'
+import { Footer } from '../../Components/Home'
+import CopyRight from '../../Components/Utils/CopyRight'
 function PrintCategory() {
 
   const per_page =3
@@ -38,6 +40,8 @@ function PrintCategory() {
               ))
             }
       </div>
+      <Footer />
+      <CopyRight />
   </>
   )
 }

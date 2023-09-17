@@ -6,9 +6,10 @@ const Main_Paper = () => {
     <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
-    width={376}
-    height={485}
+    width={300}
+    height={390}
     viewBox="0 0 376 485"
+    style={{display:"inline"}}
     className='Main_Paper'
   >
     <defs>

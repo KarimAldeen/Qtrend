@@ -2,7 +2,7 @@
 
 .category-product-page{
     width: 70vw;
-        
+      
     margin: auto;
     .header-category-product-page{
 
@@ -20,6 +20,7 @@
    
    .category_product{
     height: 200px;
+
    }
 }
 .product_category_row{
@@ -31,8 +32,9 @@
     //   justify-content:space-around;
 
       .simple-continer-row{
-        width: 70%;
-        // margin: auto;
+        width: 78%;
+        margin: auto;
+        align-items: center;
         display: flex; 
         justify-content: space-around;
       }
