@@ -57,14 +57,15 @@
    
     .home_section{
         height: 70vh;       
+        margin-bottom: 7vh;
         .home_second{
-            height: 70;
+            height: 70vh;
             background: #EDF1F4;
             display: flex; justify-content: center; align-items: start;
             width: 100vw;
             .home_second_left{
                 width: 100vw;
-                height: 70;
+                height: 70vh;
                 display: flex;
                 align-items: start;
                 flex-direction: column;
