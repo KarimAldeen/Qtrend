@@ -1,19 +1,21 @@
 .checkout_page{
 
     background: #EDF1F4;
-    height: 100vh;
-    width: 100vw;
+    min-height: 150vh;
+    // width: 100vw;
     margin-top:-5px ;
     border-top: 5px solid #c2c2c2;
-
+    
     .checkout_body{
         width: 80%;
         background-color: white;
-        height: 100vh;
+        min-height: 100vh;
         margin: auto;
+        margin-bottom: 10vh;
         .checkout_container{
             width: 80%;
             margin: auto;
+            height: fit-content;
             padding-top: 7vh;
             .location_page{
                 color: var(--Old-Gray, #A7A7A7);
@@ -97,6 +99,202 @@
                     }
                 }
             }
+            .checkout_form{
+                height: fit-content;
+                display: flex;
+                justify-content: space-between;
+                @include devices(tablet){
+                    &{
+                        flex-direction: column;
+                    }
+                }
+                .checkout_left_form{
+                    input{
+                        &:focus{
+                            padding-inline:3px;
+                        }
+                    }
+                    width: 63%;
+                    
+                    input{
+                    border-radius: 6.22px;
+                    border: 0.777px solid var(--Black, #383838);
+                    opacity: 0.5;
+                    width: 398.08px;
+                    height: 46.65px;
+                    font-size: 1.2em;
+                    width: 100%;
+                    }
+                    .input_top{
+                        label{
+                            
+                            color: var(--Black, #383838);
+                            font-family: Poppins;
+                            font-size: 13.995px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+                        input{
+                            border-radius: 0 !important;
+                            color: black;
+                            border-top: none;
+                            border-left: none;
+                            border-right: none;
+                            margin-bottom: 10px;
+                            &:focus{
+                                outline: none;
+                            }
+                        }
+                    }
+                    .div_mid_input{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom:20px;
+                        margin-top:20px ; 
+                        label{
+                            color: var(--Black, #383838);
+                            font-family: Poppins;
+                            font-size: 13.995px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                        .input_mid_1{
+                            width: 47%;
+                        }
+                        
+                        .input_mid_2{
+                            width: 47%;
+                        }
+                    }
+                    .input_bottom{
+                        label{
+                            color: var(--Black, #383838);
+                            text-align: center;
+                            font-family: Poppins;
+                            font-size: 13.995px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                        input{
+                            height: 93.3px;
+
+                        }
+                    }
+                }
+                .checkout_rigth_form{
+                    border-radius: 6.22px;
+                    border: 0.777px solid  #383838;
+                    margin-bottom: 30px;
+                    height: fit-content;
+                    width: 33% ;
+                    background:  #FAFAFA;
+                    .header{
+                        color:black !important  ;
+                        font-family: Poppins;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        text-align: center;
+                        margin-top: 20px;
+                        
+                        
+                    }
+                    .product_row_quantitiy_price{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 90%;
+                        margin: auto;
+                        padding: 10px;
+                    }
+                    .total_price_section{
+                        border-top: 1px solid black ;
+                        width: 90%;
+                        margin: auto;
+                    }
+                    .product_full_price{
+                        border-bottom: 1px solid black ;
+                        border-top: 1px solid black ;
+                        width: 85%;
+                        margin: auto;
+                        display: flex;
+                        margin-top: 10px;
+                        padding: 10px;
+                        margin-bottom: 30px;
+                        justify-content: space-between;
+                        .rigth{
+                            color: #B0D04F !important;
+                            font-family: Poppins;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            opacity: 1 !important;
+                        }
+
+                    }
+                    .submit_checkout{
+                        width: 90%;
+                        margin: auto;
+                        .header{
+                           
+                            color:  #383838;
+                            font-family: Poppins;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            text-align: left !important;
+                        }
+                        .cash_button{
+                            display: flex;
+                            width: 60%;
+                            color: #FAFAFA;
+                            color: var(--White, #FAFAFA);
+                            text-align: center;
+                            font-family: Poppins;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            padding: 10px;
+                            margin: auto;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 7.775px;
+                            margin-top: 20px;
+                            border-radius: 6.22px;
+                            border: 0.777px solid var(--Black, #383838);
+                            background: var(--Black, #383838);
+                        }
+                        .checkout_button{
+                         display: flex;
+                        padding: 12.44px;
+                        justify-content: center;
+                        align-items: center;
+                     
+                        flex-shrink: 0;
+                        width: 80%;
+                        border-radius: 6.22px;
+                        background: #C4FD14;
+                        margin: auto;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        color: #232323;
+                        font-family: Poppins;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: normal;
+                        }
+                    }
+                }
+              
+            }
         }
     }
 }
+
