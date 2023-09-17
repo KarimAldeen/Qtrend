@@ -5,7 +5,11 @@ import PrintNavBar from '../../Components/Print/PrintNavBar'
 import { MdOutlineShoppingBag } from 'react-icons/md'
 import { Footer } from '../../Components/Home'
 import CopyRight from '../../Components/Utils/CopyRight'
+import  {useRouter} from 'next/navigation'
 const MyCart = () => {
+  // const GetCheckout =
+  const route  = useRouter()
+   
   return (
     <>
       <TopHeader/>
@@ -64,8 +68,10 @@ const MyCart = () => {
                             <p className='total'>Total</p>
                             <p className='price'>150.00 Qr</p>
                           </div>
-                          <button className='Checkout_button'>Checkout</button>
-                          <p className='summary_continue'>Continue Shopping</p>
+                          <button className='Checkout_button' onClick={()=>route.push('/Checkout')}>Checkout</button>
+                          {/* <a href='/Print'> */}
+                          <p className='summary_continue' onClick={()=> route.push('/Print')}>Continue Shopping</p>
+                          {/* </a> */}
                         </div>
                    </div>
       </div>
