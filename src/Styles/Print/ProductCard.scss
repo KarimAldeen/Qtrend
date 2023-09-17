@@ -1,12 +1,14 @@
 
 
 .product_card{
-    width: 15vw;
-    margin:100px ;
+    width:  200px;
+    // margin:100px ;
     background: #181818;
     padding: 10px;
     color: white;
     border-radius: 10px;
+   
+
 
     img{
         width: 100%;
@@ -24,9 +26,15 @@
 
     .card-body{
         display: flex;
+        position: relative;
         .quick_overview{
+            
             font-size: .8em;
             width: 90%;
+            max-width: 120px;
+            min-height: 20px;
+          
+            word-wrap: break-word;
             margin-top: 10px;
             margin-bottom: 10px;
         }
@@ -35,8 +43,10 @@
             font-size: .8em;
         }
         .add_to_cart_container{
-            width: 50%;
-            position: relative;
+            width: 50%; 
+            right: -50px;
+            bottom:80px;
+            position: absolute;
             .cart_body_button{
                 top: 35px;
                 position: absolute;

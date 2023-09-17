@@ -1,21 +1,25 @@
-import React from 'react';
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
+'use client'
+import React, { useEffect, useState } from 'react';
+import  { Navigation, Pagination, Scrollbar, A11y, Autoplay  } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
 const SwiperComponent = ({ children, slidesPerView =null }) => {
+
+  const [mount  , setMount] = useState(false)
 
 
     const statment  =2
   return (
+    
+
     <Swiper
-    modules={[Navigation, Pagination, Scrollbar, A11y , Autoplay]}
-    spaceBetween={0}
+    modules={[Navigation, Pagination , A11y , Autoplay]}
+    spaceBetween={20}
     slidesPerView={statment}
     pagination={{ clickable: true }}
     // onSwiper={(swiper) => }
@@ -28,6 +32,8 @@ const SwiperComponent = ({ children, slidesPerView =null }) => {
     >
      {children}
     </Swiper>
+
+
   );
 };
 
