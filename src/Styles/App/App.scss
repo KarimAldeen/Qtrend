@@ -148,3 +148,16 @@ button,svg{
   75%  {opacity: 0.8;}
   100% {opacity: 1;}
 }
+
+
+.card_App{
+  position: relative;
+  .text_card{
+      position: absolute;
+      font-size: 14px;
+      top: 65%;
+      left: 17%;
+      color: white;
+      width: 140px;
+  }
+}

@@ -7,8 +7,10 @@ import CategorySection from '../../Components/Print/CategorySection';
 import PrintLastSection from '../../Components/Print/PrintLastSection'
 import  Footer  from '../../Components/Utils/Footer';
 import CopyRight from '../../Components/Utils/CopyRight'
+import CategoryHoemSectionWithProduct from '../../Components/Print/CategoryHomeSectionWIthProduct';
+import { data } from '../../Components/Print/data/Products';
 const Page = () => {
-
+  const per_page = 2
   return (
    
     <div className='print_page'>
@@ -29,9 +31,15 @@ const Page = () => {
             </div>
         </div>
 
-        {/* <div className='home_center'> */}
-                {/* <CategorySection /> */}
-            {/* </div> */}
+        <div className='category_product'>
+
+          {
+            data?.map((row ,index) =>(
+              
+              <CategoryHoemSectionWithProduct color="#43A7D3"  key={index} products={data?.slice(index*per_page , index*per_page +per_page)}  index={index} />
+              ))
+            }
+      </div>
             <PrintLastSection/>
             <Footer/>
             <CopyRight/>
