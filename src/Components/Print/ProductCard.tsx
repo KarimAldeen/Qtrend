@@ -20,7 +20,9 @@ function ProductCard({name , id , image  ,quick_overview , from_price , to_price
   return (
     <div className='product_card' style={{background:is_odd ? "black" :'#FFF'}}>
          {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={BaseURL + image} alt="Product IMage " />
+        <img src={
+            // BaseURL +
+             image} alt="Product IMage " />
 
         <h2 className='produc_name' style={{color:is_odd ? '#F4F4F4' :"black"}}>{name}</h2>
 

@@ -22,6 +22,7 @@ const Services4_Images = ({ Word, Data=[] }) => {
               <>
                 <SwiperSlide>
                   <img src={BaseURLImage + img?.path} alt='' className='Swiper_image1' />
+                  
                 </SwiperSlide>
               </>
             ))

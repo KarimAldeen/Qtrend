@@ -7,7 +7,6 @@ import { useGetALlStatics } from '../../api/ContactUs/Contact';
 import {BsPersonCircle} from 'react-icons/bs'
 import NavBar3 from '../../Components/Utils/NavBar3'
 import IMG from '../../../public/works/4.webp'
-import Product from '../../Components/Print/product'
 import CategoryCard from '../../Components/Print/CategoryCard'
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 function TopHeader() {
