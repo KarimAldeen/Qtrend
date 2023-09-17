@@ -1,5 +1,6 @@
 @import './ProductCard.scss';
 @import './CategoryMainCard.scss';
+@import './Heckout.scss';
 .header_container{
     width: 100%;
     height: 5vh;
@@ -52,7 +53,7 @@
     }
 }
 .print_page{
-    background: rgb(194, 194, 194);
+    background: #c2c2c2;
     height: 200vh;
    
     .home_section{
