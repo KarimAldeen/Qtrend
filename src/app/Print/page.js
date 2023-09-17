@@ -26,7 +26,7 @@ const Page = () => {
                     <p className='third_p'>AFFORDABLE RATES FOR QUALITY PRINTS WITH PROFESSIONAL RESULTS.</p>
                     <button className='request_button'>REQUEST NOW</button>
                 </div>
-                <div className='home_second_right'>
+                <div className='home_second_right' style={{zIndex:0}}>
                     <img src={'/Print/Prints.png'} alt='prints'/>
                 </div>
             </div>

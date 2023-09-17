@@ -36,12 +36,8 @@ function TopHeader() {
             <FaLinkedinIn/>
           </div>
         </div>
-            <div className='header_right'>
-                <BsPersonCircle/>
-                <a className='sign_in_up'>
-                    <p>Sign in /Sign up</p>
-                </a>
-            </div>
+           
+            
         </div>
         <NavBar3/>
     </>

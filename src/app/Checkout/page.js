@@ -4,8 +4,9 @@ import TopHeader from '../../Components/Print/TopHeader'
 import PrintNavBar from '../../Components/Print/PrintNavBar'
 import { Footer } from '../../Components/Home'
 import CopyRight from '../../Components/Utils/CopyRight'
+import {useRouter} from 'next/navigation'
 
-function page() {
+function Page() {
     const data = {
         sub_total:100,
         tax:0 ,
@@ -27,6 +28,7 @@ function page() {
             
         ]
     }
+    const route  =  useRouter()
   return (
     <>
     
@@ -160,6 +162,7 @@ function page() {
                                                 </defs>
                                                 </svg>
                                         </div>
+                                        <p onClick={()=> route.push('/MyCart')} className='back_to_cart'>Back TO Cart</p>
                                     </div>
                             </div>
                         </div>
@@ -172,4 +175,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

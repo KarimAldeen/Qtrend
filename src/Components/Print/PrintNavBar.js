@@ -24,12 +24,12 @@ const PrintNavBar = () => {
             </div>
 
         </div>
-        <div className='print_icons'>
+        <div className='print_icons' style={{zIndex:"999"}}>
         <span className='notifictaion_circle'>99</span>
             <a href='/MyCart'>
-            <MdOutlineShoppingBag/>
+                     <MdOutlineShoppingBag/>
             </a>
-            <FiMail/>
+       
         </div>
     </div>
   )
