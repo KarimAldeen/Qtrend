@@ -1,0 +1,28 @@
+.PrintNavBar{
+    margin-bottom: 0px;
+}
+.MyCart{
+    background: #EDF1F4;
+    height: 200vh;
+    width: 100vw;
+    border-top:#c2c2c2 5px solid;
+    display: flex;justify-content: center;
+    .MyCart_page{
+        background: #ffffff;
+        width: 80vw;
+        height: 120vh;
+        border-radius: 0vw 0vw 5vw 5vw;
+        .home_word, .MyCart_word{
+            color: var(--Old-Gray, #A7A7A7);
+            // font-family: Poppins;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .MyCart_word{
+            color: #9AB72B !important;
+        }
+        .home_word{
+            margin: 5vw;
+        }
+    }
+}
