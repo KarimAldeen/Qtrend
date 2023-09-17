@@ -8,17 +8,17 @@ const PrintNavBar = () => {
         <div className='print_links'>
             <div><Link className='Link' href={'/Print'}>ALL PRINTS</Link></div>
             <div className='link_with_arrow'>
-                <Link className='Link'  href={'/Print/PaperPrints'}>PAPER PRINTS 
+                <Link className='Link'  href={'/PrintCategory'}>PAPER PRINTS 
             <MdKeyboardArrowDown/>
                 </Link>
             </div>
             <div className='link_with_arrow'>
-                <Link className='Link'  href={'/Print/PaintingAndStickers'}>PAINTING AND STICKERS
+                <Link className='Link'  href={'/PrintCategory'}>PAINTING AND STICKERS
             <MdKeyboardArrowDown/>
                 </Link>
             </div>
             <div className='link_with_arrow'>
-                <Link className='Link'  href={'/Print/PaintingAndStickers'}>ADVERTISING PRODUCTS
+                <Link className='Link'  href={'/PrintCategory'}>ADVERTISING PRODUCTS
             <MdKeyboardArrowDown/>
                 </Link>
             </div>
@@ -26,7 +26,7 @@ const PrintNavBar = () => {
         </div>
         <div className='print_icons'>
         <span className='notifictaion_circle'>99</span>
-            <a href='/Print/MyCart'>
+            <a href='/MyCart'>
             <MdOutlineShoppingBag/>
             </a>
             <FiMail/>
