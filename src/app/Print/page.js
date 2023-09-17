@@ -3,6 +3,10 @@ import React from 'react'
 import TopHeader from '../../Components/Print/TopHeader'
 import PrintNavBar from '../../Components/Print/PrintNavBar';
 import { useGetALlStatics } from '../../api/ContactUs/Contact';
+import CategorySection from '../../Components/Print/CategorySection';
+import PrintLastSection from '../../Components/Print/PrintLastSection'
+import  Footer  from '../../Components/Utils/Footer';
+import CopyRight from '../../Components/Utils/CopyRight'
 const Page = () => {
 
   return (
@@ -10,7 +14,7 @@ const Page = () => {
     <div className='print_page'>
       <TopHeader />
         <div className='home_section'>
-            <PrintNavBar/>
+        <PrintNavBar/>
 
             <div className='home_second'>
                 <div className='home_second_left'>
@@ -20,11 +24,17 @@ const Page = () => {
                     <button className='request_button'>REQUEST NOW</button>
                 </div>
                 <div className='home_second_right'>
-                    <img src="https:pixabay.com/photos/tree-sunset-clouds-sky-silhouette-736885/" alt='llll'/>
+                    <img src={'/Print/Prints.png'} alt='prints'/>
                 </div>
             </div>
-
         </div>
+
+        {/* <div className='home_center'> */}
+                {/* <CategorySection /> */}
+            {/* </div> */}
+            <PrintLastSection/>
+            <Footer/>
+            <CopyRight/>
     </div>
   )
 }
