@@ -11,7 +11,7 @@ const AllSquare = () => {
     xmlnsXlink="http://www.w3.org/1999/xlink"
     className='AllSquare'
     style={{width:"60vw",marginTop:"-6vw"}}
-  >
+    >
     <rect width={548} height={548} rx="32.2353" fill="#262626" />
     <rect x={147} y={82} width={383} height={383} fill="url(#pattern0)" />
     <rect x={120} y={156} width={309} height={309} fill="url(#pattern1)" />

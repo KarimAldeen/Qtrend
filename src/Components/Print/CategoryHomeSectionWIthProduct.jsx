@@ -2,7 +2,7 @@ import React from 'react'
 import ProductCard from './ProductCard'
 import Main_Paper from '../mhmad/Main_Paper'
 import Card from '../mhmad/Card'
-import { Carousel } from 'react-responsive-carousel'
+// import { Carousel } from 'react-responsive-carousel'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import ProductCardNew from '../Print/ProductCardNew'
 function CategoryHoemSectionWithProduct({color , index , products}) {
