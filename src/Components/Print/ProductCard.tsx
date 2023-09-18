@@ -5,6 +5,7 @@ import { BaseURL } from '../../api/config'
 import { useTranslation } from 'react-i18next'
 import ShopIconCartBackGround from './Icon/ShopIconCartBackGround'
 import { useRouter } from 'next/navigation'
+import AddToCartButton from './AddToCartButton'
 type ProductCardProps =  {
     id:number 
     name :string  
@@ -30,19 +31,13 @@ function ProductCard({name , id , image  ,quick_overview , from_price , to_price
         <h2 className='produc_name' style={{color:is_odd ? '#F4F4F4' :"black"}}>{name}</h2>
 
         <div className='card-body' style={{color:is_odd ? '#F4F4F4' :"black"}}>
-                <div>
+                <div className='card-body-left'>
                     <p className='quick_overview'>{quick_overview}</p>
                     <p className='price'>From <b>{from_price} QR</b></p>
                     <p className='price'>To <b>{to_price} QR</b></p>
                 </div>
-                <div className='add_to_cart_container'>
-                    <ShopIconCartBackGround/>
-                    <div className='cart_body_button'>
-                        <p>Add to Cart</p>
-                        <ShopIcon />
-                    </div>
-                </div>
         </div>
+        <AddToCartButton />
 
 
     </div>

@@ -22,7 +22,7 @@
                 color: var(--Old-Gray, #A7A7A7);
                 /* Text Medium/Text Medium 3 */
                 font-family: Poppins;
-                font-size: 18px;
+                font-size: 1em;
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
@@ -34,12 +34,17 @@
                 color: var(--Black, #383838);
             /* Heading/Heading 3 */
             font-family: Montserrat;
-            font-size: 48px;
+            font-size: 3em;
             font-style: normal;
             margin: auto;
             text-align: center;
             font-weight: 700;
             line-height: normal;
+            @include devices(mobile){
+                &{
+                    font-size: 2em !important;
+                }
+            }
             }
             .steps_pay{
                 width: 80%;
@@ -53,7 +58,7 @@
                     align-items: center;
                     color: #D0D0D2;
                     font-family: Poppins;
-                    font-size: 24px;
+                    font-size: 1.4em;
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
@@ -99,6 +104,22 @@
                         
                     }
                 }
+                @include devices(mobile){
+                    &{
+                      
+                        .first-level  , .last-level{
+                            font-size: .7em !important;
+                            
+                        }
+                        .circle{
+                            width: 30px !important ;
+                            height:30px !important;
+                        }
+                        .mid-level{
+                            display: none;
+                        }
+                    }
+                }
             }
             .checkout_form{
                 height: fit-content;
@@ -106,7 +127,25 @@
                 justify-content: space-between;
                 @include devices(tablet){
                     &{
+                        
                         flex-direction: column;
+                        .checkout_left_form{
+                            width: 100% !important;
+                            .div_mid_input{
+                                flex-direction: column !important;
+                                .input_mid_1 , .input_mid_2{
+                                    width: 100% !important;
+                                }
+                            }
+                        }
+                        .checkout_rigth_form{
+                            margin-top: 5vh;
+                            width: 100% !important;
+                            font-size: .6em !important;
+                            .header{
+                                font-size: 1.2em !important;
+                            }
+                        }
                     }
                 }
                 .checkout_left_form{
@@ -153,6 +192,7 @@
                         justify-content: space-between;
                         margin-bottom:20px;
                         margin-top:20px ; 
+                       
                         label{
                             color: var(--Black, #383838);
                             font-family: Poppins;
@@ -209,11 +249,13 @@
                         justify-content: space-between;
                         width: 90%;
                         margin: auto;
-                        padding: 10px;
+                        font-size: .8em;
+                        padding: 15px;
                     }
                     .total_price_section{
                         border-top: 1px solid black ;
                         width: 90%;
+                        
                         margin: auto;
                     }
                     .product_full_price{
@@ -223,13 +265,14 @@
                         margin: auto;
                         display: flex;
                         margin-top: 10px;
+                        align-items: center;
                         padding: 10px;
                         margin-bottom: 30px;
                         justify-content: space-between;
                         .rigth{
                             color: #B0D04F !important;
                             font-family: Poppins;
-                            font-size: 18px;
+                            // font-size: 18px;
                             font-style: normal;
                             font-weight: 500;
                             line-height: normal;
@@ -257,7 +300,7 @@
                             color: var(--White, #FAFAFA);
                             text-align: center;
                             font-family: Poppins;
-                            font-size: 14px;
+                            font-size: .9em;
                             font-style: normal;
                             font-weight: 400;
                             line-height: normal;
@@ -265,12 +308,11 @@
                             margin: auto;
                             justify-content: center;
                             align-items: center;
-                            gap: 7.775px;
+                            
                             margin-top: 20px;
                             border-radius: 6.22px;
                             border: 0.777px solid var(--Black, #383838);
                             background: var(--Black, #383838);
-                            cursor: pointer;
                         }
                         .checkout_button{
                          display: flex;
@@ -287,7 +329,7 @@
                         margin-bottom: 20px;
                         color: #232323;
                         font-family: Poppins;
-                        font-size: 18px;
+                        font-size: 1.2em;
                         font-style: normal;
                         font-weight: 900;
                         line-height: normal;

@@ -9,9 +9,12 @@ import Section from '../../Components/mhmad/Section'
 import {data} from '../../Components/Print/data/Products'
 import { Footer } from '../../Components/Home'
 import CopyRight from '../../Components/Utils/CopyRight'
+import useGetWidth from '../../hooks/useGetWidth'
 function PrintCategory() {
 
-  const per_page =3
+  const width = useGetWidth()
+  
+  const per_page =width <400 ?1  : width <800 ?2 :3 
   return (
   <>
     <TopHeader/>

@@ -5,10 +5,11 @@ function ShopIconCartBackGround() {
     <svg
     className='shop_icon_cart_back_ground'
     xmlns="http://www.w3.org/2000/svg"
-    width={180}
-    height={130}
+    width={175}
+    height={80}
     viewBox="0 0 209 108"
     fill="none"
+
   >
     <g filter="url(#filter0_d_6_7063)">
       <path

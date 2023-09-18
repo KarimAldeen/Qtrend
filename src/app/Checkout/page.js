@@ -45,7 +45,7 @@ function Page() {
                                         1
                                     </span>
                                     <span>
-                                        My Cart
+                                        MyCart
                                     </span>
                                 </div>
                                 <div className='mid-level'> 
