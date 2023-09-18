@@ -83,24 +83,24 @@ const SingleProduct = () => {
                                 </div>
                             </div>
                             <div className='SingleProduct_total'>
-                                <p className='TOTAL'>Total:     <span>{product.price} Qr</span></p>
-                                {/* Gray SVG */}
-                                <GrayBG/>
-                                {/* end Green SVG */}
+                                <p className='TOTAL'>Total:<span>{product.price}Qr</span></p>
+                        {/* Gray SVG */}
+                                {/* <GrayBG/> */}
+                        {/* end Green SVG */}
 
-                                {/* add to cart container */}
-                                <div className='add_to_cart_container'>
+                        {/* add to cart container */}
+                                {/* <div className='add_to_cart_container'>
                                 <div className='add_to_cart_container'>
                                     <GreenBG/>
                                     <div className='cart_body_button'>
                                         <p>Add to Cart</p>
                                         <ShopIcon />
                                     </div>
-                                </div>
-                                {/* Start Green SVG */}
+                                </div> */}
+                        {/* Start Green SVG */}
                                 
-                                {/* end Green SVG */}
-                                </div>
+                        {/* end Green SVG */}
+                                {/* </div> */}
                             </div>
                         </div>
                           ))
