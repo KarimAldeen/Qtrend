@@ -1,7 +1,10 @@
 import React from 'react'
+import { BaseURL } from '../../api/config'
+import { useRouter } from 'next/navigation'
 
 
-const Main_Paper = () => {
+const Main_Paper = ({name1 ,name2 , quick_overview , id , image}) => {
+  const router  = useRouter()
   return (
     <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -86,10 +89,10 @@ const Main_Paper = () => {
           fontWeight={800}
         >
           <tspan x={0} y={28}>
-            PAINTING{" "}
+            {name1}{" "}
           </tspan>
           <tspan x={0} y={56}>
-            &amp; STICKERS
+             {name2}
           </tspan>
         </text>
         <text
@@ -100,12 +103,7 @@ const Main_Paper = () => {
           fontSize={18}
           fontFamily="Poppins-Regular, Poppins"
         >
-          <tspan x={0} y={19}>
-            Top quality paper  
-          </tspan>
-          <tspan x={0} y={46}>
-            prints in Qatar
-          </tspan>
+          {quick_overview}
         </text>
         <g id="View_All" data-name="View All" transform="translate(19 333)">
           <rect
@@ -125,7 +123,7 @@ const Main_Paper = () => {
             fontFamily="Poppins-Black, Poppins"
             fontWeight={800}
           >
-            <tspan x="10" y={21}>
+            <tspan x="10" y={21}  onClick={()=>router.push('/PrintCategory?category_id='+id)}>
               VIEW ALL
             </tspan>
           </text>
@@ -136,7 +134,7 @@ const Main_Paper = () => {
         width={125}
         height={138}
         transform="translate(-5694 1663)"
-        xlinkHref="../Print/card/1.png"
+        xlinkHref={BaseURL + image}
       />
       <g id="Left_Btn" transform="translate(-5861 1611.762)">
         <rect

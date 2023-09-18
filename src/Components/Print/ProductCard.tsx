@@ -26,7 +26,7 @@ function ProductCard({name , id , image  ,quick_overview , from_price , to_price
      onClick={()=> route.push('/SingleProduct')}
      >
          {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={image} alt="Product IMage " />
+        <img src={BaseURL +image} alt="Product IMage " />
 
         <h2 className='produc_name' style={{color:is_odd ? '#F4F4F4' :"black"}}>{name}</h2>
 

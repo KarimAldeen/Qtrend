@@ -12,10 +12,13 @@ import CopyRight from '../../Components/Utils/CopyRight'
 import useGetWidth from '../../hooks/useGetWidth'
 import Refreash from '../../Components/Print/Refrech'
 import { useParams, useSearchParams } from 'next/navigation'
+import { useGetAllProductForCategory } from '../../api/category'
 function PrintCategory() {
 
   const category_id = useSearchParams().get('category_id')
-  
+  const {data} = useGetAllProductForCategory({category_id:category_id})
+  console.log(data);
+  const product = data?.products
   // console.log(category_id);
   const width = useGetWidth()
   
@@ -36,15 +39,15 @@ function PrintCategory() {
                     <Refreash />       
                   </div>
             </div>
-        <Section />
+        <Section name={data?.name}  image={data?.category_image}  description={data?.description}/>
 
     </div>
     <div className='category_product'>
 
           {
-            data?.map((row ,index) =>(
+            product?.map((row ,index) =>(
               
-              <ProductCategoryContainer color="#43A7D3"  key={index} products={data?.slice(index*per_page , index*per_page +per_page)}  index={index} />
+              <ProductCategoryContainer color={data?.background_color}  key={index} products={product?.slice(index*per_page , index*per_page +per_page)}  index={index} />
               ))
             }
       </div>

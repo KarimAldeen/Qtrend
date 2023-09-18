@@ -11,11 +11,16 @@ import CopyRight from '../../Components/Utils/CopyRight'
 import CategoryHoemSectionWithProduct from '../../Components/Print/CategoryHomeSectionWIthProduct';
 import { data, dataCategory } from '../../Components/Print/data/Products';
 import useGetWidth from '../../hooks/useGetWidth'
-
+import {useGetAllCategory} from '../../api/category'
 const Page = () => {
     const width = useGetWidth()
 
   const per_page =width <810 ?1  : width <1100 ?2 :3 
+
+  const {data:prev_data} = useGetAllCategory()
+
+  const data  = prev_data?.category
+
   return (
    
     <div className='print_page'>
@@ -38,9 +43,9 @@ const Page = () => {
         <div className='category_product'>
 
           {
-            dataCategory?.map((row ,index) =>(
+            data?.map((row ,index) =>(
               
-              <CategoryHoemSectionWithProduct color="#43A7D3"  key={index} products={row?.products}  index={index} per_page={per_page} />
+              <CategoryHoemSectionWithProduct color={row?.background_color}  key={index} products={row?.products}  index={index} per_page={per_page} category={row} />
               ))
             }
             

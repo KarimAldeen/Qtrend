@@ -12,28 +12,34 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { BaseURLImage } from '../../api/config'
 import Arrow from '../Services/Arrow'
-function CategoryHoemSectionWithProduct({color , index , products , per_page}) {
+function CategoryHoemSectionWithProduct({color , index , products , per_page ,category}) {
     const is_odd = index %2 ==1 
-    
+
+  
   return (
     <>
     <div style={{background:is_odd? "#EDF1F4" :color , display:products?.length == 0 ? 'none' :"flex"}} className='product_category_row'>
       <div className='simple-continer-row'>
         <div >
 
-        <Main_Paper />
+        <Main_Paper
+         name1={category?.name.split(' ')[0]} 
+          name2={category?.name.split(' ')[1] ?? ''} 
+ quick_overview={category?.description} id={category?.id}  image={category?.category_image}/>
         </div>
   
         <Swiper
           spaceBetween={0}
           slidesPerView={per_page}>
           {
-            products?.map((img) => (
+            products?.map((product) => (
               <>
                 <SwiperSlide>
                   <ProductCard 
-
-                  {...img}
+                  image={product?.product_main_image}
+                  {...product}
+                  from_price={product?.low_price}
+                  to_price={product?.high_price}
                 />
                 </SwiperSlide>
               </>
