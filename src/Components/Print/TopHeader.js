@@ -13,34 +13,32 @@ function TopHeader() {
     const {data  , isError}  = useGetALlStatics()
 
   return (
-    <>
+    <div className='HEADER'>
      <div className='header_container'>
         <div className='header_left'>
-          <div className='Print_info_1'>
-            {/* <a href='https://www.FaMobileAlt.com/' aria-label="FaMobileAlt" target="_blank" rel="noopener"> */}
-            <FaMobileAlt/>
-            {/* </a> */}
+            <div className='Print_info_1'>
+              <FaMobileAlt/>
+            <p>{data?.find(static_info => static_info.key == 'phone')?.value}</p>
+            </div>
 
-          <p>{data?.find(static_info => static_info.key == 'phone')?.value}</p>
+            <div className='Print_info_2'>
+            <LuMail/>
+            <p>{data?.find(static_info => static_info.key == 'email')?.value}</p>
+            </div>
           </div>
-          <div className='Print_info_2'>
-          {/* <a href='https://www.LuMail.com/' aria-label="LuMail" target="_blank" rel="noopener"> */}
-          <LuMail/>
-            {/* </a> */}
-         
-          <p>{data?.find(static_info => static_info.key == 'email')?.value}</p>
+
+          <div className='header_right'>
+            <div className='print_info_3'>
+              <FaInstagram/>
+              <FaFacebookF/>
+              <FaLinkedinIn/>
+            </div>
           </div>
-          <div className='print_info_3'>
-            <FaInstagram/>
-            <FaFacebookF/>
-            <FaLinkedinIn/>
-          </div>
-        </div>
            
             
         </div>
-        <NavBar3/>
-    </>
+        {/* <NavBar3/> */}
+    </div>
   )
 }
 
