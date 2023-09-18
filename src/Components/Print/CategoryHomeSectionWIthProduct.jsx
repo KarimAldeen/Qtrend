@@ -25,8 +25,8 @@ function CategoryHoemSectionWithProduct({color , index , products , per_page}) {
         </div>
   
         <Swiper
-          spaceBetween={50}
-          slidesPerView={3}>
+          spaceBetween={0}
+          slidesPerView={per_page}>
           {
             products?.map((img) => (
               <>

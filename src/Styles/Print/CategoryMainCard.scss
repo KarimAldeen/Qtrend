@@ -2,7 +2,7 @@
 
 .category-product-page{
     width: 70vw;
-      
+    
    
     margin: auto;
     .category_section_body{
@@ -34,11 +34,16 @@
     width:100% ;
     // display:flex;
     
-     padding:10px ;
+    //  padding:10px ;
     //   justify-content:space-around;
 
+    .Arrow{
+      width: 20px;
+      height: 100px;
+      margin-inline:5px ;
+    }
       .simple-continer-row{
-        width: 88%;
+        width: 95%;
         margin: auto;
         align-items: center;
         display: flex; 
@@ -47,6 +52,23 @@
      
 }
 
+@include devices(tablet){
+
+  .simple-continer-row{
+    .product_card{
+      width: 160px;
+
+      .add_to_cart_button{
+
+
+        .shop_icon_cart_back_ground{
+          width: 140px;
+        }
+      }
+    }
+  }
+  
+}
 @include devices(BreakPoints){
   .product_category_row{
     width: 100vw !important;

@@ -10,8 +10,12 @@ import  Footer  from '../../Components/Utils/Footer';
 import CopyRight from '../../Components/Utils/CopyRight'
 import CategoryHoemSectionWithProduct from '../../Components/Print/CategoryHomeSectionWIthProduct';
 import { data, dataCategory } from '../../Components/Print/data/Products';
+import useGetWidth from '../../hooks/useGetWidth'
+
 const Page = () => {
-  const per_page = 3
+    const width = useGetWidth()
+
+  const per_page =width <810 ?1  : width <1100 ?2 :3 
   return (
    
     <div className='print_page'>
