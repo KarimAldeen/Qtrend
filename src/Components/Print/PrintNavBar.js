@@ -2,30 +2,16 @@ import React from 'react'
 import Link from 'next/link'
 import {FiMail} from 'react-icons/fi'
 import {MdOutlineShoppingBag, MdKeyboardArrowDown} from 'react-icons/md'
+import { useGetAllCategory } from '../../api/category'
 const PrintNavBar = () => {
-    const data = [
-        {
-            id:1,
-            name:"PAPER PRINT",
-            
-        },
-        {
-            id:2,
-            name:"PAINTING AND STICKERS",
-            
-        },
-        {
-            id:3,
-            name:"ADVERTISING PRODUCTS",
-            
-        }
-    ]
+    const {data} = useGetAllCategory()
+    
   return (
     <div className='PrintNavBar'>
         <div className='print_links'>
             <div><Link className='Link' href={'/Print'}>ALL PRINTS</Link></div>
             {
-                data.map((nav , index) =>(
+                data?.category?.map((nav , index) =>(
                     <div className='link_with_arrow' key={nav.id}>
                       <Link className='Link'  href={'/PrintCategory?category_id='+nav.id}>
                         {nav.name} 
