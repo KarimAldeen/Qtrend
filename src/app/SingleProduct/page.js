@@ -7,9 +7,9 @@ import { Footer } from '../../Components/Home'
 import CopyRight from '../../Components/Utils/CopyRight'
 import { MdKeyboardArrowDown } from 'react-icons/md'
 import { BsWhatsapp } from 'react-icons/bs'
-import ShopIconCartBackGround from '../../Components/Print/Icon/ShopIconCartBackGround'
 import ShopIcon from '../../Components/Print/Icon/ShopIcon'
-
+import GrayBG from './grayBG'
+import GreenBG from './greenBG'
 const SingleProduct = () => {
     const data = {
         products:[
@@ -21,6 +21,7 @@ const SingleProduct = () => {
                 firstDesc:"Personal cards are the address of your company and it is also the first interface in front of your customers and thus gives the first and most important impression of the customer Accordingly, the company must give great attention to the cards to give a distinctive, attractive and correct impression of the company",
                 secondDesc:"The importance of the cards is not only for companies, but also for small shops, institutions and home projects.",
                 thirdDesc:"We have many distinct options for personal cards to suit all required options at distinctive prices and suitable for different budgets",
+                price:"140.00",
             },
             // {
             //     id:1,
@@ -84,48 +85,24 @@ const SingleProduct = () => {
                                 </div>
                             </div>
                             <div className='SingleProduct_total'>
-                                <p className='TOTAL'>Total :</p>
-                                {/* <svg  className='gray_bg' xmlns="http://www.w3.org/2000/svg" width="226" height="85" viewBox="0 0 226 85" fill="none">
-                                    <g filter="url(#filter0_d_76_189)">
-                                    <path d="M23.6309 66C18.4824 66 14.7025 61.1649 15.945 56.1686L25.6839 17.0086C26.5619 13.4782 29.7319 11 33.3698 11L202.261 11C210.737 11 213.289 22.5177 205.607 26.0985L126.026 63.1914C122.057 65.0413 117.731 66 113.352 66L23.6309 66Z" fill="#D0D0D0"/>
-                                    </g>
-                                    <defs>
-                                    <filter id="filter0_d_76_189" x="0.857031" y="0.11" width="224.185" height="84.7" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                    <feOffset dy="3.96"/>
-                                    <feGaussianBlur stdDeviation="7.425"/>
-                                    <feComposite in2="hardAlpha" operator="out"/>
-                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
-                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_76_189"/>
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_76_189" result="shape"/>
-                                    </filter>
-                                    </defs>
-                                </svg>
-                                <div className='add_to_cart_container'>
-                                <div className='add_to_cart'>
-                                    add to cart 
-                                    <ShopIcon/>
-                                </div>
-                                <svg className='green_bg'  xmlns="http://www.w3.org/2000/svg" width="214" height="85" viewBox="0 0 214 85" fill="none">
-                                    <g filter="url(#filter0_d_6_7652)">
-                                    <path d="M190.601 11C196.578 11 200.401 17.3665 197.592 22.6419L176.685 61.9118C175.31 64.4955 172.622 66.1099 169.694 66.1099L23.2626 66.1099C14.6645 66.1099 12.227 54.3338 20.1186 50.9207L110.913 11.6508C111.906 11.2215 112.976 11 114.057 11L190.601 11Z" fill="#C4FD14"/>
-                                    </g>
-                                    <defs>
-                                    <filter id="filter0_d_6_7652" x="0.482275" y="0.11" width="212.9" height="84.8099" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                    <feOffset dy="3.96"/>
-                                    <feGaussianBlur stdDeviation="7.425"/>
-                                    <feComposite in2="hardAlpha" operator="out"/>
-                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
-                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_6_7652"/>
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_6_7652" result="shape"/>
-                                    </filter>
-                                    </defs>
-                                </svg>
+                                <p className='TOTAL'>Total:     <span>{product.price} Qr</span></p>
+                                {/* Gray SVG */}
+                                <GrayBG/>
+                                {/* end Green SVG */}
 
-                                </div> */}
+                                {/* add to cart container */}
+                                <div className='add_to_cart_container'>
+                                <div className='add_to_cart_container'>
+                                    <GreenBG/>
+                                    <div className='cart_body_button'>
+                                        <p>Add to Cart</p>
+                                        <ShopIcon />
+                                    </div>
+                                </div>
+                                {/* Start Green SVG */}
+                                
+                                {/* end Green SVG */}
+                                </div>
                             </div>
                         </div>
                           ))
