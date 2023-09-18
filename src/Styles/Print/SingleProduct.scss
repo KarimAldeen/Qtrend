@@ -123,25 +123,59 @@
                         }
                         .SingleProduct_total{
                             display: flex;
-                            justify-content: space-between;
+                            height: 8vh;
                             width: 31vw;
                             .TOTAL{
-                                width: 10vw;
+                                width: 15vw !important;
                                 color: #323232;
                                 // font-family: Tajawal;
                                 font-size: 20px;
                                 font-style: normal;
                                 font-weight: 700;
                                 line-height: 68px; /* 116.667% */
+                                display: flex;
                                 text-transform: capitalize;
-                                .gray_bg{
-                                    width: 10vw;
-
+                                z-index: 99999;
+                                span{
+                                    margin-left: 4vw;
+                                    margin-top: .5vh;
+                                    font-size: 9px;
+                                    width: 10vw !important;
                                 }
-                                .green_bg{
-                                    width: 10vw;
+                            }
+                            .add_to_cart_container{
+                                transform: translateX(-7.5vw);
+                                z-index: 0;
+                                .cart_body_button{
+                                    margin-top: -6vw;
+                                    height: 1vh;
+                                    z-index: 999999;
+                                    transform: translate(5.5vw,.6vw);
+                                    svg{
+                                        width: 1.7vw;
+                                    }
+                                    p{
+                                        color: black;
+                                        font-weight: 500;
+                                        font-family: Poppins;
+                                        font-size: 7.6px;
+                                        font-weight: 400;
+                                    }
                                 }
-
+                                // .shop_icon_cart_back_ground{
+                                //     // position: absolute;
+                                //     // left: -105px;
+                                //     z-index: 0;
+                                // //     display: none !important;
+                                // }
+                            }
+                            .gray_bg{
+                                // margin-left: -15vw;
+                                transform: translateX(-3vw);
+                            }
+                            .green_bg{
+                                // margin-right: 10vw;
+                                transform: translate(-7.5vw,-2vw);
                             }
                         }
                     }
