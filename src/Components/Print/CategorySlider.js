@@ -22,7 +22,7 @@ const data  = [
 function CategorySlider() {
  
     const sliderRender = data.map(slider =>(
-            <img src={slider.img} alt={slider.id}  style={{height:"100px", objectFit:"contain"}}  key={slider.id}  />
+            <img src={slider.img} alt={slider.id}    key={slider.id} className='image-slider-category'  />
         ))
     
     return (

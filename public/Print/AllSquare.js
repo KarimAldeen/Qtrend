@@ -3,14 +3,14 @@ import React from 'react'
 const AllSquare = () => {
   return (
     <svg
-    width={1110}
-    height={548}
+    width={910}
+    height={248}
     viewBox="0 0 1110 548"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
-    className='AllSquare'
-    style={{width:"60vw",marginTop:"-6vw"}}
+    className='AllSquare '
+    // style={{width:"60vw",marginTop:"-6vw"}}
     >
     <rect width={548} height={548} rx="32.2353" fill="#262626" />
     <rect x={147} y={82} width={383} height={383} fill="url(#pattern0)" />
