@@ -74,14 +74,12 @@ const SingleProduct = () => {
                             <div className='SingleProduct_options'>
                                 <div className='first_option'>
                                     Quantity :
-                                    <MdKeyboardArrowDown/>
-                                    <input type="text" id="option" placeholder='Choose an option' name="option"/>
+                                    <select type="text" id="option" placeholder='Choose an option' name="option"/>
                                 </div>
 
                                 <div className='second_option'>
                                     Design :
-                                        <MdKeyboardArrowDown/>
-                                    <input type="text" placeholder='Choose an option' id="option" name="option"/>
+                                    <select type="text" placeholder='Choose an option' id="option" name="option"/>
                                 </div>
                             </div>
                             <div className='SingleProduct_total'>
