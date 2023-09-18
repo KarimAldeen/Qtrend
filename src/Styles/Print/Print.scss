@@ -1,55 +1,48 @@
 @import './ProductCard.scss';
 @import './CategoryMainCard.scss';
 @import './Heckout.scss';
-.header_container{
-    width: 100%;
+.HEADER{
+    width: 100vw;
     height: 5vh;
-    display: flex; justify-content: space-between; align-items: center;
     background: #211e1e;
-    .header_left{
-        display: flex; 
-        align-items: center;
-        width: 100vw;
-        margin-inline: 10em;
-        height: 2vh;
-        .Print_info_1, .Print_info_2, .Print_info_3{
+    .header_container{
+        width: 80vw;
+        margin: auto;
+        display: flex;
+        justify-content: space-between; align-items: center;
+        .header_left{
             display: flex;
-            justify-content: space-around;
+            width: 80vw;
+            height: 5vh;
+            .Print_info_1, .Print_info_2{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-left:2.5vw;
+                p{
+                    padding-inline: .9vw;
+                    color: #fff;
+                    font-size: .7vw;
+                }
+                svg{
+                    color: #fff;
+                    width: .5vw;
+                }
+            }
+        }
+        .header_right{
+            display: flex;
+            justify-content: end;
             align-items: center;
-            margin-left: 2em;
-            p{
-                padding-inline: .7em;
-                color: #fff;
-                font-size: .5em;
-            }
+            width: 80vw;
+            height: 5vh;
             svg{
                 color: #fff;
-                width: .4em;
+                margin-left: 1.4vw;
+                width: .8vw;
             }
         }
-        .print_info_3{
-            svg{
-                color: #fff;
-                margin-left: 1em;
-                width: .6em;
-            }
-        }
-    }
-    .header_right{
-        width: 40vw;
-        display: flex; justify-content: center; align-items: center;
-        margin-inline: 15em;
-        svg{
-            color: #fff;
-            padding-inline: 1em;
-        }
-        .sign_in_up{
-            p{
-                color: #fff;
-                font-size: .6em;
-                font-weight: 500;
-            }
-        }
+         
     }
 }
 .print_page{
