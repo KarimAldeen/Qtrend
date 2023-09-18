@@ -9,6 +9,7 @@ const Section = () => {
     xmlnsXlink="http://www.w3.org/1999/xlink"
     width={900}
     height={240}
+    className='category_section_body'
     viewBox="0 0 1351 356"
   >
     <defs>

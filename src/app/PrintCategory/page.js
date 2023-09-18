@@ -10,28 +10,29 @@ import {data} from '../../Components/Print/data/Products'
 import { Footer } from '../../Components/Home'
 import CopyRight from '../../Components/Utils/CopyRight'
 import useGetWidth from '../../hooks/useGetWidth'
+import Refreash from '../../Components/Print/Refrech'
 function PrintCategory() {
 
   const width = useGetWidth()
   
-  const per_page =width <400 ?1  : width <800 ?2 :3 
-  return (
-  <>
-    <TopHeader/>
-    <PrintNavBar/>
-    <div className='category-product-page'>
-           <div className='header-category-product-page'>
-                <div className='left'>
-                    <img src='/Print/Refrech.png' />        
-                </div>
-                <div className='center'>
-                    <CategorySlider />
-                </div>
-                <div className='left'  style={{opacity:"0"}}>
-                    <img src='/Print/Refrech.png' />        
-                </div>
-           </div>
-      <Section />
+    const per_page =width <500 ?1  : width <800 ?2 :3 
+    return (
+    <>
+      <TopHeader/>
+      <PrintNavBar/>
+      <div className='category-product-page'>
+            <div className='header-category-product-page'>
+                  <div className='left'>
+                    <Refreash />       
+                  </div>
+                  <div className='center'>
+                      <CategorySlider />
+                  </div>
+                  <div className='left'  style={{opacity:"0"}}>
+                    <Refreash />       
+                  </div>
+            </div>
+        <Section />
 
     </div>
     <div className='category_product'>

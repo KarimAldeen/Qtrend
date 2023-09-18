@@ -47,14 +47,16 @@
         }
         .card-body-left{
             width: 50%;
-            background: red;
         }
-        .add_to_cart_button{
-            bottom: 20px !important;
-            left: 200px;
-        }
+       
 
       
+    }
+    .add_to_cart_button{
+        bottom: 50px !important;
+        left: 55px;
+        // position: absolute !important;
+        // display: none ;
     }
 }
 
@@ -67,6 +69,21 @@
         bottom: 15px;
         font-size: 12px;
         right: 40px !important;
+
+    }
+}
+@include devices(FORPRODUCT){
+    .product_card{
+        height: 200px !important;
+        .produc_name{
+            font-size: .7em !important;
+        }
+        .quick_overview{
+            font-size: .5em !important;
+        }
+        .price{
+            font-size: .65em !important;
+        }
 
     }
 }
