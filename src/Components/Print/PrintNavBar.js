@@ -3,25 +3,38 @@ import Link from 'next/link'
 import {FiMail} from 'react-icons/fi'
 import {MdOutlineShoppingBag, MdKeyboardArrowDown} from 'react-icons/md'
 const PrintNavBar = () => {
+    const data = [
+        {
+            id:1,
+            name:"PAPER PRINT",
+            
+        },
+        {
+            id:2,
+            name:"PAINTING AND STICKERS",
+            
+        },
+        {
+            id:3,
+            name:"ADVERTISING PRODUCTS",
+            
+        }
+    ]
   return (
     <div className='PrintNavBar'>
         <div className='print_links'>
             <div><Link className='Link' href={'/Print'}>ALL PRINTS</Link></div>
-            <div className='link_with_arrow'>
-                <Link className='Link'  href={'/PrintCategory'}>PAPER PRINTS 
-            <MdKeyboardArrowDown/>
-                </Link>
-            </div>
-            <div className='link_with_arrow'>
-                <Link className='Link'  href={'/PrintCategory'}>PAINTING AND STICKERS
-            <MdKeyboardArrowDown/>
-                </Link>
-            </div>
-            <div className='link_with_arrow'>
-                <Link className='Link'  href={'/PrintCategory'}>ADVERTISING PRODUCTS
-            <MdKeyboardArrowDown/>
-                </Link>
-            </div>
+            {
+                data.map((nav , index) =>(
+                    <div className='link_with_arrow' key={nav.id}>
+                      <Link className='Link'  href={'/PrintCategory?category_id='+nav.id}>
+                        {nav.name} 
+                        <MdKeyboardArrowDown/>
+                      </Link>
+                   </div>
+                ))
+            }
+          
 
         </div>
         <div className='print_icons' style={{zIndex:"999"}}>

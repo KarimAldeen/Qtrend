@@ -19,14 +19,15 @@
                 justify-content: space-around;
                 align-items: center;
                 margin-left:2.5vw;
-                p{
+                .NUM, .EMAIL{
                     padding-inline: .9vw;
                     color: #fff;
-                    font-size: .7vw;
+                    font-size: 1vw !important; 
+                    width: 9vw;
                 }
                 svg{
                     color: #fff;
-                    width: .5vw;
+                    width: 1vw;
                 }
             }
         }
@@ -42,8 +43,14 @@
                 width: .8vw;
             }
         }
-         
+        @include devices(Minlaptop){
+            .header_left{
+                .NUM, .EMAIL{
+                    font-size: 2vw !important;
+                }
+            }
     }
+}
 }
 .print_page{
     background: #c2c2c2;

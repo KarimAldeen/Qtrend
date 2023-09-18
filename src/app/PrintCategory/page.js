@@ -11,8 +11,12 @@ import { Footer } from '../../Components/Home'
 import CopyRight from '../../Components/Utils/CopyRight'
 import useGetWidth from '../../hooks/useGetWidth'
 import Refreash from '../../Components/Print/Refrech'
+import { useParams, useSearchParams } from 'next/navigation'
 function PrintCategory() {
 
+  const category_id = useSearchParams().get('category_id')
+  
+  // console.log(category_id);
   const width = useGetWidth()
   
     const per_page =width <500 ?1  : width <800 ?2 :3 
