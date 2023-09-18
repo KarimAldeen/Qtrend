@@ -11,7 +11,7 @@ import CopyRight from '../../Components/Utils/CopyRight'
 import CategoryHoemSectionWithProduct from '../../Components/Print/CategoryHomeSectionWIthProduct';
 import { data, dataCategory } from '../../Components/Print/data/Products';
 const Page = () => {
-  const per_page = 2
+  const per_page = 3
   return (
    
     <div className='print_page'>
@@ -37,7 +37,7 @@ const Page = () => {
           {
             dataCategory?.map((row ,index) =>(
               
-              <CategoryHoemSectionWithProduct color="#43A7D3"  key={index} products={row?.products}  index={index} />
+              <CategoryHoemSectionWithProduct color="#43A7D3"  key={index} products={row?.products}  index={index} per_page={per_page} />
               ))
             }
             
