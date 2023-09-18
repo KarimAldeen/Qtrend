@@ -18,12 +18,15 @@ function TopHeader() {
         <div className='header_left'>
             <div className='Print_info_1'>
               <FaMobileAlt/>
-            <p>{data?.find(static_info => static_info.key == 'phone')?.value}</p>
+            <p className='NUM'>
+              {data?.find(static_info => static_info.key == 'phone')?.value}
+              </p>
             </div>
-
             <div className='Print_info_2'>
             <LuMail/>
-            <p>{data?.find(static_info => static_info.key == 'email')?.value}</p>
+            <p className='EMAIL'>
+            {data?.find(static_info => static_info.key == 'email')?.value}
+            </p>
             </div>
           </div>
 
@@ -37,7 +40,7 @@ function TopHeader() {
            
             
         </div>
-        {/* <NavBar3/> */}
+        <NavBar3/>
     </div>
   )
 }

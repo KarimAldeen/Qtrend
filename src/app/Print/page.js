@@ -20,9 +20,8 @@ const Page = () => {
    
     <div className='print_page'>
       <TopHeader />
+      <PrintNavBar/>
         <div className='home_section'>
-        <PrintNavBar/>
-
             <div className='home_second'>
                 <div className='home_second_left'>
                     <p className='frist_p'>WE OFFER TOP</p>
