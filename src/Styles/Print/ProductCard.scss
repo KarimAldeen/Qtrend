@@ -35,12 +35,18 @@
             font-size: .8em;
             width: 90%;
             max-width: 120px;
-            min-height: 20px;
-          
+            height: 43px !important;
             word-wrap: break-word;
             margin-top: 10px;
             margin-bottom: 10px;
+            @include devices(FORPRODUCT){
+                &{
+                    height: 20px !important;
+
+                }
+            }
         }
+
         .price{
            
             font-size: .8em;

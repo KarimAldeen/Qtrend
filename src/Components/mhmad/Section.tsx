@@ -1,8 +1,9 @@
 import React from 'react'
+import { BaseURL } from '../../api/config'
 
 interface Props {}
 
-const Section = () => {
+const Section = ({name , description , image}) => {
   return (
     <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +76,7 @@ const Section = () => {
           width={194}
           height={219}
           transform="translate(1066 -28.921)"
-          xlinkHref="../Print/card/1.png"
+          xlinkHref={BaseURL +image}
         />
       </g>
       <text
@@ -87,7 +88,7 @@ const Section = () => {
         fontWeight={800}
       >
         <tspan x={0} y={57}>
-          ADVERTISING PRODUCTS
+            {name}
         </tspan>
       </text>
       <text
@@ -98,7 +99,7 @@ const Section = () => {
         fontFamily="Poppins-Regular, Poppins"
       >
         <tspan x={0} y={36}>
-          Top quality paper prints in Qatar
+          {description}
         </tspan>
       </text>
       <g id="View_All" data-name="View All" transform="translate(45 212.079)">

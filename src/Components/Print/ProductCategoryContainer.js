@@ -7,14 +7,17 @@ function ProductCategoryContainer({color , index , products}) {
   return (
     <>
     <div style={{background:is_odd? "#EDF1F4" :color , display:products?.length == 0 ? 'none' :"block"}} className='product_category_row'>
-      <div className='simple-continer-row'>
+      <div className='simple-continer-row' style={{padding:"10px"}}>
 
         {
           products.map(product =>(
             <ProductCard 
             index={index+1}
                 key={product.id}
+                image={product?.product_main_image}
                 {...product}
+                from_price={product?.low_price}
+                to_price={product?.high_price}
                 />
                 ))
               }
