@@ -8,7 +8,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 const data  = [
     {
         id:1  ,
-        img:'/Print/1.png'
+        img:'/Print/3.png'
     },
     {
         id:2 ,
@@ -16,7 +16,7 @@ const data  = [
     },
     {
         id:3  ,
-        img:'/Print/3.png'
+        img:'/Print/1.png'
     }
 ]
 function CategorySlider() {

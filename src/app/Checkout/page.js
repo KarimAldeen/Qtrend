@@ -66,19 +66,19 @@ function Page() {
 
                                     <div className='input_top'>
                                         <label>Buyer Info</label>
-                                    <input type='text' placeholder=''   />
+                                    <input type='text' placeholder=''/>
 
                                     </div>
                                     <div className='div_mid_input'>
                                     <div  className='input_mid_1'>
                                     <label>Name</label>
 
-                                    <input type='text' placeholder=''  />
+                                    <input type='text' placeholder=''/>
                                     </div>
                                     <div className='input_mid_2' >
                                     <label>Phone Number</label>
 
-                                    <input type='text' placeholder=''  />
+                                    <input type='text' placeholder=''/>
                                     </div>
 
                                     </div>
@@ -86,7 +86,7 @@ function Page() {
 
                                     <div  className='input_bottom'>
                                         <label>Note </label>
-                                    <input type='text' placeholder=''  />
+                                    <input type='text' placeholder=''/>
 
                                     </div>
                                     </div>

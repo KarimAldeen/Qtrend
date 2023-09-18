@@ -4,6 +4,7 @@ import React , {ReactNode} from 'react'
 import { BaseURL } from '../../api/config'
 import { useTranslation } from 'react-i18next'
 import ShopIconCartBackGround from './Icon/ShopIconCartBackGround'
+import { useRouter } from 'next/navigation'
 type ProductCardProps =  {
     id:number 
     name :string  
@@ -17,8 +18,12 @@ type ProductCardProps =  {
 function ProductCard({name , id , image  ,quick_overview , from_price , to_price ,index = 0}:ProductCardProps) {
     const is_odd  = index %2 == 1 
     const t   = useTranslation()
+    const route = useRouter()
   return (
-    <div className='product_card' style={{background:is_odd ? "black" :'#FFF'}}>
+    <div className='product_card'
+     style={{background:is_odd ? "black" :'#FFF'}}
+     onClick={()=> route.push('/SingleProduct')}
+     >
          {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={image} alt="Product IMage " />
 
