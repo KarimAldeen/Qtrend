@@ -33,16 +33,17 @@ function CategoryHoemSectionWithProduct({color , index , products , per_page ,ca
           slidesPerView={per_page}>
           {
             products?.map((product) => (
-              <>
-                <SwiperSlide>
+              
+                <SwiperSlide key={product.id}>
                   <ProductCard 
                   image={product?.product_main_image}
-                  {...product}
+                  price={product?.price}
                   from_price={product?.low_price}
                   to_price={product?.high_price}
+                  {...product}
                 />
                 </SwiperSlide>
-              </>
+              
             ))
             
           }

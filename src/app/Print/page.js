@@ -1,60 +1,65 @@
 "use client"
-
-import React from 'react'
-import TopHeader from '../../Components/Print/TopHeader'
+import React, { useEffect, useState } from 'react';
+import TopHeader from '../../Components/Print/TopHeader';
 import PrintNavBar from '../../Components/Print/PrintNavBar';
-import { useGetALlStatics } from '../../api/ContactUs/Contact';
+import { useGetAllCategory } from '../../api/category';
 import CategorySection from '../../Components/Print/CategorySection';
-import PrintLastSection from '../../Components/Print/PrintLastSection'
-import  Footer  from '../../Components/Utils/Footer';
-import CopyRight from '../../Components/Utils/CopyRight'
-import CategoryHoemSectionWithProduct from '../../Components/Print/CategoryHomeSectionWIthProduct';
-import { data, dataCategory } from '../../Components/Print/data/Products';
-import useGetWidth from '../../hooks/useGetWidth'
-import {useGetAllCategory} from '../../api/category'
+import PrintLastSection from '../../Components/Print/PrintLastSection';
+import Footer from '../../Components/Utils/Footer';
+import CopyRight from '../../Components/Utils/CopyRight';
+import CategoryHomeSectionWithProduct from '../../Components/Print/CategoryHomeSectionWithProduct';
+import useGetWidth from '../../hooks/useGetWidth';
+
 const Page = () => {
-    const width = useGetWidth()
+  const [categoryData, setCategoryData] = useState([]);
+  const width = useGetWidth();
+  const perPage = width < 810 ? 1 : width < 1100 ? 2 : 3;
 
-  const per_page =width <810 ?1  : width <1100 ?2 :3 
+  const { data: categoryApiResponse, error: categoryApiError } = useGetAllCategory();
 
-  const {data:prev_data} = useGetAllCategory()
-
-  const data  = prev_data?.category
+  useEffect(() => {
+    if (categoryApiError) {
+      console.error(categoryApiError);
+      // Handle error here, e.g., show an error message to the user
+    } else if (categoryApiResponse) {
+      setCategoryData(categoryApiResponse.category);
+    }
+  }, [categoryApiResponse, categoryApiError]);
 
   return (
-   
     <div className='print_page'>
       <TopHeader />
-      <PrintNavBar/>
-        <div className='home_section'>
-            <div className='home_second'>
-                <div className='home_second_left'>
-                    <p className='frist_p'>WE OFFER TOP</p>
-                    <p className='second_p'>PRINTING SERVICES</p>
-                    <p className='third_p'>AFFORDABLE RATES FOR QUALITY PRINTS WITH PROFESSIONAL RESULTS.</p>
-                    <button className='request_button'>REQUEST NOW</button>
-                </div>
-                <div className='home_second_right' style={{zIndex:0}}>
-                    <img src={'/Print/Prints.png'} alt='prints'/>
-                </div>
-            </div>
+      <PrintNavBar />
+      <div className='home_section'>
+        <div className='home_second'>
+          <div className='home_second_left'>
+            <p className='frist_p'>WE OFFER TOP</p>
+            <p className='second_p'>PRINTING SERVICES</p>
+            <p className='third_p'>AFFORDABLE RATES FOR QUALITY PRINTS WITH PROFESSIONAL RESULTS.</p>
+            <button className='request_button'>REQUEST NOW</button>
+          </div>
+          <div className='home_second_right' style={{ zIndex: 0 }}>
+            <img src='/Print/Prints.png' alt='Print Services' />
+          </div>
         </div>
-
-        <div className='category_product'>
-
-          {
-            data?.map((row ,index) =>(
-              
-              <CategoryHoemSectionWithProduct color={row?.background_color}  key={index} products={row?.products}  index={index} per_page={per_page} category={row} />
-              ))
-            }
-            
       </div>
-            <PrintLastSection/>
-            <Footer/>
-            <CopyRight/>
+      <div className='category_product'>
+        {categoryData.map((category, index) => (
+          <CategoryHomeSectionWithProduct
+            key={index}
+            color={category.background_color}
+            products={category.products}
+            index={index}
+            perPage={perPage}
+            category={category}
+          />
+        ))}
+      </div>
+      <PrintLastSection />
+      <Footer />
+      <CopyRight />
     </div>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;

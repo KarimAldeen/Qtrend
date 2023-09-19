@@ -6,6 +6,7 @@
     background: #181818;
     padding: 10px;
     color: white;
+    z-index: 0 ;
     border-radius: 10px;
     height: 270px;
     margin-inline: 20px !important;
@@ -61,6 +62,7 @@
     .add_to_cart_button{
         bottom: 50px !important;
         left: 55px;
+        z-index: 999 !important ;
         // position: absolute !important;
         // display: none ;
     }

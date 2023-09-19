@@ -6,42 +6,37 @@ import { useTranslation } from 'react-i18next'
 import ShopIconCartBackGround from './Icon/ShopIconCartBackGround'
 import { useRouter } from 'next/navigation'
 import AddToCartButton from './AddToCartButton'
-type ProductCardProps =  {
-    id:number 
-    name :string  
-    image :string,
-    from_price:string,
-    to_price :string,
-    quick_overview:string,
-    index:number
+import useManageCart from '../../zustand/cart'
 
-}
-function ProductCard({name , id , image  ,quick_overview , from_price , to_price ,index = 0}:ProductCardProps) {
+function ProductCard({name , id , image  ,quick_overview , from_price  ,  to_price ,index = 0 }) {
+    const {addProductToCart} = useManageCart()
     const is_odd  = index %2 == 1 
     const t   = useTranslation()
     const route = useRouter()
   return (
     <div className='product_card'
-     style={{background:is_odd ? "black" :'#FFF'}}
-     onClick={()=> route.push('/SingleProduct')}
-     >
+     style={{background:is_odd ? "black" :'#FFF'}}>
          {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={BaseURL +image} alt="Product IMage " />
+        <img src={BaseURL +image} alt="Product IMage "   onClick={()=> route.push('/SingleProduct')}/>
 
-        <h2 className='produc_name' style={{color:is_odd ? '#F4F4F4' :"black"}}>{name}</h2>
+        <h2 className='produc_name' style={{color:is_odd ? '#F4F4F4' :"black"}}  onClick={()=> route.push('/SingleProduct')} >{name}</h2>
 
-        <div className='card-body' style={{color:is_odd ? '#F4F4F4' :"black"}}>
+        <div className='card-body' style={{color:is_odd ? '#F4F4F4' :"black"}}   onClick={()=> route.push('/SingleProduct')}>
                 <div className='card-body-left'>
                     <p className='quick_overview'>{quick_overview}</p>
                     <p className='price'>From <b>{from_price} QR</b></p>
                     <p className='price'>To <b>{to_price} QR</b></p>
                 </div>
         </div>
-        <AddToCartButton />
-
-
+        <AddToCartButton onClick={()=>addProductToCart({
+          id,
+          quantity:1,
+          price:to_price,
+          image:image,
+          name:name
+        })} />
     </div>
   )
 }
 
-export default ProductCard
+export default ProductCard  
