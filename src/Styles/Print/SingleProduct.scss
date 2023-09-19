@@ -84,7 +84,7 @@
                             width: 34vw;
                             @include devices(tablet){
                                 &{
-                                    width: 40vw;
+                                    width: 80vw;
                                 }
                             }
                             .first_SingleProduct_desc, .second_SingleProduct_desc, .third_SingleProduct_desc{
@@ -112,6 +112,11 @@
                                 font-weight: 700;
                                 line-height: 28px; /* 175% */
                                 text-transform: capitalize;
+                                @include devices(tablet){
+                                    &{
+                                        font-size: 2vw;
+                                    }
+                                }
                                 
                                 select{
                                     border-radius: 3px;
@@ -125,6 +130,11 @@
                                     font-weight: 400;
                                     padding-inline: .7em;
                                     margin-left: 1vw;
+                                    @include devices(tablet){
+                                        &{
+                                            width: 40vw;
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -177,14 +187,14 @@
                     width: 65vw;
                     min-height: 70vh;
                     display: flex;
-                    @include devices(tablet){
-                        &{
-                            margin-top: 4vw;
-                            flex-direction: column;
-                            align-items: center;justify-content: center;
-                            margin-bottom: 5vw;
-                        }
-                    }
+                    // @include devices(tablet){
+                    //     &{
+                    //         margin-top: 4vw;
+                    //         flex-direction: column;
+                    //         margin-bottom: 5vw;
+                    //         width: 80vw;
+                    //     }
+                    // }
                     .important_notes{
                         display: flex;justify-content: start;align-items: start;flex-direction: column;
                         width: 31vw;
@@ -227,7 +237,6 @@
                                 // font-family: Poppins;
                                 font-size: 19px;
                                 font-weight: 900;
-                                // transform: translateY(-1em) !important;
                             }
                         }
                     }
@@ -237,6 +246,7 @@
                         border-left: 1px solid #c2c2c2;
                         padding-left: 1.5em;
                         margin-inline: auto;
+                        display: flex;flex-direction: column;
                         margin-top: 6vh;
                         .coustomized_design_title, span{
                             color: var(--Black, #383838);
@@ -327,20 +337,19 @@
         width: 90vw !important;
         margin: auto;
         .mid_section{
-            width: 90vw;
-            margin: auto;
+            width: 90vw !important;
             flex-direction: column;
-            align-items: center;justify-content: center;
+            // align-items: center;justify-content: center;
             .mid_left_section, .mid_right_section{
                 width: 100% !important;
                 margin: auto;
-                margin-left: 0vw;
             }
             .mid_left_section{
                 flex-direction: column-reverse;
                 .main_img{
-                    width: 97% !important;
+                    width: 80% !important;
                     margin-bottom: 10px;
+                    margin-inline: auto !important;
                     img{
                         width: 100% !important;
                     }
@@ -348,6 +357,8 @@
                 .more_img{
                     flex-direction: row !important;
                     justify-content: space-evenly;
+                    width: 75%;
+                    margin-inline: auto !important;
                     img{
                         width: 22% !important;
                     }
@@ -355,7 +366,30 @@
             }
         }
         .last_section{
-            width: 90vw;
+            margin-top: 4vw;
+            flex-direction: column;
+            margin-bottom: 5vw;
+            width: 90vw !important;
+            margin-inline: auto;
+            .important_notes{
+                width: 85vw !important;
+                margin: auto;
+            }
+            .coustomized_design{
+                width: 85vw !important;
+                .coustomized_design_text{
+                    width: 71vw !important;
+                }
+                input{
+                    width: 70vw !important;
+                }
+                .buttons_div{
+                    width: 70vw !important;
+                    .quote_button, .Upload_button{
+                        width: 34vw !important;
+                    }
+                }
+            }
         }
     }
 
