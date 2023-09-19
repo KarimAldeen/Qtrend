@@ -10,7 +10,12 @@ import { BsWhatsapp } from 'react-icons/bs'
 import ShopIcon from '../../Components/Print/Icon/ShopIcon'
 import GrayBG from './grayBG'
 import GreenBG from './greenBG'
+import { BaseURL } from '../../api/config'
+import {useGetProduct} from '../../api/product'
+import { useSearchParams } from 'next/navigation'
 const SingleProduct = () => {
+    const productID = useSearchParams().get('product_id');
+
     const data = {
         products:[
             {
@@ -22,18 +27,12 @@ const SingleProduct = () => {
                 secondDesc:"The importance of the cards is not only for companies, but also for small shops, institutions and home projects.",
                 thirdDesc:"We have many distinct options for personal cards to suit all required options at distinctive prices and suitable for different budgets",
                 price:"140.00",
-            },
-            // {
-            //     id:1,
-            //     name:"Business Cards",
-            //     from:130,
-            //     to:150,
-            //     firstDesc:"jabkb",
-                
-            // },
-            
+            },  
         ]
     }
+    // const {data, isLoading} = useGetProduct({product_id:productID})
+    
+    console.log(data);
   return (
         <div className='CONTAINER'>
             <TopHeader/>
@@ -46,7 +45,8 @@ const SingleProduct = () => {
                         <CategorySlider/>
                     </div>
                     
-
+                    {
+                            data?.products?.map(product => (
                     <div className='mid_section'>
 
                         <div className='mid_left_section'>
@@ -57,11 +57,12 @@ const SingleProduct = () => {
                                 <img src={'/Print/Rectangle 9629.png'} alt='more_img'/>
                             </div>
                             <div className='main_img'>
-                            <img src={'/Print/Rectangle 9629.png'} alt='more_img'/>
+                            <img src={'/Print/Rectangle 9629.png'}
+                            // {BaseURL + product.image}
+                             alt='more_img'/>
                             </div>
                         </div>
-                        {
-                            data?.products?.map(product => (
+                        
                         <div key={product.id} className='mid_right_section'>
                             <h1 className='header_word'>Paper Prints  {'>'} <span>{product.name}</span></h1>
                             <h2 className='SingleProduct_title'>{product.name}</h2>
@@ -103,10 +104,10 @@ const SingleProduct = () => {
                                 {/* </div> */}
                             </div>
                         </div>
-                          ))
-                        }
+                          
                     </div>
-
+                            ))
+                        }
 
                     <div className='last_section'>
                         <div className='important_notes'>

@@ -16,7 +16,7 @@ const Page = () => {
   const perPage = width < 810 ? 1 : width < 1100 ? 2 : 3;
 
   const { data: categoryApiResponse, error: categoryApiError } = useGetAllCategory();
-
+  // console.log(categoryApiResponse);
   useEffect(() => {
     if (categoryApiError) {
       console.error(categoryApiError);

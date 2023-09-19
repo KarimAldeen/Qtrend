@@ -133,7 +133,7 @@
             margin: auto;
             border-top:1px solid #B0D04F;
             border-bottom:1px solid #B0D04F;
-            margin-bottom: 10vh;
+            // margin-bottom: 10vh;
             padding: 1vw;
             .sec{
                 display: flex;justify-content: space-between;align-items: center;
@@ -291,4 +291,5 @@
 
     .product_cart_container{
         min-height: 50vh !important;
+        margin-bottom: 10vh;
     }
