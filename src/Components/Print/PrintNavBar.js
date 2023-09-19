@@ -1,12 +1,18 @@
-import React from 'react'
+'use client'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import {FiMail} from 'react-icons/fi'
 import {MdOutlineShoppingBag, MdKeyboardArrowDown} from 'react-icons/md'
 import { useGetAllCategory } from '../../api/category'
+import useManageCart from '../../zustand/cart'
 const PrintNavBar = () => {
     const {data} = useGetAllCategory()
-    
-  return (
+    const {cart} = useManageCart()
+    const [length , setLength] = useState(0)
+    useEffect(()=>(
+      setLength(cart?.length)
+    ),[cart])
+    return (
     <div className='PrintNavBar'>
         <div className='print_links'>
             <div><Link className='Link' href={'/Print'}>ALL PRINTS</Link></div>
@@ -24,10 +30,10 @@ const PrintNavBar = () => {
 
         </div>
         <div className='print_icons' style={{zIndex:"999"}}>
-        <span className='notifictaion_circle'>99</span>
-            <a href='/MyCart'>
+        <span className='notifictaion_circle'>{length || 0}</span>
+            <Link href='/MyCart'>
                      <MdOutlineShoppingBag/>
-            </a>
+            </Link>
        
         </div>
     </div>

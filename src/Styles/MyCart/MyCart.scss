@@ -3,16 +3,18 @@
 }
 .MyCart{
     background: #EDF1F4;
-    height: 160vh;
+    min-height: 160vh;
     width: 100vw;
+    padding-bottom: 10vh;
     border-top:#c2c2c2 3px solid;
     .MyCart_container{
         width: 80%;
         margin: auto;
+        padding-bottom:5vh ;
         padding-top: 7vh;
         background: #fff;
         border-radius: 0vw 0vw 2vw 2vw;
-        height: 140vh;
+        min-height: 140vh;
         .location_page{
             color: var(--Old-Gray, #A7A7A7);
             /* Text Medium/Text Medium 3 */
@@ -216,6 +218,7 @@
                 color: #9AB72B;
                 font-size: 2vw;
                 font-weight: 700;
+                cursor: pointer;
                 }
             }
             .summary{
@@ -283,4 +286,9 @@
                 }
             }        
         }
+    }
+
+
+    .product_cart_container{
+        min-height: 50vh !important;
     }

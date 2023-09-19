@@ -1,12 +1,19 @@
 'use client'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import TopHeader from '../../Components/Print/TopHeader'
 import PrintNavBar from '../../Components/Print/PrintNavBar'
 import { Footer } from '../../Components/Home'
 import CopyRight from '../../Components/Utils/CopyRight'
 import {useRouter} from 'next/navigation'
+import useManageCart from '../../zustand/cart'
+import { getTotalPrice } from '../../Utils/CalcFinalPrice'
 
 function Page() {
+    const {cart} = useManageCart()
+    const [myCart , setMyCart] = useState([])
+    useEffect(()=>{
+        setMyCart(cart)
+    },[])
     const data = {
         sub_total:100,
         tax:0 ,
@@ -94,7 +101,7 @@ function Page() {
                             <div className='checkout_rigth_form'>
                                     <h1 className='header'>Your Order Summary</h1>
                                     {
-                                        data?.products?.map(product => (
+                                        myCart?.map(product => (
                                             <div key={product.id} className='product_row_quantitiy_price'>
                                                 <div className='left'>
                                                     <span>{product.quantity}x</span>      <span>{[product.name]}</span>
@@ -112,7 +119,7 @@ function Page() {
                                                     <span>Subtotal</span>   
                                                 </div>
                                                 <div className='rigth'>
-                                                    {data.sub_total} Qr
+                                                    {getTotalPrice(myCart)} Qr
                                                 </div>
                                          </div>
                                          <div  className='product_row_quantitiy_price'>
@@ -120,7 +127,7 @@ function Page() {
                                                     <span>Shipping</span>   
                                                 </div>
                                                 <div className='rigth'>
-                                                    {data.shipping} Qr
+                                                    {0} Qr
                                                 </div>
                                          </div>
                                          <div  className='product_row_quantitiy_price'>
@@ -128,7 +135,7 @@ function Page() {
                                                     <span>Tax</span>   
                                                 </div>
                                                 <div className='rigth'>
-                                                    {data.tax} Qr
+                                                    {0} Qr
                                                 </div>
                                          </div>
                                     </div>
@@ -138,7 +145,7 @@ function Page() {
                                                     <span>Total</span>   
                                                 </div>
                                                 <div className='rigth'>
-                                                    {data.total} Qr
+                                                    {getTotalPrice(myCart)} Qr
                                                 </div>
                                          </div>
                                     </div>
