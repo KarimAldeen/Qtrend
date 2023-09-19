@@ -9,6 +9,7 @@ import CopyRight from '../../Components/Utils/CopyRight';
 import { useRouter } from 'next/navigation';
 import useManageCart from '../../zustand/cart';
 import {getTotalPrice} from '../../Utils/CalcFinalPrice' 
+import { BaseURL } from '../../api/config';
 const MyCart = () => {
   const route = useRouter();
   const {cart ,removeProductFromCart} = useManageCart()
@@ -63,7 +64,7 @@ const MyCart = () => {
             <div className='sec'>
               <div className='left_sec'>
                 <div className='left_left'>
-                  <img src={'/Print/Rectangle 9629.png'} alt='Product Image' />
+                  <img src={BaseURL + item.image} alt='Product Image' />
                 </div>
                 <div className='right_left'>
                   <p className='right_left_first'>{item?.name}</p>

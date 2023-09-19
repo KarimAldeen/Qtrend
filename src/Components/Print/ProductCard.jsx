@@ -7,15 +7,16 @@ import ShopIconCartBackGround from './Icon/ShopIconCartBackGround'
 import { useRouter } from 'next/navigation'
 import AddToCartButton from './AddToCartButton'
 import useManageCart from '../../zustand/cart'
-
-function ProductCard({name , id , image  ,quick_overview , from_price  ,  to_price ,index = 0 }) {
+import {TranslateObject} from '../../Utils/TranslateObject'
+function ProductCard({name  , image  ,quick_overview , from_price  ,  to_price ,translate ,index = 0  }) {
     const {addProductToCart} = useManageCart()
     const is_odd  = index %2 == 1 
-    const t   = useTranslation()
+    const {t ,i18n}   = useTranslation()
     const route = useRouter()
     const handelGoToSingleProduct = ()=>{
       route.push('/SingleProduct?product_id='+id)
     }
+    console.log(translate);
   return (
     <div className='product_card'
      style={{background:is_odd ? "black" :'#FFF'}}>
@@ -23,6 +24,7 @@ function ProductCard({name , id , image  ,quick_overview , from_price  ,  to_pri
         <img src={BaseURL +image} alt="Product IMage "   onClick={handelGoToSingleProduct}/>
 
         <h2 className='produc_name' style={{color:is_odd ? '#F4F4F4' :"black"}}  onClick={handelGoToSingleProduct} >{name}</h2>
+        <h2 className='produc_name' style={{color:is_odd ? '#F4F4F4' :"black"}}  onClick={()=> route.push('/SingleProduct')} >{TranslateObject(translate,i18n.language , 'name' )} </h2>
 
         <div className='card-body' style={{color:is_odd ? '#F4F4F4' :"black"}}   onClick={handelGoToSingleProduct}>
                 <div className='card-body-left'>

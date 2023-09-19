@@ -9,12 +9,13 @@ import Footer from '../../Components/Utils/Footer';
 import CopyRight from '../../Components/Utils/CopyRight';
 import CategoryHomeSectionWithProduct from '../../Components/Print/CategoryHomeSectionWithProduct';
 import useGetWidth from '../../hooks/useGetWidth';
+import { useTranslation } from 'react-i18next';
 
 const Page = () => {
   const [categoryData, setCategoryData] = useState([]);
   const width = useGetWidth();
   const perPage = width < 810 ? 1 : width < 1100 ? 2 : 3;
-
+  const {t} = useTranslation()
   const { data: categoryApiResponse, error: categoryApiError } = useGetAllCategory();
   // console.log(categoryApiResponse);
   useEffect(() => {
@@ -33,10 +34,10 @@ const Page = () => {
       <div className='home_section'>
         <div className='home_second'>
           <div className='home_second_left'>
-            <p className='frist_p'>WE OFFER TOP</p>
-            <p className='second_p'>PRINTING SERVICES</p>
-            <p className='third_p'>AFFORDABLE RATES FOR QUALITY PRINTS WITH PROFESSIONAL RESULTS.</p>
-            <button className='request_button'>REQUEST NOW</button>
+            <p className='frist_p'>{t("WE OFFER TOP")}</p>
+            <p className='second_p'>{t('PRINTING SERVICES')}</p>
+            <p className='third_p'>{t('AFFORDABLE RATES FOR QUALITY PRINTS WITH PROFESSIONAL RESULTS.')}</p>
+            <button className='request_button'>{t("REQUEST NOW")}</button>
           </div>
           <div className='home_second_right' style={{ zIndex: 0 }}>
             <img src='/Print/Prints.png' alt='Print Services' />

@@ -5,7 +5,7 @@ export const TranslateObject  = (array=[]  ,lanCOde , key)=>{
 
     
 
-   
+    console.log(array);
     if(array.length<=1){
         return ''
     }
