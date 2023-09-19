@@ -1,6 +1,31 @@
 @import './ProductCard.scss';
 @import './CategoryMainCard.scss';
 @import './Heckout.scss';
+.ar{
+    .HEADER{
+        font-family: Noor !important;
+    }
+    .print_page{
+        font-family: Noor !important;
+        .home_second_left{
+            .frist_p{
+                line-height: 1.5 !important;
+                font-family: Noor !important;
+            }
+            .second_p{
+                line-height: 1.5 !important;
+
+                font-family: Noor !important;
+            }
+            .third_p{
+                line-height: 1.5 !important;
+
+                font-family: Noor !important;
+
+            }
+        }
+    }   
+}
 .HEADER{
     width: 100vw;
     height: 5vh;
@@ -191,7 +216,11 @@
 
 
 
-
+.ar{
+    .PrintLastSection{
+        direction: rtl !important;
+    }
+}
 
 
 @media only screen and (max-width: 900px)  {

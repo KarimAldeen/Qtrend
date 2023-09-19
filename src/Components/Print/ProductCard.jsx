@@ -7,19 +7,20 @@ import ShopIconCartBackGround from './Icon/ShopIconCartBackGround'
 import { useRouter } from 'next/navigation'
 import AddToCartButton from './AddToCartButton'
 import useManageCart from '../../zustand/cart'
-
-function ProductCard({name , id , image  ,quick_overview , from_price  ,  to_price ,index = 0 }) {
+import {TranslateObject} from '../../Utils/TranslateObject'
+function ProductCard({name  , image  ,quick_overview , from_price  ,  to_price ,translate ,index = 0  }) {
     const {addProductToCart} = useManageCart()
     const is_odd  = index %2 == 1 
-    const t   = useTranslation()
+    const {t ,i18n}   = useTranslation()
     const route = useRouter()
+    console.log(translate);
   return (
     <div className='product_card'
      style={{background:is_odd ? "black" :'#FFF'}}>
          {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={BaseURL +image} alt="Product IMage "   onClick={()=> route.push('/SingleProduct')}/>
 
-        <h2 className='produc_name' style={{color:is_odd ? '#F4F4F4' :"black"}}  onClick={()=> route.push('/SingleProduct')} >{name}</h2>
+        <h2 className='produc_name' style={{color:is_odd ? '#F4F4F4' :"black"}}  onClick={()=> route.push('/SingleProduct')} >{TranslateObject(translate,i18n.language , 'name' )} </h2>
 
         <div className='card-body' style={{color:is_odd ? '#F4F4F4' :"black"}}   onClick={()=> route.push('/SingleProduct')}>
                 <div className='card-body-left'>

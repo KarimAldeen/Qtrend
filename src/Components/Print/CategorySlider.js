@@ -2,7 +2,8 @@
 import React from 'react'
 import { Carousel } from 'react-responsive-carousel'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-
+import {useGetSlider} from '../../api/sliders' 
+import { BaseURL, BaseURLImage } from '../../api/config';
 
 
 const data  = [
@@ -21,9 +22,11 @@ const data  = [
 ]
 function CategorySlider() {
  
-    const sliderRender = data.map(slider =>(
-            <img src={slider.img} alt={slider.id}    key={slider.id} className='image-slider-category'  />
-        ))
+    const {data} = useGetSlider()
+    console.log(data?.category_slider);
+    const sliderRender = data?.category_slider?.map(slider =>(
+        <img src={BaseURLImage +slider.image} alt={slider.id}    key={slider.id} className='image-slider-category'  />
+    ))
     
     return (
         <Carousel

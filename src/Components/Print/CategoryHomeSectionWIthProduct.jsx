@@ -25,7 +25,7 @@ function CategoryHoemSectionWithProduct({color , index , products , per_page ,ca
         <Main_Paper
          name1={category?.name.split(' ')[0]} 
           name2={category?.name.split(' ')[1] ?? ''} 
- quick_overview={category?.description} id={category?.id}  image={category?.category_image}/>
+        quick_overview={category?.description} id={category?.id}  image={category?.category_image}/>
         </div>
   
         <Swiper
@@ -40,7 +40,9 @@ function CategoryHoemSectionWithProduct({color , index , products , per_page ,ca
                   price={product?.price}
                   from_price={product?.low_price}
                   to_price={product?.high_price}
-                  {...product}
+                  translate={product?.translations}
+                  index={0}
+                  
                 />
                 </SwiperSlide>
               
