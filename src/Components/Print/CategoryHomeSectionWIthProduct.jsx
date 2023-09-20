@@ -12,9 +12,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { BaseURLImage } from '../../api/config'
 import Arrow from '../Services/Arrow'
-function CategoryHoemSectionWithProduct({color , index , products , per_page ,category}) {
+function CategoryHoemSectionWithProduct({color , index , products , perPage ,category}) {
     const is_odd = index %2 ==1 
-
+console.log(perPage);
   
   return (
     <>
@@ -30,7 +30,7 @@ function CategoryHoemSectionWithProduct({color , index , products , per_page ,ca
   
         <Swiper
           spaceBetween={0}
-          slidesPerView={per_page}>
+          slidesPerView={perPage}>
           {
             products?.map((product) => (
               
@@ -53,7 +53,7 @@ function CategoryHoemSectionWithProduct({color , index , products , per_page ,ca
 
 
         </Swiper>
-        <div style={{marginInline:"10px" , display:products?.length > per_page ? 'block' :"none"}}>
+        <div style={{marginInline:"10px" , display:products?.length > perPage ? 'block' :"none"}}>
 
           <Arrow color={is_odd ? "black" :'white'} />
         </div>

@@ -74,7 +74,7 @@
     position: relative;
     .add_To_cart_button_body{
         position: absolute;
-        bottom: 15px;
+        bottom: 25px !important;
         font-size: 12px;
         right: 40px !important;
 
@@ -82,7 +82,9 @@
 }
 @include devices(FORPRODUCT){
     .product_card{
-        height: 200px !important;
+        height: 130px !important;
+        width: 100px !important;
+
         .produc_name{
             font-size: .7em !important;
         }
@@ -94,4 +96,5 @@
         }
 
     }
+ 
 }
