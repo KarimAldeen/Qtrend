@@ -18,6 +18,7 @@ const PrintNavBar = () => {
     <div className='PrintNavBar'>
         <div className='print_links'>
             <div><Link className='Link' href={'/Print'}>{t("ALL PRINTS")}</Link></div>
+            <div className='middle'>
             {
                 data?.category?.map((nav , index) =>(
                     <div className='link_with_arrow' key={nav.id}>
@@ -28,6 +29,8 @@ const PrintNavBar = () => {
                    </div>
                 ))
             }
+            </div>
+        
           
 
         </div>

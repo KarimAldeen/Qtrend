@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: calc(10vh - 3px);
-    
+
     @include devices(Minlaptop){
         &{
           margin-top: calc(8vh - 3px);
@@ -22,7 +22,13 @@
             // min-height: 15vw !important;
             margin-top: min(10vw , calc(7.85vh - 3px) ) !important;
             height: 5.5vh !important;
+            // .print_links{
+            //     width: 70% !important;
 
+            // }
+            // .print_icons{
+            //     width: 20% !important;
+            // }
         }
     }
     // width: 100%;
