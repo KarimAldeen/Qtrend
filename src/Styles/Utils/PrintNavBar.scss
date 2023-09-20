@@ -13,14 +13,16 @@
     @include devices(Minlaptop){
         &{
           margin-top: calc(8vh - 3px);
-    
+            
         }
     }
      
     @include devices(mobile){
         &{
-            margin-top: calc(6.5vh - 3px);
-    
+            // min-height: 15vw !important;
+            margin-top: min(10vw , calc(7.85vh - 3px) ) !important;
+            height: 5.5vh !important;
+
         }
     }
     // width: 100%;
