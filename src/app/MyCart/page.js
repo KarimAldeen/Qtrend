@@ -10,9 +10,11 @@ import { useRouter } from 'next/navigation';
 import useManageCart from '../../zustand/cart';
 import {getTotalPrice} from '../../Utils/CalcFinalPrice' 
 import { BaseURL } from '../../api/config';
+import { useTranslation } from 'react-i18next';
 const MyCart = () => {
   const route = useRouter();
   const {cart ,removeProductFromCart} = useManageCart()
+  const {t} = useTranslation();
 
   const [MyCart  ,  setMyCart] = useState([])
   useEffect(()=>{
@@ -32,7 +34,7 @@ const MyCart = () => {
           {/* Page location */}
           <h1 className='location_page' onClick={()=> route.push('/Print')}>Home {">"} <span> My Cart</span></h1>
           <div className='header'>
-            <h1 className='header_page'>My Cart</h1>
+            <h1 className='header_page'>{t("My Cart")}</h1>
             <MdOutlineShoppingBag />
           </div>
           {/* Checkout steps */}

@@ -107,6 +107,18 @@ button,svg{
         }
       
     }
+    @if $breakpoint == SS_mobile {
+      @media only screen and (max-width: 450px) {
+        @content;
+      }
+    
+  }
+  @if $breakpoint == NO_WAY {
+    @media only screen and (max-width: 350px) {
+      @content;
+    }
+  
+}
     @if $breakpoint == XS_mobile {
       @media only screen and (max-width: 300px) {
         @content;
