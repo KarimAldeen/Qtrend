@@ -113,14 +113,15 @@
                     width: 100vw !important;
                     flex-direction: column-reverse !important;
                     .home_second_left{
-                        justify-content: center !important;
+
+                        justify-content: flex-start !important;
                         .frist_p{
                             width: 50vw !important; 
                         }
                         .second_p{
                             margin-top: 10px;
                             margin-bottom: 10px;
-                            width: 80vw !important;
+                            width: 50vw !important;
                         }
                         .third_p{
                             width: 50% !important;
