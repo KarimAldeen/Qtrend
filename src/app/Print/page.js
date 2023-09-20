@@ -30,8 +30,8 @@ const Page = () => {
   return (
     <div className='print_page'>
       <TopHeader />
-      <PrintNavBar />
-      <div className='home_section'>
+      {/* <PrintNavBar /> */}
+      {/* <div className='home_section'>
         <div className='home_second'>
           <div className='home_second_left'>
             <p className='frist_p'>{t("WE OFFER TOP")}</p>
@@ -58,7 +58,7 @@ const Page = () => {
       </div>
       <PrintLastSection />
       <Footer />
-      <CopyRight />
+      <CopyRight /> */}
     </div>
   );
 };

@@ -31,41 +31,41 @@
     height: 5vh;
     background: #211e1e;
     .header_container{
-        width: 80vw;
+        width: 100vw;
         margin: auto;
         display: flex;
-        justify-content: space-between; align-items: center;
+        justify-content: space-around; align-items: center;
         .header_left{
             display: flex;
-            width: 80vw;
+            // width: 80vw;
             height: 5vh;
             .Print_info_1, .Print_info_2{
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-between;
                 align-items: center;
                 margin-left:2.5vw;
                 .NUM, .EMAIL{
                     padding-inline: .9vw;
                     color: #fff;
                     font-size: 1vw !important; 
-                    width: 9vw;
+                    // width: 9vw;
                 }
                 svg{
                     color: #fff;
-                    width: 1vw;
+                    width: 2vw;
                 }
             }
         }
         .header_right{
             display: flex;
-            justify-content: end;
+            // justify-content: end;
             align-items: center;
-            width: 80vw;
+            // width: 80vw;
             height: 5vh;
             svg{
                 color: #fff;
                 margin-left: 1.4vw;
-                width: .8vw;
+                width: 1.8vw;
             }
         }
         @include devices(Minlaptop){
@@ -74,6 +74,19 @@
                     font-size: 2vw !important;
                 }
             }
+    }
+    @include devices(tablet){
+
+        .header_left {
+            svg{
+                width: 30px !important;
+            }
+        }   
+        .header_right{
+            svg{
+                width: 3vw;
+            }
+        }
     }
 }
 }
