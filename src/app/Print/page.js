@@ -15,7 +15,8 @@ const Page = () => {
   const [categoryData, setCategoryData] = useState([]);
   const width = useGetWidth();
   const perPage = width < 810 ? 1 : width < 1100 ? 2 : 3;
-  const [t] = useTranslation();
+  
+  const {t} = useTranslation()
   const { data: categoryApiResponse, error: categoryApiError } = useGetAllCategory();
   // console.log(categoryApiResponse);
   useEffect(() => {
