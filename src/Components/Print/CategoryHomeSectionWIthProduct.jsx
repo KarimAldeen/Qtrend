@@ -30,7 +30,7 @@ console.log(perPage);
   
         <Swiper
           spaceBetween={0}
-          slidesPerView={perPage}>
+          slidesPerView={perPage  > products?.length ? products?.length : perPage}>
           {
             products?.map((product) => (
               
