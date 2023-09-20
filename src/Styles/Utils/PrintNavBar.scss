@@ -74,36 +74,85 @@
         }
     }
     .print_icons{
-        width: 50%;
+        width: 50% !important;
+        height: 5vh;
         display: flex;
+
         justify-content: center;
         align-items: center;
+        // flex-direction: column;
         margin-right: -4vw;
+        // background: #000;
+        margin-top: 1vw;
         .notifictaion_circle{
             width: 1vw;
             height: 1vw;
             border-radius: 50%;
             background: #B0D04F;
             font-size: .4em;
-            padding: .15vw;
+            padding: .25em;
             color: #ffffff;
             display: flex;justify-content: center;align-items: center;
-            margin: -.8vw -2.2w 0vw .3vw;
+            transform: translate(2.2vw,-1vw);
             font-weight: 300;
             z-index: 9999;
         }
         svg{
-            margin: 1.1vw 1.2vw 0vw 0vw;
-            font-size: 1.5em;
+            // margin: 1.1vw 1.2vw 0vw 0vw;
+            font-size: 2em;
             z-index: 0;
             }
-            @include devices(tablet){
-                .svg{
-                    font-size: 2.5em;
+            // start of icon res
+            @include devices(Minlaptop){
+                .notifictaion_circle{
+                    font-size: 1em ;
+                    padding: .6em;
+                    transform: translate(5.3vw,-2vw);
                 }
             }
             @include devices(tablet){
-                
+                .notifictaion_circle{
+                    transform: translate(6vw,-2vw);
+                }
             }
+            @include devices(FORPRODUCT){
+                .notifictaion_circle{
+                    transform: translate(6.5vw,-2vw);
+                }
+            }
+            @include devices(mobile){
+                .notifictaion_circle{
+                    transform: translate(6.5vw,-2.7vw);
+                }
+            }
+            @include devices(S_mobile){
+                .notifictaion_circle{
+                    transform: translate(8vw,-2.7vw);
+                }
+            }
+            //////////////////// font change
+            @include devices(SS_mobile){
+                .notifictaion_circle{
+                    font-size: .9em;
+                    padding: .5em;
+                    transform: translate(8vw,-3vw);
+                }
+                svg{
+                    font-size: 1.5em !important;
+                }
+            }
+            @include devices(NO_WAY){
+                .notifictaion_circle{
+                    transform: translate(10vw,-3.4vw);
+                }
+            }
+            @include devices(XS_mobile){
+                .notifictaion_circle{
+                    font-size: .7em;
+                    padding: .6em;
+                    transform: translate(12vw,-4.2vw);
+                }
+            }
+        // end of icon res
     }
 }
