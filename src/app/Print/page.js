@@ -7,7 +7,7 @@ import CategorySection from '../../Components/Print/CategorySection';
 import PrintLastSection from '../../Components/Print/PrintLastSection';
 import Footer from '../../Components/Utils/Footer';
 import CopyRight from '../../Components/Utils/CopyRight';
-import CategoryHomeSectionWithProduct from '../../Components/Print/CategoryHomeSectionWithProduct';
+import CategoryHomeSectionWithProduct from '../../Components/Print/CategoryHomeSectionWIthProduct';
 import useGetWidth from '../../hooks/useGetWidth';
 import { useTranslation } from 'react-i18next';
 
