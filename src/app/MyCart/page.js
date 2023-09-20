@@ -32,7 +32,7 @@ const MyCart = () => {
       <div className='MyCart'>
         <div className='MyCart_container'>
           {/* Page location */}
-          <h1 className='location_page' onClick={()=> route.push('/Print')}>Home {">"} <span> My Cart</span></h1>
+          <h1 className='location_page' onClick={()=> route.push('/Print')}>{t("Home")} {">"} <span> {t("My Cart")}</span></h1>
           <div className='header'>
             <h1 className='header_page'>{t("My Cart")}</h1>
             <MdOutlineShoppingBag />
@@ -44,7 +44,7 @@ const MyCart = () => {
                 1
               </span>
               <span>
-                MyCart
+                {t("My Cart")}
               </span>
             </div>
             <div className='mid-level'>
@@ -55,7 +55,7 @@ const MyCart = () => {
                 2
               </span>
               <span className='checkout_span' onClick={handelGoToCheckout}>
-                Checkout
+                {t("Checkout")}
               </span>
             </div>
           </div>
@@ -73,7 +73,7 @@ const MyCart = () => {
                 </div>
                 <div className='right_left'>
                   <p className='right_left_first'>{item?.name}</p>
-                  <p className='right_left_second'>Quantity : {item?.quantity}</p>
+                  <p className='right_left_second'>{t("Quantity :")} {item?.quantity}</p>
                   <p className='right_left_third'>{item?.price} Qr</p>
                 </div>
               </div>
@@ -89,14 +89,14 @@ const MyCart = () => {
            </div>
           {/* Order summary */}
           <div className='summary'>
-            <p className='summary_title'>Summary</p>
+            <p className='summary_title'>{t("Summary")}</p>
             <div className='summary_total'>
-              <p className='total'>Total</p>
+              <p className='total'>{t("Total")}</p>
               <p className='price'>{getTotalPrice(MyCart)} Qr</p>
             </div>
             {/* Checkout and Continue Shopping buttons */}
-            <button className='Checkout_button' onClick={() => route.push('/Checkout')}>Checkout</button>
-            <p className='summary_continue' onClick={() => route.push('/Print')}>Continue Shopping</p>
+            <button className='Checkout_button' onClick={() => route.push('/Checkout')}>{t("Checkout")}</button>
+            <p className='summary_continue' onClick={() => route.push('/Print')}>{t("Continue Shopping")}</p>
           </div>
         </div>
       </div>
