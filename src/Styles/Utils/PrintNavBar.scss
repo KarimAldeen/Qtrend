@@ -84,23 +84,26 @@
             height: 1vw;
             border-radius: 50%;
             background: #B0D04F;
-            font-size: .6vw;
+            font-size: .4em;
             padding: .15vw;
             color: #ffffff;
             display: flex;justify-content: center;align-items: center;
-            margin: -.8vw -2.1vw 0vw 0vw;
+            margin: -.8vw -2.2w 0vw .3vw;
             font-weight: 300;
             z-index: 9999;
         }
         svg{
             margin: 1.1vw 1.2vw 0vw 0vw;
-            font-size: 1.5vw;
+            font-size: 1.5em;
             z-index: 0;
             }
             @include devices(tablet){
                 .svg{
-                    font-size: 2.5vw;
+                    font-size: 2.5em;
                 }
+            }
+            @include devices(tablet){
+                
             }
     }
 }
