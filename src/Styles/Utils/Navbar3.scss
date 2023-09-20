@@ -66,10 +66,16 @@
         align-items: center;
         justify-content: center;
         text-align: center;
+        @include devices(mobile){
+            input{
+                height: 2vh !important;
+            }
+        }
         input{
             display: flex;justify-content: center;align-items: center;
             width: 23vw;
-            height: 3.8vh;
+            height:3.8vh;
+            
             padding-inline: 10px;
             margin-inline: 7vw;
             border-radius: 2vw;
