@@ -94,6 +94,7 @@
 }
 }
 .print_page{
+    overflow-x: hidden !important;
     background: #c2c2c2;
     height: 200vh;
     width: 100lvw !important; 
