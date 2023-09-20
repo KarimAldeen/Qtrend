@@ -4,7 +4,10 @@ const GrayBG = () => {
   return (
 
    <div>
-     <svg  style={{transform:"translate(-10vw)",zIndex:"0"}} xmlns="http://www.w3.org/2000/svg" width="180" height="85" viewBox="0 0 226 85" fill="none">
+     <svg  
+     className='GrayBG'
+    //  style={{width:"100%",transform:"translate(-10vw)",zIndex:"0"}}
+      xmlns="http://www.w3.org/2000/svg" width="180" height="85" viewBox="0 0 226 85" fill="none">
         <g filter="url(#filter0_d_76_189)">
         <path d="M23.6309 66C18.4824 66 14.7025 61.1649 15.945 56.1686L25.6839 17.0086C26.5619 13.4782 29.7319 11 33.3698 11L202.261 11C210.737 11 213.289 22.5177 205.607 26.0985L126.026 63.1914C122.057 65.0413 117.731 66 113.352 66L23.6309 66Z" fill="#D0D0D0"/>
         </g>

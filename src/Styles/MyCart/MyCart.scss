@@ -24,6 +24,7 @@
             font-weight: 500;
             line-height: normal;
             margin-left: 4em;
+            cursor: pointer;
             span{
                 color:#9AB72B
             }
@@ -94,7 +95,9 @@
                 font-family: Poppins;
                 font-size: 24px;
                 font-weight: 400;
-
+                span{
+                    cursor: pointer;
+                }
                 .circle{
                     width: 50px;
                     height: 50px;
@@ -104,6 +107,7 @@
                     justify-content: center;
                     align-items: center;
                     border-radius: 50%;
+                    // cursor: pointer;
                     
                 }
             }
@@ -133,7 +137,7 @@
             margin: auto;
             border-top:1px solid #B0D04F;
             border-bottom:1px solid #B0D04F;
-            margin-bottom: 10vh;
+            // margin-bottom: 10vh;
             padding: 1vw;
             .sec{
                 display: flex;justify-content: space-between;align-items: center;
@@ -291,4 +295,5 @@
 
     .product_cart_container{
         min-height: 50vh !important;
+        margin-bottom: 10vh;
     }

@@ -18,7 +18,7 @@ const Page = () => {
   
   const {t} = useTranslation()
   const { data: categoryApiResponse, error: categoryApiError } = useGetAllCategory();
-
+  // console.log(categoryApiResponse);
   useEffect(() => {
     if (categoryApiError) {
       console.error(categoryApiError);

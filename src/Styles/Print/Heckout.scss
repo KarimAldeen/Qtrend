@@ -26,8 +26,13 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
+                cursor: pointer;
+                .My_Cart_span{
+                    color: var(--Old-Gray, #A7A7A7);
+                    cursor: pointer;
+                }
                 span{
-                    color:#9AB72B
+                    color:#9AB72B;
                 }
             }
             .header_page{
@@ -62,6 +67,9 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
+                    span{
+                        cursor: pointer;
+                    }
                     .circle{
                         width: 50px;
                         height: 50px;

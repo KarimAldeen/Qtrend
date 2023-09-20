@@ -23,7 +23,7 @@ const data  = [
 function CategorySlider() {
  
     const {data} = useGetSlider()
-    console.log(data?.category_slider);
+    // console.log(data?.category_slider);
     const sliderRender = data?.category_slider?.map(slider =>(
         <img src={BaseURLImage +slider.image} alt={slider.id}    key={slider.id} className='image-slider-category'  />
     ))

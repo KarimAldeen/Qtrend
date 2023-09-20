@@ -5,17 +5,19 @@ import {FiMail} from 'react-icons/fi'
 import {MdOutlineShoppingBag, MdKeyboardArrowDown} from 'react-icons/md'
 import { useGetAllCategory } from '../../api/category'
 import useManageCart from '../../zustand/cart'
+import { useTranslation } from 'react-i18next'
 const PrintNavBar = () => {
     const {data} = useGetAllCategory()
     const {cart} = useManageCart()
     const [length , setLength] = useState(0)
+    const [t] = useTranslation()
     useEffect(()=>(
       setLength(cart?.length)
     ),[cart])
     return (
     <div className='PrintNavBar'>
         <div className='print_links'>
-            <div><Link className='Link' href={'/Print'}>ALL PRINTS</Link></div>
+            <div><Link className='Link' href={'/Print'}>{t("ALL PRINTS")}</Link></div>
             {
                 data?.category?.map((nav , index) =>(
                     <div className='link_with_arrow' key={nav.id}>
