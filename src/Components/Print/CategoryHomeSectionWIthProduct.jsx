@@ -7,14 +7,19 @@ import ProductCardNew from '../Print/ProductCardNew'
 
 import { data } from './data/Products'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore from 'swiper';
+import  { Autoplay } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
 import { BaseURLImage } from '../../api/config'
 import Arrow from '../Services/Arrow'
+
+
+SwiperCore.use([Autoplay]);
+
 function CategoryHoemSectionWithProduct({color , index , products , perPage ,category}) {
     const is_odd = index %2 ==1 
-console.log(perPage);
   
   return (
     <>
@@ -29,7 +34,13 @@ console.log(perPage);
         </div>
   
         <Swiper
+        className='swiper-container-product'
           spaceBetween={0}
+          autoplay
+          speed={1000}
+          autoFocus
+          modules={[Autoplay]}
+
           slidesPerView={perPage  > products?.length ? products?.length : perPage}>
           {
             products?.map((product) => (
@@ -53,7 +64,7 @@ console.log(perPage);
 
 
         </Swiper>
-        <div style={{marginInline:"10px" , display:products?.length > perPage ? 'block' :"none"}}>
+        <div style={{marginInline:"10px" , display:products?.length > perPage ? 'block' :"none"}} className='arrow-product'>
 
           <Arrow color={is_odd ? "black" :'white'} />
         </div>
