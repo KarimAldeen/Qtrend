@@ -84,9 +84,13 @@
   }
 }
 
+
 @include devices(tablet){
     .category_section_body{
       height: 100px;
+    }
+    .Main_Paper{
+      width: 36vw;
     }
   
 }

@@ -35,7 +35,8 @@ function CategoryHoemSectionWithProduct({color , index , products , per_page ,ca
             products?.map((product) => (
               
                 <SwiperSlide key={product.id}>
-                  <ProductCard 
+                  <ProductCard
+                  id={product.id} 
                   image={product?.product_main_image}
                   price={product?.price}
                   from_price={product?.low_price}

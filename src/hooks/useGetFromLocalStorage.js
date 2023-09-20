@@ -7,7 +7,7 @@ function useGetFromLocalStorage(key , initvalue=[]) {
     
     useEffect(()=>{
         setValue(localStorage.getItem(key))
-    },[])
+    },[key])
   return (
      value
     )

@@ -7,6 +7,7 @@
     }
     .print_page{
         font-family: Noor !important;
+        width: 100vw !important;
         .home_second_left{
             .frist_p{
                 line-height: 1.5 !important;
@@ -27,45 +28,46 @@
     }   
 }
 .HEADER{
-    width: 100vw;
+    min-width: 100vw !important;
     height: 5vh;
+    position: relative;
     background: #211e1e;
     .header_container{
-        width: 80vw;
+        width: 100vw;
         margin: auto;
         display: flex;
-        justify-content: space-between; align-items: center;
+        justify-content: space-around; align-items: center;
         .header_left{
             display: flex;
-            width: 80vw;
+            // width: 80vw;
             height: 5vh;
             .Print_info_1, .Print_info_2{
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-between;
                 align-items: center;
                 margin-left:2.5vw;
                 .NUM, .EMAIL{
                     padding-inline: .9vw;
                     color: #fff;
                     font-size: 1vw !important; 
-                    width: 9vw;
+                    // width: 9vw;
                 }
                 svg{
                     color: #fff;
-                    width: 1vw;
+                    width: 2vw;
                 }
             }
         }
         .header_right{
             display: flex;
-            justify-content: end;
+            // justify-content: end;
             align-items: center;
-            width: 80vw;
+            // width: 80vw;
             height: 5vh;
             svg{
                 color: #fff;
                 margin-left: 1.4vw;
-                width: .8vw;
+                width: 1.8vw;
             }
         }
         @include devices(Minlaptop){
@@ -75,13 +77,29 @@
                 }
             }
     }
+    @include devices(tablet){
+
+        .header_left {
+            font-size: 2.4vw !important;
+            svg{
+                width: 30px !important;
+            }
+        }   
+        .header_right{
+            svg{
+                width: 3vw;
+            }
+        }
+    }
 }
 }
 .print_page{
+    overflow-x: hidden !important;
     background: #c2c2c2;
     height: 200vh;
-   
+    width: 100lvw !important; 
     .home_section{
+        width: 100vw;
         min-height: 70vh;       
         // margin-bottom: 7vh;
         // border-top: 10px solid #EDF1F4 !important;
@@ -96,14 +114,15 @@
                     width: 100vw !important;
                     flex-direction: column-reverse !important;
                     .home_second_left{
-                        justify-content: center !important;
+
+                        justify-content: flex-start !important;
                         .frist_p{
                             width: 50vw !important; 
                         }
                         .second_p{
                             margin-top: 10px;
                             margin-bottom: 10px;
-                            width: 80vw !important;
+                            width: 50vw !important;
                         }
                         .third_p{
                             width: 50% !important;
@@ -223,42 +242,28 @@
 }
 
 
-@media only screen and (max-width: 900px)  {
-    .header_container{
-         .header_left{
-            width: 55% !important;
-            margin-inline: 4em !important;
-            .Print_info_1, .Print_info_2, .Print_info_3{
-                // width: 25%;
-                p{
-                    font-size: .9em !important;
-                }
-            }
-        }
-        .header_right{
-            width: 40%;
-            .sign_in_up{
-                p{
-                    font-size: 1.1em !important;
-                }
-            }
-        }
-    }   
-    .NavBar3{
-        .search_input{
-            transform: translateX(-7em) !important;
-            input{
-                // width: 23vw !important;
-                // padding-left:1em !important;
-            }
-        }
-        img{
-            transform: translateX(2em) !important;
-        }
-        a{
-            width: 100% !important;
-            font-size: .7em !important;
-        }
-    }
+// @media only screen and (max-width: 900px)  {
+//     .header_container{
+//          .header_left{
+//             width: 55% !important;
+//             margin-inline: 4em !important;
+//             .Print_info_1, .Print_info_2, .Print_info_3{
+//                 // width: 25%;
+//                 p{
+//                     font-size: .9em !important;
+//                 }
+//             }
+//         }
+//         .header_right{
+//             width: 40%;
+//             .sign_in_up{
+//                 p{
+//                     font-size: 1.1em !important;
+//                 }
+//             }
+//         }
+//     }   
+   
     
-}
+// }
+
