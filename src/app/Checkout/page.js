@@ -9,6 +9,12 @@ import useManageCart from '../../zustand/cart'
 import { getTotalPrice } from '../../Utils/CalcFinalPrice'
 
 function Page() {
+    const handelBackToCart = ()=>{
+        route.push('/MyCart')
+      }
+    const handelBackToPrint = ()=>{
+        route.push('/Print')
+    }
     const {cart} = useManageCart()
     const [myCart , setMyCart] = useState([])
     useEffect(()=>{
@@ -44,14 +50,16 @@ function Page() {
     <div  className='checkout_page'>
             <div className='checkout_body'>
                    <div className='checkout_container'>
-                        <h1 className='location_page'>Home {">"}  My Cart {">"}  <span>Checkout</span></h1>
+                        <h1 className='location_page' 
+                        // onClick={handelBackToPrint}
+                        >Home {">"}  <span className='My_Cart_span' onClick={handelBackToCart}>My Cart</span> {">"}  <span>Checkout</span></h1>
                         <h1 className='header_page'>Checkout</h1>
                         <div className='steps_pay'>
                                 <div className='first-level'>
-                                    <span className='circle'>
+                                    <span className='circle' onClick={handelBackToCart}>
                                         1
                                     </span>
-                                    <span>
+                                    <span onClick={handelBackToCart}>
                                         MyCart
                                     </span>
                                 </div>
@@ -169,7 +177,7 @@ function Page() {
                                                 </defs>
                                                 </svg>
                                         </div>
-                                        <p onClick={()=> route.push('/MyCart')} className='back_to_cart'>Back TO Cart</p>
+                                        <p onClick={handelBackToCart} className='back_to_cart'>Back TO Cart</p>
                                     </div>
                             </div>
                         </div>

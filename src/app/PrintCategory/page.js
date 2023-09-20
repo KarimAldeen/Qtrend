@@ -1,6 +1,6 @@
 'use client'
 // Import necessary modules and components
-import React from 'react';
+import React, { useTransition } from 'react';
 import TopHeader from '../../Components/Print/TopHeader';
 import PrintNavBar from '../../Components/Print/PrintNavBar';
 import CircleServiceFifth from '../../Components/Services/CircleServiceFifth';
@@ -13,6 +13,7 @@ import useGetWidth from '../../hooks/useGetWidth';
 import Refreash from '../../Components/Print/Refrech';
 import { useParams, useSearchParams } from 'next/navigation';
 import { useGetAllProductForCategory } from '../../api/category';
+import { useTranslation } from 'react-i18next';
 
 function PrintCategory() {
   // Get the 'category_id' parameter from the URL
@@ -30,6 +31,7 @@ function PrintCategory() {
   // Determine the number of products per page based on window width
   const per_page = width < 500 ? 1 : width < 800 ? 2 : 3;
 
+  const [t] = useTranslation()
   return (
     <>
       {/* Display the top header */}

@@ -10,7 +10,7 @@ const PrintNavBar = () => {
     const {data} = useGetAllCategory()
     const {cart} = useManageCart()
     const [length , setLength] = useState(0)
-    const t = useTranslation
+    const [t] = useTranslation()
     useEffect(()=>(
       setLength(cart?.length)
     ),[cart])

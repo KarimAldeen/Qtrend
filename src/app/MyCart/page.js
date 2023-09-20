@@ -18,6 +18,9 @@ const MyCart = () => {
   useEffect(()=>{
     setMyCart(cart)
   },[cart])
+  const handelGoToCheckout = ()=>{
+    route.push('/Checkout')
+  }
   return (
     <>
       {/* Display the top header */}
@@ -27,7 +30,7 @@ const MyCart = () => {
       <div className='MyCart'>
         <div className='MyCart_container'>
           {/* Page location */}
-          <h1 className='location_page'>Home {">"} <span> My Cart</span></h1>
+          <h1 className='location_page' onClick={()=> route.push('/Print')}>Home {">"} <span> My Cart</span></h1>
           <div className='header'>
             <h1 className='header_page'>My Cart</h1>
             <MdOutlineShoppingBag />
@@ -46,10 +49,10 @@ const MyCart = () => {
 
             </div>
             <div className='last-level'>
-              <span className='circle'>
+              <span className='circle' onClick={handelGoToCheckout}>
                 2
               </span>
-              <span>
+              <span className='checkout_span' onClick={handelGoToCheckout}>
                 Checkout
               </span>
             </div>

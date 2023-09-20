@@ -9,9 +9,10 @@ import NavBar3 from '../../Components/Utils/NavBar3'
 import IMG from '../../../public/works/4.webp'
 import CategoryCard from '../../Components/Print/CategoryCard'
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { useTranslation } from 'react-i18next';
 function TopHeader() {
     const {data  , isError}  = useGetALlStatics()
-
+    const [t] = useTranslation();
   return (
     <div className='HEADER'>
      <div className='header_container'>

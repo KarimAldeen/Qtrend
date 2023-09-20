@@ -8,15 +8,15 @@ import { useRouter } from 'next/navigation'
 import AddToCartButton from './AddToCartButton'
 import useManageCart from '../../zustand/cart'
 import {TranslateObject} from '../../Utils/TranslateObject'
-function ProductCard({name  , image  ,quick_overview , from_price  ,  to_price ,translate ,index = 0  }) {
+function ProductCard({id,name  , image  ,quick_overview , from_price  ,  to_price ,translate ,index = 0  }) {
     const {addProductToCart} = useManageCart()
     const is_odd  = index %2 == 1 
     const {t ,i18n}   = useTranslation()
     const route = useRouter()
     const handelGoToSingleProduct = ()=>{
-      route.push('/SingleProduct?product_id='+id)
+      route.push('/SingleProduct?product_id='+ id)
     }
-    console.log(translate);
+    // console.log(translate);
   return (
     <div className='product_card'
      style={{background:is_odd ? "black" :'#FFF'}}>

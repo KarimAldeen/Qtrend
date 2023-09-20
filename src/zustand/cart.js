@@ -12,7 +12,7 @@ const useManageCart = create((set) => ({
       console.log(product);
       const is_product_exists =  state.cart.find(productInCart => productInCart.id == product.id);
 
-      toast.success('add Succefuly')
+      toast.success('Add Successfully')
       if(is_product_exists){
         const new_Cart = state.cart.map(productInCart => {
           if(productInCart.id == product.id){
@@ -37,7 +37,7 @@ const useManageCart = create((set) => ({
   // Remove a product from the cart
   removeProductFromCart: (productId) =>
     set((state) =>{
-      toast.success('removed Succefuly')
+      toast.success('Removed Successfully')
       const new_Cart = state.cart.filter((product) => product.id != productId)
       localStorage.setItem('cart', JSON.stringify(new_Cart))
 
@@ -49,7 +49,7 @@ const useManageCart = create((set) => ({
     
   // Clear the cart (remove all products)
   clearCart: () => set({ cart: [] }),
-
+  
   // Calculate the total price of items in the cart
 
 }));

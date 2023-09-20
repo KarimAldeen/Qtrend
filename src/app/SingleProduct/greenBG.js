@@ -3,7 +3,8 @@ import React from 'react'
 const GreenBG = () => {
   return (
     <svg  
-      xmlns="http://www.w3.org/2000/svg" width="150" height="90" viewBox="0 0 214 85" fill="none">
+      xmlns="http://www.w3.org/2000/svg" width="150" height="90" viewBox="0 0 214 85" fill="none"
+      className='GreenBG'>
         <g filter="url(#filter0_d_6_7652)">
         <path d="M190.601 11C196.578 11 200.401 17.3665 197.592 22.6419L176.685 61.9118C175.31 64.4955 172.622 66.1099 169.694 66.1099L23.2626 66.1099C14.6645 66.1099 12.227 54.3338 20.1186 50.9207L110.913 11.6508C111.906 11.2215 112.976 11 114.057 11L190.601 11Z" fill="#C4FD14"/>
         </g>

@@ -47,8 +47,8 @@
                     .mid_right_section{
                         width: 31vw;
                         display: flex; justify-content: start; align-items: start; flex-direction: column;
-                        margin-left: 1em;
-                        margin-top: 5.9em;
+                        margin-left: 1.2vw;
+                        margin-top: 8vw;
                         .header_word{
                             color: var(--Old-Gray, #A7A7A7);
                             /* Text Medium/Text Medium 3 */
@@ -74,7 +74,6 @@
                             font-size: 12.4px;
                             font-style: normal;
                             font-weight: 400;
-                            // line-height: 102%; /* 14.688px */
                             span{
                                 font-weight: 600;
                             }
@@ -89,7 +88,7 @@
                             }
                             .first_SingleProduct_desc, .second_SingleProduct_desc, .third_SingleProduct_desc{
                                 color: #969696;
-                                // font-family: Tajawal;
+                                font-family: Tajawal;
                                 font-size: 10px;
                                 font-style: normal;
                                 font-weight: 500;
@@ -99,22 +98,25 @@
                         .SingleProduct_options{
                             display: flex;
                             flex-direction: column;
-                            // display: none;
-                            .first_option{
-                                margin-bottom: 1vh;
+                            width: 25.5vw !important;
+                            height: 10vh;
+                            justify-content: space-around;
+                            @include devices(tablet){
+                                &{
+                                    width: 70vw !important;
+                                }
                             }
                             .first_option, .second_option{
-                                // display: none;
                                 color: #323232;
-                                // font-family: Tajawal;
+                                display: flex !important; justify-content: space-between;
+                                font-family: Tajawal;
                                 font-size: 1.2vw;
                                 font-style: normal;
                                 font-weight: 700;
-                                line-height: 28px; /* 175% */
                                 text-transform: capitalize;
                                 @include devices(tablet){
                                     &{
-                                        font-size: 2vw;
+                                        font-size: 3.4vw;
                                     }
                                 }
                                 
@@ -123,16 +125,14 @@
                                     border: 2px solid #E8E8E8;
                                     background: #EFEFEF;
                                     height: 3.5vh;
-                                    width: 20vw;
+                                    width: 20vw !important;
                                     color: #969696;
-                                    // font-family: Tajawal;
+                                    font-family: Tajawal;
                                     font-size: 1vw;
                                     font-weight: 400;
-                                    padding-inline: .7em;
-                                    margin-left: 1vw;
                                     @include devices(tablet){
                                         &{
-                                            width: 40vw;
+                                            width: 50vw !important;
                                         }
                                     }
                                 }
@@ -140,43 +140,55 @@
                         }
                         .SingleProduct_total{
                             display: flex;
+                            align-items: center;
+                            justify-content: space-evenly !important;
                             height: 8vh;
-                            width: 31vw;
+                            width: 40vw;
+                            
                             .TOTAL{
+                                display: flex;
                                 width: 15vw !important;
                                 color: #323232;
-                                // font-family: Tajawal;
+                                font-family: Tajawal;
                                 font-size: 20px;
                                 font-style: normal;
                                 font-weight: 700;
-                                line-height: 68px; /* 116.667% */
-                                display: flex;
                                 text-transform: capitalize;
                                 z-index: 99999;
+                                line-height: 68px; /* 116.667% */
                                 span{
+                                    z-index: 9999;
                                     margin-left: 4vw;
                                     margin-top: .5vh;
                                     font-size: 9px;
-                                    width: 10vw !important;
                                 }
                             }
-                            .add_to_cart_container{
-                                transform: translateX(-7.5vw);
-                                z-index: 0;
-                                .cart_body_button{
-                                    margin-top: -11.6vh;
-                                    height: 1vh;
-                                    z-index: 999999;
-                                    transform: translate(5.5vw,1vh);
-                                    svg{
-                                        width: 1.7vw;
+                            .Moaz{
+                                width: 100%;
+                                transform: translate(-6vw,1.5vh);
+                                @include devices(Minlaptop){
+                                    &{
+                                        transform: translate(-3vw,1vh);
                                     }
-                                    p{
-                                        color: black;
-                                        font-weight: 500;
-                                        font-family: Poppins;
-                                        font-size: 7.6px;
-                                        font-weight: 400;
+                                }
+                                @include devices(mobile){
+                                    &{
+                                        transform: translate(1vw,.5vh);
+                                    }
+                                }
+                                @include devices(frshan){
+                                    &{
+                                        transform: translate(6vw,.3vh);
+                                    }
+                                }
+                                @include devices(XS_mobile){
+                                    &{
+                                        transform: translate(10vw,1vh);
+                                    }
+                                }
+                                @include devices(XXS_mobile){
+                                    &{
+                                        transform: translate(15vw,1vh);
                                     }
                                 }
                             }
@@ -187,21 +199,13 @@
                     width: 65vw;
                     min-height: 70vh;
                     display: flex;
-                    // @include devices(tablet){
-                    //     &{
-                    //         margin-top: 4vw;
-                    //         flex-direction: column;
-                    //         margin-bottom: 5vw;
-                    //         width: 80vw;
-                    //     }
-                    // }
                     .important_notes{
                         display: flex;justify-content: start;align-items: start;flex-direction: column;
                         width: 31vw;
                         min-height: 50vh;
                         .important_notes_title{
                             color: var(--Black, #c2c2c2);
-                            // font-family: Poppins;
+                            font-family: Poppins;
                             font-size: 14.99px;
                             font-style: normal;
                             font-weight: 600;
@@ -234,7 +238,7 @@
                             margin-left: .5em;
                             span{
                                 color: var(--Black, #383838);
-                                // font-family: Poppins;
+                                font-family: Poppins;
                                 font-size: 19px;
                                 font-weight: 900;
                             }
@@ -334,15 +338,20 @@
 }
 @include devices(tablet){
     .SingleProduct_body_body{
-        width: 90vw !important;
+        width: 80vw !important;
         margin: auto;
         .mid_section{
-            width: 90vw !important;
+            width: 80vw !important;
             flex-direction: column;
             // align-items: center;justify-content: center;
-            .mid_left_section, .mid_right_section{
+            .mid_left_section {
                 width: 100% !important;
                 margin: auto;
+            }
+            .mid_right_section{
+                width: 80vw !important; 
+                margin: auto !important; 
+                margin-bottom: 6vw;
             }
             .mid_left_section{
                 flex-direction: column-reverse;
@@ -369,11 +378,13 @@
             margin-top: 4vw;
             flex-direction: column;
             margin-bottom: 5vw;
-            width: 90vw !important;
+            width: 80vw !important;
             margin-inline: auto;
+ 
             .important_notes{
-                width: 85vw !important;
+                width: 80vw !important;
                 margin: auto;
+                margin-bottom: -20vw !important;
             }
             .coustomized_design{
                 width: 85vw !important;

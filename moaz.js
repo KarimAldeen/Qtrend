@@ -101,7 +101,7 @@ function deleteProductFromCart(productToDelete){
     }else{
         cart =  cart.map(cartItem => {
             if(cartItem.id == productToDelete.id){
-                cartItem.quntity -=productToDelete.quntity
+                cartItem.quntity -= productToDelete.quntity
             }
             return cartItem
         })

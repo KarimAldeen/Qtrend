@@ -31,7 +31,7 @@ function NavBar3() {
                   <MenuService handleMouseLeave={handleMouseLeave}  t={t}/>
                 }
                 <Link  href={'/about_us'}  >{t('ABOUT US')}</Link>
-                <Link  href={'meet_us'}  >{t('MEET US')}</Link>
+                <Link  href={'/meet_us'}  >{t('MEET US')}</Link>
             </div>
            
             <BtnTranslate/>
