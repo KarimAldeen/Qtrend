@@ -7,6 +7,7 @@
     }
     .print_page{
         font-family: Noor !important;
+        width: 100vw !important;
         .home_second_left{
             .frist_p{
                 line-height: 1.5 !important;
@@ -27,8 +28,9 @@
     }   
 }
 .HEADER{
-    width: 100vw;
+    min-width: 100vw !important;
     height: 5vh;
+    position: fixed;
     background: #211e1e;
     .header_container{
         width: 100vw;
@@ -94,8 +96,9 @@
 .print_page{
     background: #c2c2c2;
     height: 200vh;
-   
+    width: 100lvw !important; 
     .home_section{
+        width: 100vw;
         min-height: 70vh;       
         // margin-bottom: 7vh;
         // border-top: 10px solid #EDF1F4 !important;
@@ -237,42 +240,28 @@
 }
 
 
-@media only screen and (max-width: 900px)  {
-    .header_container{
-         .header_left{
-            width: 55% !important;
-            margin-inline: 4em !important;
-            .Print_info_1, .Print_info_2, .Print_info_3{
-                // width: 25%;
-                p{
-                    font-size: .9em !important;
-                }
-            }
-        }
-        .header_right{
-            width: 40%;
-            .sign_in_up{
-                p{
-                    font-size: 1.1em !important;
-                }
-            }
-        }
-    }   
-    .NavBar3{
-        .search_input{
-            transform: translateX(-7em) !important;
-            input{
-                // width: 23vw !important;
-                // padding-left:1em !important;
-            }
-        }
-        img{
-            transform: translateX(2em) !important;
-        }
-        a{
-            width: 100% !important;
-            font-size: .7em !important;
-        }
-    }
+// @media only screen and (max-width: 900px)  {
+//     .header_container{
+//          .header_left{
+//             width: 55% !important;
+//             margin-inline: 4em !important;
+//             .Print_info_1, .Print_info_2, .Print_info_3{
+//                 // width: 25%;
+//                 p{
+//                     font-size: .9em !important;
+//                 }
+//             }
+//         }
+//         .header_right{
+//             width: 40%;
+//             .sign_in_up{
+//                 p{
+//                     font-size: 1.1em !important;
+//                 }
+//             }
+//         }
+//     }   
+   
     
-}
+// }
+
