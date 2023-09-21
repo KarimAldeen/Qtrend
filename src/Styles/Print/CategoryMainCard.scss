@@ -62,7 +62,7 @@
       width: 110px !important;
       height: 130px !important;
       position: relative;
-
+    
       .produc_name{
         margin-top: 2px;
         font-size: .8em;
@@ -70,10 +70,11 @@
     .card-body{
         display: flex;
         .quick_overview{
-            font-size: .8em;
+            font-size: 8px;
             width: 90%;
+         
             max-width: 120px;
-            height: 20px !important;
+            height: 32px !important;
             word-wrap: break-word;
            margin: 0 !important;
         }
@@ -94,7 +95,8 @@
         .add_To_cart_button_body{
           position: absolute;
           bottom:20px !important;
-          font-size: 5px;
+          font-size: 6px;
+          font-weight: 700;
           right: 25px !important;
          
           .shop_icon{
@@ -105,6 +107,9 @@
     }
   } 
 }
+
+
+
 @include devices(BreakPoints){
   .product_category_row{
     width: 100vw !important;
@@ -113,7 +118,8 @@
       margin: 0;
       justify-content: space-around !important;
       padding-inline: 10px;
-    }
+
+    }   
   }
 }
 @include devices(tablet){
