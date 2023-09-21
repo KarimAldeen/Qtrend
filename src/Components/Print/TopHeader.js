@@ -40,7 +40,7 @@ function TopHeader() {
                 DATASOCIALMEDIA.map((icon ,index) =>{
                   const object_is_exist = data2?.find(social => social.icon == icon.key)
                   return (    
-                          <a href={object_is_exist?.link} target='_blank' className='btn  btn-lg btn-floating' key={index} >
+                          <a href={object_is_exist?.link} target='_blank' className='btn  btn-lg btn-floating' key={index} style={{marginLeft:"5px"}} >
                             {icon.icon}
                           </a>
                     )

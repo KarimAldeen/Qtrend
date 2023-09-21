@@ -22,7 +22,6 @@
                 line-height: 1.5 !important;
 
                 font-family: Noor !important;
-
             }
         }
     }   
@@ -39,7 +38,6 @@
         justify-content: space-around; align-items: center;
         .header_left{
             display: flex;
-            // width: 80vw;
             height: 5vh;
             .Print_info_1, .Print_info_2{
                 display: flex;
@@ -149,7 +147,6 @@
                 
                 text-align: left !important;
                 @include devices(tablet){
-
                     &{
 
                         .frist_p{
@@ -174,7 +171,7 @@
                     color: #323232;
                     width: 25vw ;
                     font-style: italic;
-                    // font-family: inter;
+                    font-family: inter;
                     line-height: .82em;
                     margin-left: 0 !important;
                 }
@@ -185,7 +182,7 @@
                     width: 25vw;
                     
                     font-style: italic;
-                    // font-family: inter;
+                    font-family: inter;
                     line-height: .82em;
                 }
                 .third_p{
@@ -197,7 +194,7 @@
                     display: flex;
                     align-items: start !important;
                     margin:.5em  0em 0em .2em;
-                    // font-family: inter;
+                    font-family: inter;
                     line-height: 1.2em;
                 }
                 .request_button{
@@ -209,15 +206,12 @@
                     color: #fff;
                     font-weight: 900;
                     font-size: 1.4em;
-                    // background: #1995CACC 80%;
                     background: linear-gradient(180deg,#1995CACC, #0085D2);
                     font-style: italic;
                 }
             }
-
             .home_second_right{
                 width: 100% !important;
-                // height: 70vh;
                 z-index: 99999;
                 img{
                     width: 38vw;

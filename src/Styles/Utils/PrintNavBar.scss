@@ -7,23 +7,17 @@
     justify-content: space-between;
     align-items: center;
     margin-top: calc(10vh - 3px);
-    
     @include devices(Minlaptop){
         &{
-          margin-top: calc(8vh - 3px);
-            
+          margin-top: calc(8vh - 3px);  
         }
     }
-     
     @include devices(mobile){
         &{
-            // min-height: 15vw !important;
             margin-top: min(13vw , calc(7.8vh - 3px) ) !important;
             height: 5.5vh !important;
-
         }
     }
-    // width: 100%;
     .print_links{
         width: 80%;
         display: flex;
@@ -45,8 +39,6 @@
         }
         .middle{
             display: flex;
-            
-        
         }
         .link_with_arrow{
             display: flex;
@@ -71,12 +63,10 @@
               
             }
             svg{
-                // transform: translateY(.7vw);
                 color: #000;
                 margin-left: .3vw;
                 font-size: 1.1em !important;
             }
-            
         }
     }
     .print_icons{
