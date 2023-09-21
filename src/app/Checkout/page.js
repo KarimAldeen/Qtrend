@@ -7,8 +7,10 @@ import CopyRight from '../../Components/Utils/CopyRight'
 import {useRouter} from 'next/navigation'
 import useManageCart from '../../zustand/cart'
 import { getTotalPrice } from '../../Utils/CalcFinalPrice'
+import { useTranslation } from 'react-i18next'
 
 function Page() {
+    const {t} = useTranslation();
     const handelBackToCart = ()=>{
         route.push('/MyCart')
       }
@@ -51,16 +53,15 @@ function Page() {
             <div className='checkout_body'>
                    <div className='checkout_container'>
                         <h1 className='location_page' 
-                        // onClick={handelBackToPrint}
-                        >Home {">"}  <span className='My_Cart_span' onClick={handelBackToCart}>My Cart</span> {">"}  <span>Checkout</span></h1>
-                        <h1 className='header_page'>Checkout</h1>
+                        >{t("Home")} {">"}  <span className='My_Cart_span' onClick={handelBackToCart}>{t("My Cart")}</span> {">"}  <span>{t("Checkout")}</span></h1>
+                        <h1 className='header_page'>{t("Checkout")}</h1>
                         <div className='steps_pay'>
                                 <div className='first-level'>
                                     <span className='circle' onClick={handelBackToCart}>
                                         1
                                     </span>
                                     <span onClick={handelBackToCart}>
-                                        MyCart
+                                        {t("My Cart")}
                                     </span>
                                 </div>
                                 <div className='mid-level'> 
@@ -71,7 +72,7 @@ function Page() {
                                         2
                                     </span>
                                     <span>
-                                        Checkout
+                                        {t("Checkout")}
                                     </span>
                                 </div>
                         </div>
@@ -80,18 +81,18 @@ function Page() {
 
 
                                     <div className='input_top'>
-                                        <label>Buyer Info</label>
+                                        <label>{t("Buyer Info")}</label>
                                     <input type='text' placeholder=''/>
 
                                     </div>
                                     <div className='div_mid_input'>
                                     <div  className='input_mid_1'>
-                                    <label>Name</label>
+                                    <label>{t("Name")}</label>
 
                                     <input type='text' placeholder=''/>
                                     </div>
                                     <div className='input_mid_2' >
-                                    <label>Phone Number</label>
+                                    <label>{t("Phone Number")}</label>
 
                                     <input type='text' placeholder=''/>
                                     </div>
@@ -100,14 +101,14 @@ function Page() {
                                     <div>
 
                                     <div  className='input_bottom'>
-                                        <label>Note </label>
+                                        <label>{t("Note")} </label>
                                     <input type='text' placeholder=''/>
 
                                     </div>
                                     </div>
                             </div>
                             <div className='checkout_rigth_form'>
-                                    <h1 className='header'>Your Order Summary</h1>
+                                    <h1 className='header'>{t("Your Order Summary")}</h1>
                                     {
                                         myCart?.map(product => (
                                             <div key={product.id} className='product_row_quantitiy_price'>
@@ -124,7 +125,7 @@ function Page() {
                                         
                                     <div  className='product_row_quantitiy_price'>
                                                 <div className='left'>
-                                                    <span>Subtotal</span>   
+                                                    <span>{t("Subtotal")}</span>   
                                                 </div>
                                                 <div className='rigth'>
                                                     {getTotalPrice(myCart)} Qr
@@ -132,7 +133,7 @@ function Page() {
                                          </div>
                                          <div  className='product_row_quantitiy_price'>
                                                 <div className='left'>
-                                                    <span>Shipping</span>   
+                                                    <span>{t("Shipping")}</span>   
                                                 </div>
                                                 <div className='rigth'>
                                                     {0} Qr
@@ -140,7 +141,7 @@ function Page() {
                                          </div>
                                          <div  className='product_row_quantitiy_price'>
                                                 <div className='left'>
-                                                    <span>Tax</span>   
+                                                    <span>{t("Tax")}</span>   
                                                 </div>
                                                 <div className='rigth'>
                                                     {0} Qr
@@ -150,7 +151,7 @@ function Page() {
                                     <div>
                                     <div  className='product_full_price'>
                                                 <div className='left'>
-                                                    <span>Total</span>   
+                                                    <span>{t("Total")}</span>   
                                                 </div>
                                                 <div className='rigth'>
                                                     {getTotalPrice(myCart)} Qr
@@ -158,13 +159,13 @@ function Page() {
                                          </div>
                                     </div>
                                     <div className='submit_checkout'>
-                                        <h1 className='header'>Payment</h1>
+                                        <h1 className='header'>{t("Payment")}</h1>
 
                                         <div  className='cash_button'>
-                                            Cash On Delivary
+                                            {t("Cash On Delivary")}
                                         </div>
                                         <div className='checkout_button'>
-                                            CHECKOUT
+                                            {t("Checkout")}
                                             <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
                                                 <g clip-path="url(#clip0_81_189)">
                                                 <path d="M18.7363 36.9949C28.6775 36.9949 36.7363 28.936 36.7363 18.9949C36.7363 9.05375 28.6775 0.994873 18.7363 0.994873C8.7952 0.994873 0.736328 9.05375 0.736328 18.9949C0.736328 28.936 8.7952 36.9949 18.7363 36.9949Z" fill="white"/>
@@ -177,7 +178,7 @@ function Page() {
                                                 </defs>
                                                 </svg>
                                         </div>
-                                        <p onClick={handelBackToCart} className='back_to_cart'>Back TO Cart</p>
+                                        <p onClick={handelBackToCart} className='back_to_cart'>{t("Back TO Cart")}</p>
                                     </div>
                             </div>
                         </div>

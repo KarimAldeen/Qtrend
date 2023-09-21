@@ -183,7 +183,6 @@
     "Refers to the process of printing promotional materials and branding on various items and products. This practice is commonly used by businesses and organizations to market their products or services, increase brand visibility, and create promotional merchandise for events or giveaways." :"يشير إلى عملية طباعة المواد الترويجية والعلامات التجارية على مختلف العناصر والمنتجات. تُستخدم هذه الممارسة بشكل شائع من قبل الشركات والمؤسسات لتسويق منتجاتها أو خدماتها، وزيادة ظهور العلامة التجارية، وإنشاء سلع ترويجية للأحداث أو الهدايا.",
     "Print":"مطبعة",
     "© Copyright 2023 Qtrend For Advertising All Rights Reserved.":"حقوق الطبع والنشر 2023 Qtrend للدعاية والإعلان جميع الحقوق محفوظة © ",
-    "":"حقوق ",
     "Develop and design by Qtrend studio":"تطوير وتصميم من قبل استوديو Qtrend",
     "ALL PRINTS":"جميع المطبوعات",
     "Paper Prints":"المطبوعات الورقية",
@@ -213,7 +212,19 @@
     "Summary":"ملخص",
     "My Cart":"سلتي",
     "Home":"الصفحة الرئيسية",
-    "Continue Shopping":"مواصلة التسوق"    
+    "Continue Shopping":"مواصلة التسوق",
+    "Buyer Info":"معلومات المشتري",
+    "Name":"الاسم",
+    "Phone Number":"رقم التليفون",
+    "Note":"ملحوظة",
+    "Your Order Summary":"ملخص طلبك",
+    "Subtotal":"المجموع الفرعي",
+    "Shipping":"الشحن",
+    "Tax":"ضريبةال",
+    "Cash On Delivary":"نقدا عند التسليم",
+    "Back TO Cart":"العودة إلى السلة",
+    "Payment":"القسط"    
+
 
 
 

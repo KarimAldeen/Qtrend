@@ -38,11 +38,6 @@
         }
         @include devices(XS_mobile){
             &{
-                font-size: .3em;
-            }
-        }
-        @include devices(XXS_mobile){
-            &{
                 font-size: .2em;
             }
         }
