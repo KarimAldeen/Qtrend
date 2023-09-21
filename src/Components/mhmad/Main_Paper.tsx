@@ -5,6 +5,14 @@ import { useRouter } from 'next/navigation'
 
 const Main_Paper = ({name1 ,name2 , quick_overview , id , image}) => {
   const router  = useRouter()
+  const stringFromBack = quick_overview
+
+  const TextWordToArray = stringFromBack.split(' ')
+  const TextWordLength = TextWordToArray.length
+  const first_text = TextWordToArray.slice(0 , TextWordLength/2);
+  const second_text = TextWordToArray.slice( TextWordLength/2 +1 , TextWordLength);
+  ;
+  
   return (
     <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +111,9 @@ const Main_Paper = ({name1 ,name2 , quick_overview , id , image}) => {
           fontSize={18}
           fontFamily="Poppins-Regular, Poppins"
         >
-          {quick_overview}
+         
+           <tspan x="0" dy="1.2em">{first_text.join(' ')}</tspan>
+          <tspan x="0" dy="1.2em">{second_text.join(' ')}</tspan>
         </text>
         <g id="View_All" data-name="View All" transform="translate(19 333)">
           <rect
