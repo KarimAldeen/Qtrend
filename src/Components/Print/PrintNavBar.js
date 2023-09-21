@@ -34,7 +34,7 @@ const PrintNavBar = () => {
           
 
         </div>
-        <div className='print_icons' style={{zIndex:"999"}}>
+        <div className='print_icons' style={{zIndex:"0"}}>
         <span className='notifictaion_circle'>{length || 0}</span>
             <Link href='/MyCart'>
                      <MdOutlineShoppingBag/>
