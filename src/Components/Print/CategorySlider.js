@@ -25,7 +25,7 @@ function CategorySlider() {
     const {data} = useGetSlider()
     // console.log(data?.category_slider);
     const sliderRender = data?.category_slider?.map(slider =>(
-        <img src={BaseURLImage +slider.image} alt={slider.id}    key={slider.id} className='image-slider-category'  />
+        <img  style={{zIndex:"0 !important"}}src={BaseURLImage +slider.image} alt={slider.id}    key={slider.id} className='image-slider-category'  />
     ))
     
     return (
@@ -37,9 +37,9 @@ function CategorySlider() {
         showThumbs={false}
         dynamicHeight
         >
-          {
-            sliderRender
-          }
+             {
+                sliderRender 
+             }
         </Carousel>
     )
 }

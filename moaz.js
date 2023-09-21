@@ -110,4 +110,17 @@ function deleteProductFromCart(productToDelete){
 
 }
 
-deleteProductFromCart({id:2 , quntity:10})
+// deleteProductFromCart({id:2 , quntity:10})
+
+
+
+
+
+const stringFromBack = 'Top Quality Paper Prints in Qatar'
+
+  const TextWordToArray = stringFromBack.split(' ')
+  const TextWordLength = TextWordToArray.length
+  const first_text = TextWordToArray.slice(0 , TextWordLength/2);
+  const second_text = TextWordToArray.slice( TextWordLength/2 +1 , TextWordLength);
+
+  console.log(second_text.join(' '));

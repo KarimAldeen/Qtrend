@@ -9,9 +9,12 @@ import NavBar3 from '../../Components/Utils/NavBar3'
 import IMG from '../../../public/works/4.webp'
 import CategoryCard from '../../Components/Print/CategoryCard'
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { DATASOCIALMEDIA } from '../../config/SOCIALMEDIA';
+import { useGetAllSocialMedia } from '../../api/social_media';
 import { useTranslation } from 'react-i18next';
 function TopHeader() {
     const {data  , isError}  = useGetALlStatics()
+    const {data2} = useGetAllSocialMedia()
     const [t] = useTranslation();
   return (
     <div className='HEADER'>
@@ -33,13 +36,32 @@ function TopHeader() {
 
           <div className='header_right'>
             <div className='print_info_3'>
-              <FaInstagram/>
-              <FaFacebookF/>
-              <FaLinkedinIn/>
+             {
+                DATASOCIALMEDIA.map((icon ,index) =>{
+                  const object_is_exist = data2?.find(social => social.icon == icon.key)
+                  return (    
+                          <a href={object_is_exist?.link} target='_blank' className='btn  btn-lg btn-floating' key={index} >
+                            {icon.icon}
+                          </a>
+                    )
+                  }
+                )
+              }
             </div>
+
+            {/* <div className='print_info_3'>
+              <a href=''>
+              <FaInstagram/>
+              </a>
+              <a href=''>
+              <FaFacebookF/>
+              </a>
+              <a href=''>
+              <FaLinkedinIn/>
+              </a>
+
+            </div> */}
           </div>
-           
-            
         </div>
         <NavBar3/>
     </div>

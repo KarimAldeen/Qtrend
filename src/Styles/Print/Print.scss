@@ -50,7 +50,6 @@
                     padding-inline: .9vw;
                     color: #fff;
                     font-size: 1vw !important; 
-                    // width: 9vw;
                 }
                 svg{
                     color: #fff;
@@ -60,9 +59,7 @@
         }
         .header_right{
             display: flex;
-            // justify-content: end;
             align-items: center;
-            // width: 80vw;
             height: 5vh;
             svg{
                 color: #fff;
@@ -95,14 +92,15 @@
 }
 .print_page{
     overflow-x: hidden !important;
-    background: #c2c2c2;
+    background: #EDF1F4;
     height: 200vh;
-    width: 100lvw !important; 
+    width: 100vw !important; 
+    .PrintNavBar{
+        border-bottom: 3px solid #c2c2c2;
+    }
     .home_section{
         width: 100vw;
         min-height: 70vh;       
-        // margin-bottom: 7vh;
-        // border-top: 10px solid #EDF1F4 !important;
         margin-top: .3vw;
         .home_second{
             min-height: 70vh;
@@ -146,10 +144,9 @@
                 width: 100%;
                 height: 70vh;
                 display: flex;
-                align-items: center;
-                
+                align-items: center;                
                 flex-direction: column;
-                // margin-left: 16em;
+                
                 text-align: left !important;
                 @include devices(tablet){
 
