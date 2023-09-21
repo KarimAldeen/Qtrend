@@ -1,5 +1,9 @@
+::-webkit-scrollbar {
+    display: none;
+}
 .CopyRight{
-    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
     height: 7vh;
     background: #252525;
     display: flex;

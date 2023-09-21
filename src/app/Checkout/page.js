@@ -8,6 +8,8 @@ import {useRouter} from 'next/navigation'
 import useManageCart from '../../zustand/cart'
 import { getTotalPrice } from '../../Utils/CalcFinalPrice'
 import { useTranslation } from 'react-i18next'
+import {Formik , Form , Field , ErrorMessage } from 'formik'
+import {initalValue ,Schema} from './formUtils'
 
 function Page() {
     const {t} = useTranslation();
@@ -22,27 +24,9 @@ function Page() {
     useEffect(()=>{
         setMyCart(cart)
     },[])
-    const data = {
-        sub_total:100,
-        tax:0 ,
-        shipping:20,
-        total:120 ,
-        products:[
-            {
-                id:1,
-                name:"Business Cards",
-                price:100,
-                quantity:1
-            },
-            {
-                id:2,
-                name:"Business Cards",
-                price:100,
-                quantity:1
-            },
-            
-        ]
-    }
+   const handelSubmit = (values)=>{
+    console.log({...values , myCart});
+   }
     const route  =  useRouter()
   return (
     <div className='main_page'>
@@ -76,25 +60,34 @@ function Page() {
                                     </span>
                                 </div>
                         </div>
-                        <div className='checkout_form'>
+                        <Formik initialValues={initalValue} 
+                        validationSchema={Schema}
+                        onSubmit={handelSubmit}>
+                            {
+                                ({submitForm})=>(
+                                    <Form>
+                               <div className='checkout_form'>
                             <div className='checkout_left_form'>
-
+                                
 
                                     <div className='input_top'>
                                         <label>{t("Buyer Info")}</label>
-                                    <input type='text' placeholder=''/>
+                                    <Field name="buyer_info" type='text' placeholder=''/>
+                                    <ErrorMessage name="buyer_info" ></ErrorMessage>
 
                                     </div>
                                     <div className='div_mid_input'>
                                     <div  className='input_mid_1'>
                                     <label>{t("Name")}</label>
 
-                                    <input type='text' placeholder=''/>
+                                    <Field name="name" type='text' placeholder=''/>
+                                    <ErrorMessage name="name" ></ErrorMessage>
                                     </div>
                                     <div className='input_mid_2' >
                                     <label>{t("Phone Number")}</label>
 
-                                    <input type='text' placeholder=''/>
+                                    <Field name='phone' type='text' placeholder=''/>
+                                    <ErrorMessage name="phone" ></ErrorMessage>
                                     </div>
 
                                     </div>
@@ -102,7 +95,8 @@ function Page() {
 
                                     <div  className='input_bottom'>
                                         <label>{t("Note")} </label>
-                                    <input type='text' placeholder=''/>
+                                    <Field name="note" type='text' placeholder=''/>
+                                    <ErrorMessage name="note" ></ErrorMessage>
 
                                     </div>
                                     </div>
@@ -164,7 +158,7 @@ function Page() {
                                         <div  className='cash_button'>
                                             {t("Cash On Delivary")}
                                         </div>
-                                        <div className='checkout_button'>
+                                        <div className='checkout_button' onClick={()=>submitForm()}> 
                                             {t("Checkout")}
                                             <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
                                                 <g clip-path="url(#clip0_81_189)">
@@ -181,7 +175,13 @@ function Page() {
                                         <p onClick={handelBackToCart} className='back_to_cart'>{t("Back TO Cart")}</p>
                                     </div>
                             </div>
-                        </div>
+                        </div> 
+                            </Form> 
+                                )
+                            }
+                           
+                        </Formik>
+                        
                    </div>
             </div>
     </div>
