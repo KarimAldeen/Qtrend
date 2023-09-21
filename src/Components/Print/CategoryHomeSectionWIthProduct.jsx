@@ -48,6 +48,7 @@ function CategoryHoemSectionWithProduct({color , index , products , perPage ,cat
               
                 <SwiperSlide key={product.id}>
                   <ProductCard
+                  name={product?.name}
                   id={product.id} 
                   image={product?.product_main_image}
                   price={product?.price}

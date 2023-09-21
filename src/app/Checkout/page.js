@@ -25,15 +25,29 @@ function Page() {
     useEffect(()=>{
         setMyCart(cart)
     },[])
-   const handelSubmit = (values , {resetForm})=>{
-   
-    const whatsappLink = `https://web.whatsapp.com/send?phone=+97470070716&text=${encodeURIComponent(ConvertArrayToFatora({...values , myCart}))}&app_absent=0`;
-
-    // Redirect to the WhatsApp link
-    clearCart()
-    resetForm()
-    window.location.href = whatsappLink;
-   }
+    const handleSubmit = (values, { resetForm }) => {
+        // Define the phone number and message
+        const phoneNumber = '+97470070716';
+        const message = ConvertArrayToFatora({ ...values, myCart });
+      
+        // Create a WhatsApp link for both desktop and mobile
+        const whatsappLink = isMobileDevice()
+          ? `whatsapp://send?phone=${encodeURIComponent(phoneNumber)}&text=${encodeURIComponent(message)}`
+          : `https://web.whatsapp.com/send?phone=${encodeURIComponent(phoneNumber)}&text=${encodeURIComponent(message)}&app_absent=0`;
+      
+        // Redirect to the WhatsApp link
+        clearCart();
+        resetForm();
+        window.location.href = whatsappLink;
+      };
+      
+      // Function to detect if the user is on a mobile device
+      function isMobileDevice() {
+        return (
+          typeof window.orientation !== 'undefined' ||
+          navigator.userAgent.indexOf('IEMobile') !== -1
+        );
+      }
     const route  =  useRouter()
   return (
     <div className='main_page'>
@@ -69,7 +83,7 @@ function Page() {
                         </div>
                         <Formik initialValues={initalValue} 
                         validationSchema={Schema}
-                        onSubmit={handelSubmit}>
+                        onSubmit={handleSubmit}>
                             {
                                 ({submitForm})=>(
                                     <Form>
