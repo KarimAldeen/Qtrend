@@ -24,7 +24,7 @@ const MyCart = () => {
     route.push('/Checkout')
   }
   return (
-    <>
+    <div className='main_page'>
       {/* Display the top header */}
       <TopHeader />
       {/* Display the navigation bar */}
@@ -104,7 +104,7 @@ const MyCart = () => {
       <Footer />
       {/* Display the copyright information */}
       <CopyRight />
-    </>
+    </div>
   );
 }
 

@@ -1,6 +1,9 @@
 .PrintNavBar{
     margin-bottom: 0px;
 }
+.main_page{
+    background: #EDF1F4;
+}
 .MyCart{
     background: #EDF1F4;
     min-height: 160vh;
@@ -133,20 +136,23 @@
             align-items: center;
             flex-direction: column;
             width: 70vw;
-            min-height: 30vh;
+            min-height: 17vh;
             margin: auto;
             border-top:1px solid #B0D04F;
             border-bottom:1px solid #B0D04F;
-            // margin-bottom: 10vh;
             padding: 1vw;
+            @include devices(mobile){
+                &{
+                    min-height: 8vh !important;
+                }
+            }
             .sec{
                 display: flex;justify-content: space-between;align-items: center;
-                width: 70vw;
+                width: 100%;
             }
             .left_sec{
                 display: flex;justify-content: space-between;align-items: center;
-                width: 28vw;
-                margin-left: 2vw;
+                width: 30%;
                 margin-top: 2vw;
                 .left_left{
                     img{
@@ -222,6 +228,7 @@
                 color: #9AB72B;
                 font-size: 2vw;
                 font-weight: 700;
+                width: 10%;
                 cursor: pointer;
                 }
             }

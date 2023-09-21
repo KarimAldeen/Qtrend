@@ -45,7 +45,7 @@ function Page() {
     }
     const route  =  useRouter()
   return (
-    <>
+    <div className='main_page'>
     
     <TopHeader />
     <PrintNavBar/>
@@ -187,7 +187,7 @@ function Page() {
     </div>
     <Footer />
     <CopyRight />
-    </> 
+    </div> 
   )
 }
 
