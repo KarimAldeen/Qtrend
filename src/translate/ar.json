@@ -210,7 +210,7 @@
     "Add to Cart":"أضف إلى السلة",
     "Checkout":"الدفع",
     "Summary":"ملخص",
-    "My Cart":"سلتي",
+    "My Cart":"سلَّتي",
     "Home":"الصفحة الرئيسية",
     "Continue Shopping":"مواصلة التسوق",
     "Buyer Info":"معلومات المشتري",
@@ -223,11 +223,7 @@
     "Tax":"ضريبةال",
     "Cash On Delivary":"نقدا عند التسليم",
     "Back TO Cart":"العودة إلى السلة",
-    "Payment":"القسط"    
-
-
-
-
-    
+    "Payment":"القسط",
+    "We are offering a consultation to understand your needs, brand identity, and the message they want to convey through your artwork in order to ensure readability and consistency with your brand.":"نحن نقدم استشارات لفهم احتياجاتك وهوية علامتك التجارية والرسالة التي يريدون نقلها من خلال عملك الفني لضمان سهولة القراءة والاتساق مع علامتك التجارية."    
 
 }

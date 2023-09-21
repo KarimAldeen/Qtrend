@@ -14,13 +14,14 @@ import  { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import { BaseURLImage } from '../../api/config'
 import Arrow from '../Services/Arrow'
-
+import {TranslateObject} from '../../Utils/TranslateObject'
+import { useTranslation } from 'react-i18next'
 
 SwiperCore.use([Autoplay]);
 
 function CategoryHoemSectionWithProduct({color , index , products , perPage ,category}) {
     const is_odd = index %2 ==1 
-  
+  const {i18n} = useTranslation()
   return (
     <>
     <div style={{background:is_odd? "#EDF1F4" :color , display:products?.length == 0 ? 'none' :"flex"}} className='product_category_row'>
@@ -28,9 +29,9 @@ function CategoryHoemSectionWithProduct({color , index , products , perPage ,cat
         <div >
 
         <Main_Paper
-         name1={category?.name.split(' ')[0]} 
-          name2={category?.name.split(' ')[1] ?? ''} 
-        quick_overview={category?.description} id={category?.id}  image={category?.category_image}/>
+        is_odd={is_odd}
+         name={TranslateObject(category?.translations, i18n.language , 'name' )}
+        quick_overview={TranslateObject(category?.translations, i18n.language , 'description')} id={category?.id}  image={category?.category_image}/>
         </div>
   
         <Swiper
@@ -53,7 +54,7 @@ function CategoryHoemSectionWithProduct({color , index , products , perPage ,cat
                   from_price={product?.low_price}
                   to_price={product?.high_price}
                   translate={product?.translations}
-                  index={0}
+                  index={is_odd}
                   
                 />
                 </SwiperSlide>
