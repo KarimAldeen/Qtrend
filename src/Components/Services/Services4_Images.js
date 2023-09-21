@@ -4,32 +4,25 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import Arrow from './Arrow';
+import { BaseURLImage } from '../../api/config';
 
-const Services4_Images = ({ Word, Data }) => {
-  const Number = []
-
-  const FN = () => {
-
-    for (let index = 1; index <= Data; index++) {
-      Number.push(index)
-
-    }
-  }
-  FN()
+const Services4_Images = ({ Word, Data=[] }) => {
+  
 
   return (
     <div className='Services4_Images'>
       <div className='Swiper_Image'>
-        <img alt=' ' src={`../Services/Services4/${Word}.svg`} className='Swiper_Words' />
+        {/* <img alt=' ' src={`../Services/Services4/${Word}.svg`} className='Swiper_Words' /> */}
 
         <Swiper
           spaceBetween={50}
           slidesPerView={3}>
           {
-            Number?.map((i) => (
+            Data?.map((img) => (
               <>
                 <SwiperSlide>
-                  <img src={`../Services/Services4/Swiper/${Word}/${Word.slice(0,1)}${i}.png`} alt='' className='Swiper_image1' />
+                  <img src={BaseURLImage + img?.path} alt='' className='Swiper_image1' />
+                  
                 </SwiperSlide>
               </>
             ))

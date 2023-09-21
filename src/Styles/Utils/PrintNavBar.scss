@@ -1,0 +1,167 @@
+.PrintNavBar{
+    height: 7vh;
+    background: #EDF1F4;
+    // margin-bottom: .2em;
+    // z-index: 9999;
+    display: flex;
+    overflow: hidden !important;
+    max-width: 100vw !important;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: calc(10vh - 3px);
+    
+    @include devices(Minlaptop){
+        &{
+          margin-top: calc(8vh - 3px);
+            
+        }
+    }
+     
+    @include devices(mobile){
+        &{
+            // min-height: 15vw !important;
+            margin-top: min(13vw , calc(7.8vh - 3px) ) !important;
+            height: 5.5vh !important;
+
+        }
+    }
+    // width: 100%;
+    .print_links{
+        width: 80%;
+        
+        display: flex;
+        // justify-content: center; 
+        align-items: center;
+        margin-left: 15vw;
+        // margin-bottom: .3em;
+        div{
+            .Link{
+                color: #323232;
+                // font-family: Tajawal;
+                font-size: .7em;
+                font-weight: 800;
+                margin-left: 2.5vw;
+            }
+            @include devices(tablet){
+                &{
+                    font-size: 2.5vw;
+                }
+            }
+        }
+       
+        .middle{
+            widows: 80%;
+        
+        }
+        .link_with_arrow{
+            display: flex;
+            align-items: center;
+            &{
+                .Link:hover{
+                    color: #B0D04F;
+                    transform: scale(1.25);
+                    font-weight: 700;
+                    svg{
+                        transform: rotate(360deg) scale(1.1) !important;
+                        
+                    }
+                }
+            }
+            .Link{
+                margin-top: 4px;   
+                display: flex;
+                align-items: center;
+              
+            }
+            svg{
+                // transform: translateY(.7vw);
+                color: #000;
+                margin-left: .3vw;
+                font-size: 1.1em !important;
+            }
+            
+        }
+    }
+    .print_icons{
+        width: 50% !important;
+        height: 5vh;
+        display: flex;
+        padding: 1px;
+        justify-content: center;
+        align-items: center;
+        // flex-direction: column;
+        margin-right: -4vw;
+        // background: #000;
+        margin-top: 1vw;
+        .notifictaion_circle{
+            width: 1vw;
+            height: 1vw;
+            border-radius: 50%;
+            background: #B0D04F;
+            font-size: .6em;
+            padding: .25em;
+            color: #ffffff;
+            display: flex;justify-content: center;align-items: center;
+            transform: translate(2.4vw,-1vw);
+            font-weight: 300;
+            z-index: 9999;
+        }
+        svg{
+            // margin: 1.1vw 1.2vw 0vw 0vw;
+            font-size: 2em;
+            z-index: 0;
+            }
+            // start of icon res
+            @include devices(Minlaptop){
+                .notifictaion_circle{
+                    font-size: 1em ;
+                    padding: .6em;
+                    transform: translate(5.3vw,-2vw);
+                }
+            }
+            @include devices(tablet){
+                .notifictaion_circle{
+                    transform: translate(6vw,-2vw);
+                }
+            }
+            @include devices(FORPRODUCT){
+                .notifictaion_circle{
+                    transform: translate(6.5vw,-2vw);
+                }
+            }
+            @include devices(mobile){
+                .notifictaion_circle{
+                    transform: translate(6.5vw,-2.7vw);
+                }
+            }
+            @include devices(S_mobile){
+                .notifictaion_circle{
+                    transform: translate(8vw,-2.7vw);
+                }
+            }
+            //////////////////// font change
+            @include devices(SS_mobile){
+                .notifictaion_circle{
+                    font-size: .9em;
+                    padding: .5em;
+                    transform: translate(8vw,-3vw);
+                }
+                svg{
+                    font-size: 1.5em !important;
+                }
+            }
+            @include devices(NO_WAY){
+                .notifictaion_circle{
+                    transform: translate(10vw,-3.4vw);
+                }
+            }
+            @include devices(XS_mobile){
+                .notifictaion_circle{
+                    font-size: .7em;
+                    padding: .6em;
+                    transform: translate(12vw,-4.2vw);
+                }
+            }
+        // end of icon res
+    }
+}

@@ -1,14 +1,18 @@
 .Services_Pages{
+    
     max-width: 100vw;
     overflow-x: hidden;
+    height: 150vw;
     .Footer{
         position: absolute;
         bottom: 0;
+        // transform: translateY(1vw);
+        // padding-top: 1.5vw;
     }
     .NavBar{
         .Links{
             a:nth-child(2){
-                color: #C7F36C !important;
+                color: #C7F36C ;
             }
         }
     }

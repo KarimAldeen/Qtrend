@@ -1,11 +1,15 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next';
 const BtnTranslate = () => {
-  const [Word, setWord] = useState("AR")
   const [t, i18n] = useTranslation();
+
+  const [Word, setWord] = useState("AR")
+
+
   function Trans(){
-      if(Word === "AR"){
+    console.log(i18n.language)
+      if(i18n.language =='en'){
         lungAR()
       }
       else{
@@ -17,7 +21,7 @@ const BtnTranslate = () => {
 
   return (
     <div className='Lung'>
-      <span className="switch-left" onClick={() => Trans()}>{t(Word)}</span>
+      <span className="switch-left" onClick={() => Trans()}>{t(i18n.language !='en' ? 'EN':"AR")}</span>
     </div>
   )
 }

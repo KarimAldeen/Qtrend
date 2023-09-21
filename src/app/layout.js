@@ -1,16 +1,31 @@
 'use client'
+import { QueryClient, QueryClientProvider } from 'react-query'
 import i18n from '../../src/translate/Translate'
 import '../Styles/App/Import.scss'
+import CustomToastContainer from '../Utils/ToastifyContainer'
+import Head from 'next/head'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+
 export default function RootLayout({ children }) {
+
+  const queryClient = new QueryClient()
 
   return (
     <html lang="en">
-      <head>
+      <Head>
+      <link rel='image_src' href='/LogoBlack.png' />
         <title>Qtrend Company</title>
-        <meta
-          name="description"
-          content="Check out iPhone 12 XR Pro and iPhone 12 Pro Max. Visit your local store and for expert advice."
-        />
+        <meta 
+        name='description' content='Protfolio that is my pesonal website with the best 
+        animation skill that i show information about me and
+        my skill , project  Nextjs ,tailiwndCss, frame-motion' />
+        <meta name="keywords" content='Qtrend , Qtrend Company , Qtrend Services 
+        , Company , qtrend Company ,Qtrend Website ,
+        Website , Web Development Company , Qtrend For Web Development  , ' />
+        <link rel="canonical" href={typeof window == "undefined"? "" : window.location.href} />
+        <meta name="robots" content="index" />
+        <meta name="author" content='Qtrend' />
+        <link href={typeof window == "undefined"? "" : window.location.href} rel="publisher" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="black" />
         <link
@@ -19,8 +34,11 @@ export default function RootLayout({ children }) {
         />
 
 
-      </head>
+      </Head>
+      <QueryClientProvider client={queryClient}>
+        <CustomToastContainer/>
       <body>{children}</body>
+      </QueryClientProvider>
     </html>
   )
 }

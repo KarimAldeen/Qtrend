@@ -1,0 +1,45 @@
+.CopyRight{
+    width: 100vw;
+    height: 7vh;
+    background: #252525;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .left, .right{
+        color: #FFF;
+        font-family: Tajawal;
+        font-size: 1em;
+        font-weight: 400;
+        }
+        @include devices(Minlaptop){
+            &{
+                font-size: .9em;
+            }
+        }
+        @include devices(tablet){
+            &{
+                font-size: .7em;
+            }
+        }
+        @include devices(S_mobile){
+            &{
+                font-size: .6em;
+            }
+        }
+        @include devices(SS_mobile){
+            &{
+                font-size: .5em;
+            }
+        }
+        @include devices(NO_WAY){
+            &{
+                font-size: .4em;
+            }
+        }
+        @include devices(XS_mobile){
+            &{
+                font-size: .2em;
+            }
+        }
+   
+}

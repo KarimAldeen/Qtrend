@@ -12,7 +12,7 @@
         display: flex;
         justify-content: space-between;
         padding-left: 5vw;
-        align-items: start;
+        align-items: flex-start;
         height: 20vw;
         // svg{
         //     width: 40vw;
@@ -121,3 +121,13 @@
     
   }
   
+
+  .ar{
+    .Home4{
+        .Home4_Top{
+            h1{
+                font-family: BNoor !important;
+            }
+        }
+    }
+  }

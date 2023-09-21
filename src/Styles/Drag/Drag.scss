@@ -11,6 +11,9 @@
     animation: Arrow 2s infinite;
 }
 
+.Footer{
+  padding-bottom: 8vw !important;
+}
 
 .Drag_Down_1,
 .Drag_Down_2,
@@ -21,12 +24,29 @@
 display: none;
 position: absolute;
 bottom: 0;
-height: 11vw;
+height: 31vw;
 width: 100vw;
 cursor: pointer;
 opacity: .1;
 }
+.Drag_Up_1,
+.Drag_Up_2,
+.Drag_Up_3,
+.Drag_Up_4,
+.Drag_Up_5,
+.Drag_Up_6{
+display: none;
+position: absolute;
+top: 0;
+height: 31vw;
+width: 100vw;
+cursor: pointer;
+opacity: .5;
+}
 .Drag_Down_1{
+    display: block;
+  }
+  .Drag_Up_1{
     display: block;
   }
 
@@ -67,6 +87,9 @@ opacity: .1;
     display: none;
   }
   .Drag_Down_2{
+    display: block !important;
+  }
+  .Drag_Up_2{
     display: block !important;
   }
 
@@ -126,6 +149,12 @@ opacity: .1;
     .Drag_Down_2{  display: none;}
     .Drag_Down_3{ display: block !important;}
 
+    .Drag_Up_2{
+      display: none !important;
+    }
+    .Drag_Up_3{
+      display: block !important;
+    }
    .Services6_2_Text{
     opacity: 1;
     transform: translate(-17px, 899px)
@@ -192,6 +221,12 @@ opacity: .1;
   .Drag_Down_3{  display: none;}
   .Drag_Down_4{ display: block !important;}
 
+  .Drag_Up_3{
+    display: none !important;
+  }
+  .Drag_Up_4{
+    display: block !important;
+  }
   .S6_3_Images{
     scale: 1;
    
@@ -235,6 +270,12 @@ opacity: .1;
    }
     .Drag_Down_4{  display: none;}
     .Drag_Down_5{ display: block !important;}
+    .Drag_Up_4{
+      display: none !important;
+    }
+    .Drag_Up_5{
+      display: block !important;
+    }
     .S6_5_G{
       scale: 1;
      
@@ -282,7 +323,12 @@ opacity: .1;
     .Drag_Down_5{  display: none;}
     .Drag_Down_6{ display: block !important;}
    
-
+    .Drag_Up_5{
+      display: none !important;
+    }
+    .Drag_Up_6{
+      display: block !important;
+    }
     .Footer{
       bottom: 1vw !important;
     }

@@ -18,9 +18,20 @@
         align-items: center;
     }
 }
+.ar{
+    *{
 
+        letter-spacing:0 !important ;
+    }
+    .Home2_Text{
+        h2{
+            letter-spacing:0 !important ;
+        }
+    }
+}
 .Home2 {
     .Home2_Text {
+       
         .Home2_Text_h1 {
             text-align: center;
             margin-bottom: 1.2vw;

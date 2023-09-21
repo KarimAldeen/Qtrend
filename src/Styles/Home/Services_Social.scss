@@ -1,6 +1,5 @@
 .Home2{
-    
-
+    margin-bottom: 5vw;
 .Services_Social{
     position: absolute;
     left: 35vw;
@@ -23,7 +22,6 @@
     rotate: 130px;   
     transform: rotate(60deg);
     display: flex; justify-content: center; align-items: center;
-  
     &:hover{
         background-color: black;
         color: #C7F36C;
@@ -38,7 +36,7 @@
 }
 }
 }
-i{
+a{
     border-radius: 50%;
     background: black;
     display: flex;justify-content: center; align-items: center;
@@ -74,13 +72,20 @@ svg{
         }
     }
 
-    i{
+    a{
         background: #C7F36C !important;
       
         &:hover{
             background: black !important;
             color: #C7F36C;
         
+        }
+    }
+}
+.ar{
+    .Home2{
+        .Services_MIcon{
+            margin-top: 3vw;
         }
     }
 }

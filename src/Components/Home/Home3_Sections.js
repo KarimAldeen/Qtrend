@@ -8,7 +8,7 @@ const Home3_Sections = ({src,h1,p,t}) => {
         </div>
         <h1>{t(h1)}</h1>
         <p>
-      {t(p)}
+          {t(p)}
         </p>
         <a>{t("Read more")}</a>
     </div>
