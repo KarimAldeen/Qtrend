@@ -74,13 +74,14 @@
         input{
             display: flex;justify-content: center;align-items: center;
             width: 23vw;
-            height:3.8vh;
+            height:4vh;
             
             padding-inline: 10px;
             margin-inline: 7vw;
             border-radius: 2vw;
             border: none;
-            transform: translateX(8vw);
+
+            transform: translateX(8vw) translateY(4px);
             &:hover{
                 border: none;
             }
