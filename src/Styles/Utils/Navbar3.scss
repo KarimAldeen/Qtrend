@@ -91,6 +91,21 @@
             margin: .65vw 0vw 0vw -1.2vw ;
             font-size: 1.5vw;
             z-index: 999;
+            @include devices(mobile){
+                &{
+                    margin-top: .8vh;
+                }
+            }
+            @include devices(S_mobile){
+                &{
+                    margin-top: 1vh;
+                }
+            }
+            @include devices(SS_mobile){
+                &{
+                    margin-left: -1.5vw;
+                }
+            }
         }
     }
    .Links3{
@@ -105,7 +120,6 @@
         font-size: .65vw;
         margin-inline: .8vw;
         font-weight: 900 !important ;
-
     }
     @include devices(Minlaptop){
         a{
@@ -121,10 +135,8 @@
         font-size: 1vw;
         margin-left: 2vw;
         border-radius: .4vw;
-        position: relative;
-        // top: .2vw;
-     
-}
+        position: relative;     
+    }
 }
 .NavBar6{
     span{
