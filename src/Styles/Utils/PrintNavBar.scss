@@ -1,8 +1,6 @@
 .PrintNavBar{
     height: 7vh;
     background: #EDF1F4;
-    // margin-bottom: .2em;
-    // z-index: 9999;
     display: flex;
     overflow: hidden !important;
     max-width: 100vw !important;
@@ -45,15 +43,16 @@
                 }
             }
         }
-       
         .middle{
-            widows: 80%;
+            display: flex;
+            
         
         }
         .link_with_arrow{
             display: flex;
+            flex-direction: row !important;
             align-items: center;
-            justify-content: center;
+            justify-content: space-around;
             &{
                 .Link:hover{
                     color: #B0D04F;

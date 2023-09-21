@@ -146,6 +146,7 @@
                 display: flex;
                 align-items: center;                
                 flex-direction: column;
+                
                 text-align: left !important;
                 @include devices(tablet){
 
