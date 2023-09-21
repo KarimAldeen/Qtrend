@@ -9,7 +9,7 @@ const AllSquare = () => {
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
-    className='AllSquare '
+    className='AllSquare'
     // style={{width:"60vw",marginTop:"-6vw"}}
     >
     <rect width={548} height={548} rx="32.2353" fill="#262626" />
