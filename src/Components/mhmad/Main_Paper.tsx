@@ -11,7 +11,6 @@ const Main_Paper = ({ quick_overview , id , image , name , is_odd}) => {
   const TextWordLength = TextWordToArray.length
   const first_text = TextWordToArray.slice(0 , 2);
   const second_text = TextWordToArray.slice( 2  , TextWordLength).join(' ');
-    console.log(name)
 
     const  name1 = name.split(' ').slice(0, 1)
     const  name2 = name.split(' ').slice(1, name.length).length > 13 ? name.split(' ').slice(1, name.length) + '..': name.split(' ').slice(1, name.length)  

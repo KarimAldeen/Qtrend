@@ -14,6 +14,7 @@ import Refreash from '../../Components/Print/Refrech';
 import { useParams, useSearchParams } from 'next/navigation';
 import { useGetAllProductForCategory } from '../../api/category';
 import { useTranslation } from 'react-i18next';
+import { TranslateObject } from '../../Utils/TranslateObject';
 
 function PrintCategory() {
   // Get the 'category_id' parameter from the URL
@@ -30,8 +31,9 @@ function PrintCategory() {
 
   // Determine the number of products per page based on window width
   const per_page = width < 500 ? 1 : width < 800 ? 2 : 3;
-
-  const [t] = useTranslation()
+  console.log(data?.translations);
+  const [i18n] = useTranslation()
+  // const {i} = useTransition()
   return (
     <div className='main_page'>
       {/* Display the top header */}
@@ -54,7 +56,7 @@ function PrintCategory() {
           </div>
         </div>
         {/* Display a section with category information */}
-        <Section name={data?.name} image={data?.category_image} description={data?.description} />
+        <Section  image={data?.category_image} translations={data?.translations}/>
       </div>
       <div className='category_product'>
         {

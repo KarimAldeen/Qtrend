@@ -16,14 +16,12 @@ function ProductCard({name  , image  ,quick_overview , from_price , id ,  to_pri
     const handelGoToSingleProduct = ()=>{
       route.push('/SingleProduct?product_id='+ id)
     }
-    console.log(translate);
   return (
     <div className='product_card'
      style={{background:is_odd ? "black" :'#FFF'}}>
          {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={BaseURL +image} alt="Product IMage "   onClick={handelGoToSingleProduct}/>
 
-        <h2 className='produc_name' style={{color:is_odd ? '#F4F4F4' :"black"}}  onClick={handelGoToSingleProduct} >{name}</h2>
         <h2 className='produc_name' style={{color:is_odd ? '#F4F4F4' :"black"}}  onClick={()=> route.push('/SingleProduct')} >{TranslateObject(translate,i18n.language , 'name' )} </h2>
 
         <div className='card-body' style={{color:is_odd ? '#F4F4F4' :"black"}}   onClick={handelGoToSingleProduct}>

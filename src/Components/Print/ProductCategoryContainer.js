@@ -14,6 +14,7 @@ function ProductCategoryContainer({color , index , products}) {
             <ProductCard 
             index={index+1}
                 key={product.id}
+                translate={product?.translations}
                 image={product?.product_main_image}
                 {...product}
                 from_price={product?.low_price}
