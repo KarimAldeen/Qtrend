@@ -139,7 +139,19 @@
   margin-left: 30px;
 }
 .image-slider-category{
+  // height: 60px;
   z-index: 0 !important;
   
   
+}
+
+.image-slider-container-category{
+  img{
+    min-height: 40px;
+    min-width: 6vw;
+  }
+  .control-dots{
+    height:1.7vw;
+
+  }
 }
