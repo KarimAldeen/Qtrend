@@ -161,8 +161,6 @@
             }
             @include devices(XS_mobile){
                 .notifictaion_circle{
-                    // font-size: .7em;
-                    // padding: .6em;
                     transform: translate(9vw,-1.4vw) !important;
                 }
                 svg{

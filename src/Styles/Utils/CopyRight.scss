@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    overflow-y: hidden !important;
     .left, .right{
         color: #FFF;
         font-family: Tajawal;
@@ -28,17 +29,17 @@
         }
         @include devices(SS_mobile){
             &{
-                font-size: .5em;
+                font-size: .4em;
             }
         }
         @include devices(NO_WAY){
             &{
-                font-size: .4em;
+                font-size: .3em;
             }
         }
         @include devices(XS_mobile){
             &{
-                font-size: .2em;
+                font-size: .1em;
             }
         }
    
