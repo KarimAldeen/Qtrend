@@ -6,11 +6,13 @@ import {MdOutlineShoppingBag, MdKeyboardArrowDown} from 'react-icons/md'
 import { useGetAllCategory } from '../../api/category'
 import useManageCart from '../../zustand/cart'
 import { useTranslation } from 'react-i18next'
+import { TranslateObject } from '../../Utils/TranslateObject'
 const PrintNavBar = () => {
     const {data} = useGetAllCategory()
     const {cart} = useManageCart()
     const [length , setLength] = useState(0)
-    const [t] = useTranslation()
+    const [t  ] = useTranslation()
+    const {i18n}  = useTranslation()
     useEffect(()=>(
       setLength(cart?.length)
     ),[cart])
@@ -23,7 +25,7 @@ const PrintNavBar = () => {
                 data?.category?.map((nav , index) =>(
                     <div className='link_with_arrow' key={nav.id}>
                       <Link className='Link'  href={'/PrintCategory?category_id='+nav.id}>
-                        {nav.name} 
+                        {TranslateObject(nav?.translations ,i18n.language , 'name' )} 
                         <MdKeyboardArrowDown/>
                       </Link>
                    </div>

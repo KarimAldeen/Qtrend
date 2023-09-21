@@ -3,16 +3,20 @@ import { BaseURL } from '../../api/config'
 import { useRouter } from 'next/navigation'
 
 
-const Main_Paper = ({name1 ,name2 , quick_overview , id , image}) => {
+const Main_Paper = ({ quick_overview , id , image , name , is_odd}) => {
   const router  = useRouter()
   const stringFromBack = quick_overview
 
   const TextWordToArray = stringFromBack.split(' ')
   const TextWordLength = TextWordToArray.length
-  const first_text = TextWordToArray.slice(0 , TextWordLength/2);
-  const second_text = TextWordToArray.slice( TextWordLength/2 +1 , TextWordLength);
-  ;
-  
+  const first_text = TextWordToArray.slice(0 , 2);
+  const second_text = TextWordToArray.slice( 2  , TextWordLength).join(' ');
+    console.log(name)
+
+    const  name1 = name.split(' ').slice(0, 1)
+    const  name2 = name.split(' ').slice(1, name.length).length > 13 ? name.split(' ').slice(1, name.length) + '..': name.split(' ').slice(1, name.length)  
+
+ 
   return (
     <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -22,6 +26,7 @@ const Main_Paper = ({name1 ,name2 , quick_overview , id , image}) => {
     viewBox="0 0 376 485"
     style={{display:"inline"}}
     className='Main_Paper'
+    fill='red'
   >
     <defs>
       <filter
@@ -71,7 +76,7 @@ const Main_Paper = ({name1 ,name2 , quick_overview , id , image}) => {
               height={378}
               rx={8}
               transform="translate(39 57)"
-              fill="#181818"
+              fill={is_odd ? "black" : "white"}
             />
           </g>
           <g
@@ -91,7 +96,8 @@ const Main_Paper = ({name1 ,name2 , quick_overview , id , image}) => {
           id="PAINTING_STICKERS"
           data-name="PAINTING & STICKERS"
           transform="translate(16 183)"
-          fill="#fff"
+          fill={!is_odd ? "black" : "white"}
+          
           fontSize={27}
           fontFamily="Poppins-Black, Poppins"
           fontWeight={800}
@@ -107,13 +113,14 @@ const Main_Paper = ({name1 ,name2 , quick_overview , id , image}) => {
           id="Top_quality_paper_prints_in_Qatar"
           data-name="Top quality paper prints in Qatar"
           transform="translate(19 256.302)"
-          fill="#fff"
+          fill={!is_odd ? "black" : "white"}
+          
           fontSize={18}
           fontFamily="Poppins-Regular, Poppins"
         >
          
            <tspan x="0" dy="1.2em">{first_text.join(' ')}</tspan>
-          <tspan x="0" dy="1.2em">{second_text.join(' ')}</tspan>
+          <tspan x="0" dy="1.2em">{second_text.length >29 ?second_text.slice(0, 29) + '...' : second_text}</tspan>
         </text>
         <g id="View_All" data-name="View All" transform="translate(19 333)">
           <rect
@@ -122,18 +129,18 @@ const Main_Paper = ({name1 ,name2 , quick_overview , id , image}) => {
             width={124}
             height={38}
             rx={12}
-            fill="#fff"
-          />
+            fill={!is_odd ? "black" : "white"}
+            />
           <text
             id="VIEW_ALL-2"
             data-name="VIEW ALL"
             transform="translate(0 4.96)"
-            fill="#181818"
+            fill={is_odd ? "black" : "white"}
             fontSize={20}
             fontFamily="Poppins-Black, Poppins"
             fontWeight={800}
           >
-            <tspan x="10" y={21}  onClick={()=>router.push('/PrintCategory?category_id='+id)}>
+            <tspan x="16" y={21}  onClick={()=>router.push('/PrintCategory?category_id='+id)}>
               VIEW ALL
             </tspan>
           </text>

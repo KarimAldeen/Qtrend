@@ -7,7 +7,7 @@ export const TranslateObject  = (array=[]  ,lanCOde , key)=>{
 
     console.log(array);
     if(array.length<=1){ 
-        return ''
+        return ' '
     }
 
     for (let index = 0; index < array.length; index++) {
@@ -17,5 +17,5 @@ export const TranslateObject  = (array=[]  ,lanCOde , key)=>{
             }
         
     }
-    return array[0][key]
+    return array[0][key] ||" "
 }
