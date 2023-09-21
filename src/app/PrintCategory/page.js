@@ -33,9 +33,9 @@ function PrintCategory() {
 
   const [t] = useTranslation()
   return (
-    <>
+    <div className='main_page'>
       {/* Display the top header */}
-      <TopHeader />
+      <TopHeader/>
       {/* Display the navigation bar */}
       <PrintNavBar />
       <div className='category-product-page'>
@@ -73,7 +73,7 @@ function PrintCategory() {
       <Footer />
       {/* Display the copyright information */}
       <CopyRight />
-    </>
+    </div>
   );
 }
 
