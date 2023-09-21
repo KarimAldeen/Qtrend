@@ -204,5 +204,16 @@
     "Summary":"Summary",
     "My Cart":"MyCart",
     "Home":"Home",
-    "Continue Shopping":"Continue Shopping"    
+    "Continue Shopping":"Continue Shopping",
+    "Buyer Info":"Buyer Info",
+    "Name":"Name",
+    "Phone Number":"Phone Number",
+    "Note":"Note",
+    "Your Order Summary":"Your Order Summary",
+    "Subtotal":"Subtotal",
+    "Shipping":"Shipping",
+    "Tax":"Tax",
+    "Cash On Delivary":"Cash On Delivary",
+    "Back TO Cart":"Back TO Cart",
+    "Payment":"Payment"    
 }
