@@ -7,13 +7,13 @@
 
     .SingleProduct_container {
         width: 100vw;
-        min-height: 200vh;
+        // min-height: 200vh;
 
         .SingleProduct_body {
             display: flex;
             flex-direction: column;
             width: 100vw;
-            min-height: 220vh;
+            // min-height: 220vh;
             background: #fff;
             margin-top: 10vw;
 
@@ -141,6 +141,7 @@
                                 color: #323232;
                                 display: flex !important;
                                 // justify-content: space-between;
+                                align-items: center;
                                 gap: 20px;
                                 font-family: Tajawal;
                                 font-size: 1.2vw;
@@ -171,7 +172,7 @@
                                     font-family: Tajawal;
                                     font-size: 1vw;
                                     font-weight: 400;
-                                    transform: translateX(-20px);                                    
+                                    transform: translateX(-15px);                                    
                                     @include devices(tablet) {
                                         & {
                                             width: 50vw !important;
@@ -321,7 +322,8 @@
                         display: flex;
                         flex-direction: column;
                         margin-top: 6vh;
-
+                        margin-bottom: 100px;
+                        margin-left: 10px;
                         .coustomized_design_title,
                         span {
                             color: var(--Black, #383838);
@@ -596,3 +598,7 @@
     background-color: #A9D20E;
   }
   
+
+  .SingleProduct_body_body{
+    transform: translateY(-7vw);
+  }

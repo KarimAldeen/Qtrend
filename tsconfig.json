@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/Components/Print/SwiperComponents.jsx", "src/Components/Print/ProductCard.jsx"  ],
+, "src/Components/Print/SwiperComponents.jsx", "src/Components/Print/ProductCard.jsx", "src/Components/mhmad/Section.jsx"  ],
   "exclude": [
     "node_modules"
   ]

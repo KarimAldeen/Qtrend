@@ -1,9 +1,11 @@
 import React from 'react'
 import { BaseURL } from '../../api/config'
+import { TranslateObject } from '../../Utils/TranslateObject'
+import { useTranslation } from 'react-i18next'
 
-interface Props {}
 
-const Section = ({name , description , image}) => {
+const Section = ({translations , image}) => {
+    const {i18n} = useTranslation()
   return (
     <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +90,9 @@ const Section = ({name , description , image}) => {
         fontWeight={800}
       >
         <tspan x={0} y={57}>
-            {name}
+        {TranslateObject(translations ,i18n?.language , 'name' )}
+
+
         </tspan>
       </text>
       <text
@@ -99,8 +103,8 @@ const Section = ({name , description , image}) => {
         fontFamily="Poppins-Regular, Poppins"
       >
         <tspan x={0} y={36}>
-          {description}
-        </tspan>
+            {TranslateObject(translations ,i18n?.language , 'description' )}
+          </tspan>
       </text>
       <g id="View_All" data-name="View All" transform="translate(45 212.079)">
         <rect
