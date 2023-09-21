@@ -5,10 +5,8 @@ import { useTranslation } from 'react-i18next'
 import { useGetProduct } from '../../api/product';
 
 
-const Moaz = ({ id, name, price, image, product_price, to_price, translate, index = 0}) => {
-  const { addProductToCart } = useManageCart();
+const Moaz = ({ price, quantity, handelAddTocart}) => {
   const [t] = useTranslation();
-  const { data, isLoading } = useGetProduct();
   return (
     <svg
       className='Moaz'
@@ -25,15 +23,7 @@ const Moaz = ({ id, name, price, image, product_price, to_price, translate, inde
               data-name="Path 8"
               d="M335.6,11a7.92,7.92,0,0,1,6.991,11.642l-20.907,39.27a7.918,7.918,0,0,1-6.991,4.2H168.263c-8.6,0-11.036-11.776-3.144-15.189l90.794-39.27A7.923,7.923,0,0,1,259.057,11Z"
               fill="#c4fd14"
-              onClick={() => {
-                addProductToCart({
-                  id,
-                  quantity: 1,
-                  price: to_price,
-                  image: image,
-                  name: name
-                }) ;  
-              }} />
+              onClick={handelAddTocart} />
           </g>
           <path
             id="Path_10"
@@ -86,9 +76,9 @@ const Moaz = ({ id, name, price, image, product_price, to_price, translate, inde
           fontWeight={700}
         >
           <tspan x="25" y={27}>
-            000.00{" "}
+          {" "}
             {/* <span> */}
-            {price}
+            {price * (quantity ||1  )}
             {/* </span> */}
           </tspan>
           <tspan y={26} fontSize={18}>

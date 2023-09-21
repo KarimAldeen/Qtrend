@@ -36,7 +36,8 @@ function ProductCard({name  , image  ,quick_overview , from_price , id ,  to_pri
           quantity:1,
           price:to_price,
           image:image,
-          name:name
+          name:name,
+          is_customized_design:false
         })} />
     </div>
   )

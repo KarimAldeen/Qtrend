@@ -10,19 +10,22 @@ import { useGetProduct } from '../../api/product'
 import { useSearchParams } from 'next/navigation'
 import { useTranslation } from 'react-i18next'
 import Moaz from '../../Components/mhmad/Moaz'
-import { Formik, Form, Field } from 'formik';
+import { Formik, Form, Field, useFormikContext } from 'formik';
 import * as Yup from 'yup';
+import { BaseURLImage } from '../../api/config'
+import useManageCart from '../../zustand/cart'
+import { toast } from 'react-toastify'
 
-const SingleProduct = (product) => {
+const SingleProduct = () => {
 
     const productID = useSearchParams().get('product_id');
     const [t] = useTranslation()
     const { data, isLoading } = useGetProduct({ product_id: productID })
-
-    const [selectedOption, setSelectedOption] = useState(null);
+    const [selectedOption, setSelectedOption] = useState(1);
     const [selectedOption2, setSelectedOption2] = useState(null);
     const [Customized, setCustomized] = useState(false);
- 
+    const { addProductToCartWithQuantity } = useManageCart();
+    const [SubmitFormik , setSubmitFormik] = useState(false)
     const options = Array.from({ length: 10 }, (_, i) => ({
         value: i + 1,
         label: `${i + 1} item`,
@@ -36,6 +39,7 @@ const SingleProduct = (product) => {
         name: '',
         emailOrPhone: '',
         requirements: '',
+        image:""
     };
     const validationSchema = Yup.object().shape({
         name: Yup.string().required('Name is required'),
@@ -47,27 +51,32 @@ const SingleProduct = (product) => {
     const [imagePreview, setImagePreview] = useState(null);
     const [FieldValue, setFieldValue] = useState(null);
 
+
+    const [CostmizedValue ,  setCostmizedValue] = useState(null)
     const handleImageChange = (e, setFieldValue) => {
         const file = e.target.files[0];
         if (file) {
-            setFieldValue('image', file);
+            setFieldValue(file);
             const reader = new FileReader();
             reader.onload = (e) => {
                 setImagePreview(e.target.result);
             };
+           
             reader.readAsDataURL(file);
         } else {
-            setFieldValue('image', null);
+            setFieldValue(null);
             setImagePreview(null);
         }
     };
 
     const handleSubmit = (values, { resetForm }) => {
+
         // Handle form submission here, e.g., send data to a server
-        const Data = { ...values, image: imagePreview }
-        console.log('Form submitted with values:', Data);
-        resetForm();
-        setImagePreview(null)
+        setCostmizedValue(values)
+        // const Data = { ...values, image: imagePreview }
+        // console.log('Form submitted with values:', Data);
+        // resetForm();
+        // setImagePreview(null)
 
     };
 
@@ -85,6 +94,43 @@ const SingleProduct = (product) => {
 
         }
       };
+
+      const handelAddTocart = ()=>{
+
+        if(selectedOption2 != "Customized"){
+
+            addProductToCartWithQuantity({
+                id:data?.id , 
+                quantity:selectedOption , 
+                price:data?.product_price,
+                image:data?.product_main_image,
+                name:data?.name
+            })
+        }else{
+
+            if(!CostmizedValue){
+                toast.error('Please Fill The Customized Information')
+            }else{
+
+                addProductToCartWithQuantity({
+                    id:data?.id , 
+                    quantity:selectedOption , 
+                    price:data?.product_price,
+                    image:data?.product_main_image,
+                    name:data?.name,
+                    is_customized_design:true,
+                    custom:{
+                        ...CostmizedValue ,
+                        image:FieldValue
+                    }
+                })
+
+                console.log(CostmizedValue)
+            }
+            
+        }
+      }
+      
     return (
         <div className='CONTAINER'>
             <TopHeader />
@@ -100,14 +146,14 @@ const SingleProduct = (product) => {
                         <div className='mid_section'>
 
                             <div className='mid_left_section'>
-                                <div className='more_img'>
+                                {/* <div className='more_img'>
                                     <img src={'/Print/Rectangle 9629.png'} alt='more_img' />
                                     <img src={'/Print/Rectangle 9629.png'} alt='more_img' />
                                     <img src={'/Print/Rectangle 9629.png'} alt='more_img' />
                                     <img src={'/Print/Rectangle 9629.png'} alt='more_img' />
-                                </div>
+                                </div> */}
                                 <div className='main_img'>
-                                    <img src={'/Print/Rectangle 9629.png'}
+                                    <img src={BaseURLImage + data?.product_main_image}
                                         // {BaseURL + product.image}
                                         alt='more_img' />
                                 </div>
@@ -119,15 +165,8 @@ const SingleProduct = (product) => {
                                 <h3 className='from_to'>{t("From")}<span> {data?.low_price} Qr</span> {t("to")} <span>{data?.high_price} QR</span></h3>
                                 <div className='SingleProduct_desc'>
                                     <p className='first_SingleProduct_desc'>
-                                        {/* {data?.description} */}
-                                        Personal cards are the address of your company and it is also the first interface in front of
-                                        your customers and thus gives the first and most important impression of the customer
-                                        Accordingly, the company must give great attention to the cards to give a distinctive,
-                                        attractive and correct impression of the company
-                                        The importance of the cards is not only for companies, but also for small shops,
-                                        institutions and home projects.
-                                        We have many distinct options for personal cards to suit all required options at distinctive
-                                        prices and suitable for different budgets
+                                        {data?.description}
+                                       
                                     </p>
 
                                 </div>
@@ -159,7 +198,7 @@ const SingleProduct = (product) => {
                                 <div className='SingleProduct_total'>
                                     <p className='TOTAL'>{t("Total")}:
                                     </p>
-                                    <Moaz price={data?.product_price} />
+                                    <Moaz price={data?.product_price} quantity={selectedOption}  handelAddTocart={handelAddTocart} />
                                 </div>
                             </div>
 
@@ -186,9 +225,10 @@ const SingleProduct = (product) => {
                                     validationSchema={validationSchema}
                                     onSubmit={handleSubmit}
                                 >
-                                    {({ errors, touched }) => (
+                                    {({ errors, touched , submitForm }) => (
                                         <Form>
-                                            <div className="coustomized_design">
+                                         
+                                            <div className="coustomized_design" >
                                                 <h1 className="coustomized_design_title">
                                                     {t("Customized Design")} <span>{t("(option)")}</span>
                                                 </h1>
@@ -244,7 +284,8 @@ const SingleProduct = (product) => {
                                                         />
                                                     </div>
                                                     <button className="quote_button" type="submit">
-                                                        <BsWhatsapp /> {t("Get a quick quote")}
+                                                        {/* <BsWhatsapp />  */}
+                                                        {t("Save ")}
                                                     </button>
                                                 </div>
                                             </div>

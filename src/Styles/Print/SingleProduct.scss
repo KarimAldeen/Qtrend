@@ -160,7 +160,7 @@
                                     }
                                 }
 
-                                select {
+                                select  {
                                     border-radius: 3px;
                                     border: 2px solid #E8E8E8;
                                     background: #EFEFEF;
@@ -173,12 +173,13 @@
                                     font-size: 1vw;
                                     font-weight: 400;
                                     transform: translateX(-15px);                                    
-                                    @include devices(tablet) {
-                                        & {
-                                            width: 50vw !important;
-                                        }
-                                    }
+                                    // @include devices(tablet) {
+                                    //     & {
+                                    //         width: 50vw !important;
+                                    //     }
+                                    // }
                                 }
+                               
                             }
                         }
 

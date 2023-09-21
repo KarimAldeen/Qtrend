@@ -10,6 +10,7 @@ import { getTotalPrice } from '../../Utils/CalcFinalPrice'
 import { useTranslation } from 'react-i18next'
 import {Formik , Form , Field , ErrorMessage } from 'formik'
 import {initalValue ,Schema} from './formUtils'
+import { ConvertArrayToFatora } from '../SingleProduct/ConvertArrayToFatora'
 
 function Page() {
     const {t} = useTranslation();
@@ -19,13 +20,19 @@ function Page() {
     const handelBackToPrint = ()=>{
         route.push('/Print')
     }
-    const {cart} = useManageCart()
+    const {cart , clearCart} = useManageCart()
     const [myCart , setMyCart] = useState([])
     useEffect(()=>{
         setMyCart(cart)
     },[])
-   const handelSubmit = (values)=>{
-    console.log({...values , myCart});
+   const handelSubmit = (values , {resetForm})=>{
+   
+    const whatsappLink = `https://web.whatsapp.com/send?phone=+97470070716&text=${encodeURIComponent(ConvertArrayToFatora({...values , myCart}))}&app_absent=0`;
+
+    // Redirect to the WhatsApp link
+    clearCart()
+    resetForm()
+    window.location.href = whatsappLink;
    }
     const route  =  useRouter()
   return (
