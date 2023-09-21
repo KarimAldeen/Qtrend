@@ -10,7 +10,6 @@ import { useGetProduct } from '../../api/product'
 import { useSearchParams } from 'next/navigation'
 import { useTranslation } from 'react-i18next'
 import Moaz from '../../Components/mhmad/Moaz'
-import Select from 'react-select';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 
@@ -18,14 +17,12 @@ const SingleProduct = (product) => {
 
     const productID = useSearchParams().get('product_id');
     const [t] = useTranslation()
-    const { i18n } = useTranslation()
-
     const { data, isLoading } = useGetProduct({ product_id: productID })
 
-    console.log(data);
     const [selectedOption, setSelectedOption] = useState(null);
     const [selectedOption2, setSelectedOption2] = useState(null);
-    console.log(selectedOption2?.value);
+    const [Customized, setCustomized] = useState(false);
+ 
     const options = Array.from({ length: 10 }, (_, i) => ({
         value: i + 1,
         label: `${i + 1} item`,
@@ -67,28 +64,27 @@ const SingleProduct = (product) => {
 
     const handleSubmit = (values, { resetForm }) => {
         // Handle form submission here, e.g., send data to a server
-            const Data = {...values , image :imagePreview}
+        const Data = { ...values, image: imagePreview }
         console.log('Form submitted with values:', Data);
         resetForm();
         setImagePreview(null)
-        
+
     };
 
-    const customStyles = {
-        control: (provided, state) => ({
-            ...provided,
-            borderRadius: '3px',
-            border: '2px solid #E8E8E8',
-            background: '#EFEFEF',
-            height: '10px',
-            // width: '20vw !important', // You can uncomment and adjust this if needed
 
-            color: '#969696',
-            fontFamily: 'Tajawal',
-            fontSize: '10px',
-            fontWeight: 400,
-        }),
-    };
+    const handleSelectChange = (event) => {
+        setSelectedOption(event.target.value);
+      };
+      const handleSelectChange2 = (event) => {
+        setSelectedOption2(event.target.value);
+        if(event.target.value === "Customized"){
+            setCustomized(true)
+            
+        }else{
+            setCustomized(false)
+
+        }
+      };
     return (
         <div className='CONTAINER'>
             <TopHeader />
@@ -138,27 +134,26 @@ const SingleProduct = (product) => {
                                 <div className='SingleProduct_options'>
                                     <div className='first_option'>
                                         <div> {t("Quantity")}:</div>
-                                        <Select
-                                            styles={customStyles}
-                                            defaultValue={selectedOption}
-                                            onChange={setSelectedOption}
-                                            options={options}
-                                            placeholder="Choose an option"
-                                        />
-                                        {/* <select type="text" id="option" placeholder='Choose an option' name="option" /> */}
+                                        <select value={selectedOption} onChange={handleSelectChange}>
+                                            {options.map((option) => (
+                                                <option key={option.value} value={option.value}>
+                                                    {option.label}
+                                                </option>
+                                            ))}
+                                        </select>
+                                       
                                     </div>
 
                                     <div className='second_option'>
                                         <div> {t("Design")}:</div>
-                                        <Select
-                                            styles={customStyles}
-                                            defaultValue={selectedOption2}
-                                            onChange={setSelectedOption2}
-                                            options={options2}
-                                            placeholder="Choose an option"
-
-                                        />
-                                        {/* <select type="text" placeholder='Choose an option' id="option" name="option" /> */}
+                                        <select value={selectedOption2} onChange={handleSelectChange2}>
+                                            {options2.map((option) => (
+                                                <option key={option.value} value={option.value}>
+                                                    {option.label}
+                                                </option>
+                                            ))}
+                                        </select>
+                                     
                                     </div>
                                 </div>
                                 <div className='SingleProduct_total'>
@@ -185,7 +180,7 @@ const SingleProduct = (product) => {
                             </div>
 
                             {
-                                selectedOption2?.value == "Customized" &&
+                               Customized &&
                                 <Formik
                                     initialValues={initialValues}
                                     validationSchema={validationSchema}
@@ -224,7 +219,7 @@ const SingleProduct = (product) => {
                                                     )}
                                                 </div>
                                                 <div className="Input_image">
-                                                 
+
                                                     {imagePreview && (
                                                         <img
                                                             src={imagePreview}
@@ -237,10 +232,10 @@ const SingleProduct = (product) => {
                                                     )}
                                                 </div>
                                                 <div className="buttons_div">
-                                                  
+
                                                     <div className='input-file-container'>
                                                         <label htmlFor="file-input" className="custom-file-button">
-                                                        {t("Upload file")}                                                        </label>
+                                                            {t("Upload file")}                                                        </label>
                                                         <input
                                                             type="file"
                                                             id="file-input"
