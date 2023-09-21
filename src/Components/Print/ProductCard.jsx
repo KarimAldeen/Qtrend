@@ -29,8 +29,8 @@ function ProductCard({name  , image  ,quick_overview , from_price , id ,  to_pri
         <div className='card-body' style={{color:is_odd ? '#F4F4F4' :"black"}}   onClick={handelGoToSingleProduct}>
                 <div className='card-body-left'>
                     <p className='quick_overview'>{quick_overview}</p>
-                    <p className='price'>From <b>{from_price} QR</b></p>
-                    <p className='price'>To <b>{to_price} QR</b></p>
+                    <p className='price'>From <b>{from_price}QR</b></p>
+                    <p className='price'>To <b>{to_price}QR</b></p>
                 </div>
         </div>
         <AddToCartButton onClick={()=>addProductToCart({
