@@ -8,7 +8,10 @@ function AddToCartButton({onClick}) {
     <ShopIconCartBackGround/>
     <div className='add_To_cart_button_body'>
         <p>Add to Cart</p>
+        <div className='AddToCardIcon'>
         <ShopIcon />
+
+        </div>
     </div>
 </div>
   )
