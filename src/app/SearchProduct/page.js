@@ -21,9 +21,10 @@ function PrintCategory() {
   const keySearch = useSearchParams().get('search');
 
   // Fetch data for the specified category
-  // const { data } = useGetAllProductWithSearch({ search_keyword: keySearch });
+  const { data } = useGetAllProductWithSearch({ search_keyword: keySearch });
 
-  const data  = []
+  
+  console.log(data);// const data  = []
   // Extract product data from the fetched data
   
   // Get the current window width
