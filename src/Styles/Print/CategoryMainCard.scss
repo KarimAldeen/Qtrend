@@ -13,9 +13,7 @@
 
         display: flex;
         justify-content: space-between;
-        .left{
-
-        }
+      
         .center{
           height: 80px;
             display: flex;
@@ -55,57 +53,58 @@
      }
 }
 
+
 @include devices(tablet){
 
-  .simple-continer-row{
-    .product_card{
-      width: 110px !important;
-      height: 130px !important;
-      position: relative;
+  // .simple-continer-row{
+  //   .product_card{
+  //     width: 110px !important;
+  //     height: 130px !important;
+  //     position: relative;
     
-      .produc_name{
-        margin-top: 2px;
-        font-size: .8em;
-    }
-    .card-body{
-        display: flex;
-        .quick_overview{
-            font-size: 8px;
-            width: 90%;
+  //     .produc_name{
+  //       margin-top: 2px;
+  //       font-size: .8em;
+  //   }
+  //   .card-body{
+  //       display: flex;
+  //       .quick_overview{
+  //           font-size: 8px;
+  //           width: 90%;
          
-            max-width: 120px;
-            height: 32px !important;
-            word-wrap: break-word;
-           margin: 0 !important;
-        }
+  //           max-width: 120px;
+  //           height: 32px !important;
+  //           word-wrap: break-word;
+  //          margin: 0 !important;
+  //       }
 
-        .price{
-          font-size: 7px !important;
-        }
-        .card-body-left{
-            width: 50%;
-        }
-    }
-      .add_to_cart_button{
-        position: absolute;
-        bottom:-26px !important;
-        .shop_icon_cart_back_ground{
-          width: 100px; 
-        }
-        .add_To_cart_button_body{
-          position: absolute;
-          bottom:20px !important;
-          font-size: 6px;
-          font-weight: 700;
-          right: 25px !important;
+  //       .price{
+  //         font-size: 7px !important;
+  //       }
+  //       .card-body-left{
+  //           width: 50%;
+  //       }
+  //   }
+  //     .add_to_cart_button{
+  //       position: absolute;
+  //       bottom:-26px !important;
+  //       .shop_icon_cart_back_ground{
+  //         width: 100px; 
+  //       }
+  //       .add_To_cart_button_body{
+  //         position: absolute;
+  //         bottom:20px !important;
+  //         font-size: 6px;
+  //         font-weight: 700;
+  //         right: 25px !important;
          
-          .shop_icon{
-            width: 25px;
-          }
-      }
-      }
-    }
-  } 
+  //         .shop_icon{
+  //           width: 25px;
+  //         }
+  //     }
+  //     }
+  //   }
+  // } 
 }
 
 
@@ -137,6 +136,7 @@
       height: 100px;
     }
     .Main_Paper{
+      min-width: 220px;
       width: 36vw;
     }
 }
