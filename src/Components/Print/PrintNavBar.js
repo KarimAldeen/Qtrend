@@ -40,9 +40,9 @@ const PrintNavBar = () => {
 
         </div>
         <div className='print_icons' style={{zIndex:"0"}} onClick={()=> route.push('/MyCart')}>
-        <span className='notifictaion_circle'>{length || 0}</span>
+            <span className='notifictaion_circle'>{length || 0}</span>
             {/* <Link> */}
-                     <MdOutlineShoppingBag/>
+                     <MdOutlineShoppingBag className='icon_cart'/>
             {/* </Link> */}
        
         </div>
