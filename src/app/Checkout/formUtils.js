@@ -15,8 +15,8 @@ export const Schema = Yup.object().shape({
       .required('Required'),
       name: Yup.string()
       .required('Required'),
-      phone: Yup.string().required('Required'),
-      note: Yup.string().required('Required'),
+      phone: Yup.string().required('Required')
+    //   note: Yup.string().required('Required'),
 
   });
   

@@ -150,7 +150,8 @@
                                 text-transform: capitalize;
                                     margin-bottom: 10px;
                                 div{
-                                    min-width: 70px;
+                                    
+                                    width: 100px;
                                 }
                              
 
@@ -317,7 +318,7 @@
                     .coustomized_design {
                         width: 31vw;
                         min-height: 70vh;
-                        border-left: 1px solid #c2c2c2;
+                        border-left: 1px solid rgb(194, 194, 194 , 0.3) ;
                         padding-left: 1.5em;
                         margin-inline: auto;
                         display: flex;
@@ -328,17 +329,17 @@
                         .coustomized_design_title,
                         span {
                             color: var(--Black, #383838);
-                            font-family: Poppins;
-                            font-size: 20px;
-                            font-style: normal;
-                            font-weight: 700;
+                            font-family: BPoppins;
+                            font-size: 24px;
+                            // font-style: normal;
+                            font-weight: bolder;
 
                             span {
                                 font-size: 15px;
                                 font-weight: 400;
                             }
                         }
-
+                       
                         .coustomized_design_text {
                             color: var(--Old-Gray, #A7A7A7);
                             font-family: Poppins;

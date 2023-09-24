@@ -32,7 +32,7 @@ function NavBar3() {
                 <Link  href={'/works'}  >{t("OUR WORKS")}</Link>
 
                 {
-                  isHovered &&
+                  false &&
                   <MenuService handleMouseLeave={handleMouseLeave}  t={t}/>
                 }
                 <Link  href={'/about_us'}  >{t('ABOUT US')}</Link>

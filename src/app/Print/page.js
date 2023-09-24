@@ -10,14 +10,14 @@ import CopyRight from '../../Components/Utils/CopyRight';
 import CategoryHomeSectionWithProduct from '../../Components/Print/CategoryHomeSectionWIthProduct';
 import useGetWidth from '../../hooks/useGetWidth';
 import { useTranslation } from 'react-i18next';
-
+import LoadingPage from '../loading'
 const Page = () => {
   const [categoryData, setCategoryData] = useState([]);
   const width = useGetWidth();
   const perPage = width < 810 ? 1 : width < 1100 ? 2 : 3;
   
   const {t} = useTranslation()
-  const { data: categoryApiResponse, error: categoryApiError } = useGetAllCategory();
+  const { data: categoryApiResponse, error: categoryApiError , isLoading } = useGetAllCategory();
   useEffect(() => {
     if (categoryApiError) {
       console.error(categoryApiError);
@@ -26,6 +26,9 @@ const Page = () => {
       setCategoryData(categoryApiResponse.category);
     }
   }, [categoryApiResponse, categoryApiError]);
+
+  if(isLoading) return <LoadingPage/>
+
   return (
     <div className='print_page'>
       <TopHeader />
@@ -36,7 +39,7 @@ const Page = () => {
             <p className='frist_p'>{t("WE OFFER TOP")}</p>
             <p className='second_p'>{t('PRINTING SERVICES')}</p>
             <p className='third_p'>{t('AFFORDABLE RATES FOR QUALITY PRINTS WITH PROFESSIONAL RESULTS.')}</p>
-            <button className='request_button'>{t("REQUEST NOW")}</button>
+            <button className='request_button' >{t("REQUEST NOW")}</button>
           </div>
           <div className='home_second_right' style={{ zIndex: 0 }}>
             <img src='/Print/Prints.png' alt='Print Services' />

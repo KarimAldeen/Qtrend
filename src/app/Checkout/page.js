@@ -81,7 +81,7 @@ function Page() {
                         validationSchema={Schema}
                         onSubmit={handelSubmit}>
                             {
-                                ({submitForm})=>(
+                                ({submitForm , errors , touched})=>(
                                     <Form>
                                <div className='checkout_form'>
                             <div className='checkout_left_form'>
@@ -90,7 +90,9 @@ function Page() {
                                     <div className='input_top'>
                                         <label>{t("Buyer Info")}</label>
                                     <Field name="buyer_info" type='text' placeholder=''/>
-                                    <ErrorMessage name="buyer_info" ></ErrorMessage>
+                                    {errors.buyer_info && touched.buyer_info && (
+                                                        <div className="error">{errors.buyer_info}</div>
+                                    )}
 
                                     </div>
                                     <div className='div_mid_input'>
@@ -98,14 +100,18 @@ function Page() {
                                     <label>{t("Name")}</label>
 
                                     <Field name="name" type='text' placeholder=''/>
-                                    <ErrorMessage name="name" ></ErrorMessage>
+                                    {errors.name && touched.name && (
+                                                        <div className="error">{errors.name}</div>
+                                     )}            
                                     </div>
                                     <div className='input_mid_2' >
                                     <label>{t("Phone Number")}</label>
 
                                     <Field name='phone' type='text' placeholder=''/>
-                                    <ErrorMessage name="phone" ></ErrorMessage>
-                                    </div>
+                                    {errors.phone && touched.phone && (
+                                                        <div className="error">{errors.phone}</div>
+                                     )}                         
+                                       </div>
 
                                     </div>
                                     <div>
@@ -113,8 +119,9 @@ function Page() {
                                     <div  className='input_bottom'>
                                         <label>{t("Note")} </label>
                                     <Field name="note" type='text' placeholder=''/>
-                                    <ErrorMessage name="note" ></ErrorMessage>
-
+                                    {errors.note && touched.note && (
+                                                        <div className="error">{errors.note}</div>
+                                     )} 
                                     </div>
                                     </div>
                             </div>

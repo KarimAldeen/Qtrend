@@ -12,7 +12,7 @@ const CustomToastContainer = (props) => {
         setIsMount(true)
     },[])
     const dir = i18n.dir
-  const position = dir === "ltr" ? "bottom-right" : "bottom-left";
+  const position = dir === "ltr" ? "top-right" : "top-left";
   const rtl = dir === "rtl";
 
   return (

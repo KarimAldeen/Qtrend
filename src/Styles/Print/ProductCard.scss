@@ -30,9 +30,7 @@
 
     .card-body{
         display: flex;
-        
         .quick_overview{
-            
             font-size: .8em;
             width: 90%;
             max-width: 120px;
@@ -99,4 +97,8 @@
 
     }
  
+}
+
+.product_card{
+    cursor: pointer  !important;
 }

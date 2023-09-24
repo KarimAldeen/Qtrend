@@ -44,8 +44,7 @@ const SingleProduct = () => {
     const validationSchema = Yup.object().shape({
         name: Yup.string().required('Name is required'),
         emailOrPhone: Yup.string()
-            .required('Email or Phone Number is required')
-            .email('Invalid email address'),
+            .required('Email or Phone Number is required'),
         requirements: Yup.string().required('Requirements are required'),
     });
     const [imagePreview, setImagePreview] = useState(null);
@@ -77,6 +76,7 @@ const SingleProduct = () => {
         // console.log('Form submitted with values:', Data);
         // resetForm();
         // setImagePreview(null)
+        toast.success("Saved Custmized Data Successfuly")
 
     };
 
@@ -246,7 +246,7 @@ const SingleProduct = () => {
                                                 </div>
                                                 <div className="Input_mid">
                                                     <label>{t("Email Or Phone Number *")}</label>
-                                                    <Field type="email" name="emailOrPhone" />
+                                                    <Field type="text   " name="emailOrPhone" />
                                                     {errors.emailOrPhone && touched.emailOrPhone && (
                                                         <div className="error">{errors.emailOrPhone}</div>
                                                     )}

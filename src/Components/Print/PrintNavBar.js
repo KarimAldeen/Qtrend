@@ -7,12 +7,15 @@ import { useGetAllCategory } from '../../api/category'
 import useManageCart from '../../zustand/cart'
 import { useTranslation } from 'react-i18next'
 import { TranslateObject } from '../../Utils/TranslateObject'
+import { useRouter } from 'next/navigation';
+
 const PrintNavBar = () => {
     const {data} = useGetAllCategory()
     const {cart} = useManageCart()
     const [length , setLength] = useState(0)
     const [t  ] = useTranslation()
     const {i18n}  = useTranslation()
+    const route = useRouter();
     useEffect(()=>(
       setLength(cart?.length)
     ),[cart])
@@ -36,11 +39,11 @@ const PrintNavBar = () => {
           
 
         </div>
-        <div className='print_icons' style={{zIndex:"0"}}>
+        <div className='print_icons' style={{zIndex:"0"}} onClick={()=> route.push('/MyCart')}>
         <span className='notifictaion_circle'>{length || 0}</span>
-            <Link href='/MyCart'>
+            {/* <Link> */}
                      <MdOutlineShoppingBag/>
-            </Link>
+            {/* </Link> */}
        
         </div>
     </div>

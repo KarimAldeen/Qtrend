@@ -144,7 +144,6 @@
                 display: flex;
                 align-items: center;                
                 flex-direction: column;
-                
                 text-align: left !important;
                 @include devices(tablet){
                     &{
@@ -169,27 +168,27 @@
                     font-size: 3em;
                     font-weight: 900;
                     color: #323232;
-                    width: 25vw ;
+                    width: 21vw ;
                     font-style: italic;
                     font-family: inter;
-                    line-height: .82em;
+                    line-height: 1.1em;
                     margin-left: 0 !important;
                 }
                 .second_p{
                     font-size: 2.8em;
                     font-weight: 900;
                     color: #CAE67E;
-                    width: 25vw;
+                    width: 21vw;
                     
                     font-style: italic;
                     font-family: inter;
-                    line-height: .82em;
+                    line-height: .82em !important;
                 }
                 .third_p{
                     font-size: 1em;
                     font-weight: 500;
                     color: #858585;
-                    width: 25vw;
+                    width: 21vw;
                     line-height: 1.6em;
                     display: flex;
                     align-items: start !important;
@@ -198,9 +197,10 @@
                     line-height: 1.2em;
                 }
                 .request_button{
-                    margin: 1.5em 0em 0em .2em;
+                    margin: 1.5em 0em 0em 1em;
                     padding: .6em;
                     border: none;
+                    cursor: text !important;
                     border-radius: 3em;
                     width: 18vw;
                     color: #fff;
@@ -232,29 +232,4 @@
     }
 }
 
-
-// @media only screen and (max-width: 900px)  {
-//     .header_container{
-//          .header_left{
-//             width: 55% !important;
-//             margin-inline: 4em !important;
-//             .Print_info_1, .Print_info_2, .Print_info_3{
-//                 // width: 25%;
-//                 p{
-//                     font-size: .9em !important;
-//                 }
-//             }
-//         }
-//         .header_right{
-//             width: 40%;
-//             .sign_in_up{
-//                 p{
-//                     font-size: 1.1em !important;
-//                 }
-//             }
-//         }
-//     }   
-   
-    
-// }
 

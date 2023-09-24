@@ -82,7 +82,7 @@ const Moaz = ({ price, quantity, handelAddTocart}) => {
             {/* </span> */}
           </tspan>
           <tspan y={26} fontSize={18}>
-            Qr
+          {" "}Qr
           </tspan>
         </text>
       </g>
