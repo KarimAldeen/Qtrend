@@ -45,7 +45,7 @@ function PrintCategory() {
       <PrintNavBar />
       <div className='category-product-page'>
         <div className='header-category-product-page'>
-          <div className='left'>
+          <div className='left1'>
             {/* Display a refresh button */}
             <Refreash />
           </div>

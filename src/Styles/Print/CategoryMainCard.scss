@@ -3,7 +3,11 @@
 .category-product-page{
     width: 70vw;
     
-   
+   @include devices(tablet){
+    &{
+      width: 90vw;
+    }
+   }
     margin: auto;
     .category_section_body{
       width: 100% !important;
@@ -12,12 +16,28 @@
     .header-category-product-page{
 
         display: flex;
-        justify-content: space-between;
-        .left{
-
+        
+        justify-content: space-around;
+        @include devices(tablet){
+          .left{
+            display: none;
+          }
+          .left1{
+            width: 15%;
+          }
+          .center{
+            height: 80px;
+              display: flex;
+              align-items: center;
+              // width: 60%;
+              margin: auto;
+              justify-content: center;
+              
+          }
         }
+      
         .center{
-          height: 80px;
+          // height: 80px;
             display: flex;
             align-items: center;
             width: 60%;

@@ -20,7 +20,7 @@ function CategorySlider() {
         alt={slider.id}    key={slider.id} className='image-slider-category'  />
     ))
     
-    if(isLoading) return <LoadingPage />
+    if(isLoading) return <div></div>
     return (
         <Carousel
         className='image-slider-container-category'
