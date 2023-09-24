@@ -27,7 +27,7 @@ function CategoryHoemSectionWithProduct({color , index , products , perPage ,cat
   return (
     <>
     <div style={{background:is_odd? "#EDF1F4" :color , display:products?.length == 0 ? 'none' :"flex"}} className='product_category_row'>
-      <div className='simple-continer-row'>
+      <div className='simple-continer-row' style={{flexDirection:width<500 ? 'column' :"row"}}>
         <div >
 
       {
