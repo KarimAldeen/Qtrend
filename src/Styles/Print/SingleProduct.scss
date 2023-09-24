@@ -13,6 +13,7 @@
             display: flex;
             flex-direction: column;
             width: 100vw;
+            
             // min-height: 220vh;
             background: #fff;
             margin-top: 10vw;
@@ -21,18 +22,19 @@
                 width: 65vw;
                 margin: auto;
 
-                .swiper_section {}
+               
 
                 .mid_section {
                     width: 65vw;
-                    min-height: 75vh;
+                    // min-height: 75vh;
                     display: flex;
-                    margin: auto;
+                    // align-items: flex-start;
+                    // margin: auto;
 
                     .mid_left_section {
                         width: 31vw;
                         display: flex;
-                        margin-top: 15vh;
+                        margin: 20px 0 ;
 
                         .more_img {
                             display: flex;
@@ -61,7 +63,7 @@
                         align-items: start;
                         flex-direction: column;
                         margin-left: 1.2vw;
-                        margin-top: 8vw;
+                        margin-top: 25px;
 
                         .header_word {
                             color: var(--Old-Gray, #A7A7A7);
@@ -171,7 +173,7 @@
                                     max-width: 200px;
                                     color: #969696;
                                     font-family: Tajawal;
-                                    font-size: 1vw;
+                                    font-size: 1em;
                                     font-weight: 400;
                                     transform: translateX(-15px);                                    
                                     // @include devices(tablet) {
@@ -400,12 +402,18 @@
                                 background: #C4FD14;
                                 color: #000;
                                 font-family: Poppins;
-                                font-size: .8vw;
+                                font-size: 1.2em !important;
                                 font-weight: 600;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
                                 min-width: 15vw;
                                 min-height: 5vh;
                             }
 
+                            .custom-file-button{
+                                font-size: 1em;
+                            }
                             .Upload_button {
                                 border: none;
                             }
@@ -413,15 +421,15 @@
                             .quote_button {
                                 border-radius: 10px;
                                 border: 3px solid #000;
-                                font-size: 1vw;
-                                font-weight: 500;
+                                font-size: 1em;
+                                font-weight: 600;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
 
                                 svg {
                                     margin-right: .5em;
-                                    font-size: 1.4vw;
+                                    font-size: 1.4em !important;
                                 }
                             }
                         }
