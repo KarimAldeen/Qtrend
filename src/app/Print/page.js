@@ -11,6 +11,7 @@ import CategoryHomeSectionWithProduct from '../../Components/Print/CategoryHomeS
 import useGetWidth from '../../hooks/useGetWidth';
 import { useTranslation } from 'react-i18next';
 import LoadingPage from '../loading'
+import BGPrint from '../../Components/Print/BGPrint';
 const Page = () => {
   const [categoryData, setCategoryData] = useState([]);
   const width = useGetWidth();
@@ -42,7 +43,8 @@ const Page = () => {
             <button className='request_button' >{t("REQUEST NOW")}</button>
           </div>
           <div className='home_second_right' style={{ zIndex: 0 }}>
-            <img src='/Print/Prints.png' alt='Print Services' />
+            {/* <img src='/Print/Prints.png' alt='Print Services' /> */}
+            <BGPrint/>
           </div>
         </div>
       </div>

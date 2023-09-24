@@ -43,7 +43,7 @@ function CategoryHoemSectionWithProduct({color , index , products , perPage ,cat
       }
       
         </div>
-  
+      
         <Swiper
         className='swiper-container-product'
           spaceBetween={0}

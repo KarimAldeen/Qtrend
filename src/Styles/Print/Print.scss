@@ -112,6 +112,10 @@
                         img{
                             width: 50vw !important;
                         }
+                        .BGPrint{
+                            width: 50vw !important;
+        
+                        }
                     }
                 }
             }
@@ -178,6 +182,11 @@
                 img{
                     width: 38vw;
                 }
+                .BGPrint{
+                    width: 38vw;
+                    height: 30vw;
+
+                }
             }
         }
     }
@@ -218,6 +227,10 @@
             font-size: 2.7vw !important;
 
         }
+        .BGPrint{
+            height: 50vw !important;
+
+        }
     
 }
 
@@ -236,3 +249,24 @@
     }
    
 }
+
+
+
+
+@keyframes Ibra_Is_Trash3 {
+    0%   {opacity: 1;}
+  20%  {opacity: 0;}
+  80%  {opacity: 0;}
+  100% {opacity: 1;}
+    
+  }
+.SignageLighten1{
+    animation: Ibra_Is_Trash3 3s infinite;
+    transition: 1s ease-in-out;
+
+}
+  
+    
+  
+
+

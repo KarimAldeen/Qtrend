@@ -119,6 +119,7 @@ button,svg{
         }
       
     }
+    
     @if $breakpoint == SS_mobile {
       @media only screen and (max-width: 450px) {
         @content;
