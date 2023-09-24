@@ -16,33 +16,44 @@ import { BaseURLImage } from '../../api/config'
 import Arrow from '../Services/Arrow'
 import {TranslateObject} from '../../Utils/TranslateObject'
 import { useTranslation } from 'react-i18next'
+import useGetWidth from '../../hooks/useGetWidth'
 
 SwiperCore.use([Autoplay]);
 
 function CategoryHoemSectionWithProduct({color , index , products , perPage ,category}) {
     const is_odd = index %2 ==1 
   const {i18n} = useTranslation()
+  const width = useGetWidth()
   return (
     <>
     <div style={{background:is_odd? "#EDF1F4" :color , display:products?.length == 0 ? 'none' :"flex"}} className='product_category_row'>
       <div className='simple-continer-row'>
         <div >
 
-        <Main_Paper
+      {
+        width <500 ?
+        <div className='category-name-media'>
+          {TranslateObject(category?.translations, i18n.language , 'name' )}
+        </div>
+        :
+          <Main_Paper
         is_odd={is_odd}
          name={TranslateObject(category?.translations, i18n.language , 'name' )}
         quick_overview={TranslateObject(category?.translations, i18n.language , 'description')} id={category?.id}  image={category?.category_image}/>
+      }
+      
         </div>
-  
+      
         <Swiper
         className='swiper-container-product'
           spaceBetween={0}
           autoplay
           speed={1000}
           autoFocus
+          // centeredSlides
           modules={[Autoplay]}
 
-          slidesPerView={perPage  > products?.length ? products?.length : perPage}>
+          slidesPerView={(perPage)  > products?.length ? products?.length  : (perPage)}>
           {
             products?.map((product) => (
               

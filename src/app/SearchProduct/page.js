@@ -31,7 +31,7 @@ function PrintCategory() {
   const width = useGetWidth();
 
   // Determine the number of products per page based on window width
-  const per_page = width < 500 ? 1 : width < 800 ? 2 : 3;
+  const per_page = width < 500 ? 2 : width < 800 ? 2 :width <950 ? 3: 4;
 
   return (
     <div className='main_page'>
@@ -61,7 +61,7 @@ function PrintCategory() {
           // Map and display product containers
           data?.map((product, index) => (
             <ProductCategoryContainer
-              color={'#007aff'}
+              color={'#1995ca'}
               key={index}
               products={data?.slice(index * per_page, index * per_page + per_page)}
               index={index}
