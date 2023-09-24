@@ -162,8 +162,7 @@
                             padding-inline:3px;
                         }
                     }
-                    width: 63%;
-                    
+                    width: 62%;
                     input{
                     border-radius: 6.22px;
                     border: 0.777px solid var(--Black, #383838);
@@ -184,11 +183,11 @@
                             line-height: normal;
                         }
                         input{
-                            border-radius: 0 !important;
+                            // border-radius: 0 !important;
                             color: black;
-                            border-top: none;
-                            border-left: none;
-                            border-right: none;
+                            // border-top: none;
+                            // border-left: none;
+                            // border-right: none;
                             margin-bottom: 10px;
                             &:focus{
                                 outline: none;
@@ -262,14 +261,13 @@
                     }
                     .total_price_section{
                         border-top: 1px solid black ;
-                        width: 90%;
-                        
+                        width: 100%;
                         margin: auto;
                     }
                     .product_full_price{
                         border-bottom: 1px solid black ;
                         border-top: 1px solid black ;
-                        width: 85%;
+                        width: 90%;
                         margin: auto;
                         display: flex;
                         margin-top: 10px;
@@ -341,7 +339,7 @@
                         font-style: normal;
                         font-weight: 900;
                         line-height: normal;
-                        text-transform: uppercase;
+                        // text-transform: uppercase;
                         }
                         .back_to_cart{
                             text-align: center;
