@@ -3,8 +3,8 @@ import React from 'react'
 function Refrech() {
   return (
     <svg
-    width={152}
-    height={152}
+    width={132}
+    height={132}
     className='refreash_component_category'
     viewBox="0 0 152 152"
     fill="none"
