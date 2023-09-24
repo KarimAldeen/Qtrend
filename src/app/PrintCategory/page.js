@@ -15,13 +15,14 @@ import { useParams, useSearchParams } from 'next/navigation';
 import { useGetAllProductForCategory } from '../../api/category';
 import { useTranslation } from 'react-i18next';
 import { TranslateObject } from '../../Utils/TranslateObject';
+import LoadingPage from '../loading'
 
 function PrintCategory() {
   // Get the 'category_id' parameter from the URL
   const category_id = useSearchParams().get('category_id');
 
   // Fetch data for the specified category
-  const { data } = useGetAllProductForCategory({ category_id: category_id });
+  const { data , isLoading } = useGetAllProductForCategory({ category_id: category_id });
 
   // Extract product data from the fetched data
   const product = data?.products;
@@ -34,6 +35,8 @@ function PrintCategory() {
   console.log(data?.translations);
   const [i18n] = useTranslation()
   // const {i} = useTransition()
+  if(isLoading) return <LoadingPage/>
+
   return (
     <div className='main_page'>
       {/* Display the top header */}

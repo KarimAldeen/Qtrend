@@ -16,6 +16,13 @@
   // font-display: swap;
 
 }
+
+@font-face {
+  font-family: BPoppins;
+  src: url('../../Utils/Fonts/Poppins-SemiBold.ttf');
+  // font-display: swap;
+
+}
 @font-face {
   font-family: Montserrat;
   src: url('../../Utils/Fonts/Montserrat-VariableFont_wght.ttf');
@@ -194,4 +201,14 @@ button,svg{
       color: white;
       width: 140px;
   }
+}
+
+input {
+   padding-inline:10px !important;
+   transition: 0 !important;
+}
+
+.error_message{
+
+ 
 }
