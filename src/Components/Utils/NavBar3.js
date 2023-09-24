@@ -23,7 +23,7 @@ function NavBar3() {
         <img alt='logo-image'  src={'/Logo_Qtrend2.png'} />
           <NavBarSearch />
           {
-            width  < 800 ? <div style={{color:"white" , marginInline:"60px"}} onClick={()=>setIsActive(v => !v)}> <MdOutlineLegendToggle/></div> :
+            width  < 800 ? <div className='RightBurger' style={{color:"white" , marginInline:"50px"}} onClick={()=>setIsActive(v => !v)}> <MdOutlineLegendToggle/></div> :
           <div className='Links3' >
             <div className='In_Link3'> 
             <Link  href={'/'}  >{t('HOME')}</Link>
