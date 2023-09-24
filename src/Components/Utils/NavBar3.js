@@ -12,6 +12,7 @@ import NavResponsive from '../Utils/NavResponsive'
 import useGetWidth from '../../hooks/useGetWidth'
 import { MdOutlineLegendToggle } from 'react-icons/md'
 import { useRouter } from 'next/navigation'
+import GreenLogo from '/public/GreenLogo'
 function NavBar3() {
   const [t] = useTranslation();
   const { isHovered ,handleMouseEnter , handleMouseLeave} = useHover()
@@ -20,7 +21,8 @@ function NavBar3() {
   return (
     <>
     <div className='NavBar3   '>
-        <img alt='logo-image'  src={'/Logo_Qtrend2.png'} />
+        {/* <img alt='logo-image'  src={GreenLogo} /> */}
+         <GreenLogo />
           <NavBarSearch />
           {
             width  < 800 ? <div style={{color:"white" , marginInline:"60px"}} onClick={()=>setIsActive(v => !v)}> <MdOutlineLegendToggle/></div> :
