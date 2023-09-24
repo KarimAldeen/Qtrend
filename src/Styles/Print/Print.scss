@@ -269,4 +269,17 @@
     
   
 
+.Soso2{
+    transform-origin: 50% 50%;
+    rotate: 45deg;
+    transition: 1s ease-in-out;
+    animation: Soso 2s infinite; 
+  }
+  @keyframes Soso {
+    0%   { rotate: 0deg;}
+    50%   { rotate: 45deg;}
+    100%   { rotate: 0deg;}  
 
+
+    
+  }
