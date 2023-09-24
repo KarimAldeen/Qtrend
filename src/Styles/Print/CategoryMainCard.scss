@@ -71,15 +71,11 @@
         justify-content: center !important;
       }
      .swiper-container-product{
-      width: 60% !important;
+      width: 60% ;
       
      }
 }
-@include devices(S_mobile){
-  .simple-continer-row{
-    flex-direction: row !important;
-  }
-}
+
 
 @include devices(tablet){
 

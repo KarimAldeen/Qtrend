@@ -33,7 +33,7 @@ function CategoryHoemSectionWithProduct({color , index , products , perPage ,cat
          name={TranslateObject(category?.translations, i18n.language , 'name' )}
         quick_overview={TranslateObject(category?.translations, i18n.language , 'description')} id={category?.id}  image={category?.category_image}/>
         </div>
-  
+      
         <Swiper
         className='swiper-container-product'
           spaceBetween={0}
