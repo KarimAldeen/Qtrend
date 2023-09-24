@@ -58,7 +58,11 @@
       
      }
 }
-
+@include devices(S_mobile){
+  .simple-continer-row{
+    flex-direction: row !important;
+  }
+}
 
 @include devices(tablet){
 
@@ -142,7 +146,7 @@
       height: 100px;
     }
     .Main_Paper{
-      min-width: 220px;
+      min-width: 250px;
       width: 36vw;
     }
 }
