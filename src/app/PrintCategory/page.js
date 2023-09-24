@@ -31,7 +31,7 @@ function PrintCategory() {
   const width = useGetWidth();
 
   // Determine the number of products per page based on window width
-  const per_page = width < 500 ? 1 : width < 800 ? 2 : 3;
+  const per_page = width < 500 ? 2 : width < 800 ? 2 :width <950 ? 3: 4;
   console.log(data?.translations);
   const [i18n] = useTranslation()
   // const {i} = useTransition()
@@ -45,7 +45,7 @@ function PrintCategory() {
       <PrintNavBar />
       <div className='category-product-page'>
         <div className='header-category-product-page'>
-          <div className='left'>
+          <div className='left1'>
             {/* Display a refresh button */}
             <Refreash />
           </div>

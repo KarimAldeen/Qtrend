@@ -11,18 +11,26 @@ import useManageCart from '../../zustand/cart';
 import {getTotalPrice} from '../../Utils/CalcFinalPrice' 
 import { BaseURL } from '../../api/config';
 import { useTranslation } from 'react-i18next';
+import EmptyCart from '../../Components/Print/EmptyCart'
 const MyCart = () => {
   const route = useRouter();
   const {cart ,removeProductFromCart} = useManageCart()
   const {t} = useTranslation();
 
-  const [MyCart  ,  setMyCart] = useState([])
+  const [MyCart  ,  setMyCart] = useState([''])
   useEffect(()=>{
     setMyCart(cart)
   },[cart])
   const handelGoToCheckout = ()=>{
     route.push('/Checkout')
   }
+  if(MyCart.length == 0){
+    return(
+    <EmptyCart/>
+    )
+  }
+
+
   return (
     <div className='main_page'>
       {/* Display the top header */}
