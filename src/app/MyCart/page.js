@@ -17,7 +17,7 @@ const MyCart = () => {
   const {cart ,removeProductFromCart} = useManageCart()
   const {t} = useTranslation();
 
-  const [MyCart  ,  setMyCart] = useState([])
+  const [MyCart  ,  setMyCart] = useState([''])
   useEffect(()=>{
     setMyCart(cart)
   },[cart])
