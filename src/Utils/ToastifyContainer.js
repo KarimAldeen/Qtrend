@@ -23,6 +23,7 @@ const CustomToastContainer = (props) => {
       hideProgressBar={false}
       newestOnTop={false}
       closeOnClick
+      style={{zIndex:"99999999999999999999" , position:"fixed"}}
       rtl={rtl}
       pauseOnFocusLoss
       draggable

@@ -59,6 +59,7 @@ const Moaz = ({ price, quantity, handelAddTocart}) => {
           data-name="Add to Chart"
           transform="translate(3244.5 -183.88)"
           fontSize={12}
+          onClick={handelAddTocart} 
           fontFamily="Poppins-Regular, Poppins"
         >
           <tspan x={0} y={13}>
