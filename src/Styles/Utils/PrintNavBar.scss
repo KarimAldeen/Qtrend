@@ -25,7 +25,7 @@
         div{
             .Link{
                 color: #323232;
-                font-family: Tajawal;
+                font-family: Poppins;
                 font-size: .7em;
                 font-weight: 800;
                 margin-left: 2.5vw;
@@ -70,8 +70,14 @@
     }
     .print_icons{
         margin-inline:10px ;
-        margin-top: 12px !important;
+        margin-top: 17px !important;
+         @include devices(tablet){
+            &{
+                margin-top: 12px;
+            }
+        }
         position: relative;
+        
         .notifictaion_circle{
             position: absolute;
             top: -10px;
