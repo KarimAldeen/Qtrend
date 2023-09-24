@@ -12,7 +12,7 @@ function ProductCategoryContainer({color , index , products}) {
         {
           products.map(product =>(
             <ProductCard 
-            index={index+1}
+            index={index}
                 key={product.id}
                 translate={product?.translations}
                 image={product?.product_main_image}
