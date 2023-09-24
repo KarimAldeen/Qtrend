@@ -121,3 +121,16 @@
 .product_card{
     cursor: pointer  !important;
 }
+
+
+@include devices(SS_mobile){
+    .simple-continer-row{
+        width: 100%;
+      .product_card{    
+    
+      }
+      .Arrow{
+        display: none;
+      }
+    }
+}

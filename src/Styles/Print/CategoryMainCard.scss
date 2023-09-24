@@ -71,7 +71,8 @@
         justify-content: center !important;
       }
      .swiper-container-product{
-      width: 60% !important;
+      padding-inline: 10px !important;
+      width: 100% !important;
       
      }
 }
@@ -136,11 +137,19 @@
   .product_category_row{
     width: 100vw !important;
     .simple-continer-row{
+      flex-direction: column !important;
       width: 100%;
       margin: 0;
+      align-items: center !important;
       justify-content: center !important;
       padding-inline: 10px;
+      .Main_Paper{
+        display: none !important; 
+      }
 
+      .Arrow{
+        display: none;
+      }
     }   
   }
 }
@@ -183,4 +192,12 @@
     height:1.7vw;
 
   }
+}
+
+
+.category-name-media{
+  color: #C4FD14;
+  font-weight: 700;
+  margin-bottom: 20px; 
+  font-size: 2em;
 }
