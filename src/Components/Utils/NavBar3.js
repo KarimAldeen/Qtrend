@@ -21,8 +21,7 @@ function NavBar3() {
   return (
     <>
     <div className='NavBar3   '>
-        {/* <img alt='logo-image'  src={GreenLogo} /> */}
-         <GreenLogo />
+          <GreenLogo />
           <NavBarSearch />
           {
             width  < 800 ? <div className='RightBurger' style={{color:"white" , marginInline:"50px"}} onClick={()=>setIsActive(v => !v)}> <MdOutlineLegendToggle/></div> :

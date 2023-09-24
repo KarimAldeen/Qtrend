@@ -6,7 +6,7 @@
 }
 .MyCart{
     background: #EDF1F4;
-    min-height: 160vh;
+    min-height: 100vh;
     width: 100vw;
     padding-bottom: 10vh;
     border-top:#c2c2c2 3px solid;
@@ -17,7 +17,7 @@
         padding-top: 7vh;
         background: #fff;
         border-radius: 0vw 0vw 2vw 2vw;
-        min-height: 140vh;
+        min-height: 80vh;
         .location_page{
             color: var(--Old-Gray, #A7A7A7);
             /* Text Medium/Text Medium 3 */
@@ -235,7 +235,7 @@
             .summary{
                 display: flex; flex-direction: column;
                 background: #fafafa;
-                min-height: 35vh;
+                min-height: 10vh;
                 border-radius: 1em;
                 width: 60vw;
                 margin: auto;

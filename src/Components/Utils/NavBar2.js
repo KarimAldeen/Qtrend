@@ -14,7 +14,6 @@ function NavBar2() {
 
   return (
     <div className={`NavBar`}>
-          {/* <img alt='logo-image' style={{width:"9vw",height:"3vw"}} src={'/Logo_Qtrend2.png'}/> */}
           <BlackLogo/>
           <div className='Links'>
             <div className='In_Link'> 
