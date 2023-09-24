@@ -153,13 +153,14 @@
                                     margin-bottom: 10px;
                                 div{
                                     
-                                    width: 100px;
+                                    min-width: 100px  !important;
+                                    max-width: 101px !important;
                                 }
                              
 
                                 @include devices(tablet) {
                                     & {
-                                        font-size: 3.4vw;
+                                        font-size: 1.1em;
                                     }
                                 }
 
@@ -260,7 +261,7 @@
 
                 .last_section {
                     width: 65vw;
-                    min-height: 70vh;
+                    // min-height: 70vh;
                     display: flex;
 
                     .important_notes {
@@ -502,6 +503,8 @@
 
             .coustomized_design {
                 width: 85vw !important;
+                padding-left: 0  !important;
+                border: none !important;
 
                 .coustomized_design_text {
                     width: 71vw !important;

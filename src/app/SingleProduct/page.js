@@ -15,6 +15,7 @@ import * as Yup from 'yup';
 import { BaseURLImage } from '../../api/config'
 import useManageCart from '../../zustand/cart'
 import { toast } from 'react-toastify'
+import LoadingPage from '../loading'
 
 const SingleProduct = () => {
 
@@ -131,6 +132,8 @@ const SingleProduct = () => {
         }
       }
       
+
+      if(isLoading) return <LoadingPage />
     return (
         <div className='CONTAINER'>
             <TopHeader />

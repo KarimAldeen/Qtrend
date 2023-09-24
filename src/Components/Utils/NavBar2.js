@@ -6,6 +6,7 @@ import BtnTranslate from './BtnTranslate'
 import { useTranslation } from 'react-i18next'
 import MenuService from '../ui/Menu'
 import useHover from '../../hooks/useHover'
+import BlackLogo from '../../../public/BlackLogo'
 
 function NavBar2() {
   const [t] = useTranslation();
@@ -13,12 +14,13 @@ function NavBar2() {
 
   return (
     <div className={`NavBar`}>
-          <img alt='logo-image' style={{width:"9vw",height:"3vw"}} src={'/Logo_Qtrend2.png'}/>
+          {/* <img alt='logo-image' style={{width:"9vw",height:"3vw"}} src={'/Logo_Qtrend2.png'}/> */}
+          <BlackLogo/>
           <div className='Links'>
             <div className='In_Link'> 
             <Link  href={'/'}  >{t('HOME')}</Link>
                 <Link  href={'/services?param=1'}  onMouseEnter={()=>handleMouseEnter()} >{t('OUR SERVICES')}</Link>
-                <Link href={'/print'}  >{t("Print")}</Link> 
+                <Link href={'/Print'}  >{t("Print")}</Link> 
                 <Link  href={'/works'}  >{t("OUR WORKS")}</Link>
 
                 {
