@@ -38,6 +38,8 @@
 }
 .GreenLogo{
     margin-inline: 2vw;
+    width: 10vw ;
+    min-width: 50px;
 }
 .NavBar3{
     overflow: hidden !important;
@@ -70,7 +72,7 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        @include devices(mobile){
+        @include devices(donkey){
             transform: translate(-10px,-3px) ;
 
             input{
@@ -118,9 +120,9 @@
         font-weight: 900 !important ;
     }
     @include devices(Minlaptop){
-        a{
-            font-size: 9px !important;
-        }
+        // a{
+        //     font-size: 9px !important;
+        // }
     }
     span{
         background: rgb(255, 255, 255);
@@ -349,3 +351,12 @@
         }
       
 }
+
+     @include devices(tablet){
+       .In_Link3{
+        a{
+            font-size: 1.1vw;
+        }
+       }
+      
+    }

@@ -8,9 +8,8 @@
     align-items: center;
     margin-top: calc(10vh - 3px);
     @include devices(Minlaptop){
-        &{
-          margin-top: calc(8vh - 3px);  
-        }
+        
+          margin-top:53px;  
     }
     @include devices(mobile){
         &{
@@ -98,73 +97,19 @@
             }
             // start of icon res
             @include devices(Minlaptop){
-                .notifictaion_circle{
-                    font-size: 1em ;
-                    padding: .6em;
-                    transform: translate(5.3vw,-2vw);
-                }
-            }
-            @include devices(tablet){
-                .notifictaion_circle{
-                    transform: translate(6vw,-2vw);
-                }
-            }
-            @include devices(FORPRODUCT){
-                .notifictaion_circle{
-                    transform: translate(6.2vw,-1.8vw) !important; 
-                }
-                svg{
-                    font-size: 1.7em;
-                }
-            }
-            @include devices(mobile){
-                .notifictaion_circle{
-                    transform: translate(7vw,-1.9vw) !important;
-                }
+                // .notifictaion_circle{
+                //     font-size: 1em ;
+                //     padding: .6em;
+                //     transform: translate(5.3vw,-2vw);
+                // }
             }
             @include devices(S_mobile){
-                .notifictaion_circle{
-                    transform: translate(7vw,-2.1vw) !important;
-                    font-size: 1em;
-                    padding: .54em;
-                }
                 svg{
-                    font-size: 1.6em !important;
-                }
+                    font-size: 1.2em;
+                    z-index: 0;
+                    }
             }
-            //////////////////// font change
-            @include devices(SS_mobile){
-                .notifictaion_circle{
-                    font-size: .7em;
-                    padding: .5em;
-                    transform: translate(7.2vw,-2.4vw) !important;
-                }
-                svg{
-                    font-size: 1.4em !important;
-                }
-            }
-            @include devices(NO_WAY){
-                .notifictaion_circle{
-                    transform: translate(10vw,-3.4vw);
-                }
-            }
-            @include devices(XS_mobile){
-                .notifictaion_circle{
-                    transform: translate(9vw,-1.4vw) !important;
-                }
-                svg{
-                    font-size: 1.3em !important;
-                    transform: translateY(2vw) !important  ;
-                }
-            }
-            @include devices(XS_mobile){
-                .notifictaion_circle{
-                    transform: translate(11vw,-.5vw) !important;
-                }
-                svg{
-                    transform: translateY(3.5vw) !important  ;
-                }
-            }
+        
         // end of icon res
     }
 }
