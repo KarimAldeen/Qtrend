@@ -18,7 +18,7 @@ function NavBar2() {
             <div className='In_Link'> 
             <Link  href={'/'}  >{t('HOME')}</Link>
                 <Link  href={'/services?param=1'}  onMouseEnter={()=>handleMouseEnter()} >{t('OUR SERVICES')}</Link>
-                <Link href={'/Print'}  >{t("Print")}</Link> 
+                <Link href={'/print'}  >{t("Print")}</Link> 
                 <Link  href={'/works'}  >{t("OUR WORKS")}</Link>
 
                 {

@@ -11,6 +11,7 @@ import {BiSearch} from 'react-icons/bi'
 import NavResponsive from '../Utils/NavResponsive'
 import useGetWidth from '../../hooks/useGetWidth'
 import { MdOutlineLegendToggle } from 'react-icons/md'
+import { useRouter } from 'next/navigation'
 function NavBar3() {
   const [t] = useTranslation();
   const { isHovered ,handleMouseEnter , handleMouseLeave} = useHover()
@@ -27,7 +28,7 @@ function NavBar3() {
             <div className='In_Link3'> 
             <Link  href={'/'}  >{t('HOME')}</Link>
                 <Link  href={'/services?param=1'}  onMouseEnter={()=>handleMouseEnter()} >{t('OUR SERVICES')}</Link>
-                <Link href={'/Print'}  >{t("Print")}</Link>             
+                <Link href={'/print'}  >{t("Print")}</Link>             
                 <Link  href={'/works'}  >{t("OUR WORKS")}</Link>
 
                 {
@@ -50,7 +51,7 @@ function NavBar3() {
                 <div className='In_Link3'> 
                 <Link  href={'/'}  >{t('HOME')}</Link>
                     <Link  href={'/services?param=1'}  onMouseEnter={()=>handleMouseEnter()} >{t('OUR SERVICES')}</Link>
-                    <Link href={'/Print'}  >{t("Print")}</Link>             
+                    <Link href={'/print'}  >{t("Print")}</Link>             
                     <Link  href={'/works'}  >{t("OUR WORKS")}</Link>
 
                     {
@@ -74,7 +75,14 @@ export default NavBar3
 
 function NavBarSearch(){
 
-  return <div className='search_input'>
+  const router = useRouter()
+  const handelKeyDown = (e)=>{
+      
+    if(e.key == 'Enter'){
+      router.push("/SearchProduct?search="+e.target.value);
+    }
+  }
+  return <div className='search_input' onKeyDown={handelKeyDown}>
   <input />
   <BiSearch/>
   </div>

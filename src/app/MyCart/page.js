@@ -32,7 +32,7 @@ const MyCart = () => {
       <div className='MyCart'>
         <div className='MyCart_container'>
           {/* Page location */}
-          <h1 className='location_page' onClick={()=> route.push('/Print')}>{t("Home")} {">"} <span> {t("My Cart")}</span></h1>
+          <h1 className='location_page' onClick={()=> route.push('/print')}>{t("Home")} {">"} <span> {t("My Cart")}</span></h1>
           <div className='header'>
             <h1 className='header_page'>{t("My Cart")}</h1>
             <MdOutlineShoppingBag />
@@ -96,7 +96,7 @@ const MyCart = () => {
             </div>
             {/* Checkout and Continue Shopping buttons */}
             <button className='Checkout_button' onClick={() => route.push('/Checkout')}>{t("Checkout")}</button>
-            <p className='summary_continue' onClick={() => route.push('/Print')}>{t("Continue Shopping")}</p>
+            <p className='summary_continue' onClick={() => route.push('/print')}>{t("Continue Shopping")}</p>
           </div>
         </div>
       </div>

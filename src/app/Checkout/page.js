@@ -11,14 +11,16 @@ import { useTranslation } from 'react-i18next'
 import {Formik , Form , Field , ErrorMessage } from 'formik'
 import {initalValue ,Schema} from './formUtils'
 import { ConvertArrayToFatora } from '../SingleProduct/ConvertArrayToFatora'
+import useGetWidth from '../../hooks/useGetWidth'
 
 function Page() {
     const {t} = useTranslation();
+    const width = useGetWidth()
     const handelBackToCart = ()=>{
         route.push('/MyCart')
       }
     const handelBackToPrint = ()=>{
-        route.push('/Print')
+        route.push('/print')
     }
     const {cart , clearCart} = useManageCart()
     const [myCart , setMyCart] = useState([])
@@ -26,8 +28,16 @@ function Page() {
         setMyCart(cart)
     },[])
    const handelSubmit = (values , {resetForm})=>{
-   
-    const whatsappLink = `https://web.whatsapp.com/send?phone=+97470070716&text=${encodeURIComponent(ConvertArrayToFatora({...values , myCart}))}&app_absent=0`;
+    
+    var whatsappLink ;
+    if(width < 768){
+        // the device open the browser is  mobile 
+         whatsappLink = `whatsapp://send?phone=+97470070716&text=${encodeURIComponent(ConvertArrayToFatora({...values , myCart}))}&app_absent=0`;
+
+    }else{
+        // is laptop 
+         whatsappLink = `https://web.whatsapp.com/send?phone=+97470070716&text=${encodeURIComponent(ConvertArrayToFatora({...values , myCart}))}&app_absent=0`;
+    }
 
     // Redirect to the WhatsApp link
     clearCart()

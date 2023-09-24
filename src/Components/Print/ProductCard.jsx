@@ -22,7 +22,7 @@ function ProductCard({name  , image  ,quick_overview , from_price , id ,  to_pri
          {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={BaseURL +image} alt="Product IMage "   onClick={handelGoToSingleProduct}/>
 
-        <h2 className='produc_name' style={{color:is_odd ? '#F4F4F4' :"black"}}  onClick={()=> route.push('/SingleProduct')} >{TranslateObject(translate,i18n.language , 'name' )} </h2>
+        <h2 className='produc_name' style={{color:is_odd ? '#F4F4F4' :"black"}}  onClick={handelGoToSingleProduct} >{TranslateObject(translate,i18n.language , 'name' )} </h2>
 
         <div className='card-body' style={{color:is_odd ? '#F4F4F4' :"black"}}   onClick={handelGoToSingleProduct}>
                 <div className='card-body-left'>
