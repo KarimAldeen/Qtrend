@@ -145,13 +145,6 @@
                 align-items: center;                
                 flex-direction: column;
                 text-align: left !important;
-                // line-height: 6em !important;
-                // @include devices(Laptop){
-                //     &{
-                //         // line-height: 2em;
-                //         // display: none ;
-                //     }
-                // }
                 @include devices(tablet){
                     &{
 
@@ -238,29 +231,4 @@
     }
 }
 
-
-// @media only screen and (max-width: 900px)  {
-//     .header_container{
-//          .header_left{
-//             width: 55% !important;
-//             margin-inline: 4em !important;
-//             .Print_info_1, .Print_info_2, .Print_info_3{
-//                 // width: 25%;
-//                 p{
-//                     font-size: .9em !important;
-//                 }
-//             }
-//         }
-//         .header_right{
-//             width: 40%;
-//             .sign_in_up{
-//                 p{
-//                     font-size: 1.1em !important;
-//                 }
-//             }
-//         }
-//     }   
-   
-    
-// }
 
