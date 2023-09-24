@@ -9,18 +9,8 @@
         font-family: Noor !important;
         width: 100vw !important;
         .home_second_left{
-            .frist_p{
-                line-height: 1.5 !important;
-                font-family: Noor !important;
-            }
-            .second_p{
-                line-height: 1.5 !important;
-
-                font-family: Noor !important;
-            }
-            .third_p{
-                line-height: 1.5 !important;
-
+            .frist_p,.second_p,.third_p{
+                line-height: 1.5px !important;
                 font-family: Noor !important;
             }
         }
@@ -28,7 +18,7 @@
 }
 .HEADER{
     min-width: 100vw !important;
-    height: 5vh;
+    height: 35px;
     position: relative;
     background: #211e1e;
     .header_container{
@@ -38,7 +28,7 @@
         justify-content: space-around; align-items: center;
         .header_left{
             display: flex;
-            height: 5vh;
+            height: 35px;
             .Print_info_1, .Print_info_2{
                 display: flex;
                 justify-content: space-between;
@@ -58,7 +48,7 @@
         .header_right{
             display: flex;
             align-items: center;
-            height: 5vh;
+            height: 35px;
             svg{
                 color: #fff;
                 margin-left: 1.4vw;
@@ -220,7 +210,7 @@
         }
     }
     .Footer{
-        height: 15vh;
+        height: 105px;
     }
 }
 

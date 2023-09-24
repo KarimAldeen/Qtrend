@@ -53,7 +53,7 @@
     font-family: Poppins;
     font-weight: bolder !important;
     // font-display: swap;
-    height: 5vh;
+    height: 40px;
     img{
         margin-left: 3vw !important;
         
@@ -71,9 +71,14 @@
         justify-content: center;
         text-align: center;
         @include devices(mobile){
+            transform: translate(-10px,-3px) ;
+
             input{
-                height: 2vh !important;
+                height: 25px !important;
+                border-radius: 5px !important;
+                width: 50vw !important;
             }
+            
         }
         input{
             display: flex;justify-content: center;align-items: center;
@@ -92,24 +97,11 @@
         }
         svg{
             color: #262626;
-            margin: .65vw 0vw 0vw -1.2vw ;
-            font-size: 1.5vw;
+            margin: .65vw 1vw 0vw -1.2vw ;
+            font-size: 10px;
             z-index: 999;
-            @include devices(mobile){
-                &{
-                    margin-top: .8vh;
-                }
-            }
-            @include devices(S_mobile){
-                &{
-                    margin-top: 1vh;
-                }
-            }
-            @include devices(SS_mobile){
-                &{
-                    margin-left: -1.5vw;
-                }
-            }
+            margin-top: 8px;
+
         }
     }
    .Links3{
@@ -338,4 +330,22 @@
             margin-top: 10px;
         }
     }
+}
+@include devices(SS_mobile){
+    .RightBurger{
+        margin-inline: 4vw !important;
+    }
+    .search_input{
+     transform: translate(-5vw,-3px) !important;
+            svg{
+                transform: translateX(-10px);
+            }
+            input{
+                height: 25px !important;
+                border-radius: 5px !important;
+                width: 50vw !important;
+            }
+            
+        }
+      
 }
