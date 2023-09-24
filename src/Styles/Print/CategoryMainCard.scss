@@ -48,9 +48,26 @@
     }
       .simple-continer-row{
         width: 90%;
+        padding: 10px;
         margin: auto;
         align-items: center;
         display: flex; 
+        .product_card{
+          margin-inline:15px !important ;
+        }
+        &{
+          @include devices(mobile){
+            &{
+              width: 100% !important;
+              justify-content: space-between !important;
+              padding:10px  0 !important;
+              .product_card{
+                
+                margin-inline:5px !important ;
+              }
+            }
+          }
+        }
         justify-content: center !important;
       }
      .swiper-container-product{

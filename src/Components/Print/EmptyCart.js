@@ -15,7 +15,7 @@ const EmptyCart = () => {
             
             <div className='empty_cart'>
                 <BsEmojiFrownFill/>
-                <p className='empty_cart_text'>Ops Your Cart Is <span>Empty!</span></p>
+                <p className='empty_cart_text'>Ops.. Your Cart Is <span>Empty!</span></p>
                 <div className='return_button' onClick={() => route.push('/Print')} >
                     <p className='return_p'>Return to Print Page</p>
                 </div>

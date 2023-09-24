@@ -59,8 +59,11 @@
                 margin-top: 4px;   
                 display: flex;
                 align-items: center;
-              
+                @include devices(mobile){
+                    margin-top: 2px !important;
+                }
             }
+
             svg{
                 color: #000;
                 margin-left: .3vw;
@@ -73,7 +76,7 @@
         margin-top: 17px !important;
          @include devices(tablet){
             &{
-                margin-top: 12px;
+                margin-top: 10px;
             }
         }
         position: relative;
@@ -102,9 +105,7 @@
                 svg{
                     font-size: 1em !important;
                 }
-                .Link{
-                    margin-top: 0 !important;
-                }
+               
             }
         }   
     

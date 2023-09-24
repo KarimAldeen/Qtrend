@@ -7,7 +7,7 @@ function ProductCategoryContainer({color , index , products}) {
   return (
     <>
     <div style={{background:is_odd? "#EDF1F4" :color , display:products?.length == 0 ? 'none' :"block"}} className='product_category_row'>
-      <div className='simple-continer-row' style={{padding:"10px"}}>
+      <div className='simple-continer-row'>
 
         {
           products.map(product =>(
