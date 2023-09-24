@@ -235,7 +235,7 @@
             .summary{
                 display: flex; flex-direction: column;
                 background: #fafafa;
-                height: 35vh;
+                min-height: 35vh;
                 border-radius: 1em;
                 width: 60vw;
                 margin: auto;
@@ -281,7 +281,7 @@
                     font-weight: 600;
                     width: 50vw;
                     border: none;
-                    height: 8vh;
+                    min-height: 8vh;
                     margin: auto;
                 }
                 .summary_continue{
@@ -314,7 +314,7 @@
                         font-size: 14px;
                     }
                 }
-                @include devices(mobile){
+                @include devices(SS_mobile){
                     .summary_title{
                         font-size: 11px;
                     }
