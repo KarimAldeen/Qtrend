@@ -22,6 +22,7 @@ const SingleProduct = () => {
     const productID = useSearchParams().get('product_id');
     const [t] = useTranslation()
     const { data, isLoading } = useGetProduct({ product_id: productID })
+    console.log(data);
     const [selectedOption, setSelectedOption] = useState(1);
     const [selectedOption2, setSelectedOption2] = useState(null);
     const [Customized, setCustomized] = useState(false);
@@ -149,12 +150,12 @@ const SingleProduct = () => {
                         <div className='mid_section'>
 
                             <div className='mid_left_section'>
-                                {/* <div className='more_img'>
-                                    <img src={'/Print/Rectangle 9629.png'} alt='more_img' />
-                                    <img src={'/Print/Rectangle 9629.png'} alt='more_img' />
-                                    <img src={'/Print/Rectangle 9629.png'} alt='more_img' />
-                                    <img src={'/Print/Rectangle 9629.png'} alt='more_img' />
-                                </div> */}
+                                <div className='more_img'>
+                                    <img src={BaseURLImage + data?.images[0]?.path} alt='more_img' />
+                                    <img src={BaseURLImage + data?.images[0]?.path} alt='more_img' />
+                                    <img src={BaseURLImage + data?.images[0]?.path} alt='more_img' />
+                                    <img src={BaseURLImage + data?.images[0]?.path} alt='more_img' />
+                                </div>
                                 <div className='main_img'>
                                     <img src={BaseURLImage + data?.product_main_image}
                                         // {BaseURL + product.image}
