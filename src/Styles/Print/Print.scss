@@ -292,3 +292,10 @@
         width: 78% !important;
     }
   }
+  @include devices(tablet){
+    .print_page{
+        .simple-continer-row{
+            width: 100% !important;
+        }
+      }
+  }
