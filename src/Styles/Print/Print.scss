@@ -10,7 +10,7 @@
         width: 100vw !important;
         .home_second_left{
             .frist_p,.second_p,.third_p{
-                line-height: 1.5px !important;
+                // line-height: 15px !important;
                 font-family: Noor !important;
             }
         }
@@ -37,7 +37,7 @@
                 .NUM, .EMAIL{
                     padding-inline: .9vw;
                     color: #fff;
-                    font-size: 1vw !important; 
+                    font-size: .65em !important; 
                 }
                 svg{
                     color: #fff;
@@ -51,7 +51,7 @@
             height: 35px;
             svg{
                 color: #fff;
-                margin-left: 1.4vw;
+                margin-left: .4vw;
                 width: 1.8vw;
             }
         }
@@ -76,8 +76,9 @@
     }
     .home_section{
         width: 100vw;
-
+        
         margin-top: .3vw;
+        
         .home_second{
             background: #EDF1F4;
             display: flex; justify-content: center; align-items: start;
@@ -172,6 +173,7 @@
                     background: linear-gradient(180deg,#1995CACC, #0085D2);
                     font-style: italic;
                     font-size: 1.4vw ;
+                    border:  3px solid  white;
 
                 }
                 
@@ -282,4 +284,11 @@
 
 
     
+  }
+
+
+  .print_page{
+    .simple-continer-row{
+        width: 78% !important;
+    }
   }
