@@ -3,11 +3,10 @@ import React from 'react'
 const GreenLogo = () => {
   return (
     <svg
-   
     viewBox="0 0 151 47"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    className='GreenLogo'
+    className='GreenLogo  SVGGREENLOGO'
   >
     <g clipPath="url(#clip0_6_7202)">
       <path

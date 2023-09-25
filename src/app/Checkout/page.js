@@ -54,7 +54,7 @@ function Page() {
             <div className='checkout_body'>
                    <div className='checkout_container'>
                         <h1 className='location_page' 
-                        >{t("Home")} {">"}  <span className='My_Cart_span' onClick={handelBackToCart}>{t("My Cart")}</span> {">"}  <span>{t("Checkout")}</span></h1>
+                        >{t("Home")} <span style={{opacity:"0"}}>.</span> {"  >  "} <span style={{opacity:"0"}}>.</span> <span className='My_Cart_span' onClick={handelBackToCart}>{t("My Cart")}</span> <span style={{opacity:"0"}}>.</span>{" > "}<span style={{opacity:"0"}}>.</span>  <span>{t("Checkout")}</span></h1>
                         <h1 className='header_page'>{t("Checkout")}</h1>
                         <div className='steps_pay'>
                                 <div className='first-level'>

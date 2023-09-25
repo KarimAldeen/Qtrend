@@ -7,7 +7,7 @@ function AddToCartButton({onClick}) {
     <div className='add_to_cart_button' onClick={onClick}>
     <ShopIconCartBackGround/>
     <div className='add_To_cart_button_body'>
-        <p>Add to Cart</p>
+        <p style={{color:"black"}}> Add to Cart</p>
         <div className='AddToCardIcon'>
         <ShopIcon />
 

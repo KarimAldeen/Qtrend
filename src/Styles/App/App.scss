@@ -44,6 +44,14 @@
 
 }
 
+@font-face {
+  font-family: BTajwal;
+  src: url('../../Utils/Fonts/Tajawal-Bold.ttf');
+  font-weight: bold;
+  // font-display: swap;
+
+}
+
 body {
     background-color: var(--bg);
     overflow-x: hidden;
