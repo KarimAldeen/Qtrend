@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 import AddToCartButton from './AddToCartButton'
 import useManageCart from '../../zustand/cart'
 import {TranslateObject} from '../../Utils/TranslateObject'
-function ProductCard({name  , image  ,quick_overview , from_price , id ,  to_price ,translate ,index = 0  }) {
+function ProductCard({name  , image  ,price , from_price , id ,  to_price ,translate ,index = 0  }) {
     const {addProductToCart} = useManageCart()
     const is_odd  = index %2 == 1 
     const {t ,i18n}   = useTranslation()
@@ -24,14 +24,14 @@ function ProductCard({name  , image  ,quick_overview , from_price , id ,  to_pri
         <div className='card-body' style={{color:is_odd ? '#F4F4F4' :"black"}}   onClick={handelGoToSingleProduct}>
                 <div className='card-body-left'>
                     <p className='quick_overview'>{TranslateObject(translate,i18n.language , 'quick_overview' ).length > 34 ?TranslateObject(translate,i18n.language , 'quick_overview' ) +"..." :TranslateObject(translate,i18n.language , 'quick_overview' ) }</p>
-                    <p className='price'>From <b>{from_price}QR</b></p>
-                    <p className='price'>To <b>{to_price}QR</b></p>
+                    <p className='price'>{t('From')} <b>{from_price}QR</b></p>
+                    <p className='price'>{t("To")} <b>{to_price}QR</b></p>
                 </div>
         </div>
         <AddToCartButton onClick={()=>addProductToCart({
           id,
           quantity:1,
-          price:to_price,
+          price:price,
           image:image,
           name:name,
           is_customized_design:false

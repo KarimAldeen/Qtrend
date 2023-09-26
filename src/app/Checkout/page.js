@@ -12,6 +12,8 @@ import {Formik , Form , Field , ErrorMessage } from 'formik'
 import {initalValue ,Schema} from './formUtils'
 import { ConvertArrayToFatora } from '../SingleProduct/ConvertArrayToFatora'
 import useGetWidth from '../../hooks/useGetWidth'
+import { useAddMutation } from '../../api/helpers/useAddMutation'
+import { toast } from 'react-toastify'
 
 function Page() {
     const {t} = useTranslation();
@@ -24,25 +26,76 @@ function Page() {
     }
     const {cart , clearCart} = useManageCart()
     const [myCart , setMyCart] = useState([])
+    const [valuesFormik  , setvaluesFormik] = useState([])
+    
+    const {mutate  , isSuccess , isLoading , isError} = useAddMutation("CHECKOUT" , '/api/order/checkout')
     useEffect(()=>{
         setMyCart(cart)
     },[])
+
+    useEffect(()=>{
+
+       
+        if(isSuccess){
+                            var whatsappLink ;
+                    if(width < 768){
+                        // the device open the browser is  mobile 
+                        whatsappLink = `whatsapp://send?phone=+97470070716&text=${encodeURIComponent(ConvertArrayToFatora({...valuesFormik , myCart}))}&app_absent=0`;
+
+                    }else{
+                        // is laptop 
+                        whatsappLink = `https://web.whatsapp.com/send?phone=+97470070716&text=${encodeURIComponent(ConvertArrayToFatora({...valuesFormik , myCart}))}&app_absent=0`;
+                    }
+
+                    // Redirect to the WhatsApp link
+                    clearCart()
+                    window.location.href = whatsappLink;
+        }
+
+
+    },[isSuccess])
+
    const handelSubmit = (values , {resetForm})=>{
-    
-    var whatsappLink ;
-    if(width < 768){
-        // the device open the browser is  mobile 
-         whatsappLink = `whatsapp://send?phone=+97470070716&text=${encodeURIComponent(ConvertArrayToFatora({...values , myCart}))}&app_absent=0`;
 
-    }else{
-        // is laptop 
-         whatsappLink = `https://web.whatsapp.com/send?phone=+97470070716&text=${encodeURIComponent(ConvertArrayToFatora({...values , myCart}))}&app_absent=0`;
+    if(myCart.length == 0){
+        toast.warning("Cart Is Empty")
+        return ;
     }
+    setvaluesFormik(values)
+    mutate({
+        phone_number: values?.phone,
+        name : values?.name,
+        note : values?.note?? "",
+        subtotal : getTotalPrice(myCart), 
+        buyer_info :values?.buyer_info ,
+        items : myCart.map(item =>{
 
-    // Redirect to the WhatsApp link
-    clearCart()
-    resetForm()
-    window.location.href = whatsappLink;
+          
+            const primary_info = {
+                product_id :item.id,
+                product_quantity:item?.quantity,
+                
+              
+            }
+
+            if(item?.is_customized_design){
+                primary_info['customized_design'] = {
+                    name : item?.custom?.name,
+                    email_or_phone : item?.custom?.emailOrPhone,
+                    requirements : item?.custom?.requirements
+                }
+            }
+
+
+            return primary_info
+
+        })
+
+            
+         
+    })
+
+   
    }
     const route  =  useRouter()
   return (
@@ -81,7 +134,7 @@ function Page() {
                         validationSchema={Schema}
                         onSubmit={handelSubmit}>
                             {
-                                ({submitForm})=>(
+                                ({submitForm , errors , touched})=>(
                                     <Form>
                                <div className='checkout_form'>
                             <div className='checkout_left_form'>
@@ -90,22 +143,26 @@ function Page() {
                                     <div className='input_top'>
                                         <label>{t("Buyer Info")}</label>
                                     <Field name="buyer_info" type='text' placeholder=''/>
-                                    <ErrorMessage name="buyer_info" ></ErrorMessage>
-
+                                    {errors.buyer_info && touched.buyer_info && (
+                                       <div className="error">{errors.buyer_info}</div>
+                                    )}
                                     </div>
                                     <div className='div_mid_input'>
                                     <div  className='input_mid_1'>
                                     <label>{t("Name")}</label>
 
                                     <Field name="name" type='text' placeholder=''/>
-                                    <ErrorMessage name="name" ></ErrorMessage>
+                                    {errors.name && touched.name && (
+                                       <div className="error">{errors.name}</div>
+                                    )}
                                     </div>
                                     <div className='input_mid_2' >
                                     <label>{t("Phone Number")}</label>
 
                                     <Field name='phone' type='text' placeholder=''/>
-                                    <ErrorMessage name="phone" ></ErrorMessage>
-                                    </div>
+                                    {errors.phone && touched.phone && (
+                                       <div className="error">{errors.phone}</div>
+                                    )}                                    </div>
 
                                     </div>
                                     <div>
@@ -113,8 +170,9 @@ function Page() {
                                     <div  className='input_bottom'>
                                         <label>{t("Note")} </label>
                                     <Field name="note" type='text' placeholder=''/>
-                                    <ErrorMessage name="note" ></ErrorMessage>
-
+                                    {errors.note && touched.note && (
+                                       <div className="error">{errors.note}</div>
+                                    )}
                                     </div>
                                     </div>
                             </div>
@@ -175,7 +233,10 @@ function Page() {
                                         <div  className='cash_button'>
                                             {t("Cash On Delivary")}
                                         </div>
-                                        <div className='checkout_button' onClick={()=>submitForm()}> 
+                                        {
+                                            isLoading ? <div className='checkout_button'>Loading ... </div> : 
+                                            <div className='checkout_button' onClick={()=>submitForm()}> 
+                                            
                                             {t("Checkout")}
                                             <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
                                                 <g clip-path="url(#clip0_81_189)">
@@ -189,6 +250,11 @@ function Page() {
                                                 </defs>
                                                 </svg>
                                         </div>
+                                            
+                                            }
+                                         
+                                        
+                                        
                                         <p onClick={handelBackToCart} className='back_to_cart'>{t("Back TO Cart")}</p>
                                     </div>
                             </div>
