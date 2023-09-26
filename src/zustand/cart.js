@@ -1,18 +1,18 @@
 'use client'
+import { useTranslation } from 'react-i18next';
 import { toast } from 'react-toastify';
 import { create } from 'zustand';
 
 const useManageCart = create((set) => ({
+  
   cart: typeof window !== 'undefined' && window.localStorage ?  JSON.parse(localStorage.getItem('cart')) || [] : [],
   totalPrice:0 ,
-
   // Add a product to the cart
   addProductToCart: (product) =>
     set((state) =>{
       console.log(product);
       const is_product_exists =  state.cart.find(productInCart => productInCart.id == product.id);
 
-      toast.success('Add Successfully')
       if(is_product_exists){
         const new_Cart = state.cart.map(productInCart => {
           if(productInCart.id == product.id){
@@ -39,7 +39,7 @@ const useManageCart = create((set) => ({
       console.log(product);
       const is_product_exists =  state.cart.find(productInCart => productInCart.id == product.id);
 
-      toast.success('Add Successfully')
+      toast.success(t("Add Successfully"))
       if(is_product_exists){
         const new_Cart = state.cart.map(productInCart => {
           if(productInCart.id == product.id){
@@ -55,7 +55,6 @@ const useManageCart = create((set) => ({
       }
       const new_Cart = [...state.cart , product]
       localStorage.setItem('cart', JSON.stringify(new_Cart))
-
       return {
         cart : new_Cart
       }
@@ -63,7 +62,7 @@ const useManageCart = create((set) => ({
   // Remove a product from the cart
   removeProductFromCart: (productId) =>
     set((state) =>{
-      toast.success('Removed Successfully')
+      toast.success(t("Removed Successfully"))
       const new_Cart = state.cart.filter((product) => product.id != productId)
       localStorage.setItem('cart', JSON.stringify(new_Cart))
 
@@ -82,6 +81,7 @@ const useManageCart = create((set) => ({
   
   // Calculate the total price of items in the cart
 
-}));
+})
+);
 
 export default useManageCart;

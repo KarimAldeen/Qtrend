@@ -58,7 +58,7 @@ function Page() {
    const handelSubmit = (values , {resetForm})=>{
 
     if(myCart.length == 0){
-        toast.warning("Cart Is Empty")
+        toast.warning(t("Cart Is Empty"))
         return ;
     }
     setvaluesFormik(values)
@@ -234,7 +234,7 @@ function Page() {
                                             {t("Cash On Delivary")}
                                         </div>
                                         {
-                                            isLoading ? <div className='checkout_button'>Loading ... </div> : 
+                                            isLoading ? <div className='checkout_button'>{t("Loading")} ... </div> : 
                                             <div className='checkout_button' onClick={()=>submitForm()}> 
                                             
                                             {t("Checkout")}

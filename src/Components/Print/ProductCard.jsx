@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import AddToCartButton from './AddToCartButton'
 import useManageCart from '../../zustand/cart'
 import {TranslateObject} from '../../Utils/TranslateObject'
+import { toast } from 'react-toastify'
 function ProductCard({name  , image  ,price , from_price , id ,  to_price ,translate ,index = 0  }) {
     const {addProductToCart} = useManageCart()
     const is_odd  = index %2 == 1 
@@ -28,14 +29,19 @@ function ProductCard({name  , image  ,price , from_price , id ,  to_price ,trans
                     <p className='price'>{t("To")} <b>{to_price}QR</b></p>
                 </div>
         </div>
-        <AddToCartButton onClick={()=>addProductToCart({
-          id,
-          quantity:1,
-          price:price,
-          image:image,
-          name:name,
-          is_customized_design:false
-        })} />
+        <AddToCartButton onClick={()=>{
+          addProductToCart({
+            id,
+            quantity:1,
+            price:price,
+            image:image,
+            name:name,
+            is_customized_design:false
+          })
+          toast.success(t("Add Successfully"))
+        } 
+      }
+        />
     </div>
   )
 }

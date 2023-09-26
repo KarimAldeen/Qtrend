@@ -1,6 +1,7 @@
 import React from 'react'
 import { BaseURL } from '../../api/config'
 import { useRouter } from 'next/navigation'
+import { useTranslation } from 'react-i18next'
 
 
 const Main_Paper = ({ quick_overview , id , image , name , is_odd}) => {
@@ -14,7 +15,7 @@ const Main_Paper = ({ quick_overview , id , image , name , is_odd}) => {
 
     const  name1 = name.split(' ').slice(0, 1)
     const  name2 = name.split(' ').slice(1, name.length).length > 13 ? name.split(' ').slice(1, name.length) + '..': name.split(' ').slice(1, name.length)  
-
+    const {t} = useTranslation();
  
   return (
     <svg
@@ -140,7 +141,7 @@ const Main_Paper = ({ quick_overview , id , image , name , is_odd}) => {
             fontWeight={800}
           >
             <tspan x="16" y={21}  onClick={()=>router.push('/PrintCategory?category_id='+id)}>
-              VIEW ALL
+              {t("VIEW ALL")}
             </tspan>
           </text>
         </g>

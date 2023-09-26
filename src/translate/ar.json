@@ -229,6 +229,15 @@
     "Business Cards":"بطاقات العمل",
     "Ops.. Your Cart Is":"للأسف.. سلة التسوق الخاصة بك ",
     "Empty!":"!فارغة",
-    "Return to Print Page":"العودة إلى صفحة الطباعة"    
+    "Return to Print Page":"العودة إلى صفحة الطباعة"  ,
+    "Cart Is Empty":"السلة فارغة",
+    "Removed Successfully":"تمت الإزالة بنجاح" ,
+    "Add Successfully":"تمت الإضافة بنجاح",
+    "Please Fill The Customized Information":"يرجى ملء المعلومات المخصصة",
+    "Saved Custmized Data Successfuly":"تم حفظ البيانات المخصصة بنجاح",
+    "please_login_first":"الرجاء تسجيل الدخول أولا",
+    "Loading":"جاري التحميل",
+    "VIEW ALL":"عرض الكل",
+    "":""
 
 }

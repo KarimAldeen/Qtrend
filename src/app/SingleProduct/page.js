@@ -78,7 +78,7 @@ const SingleProduct = () => {
         // console.log('Form submitted with values:', Data);
         // resetForm();
         // setImagePreview(null)
-        toast.success("Saved Custmized Data Successfuly")
+        toast.success(t("Saved Custmized Data Successfuly"))
 
     };
 
@@ -111,7 +111,7 @@ const SingleProduct = () => {
         }else{
 
             if(!CostmizedValue){
-                toast.error('Please Fill The Customized Information')
+                toast.error(t('Please Fill The Customized Information'))
             }else{
 
                 addProductToCartWithQuantity({
