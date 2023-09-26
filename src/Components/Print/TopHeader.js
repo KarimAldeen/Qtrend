@@ -42,19 +42,6 @@ function TopHeader() {
                 )
               }
             </div>
-
-            {/* <div className='print_info_3'>
-              <a href=''>
-              <FaInstagram/>
-              </a>
-              <a href=''>
-              <FaFacebookF/>
-              </a>
-              <a href=''>
-              <FaLinkedinIn/>
-              </a>
-
-            </div> */}
           </div>
         </div>
         <NavBar3/>

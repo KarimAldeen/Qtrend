@@ -9,7 +9,7 @@ const AllSquare = () => {
     height={548}
     viewBox="0 0 1118 548"
     className='AllSquare'
-  >
+    >
     <defs>
       <clipPath id="clip-path">
         <rect
