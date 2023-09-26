@@ -6,7 +6,7 @@ import { useGetProduct } from '../../api/product';
 
 
 const Moaz = ({ price, quantity, handelAddTocart}) => {
-  const [t] = useTranslation();
+  const {t} = useTranslation();
   return (
     <svg
       className='Moaz'
