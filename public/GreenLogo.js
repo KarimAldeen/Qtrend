@@ -1,12 +1,16 @@
 import React from 'react'
+import { useRouter } from 'next/navigation'
 
 const GreenLogo = () => {
+  const route = useRouter();
+
   return (
     <svg
     viewBox="0 0 151 47"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     className='GreenLogo  SVGGREENLOGO'
+    onClick={() => route.push('/Print')}
   >
     <g clipPath="url(#clip0_6_7202)">
       <path

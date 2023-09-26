@@ -1,6 +1,6 @@
 @import './ProductCard.scss';
 @import './CategoryMainCard.scss';
-@import './Heckout.scss';
+@import './Checkout.scss';
 .ar{
     .HEADER{
         font-family: Noor !important;
@@ -10,7 +10,6 @@
         width: 100vw !important;
         .home_second_left{
             .frist_p,.second_p,.third_p{
-                // line-height: 15px !important;
                 font-family: Noor !important;
                 margin-top: 10px !important;
             }

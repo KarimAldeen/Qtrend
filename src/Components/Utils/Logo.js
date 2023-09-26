@@ -1,6 +1,9 @@
 import React from 'react'
+import { useRouter } from 'next/navigation'
 
 const Logo = () => {
+  const route = useRouter();
+
   return (
     <div className='Logo'>
         <svg
@@ -9,6 +12,8 @@ const Logo = () => {
   viewBox="0 0 135 41"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
+  onClick={() => route.push('/')}
+
 >
   <g clipPath="url(#clip0_0_8)">
     <path
