@@ -14,7 +14,7 @@ import { ConvertArrayToFatora } from '../SingleProduct/ConvertArrayToFatora'
 import useGetWidth from '../../hooks/useGetWidth'
 import { useAddMutation } from '../../api/helpers/useAddMutation'
 import { toast } from 'react-toastify'
-
+import {buildFormData} from '../../api/helpers/buildFormData'
 function Page() {
     const {t} = useTranslation();
     const width = useGetWidth()
@@ -57,12 +57,13 @@ function Page() {
 
    const handelSubmit = (values , {resetForm})=>{
 
+    console.log(myCart);
     if(myCart.length == 0){
         toast.warning(t("Cart Is Empty"))
         return ;
     }
     setvaluesFormik(values)
-    mutate({
+    const new_data= ({
         phone_number: values?.phone,
         name : values?.name,
         note : values?.note?? "",
@@ -82,7 +83,8 @@ function Page() {
                 primary_info['customized_design'] = {
                     name : item?.custom?.name,
                     email_or_phone : item?.custom?.emailOrPhone,
-                    requirements : item?.custom?.requirements
+                    requirements : item?.custom?.requirements,
+                    image:item?.custom?.image
                 }
             }
 
@@ -91,11 +93,13 @@ function Page() {
 
         })
 
-            
+        
          
     })
 
-   
+    const formData = new FormData();
+  buildFormData(formData, new_data);
+   mutate(formData)
    }
     const route  =  useRouter()
   return (

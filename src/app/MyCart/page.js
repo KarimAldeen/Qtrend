@@ -12,6 +12,7 @@ import {getTotalPrice} from '../../Utils/CalcFinalPrice'
 import { BaseURL } from '../../api/config';
 import { useTranslation } from 'react-i18next';
 import EmptyCart from '../../Components/Print/EmptyCart'
+import { toast } from 'react-toastify';
 const MyCart = () => {
   const route = useRouter();
   const {cart ,removeProductFromCart} = useManageCart()
@@ -85,7 +86,10 @@ const MyCart = () => {
                   <p className='right_left_third'>{item?.price} Qr</p>
                 </div>
               </div>
-              <div className='right_sec'  onClick={()=>removeProductFromCart(item?.id)}>
+              <div className='right_sec'  onClick={()=>{
+                      toast.success(t("Removed Successfully"))
+
+                removeProductFromCart(item?.id)}}>
                 X
               </div>
             </div>
