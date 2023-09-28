@@ -22,7 +22,7 @@ const PrintNavBar = () => {
     return (
     <div className='PrintNavBar'>
         <div className='print_links'>
-            <div><Link className='Link' href={'/Print'}>{t("ALL PRINTS")}</Link></div>
+            <div><Link className='Link LinkAll' href={'/Print'}>{t("ALL PRINTS")}</Link></div>
             <div className='middle'>
             {
                 data?.category?.map((nav , index) =>(

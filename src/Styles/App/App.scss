@@ -1,9 +1,5 @@
 
-@font-face {
-  font-family: Inter;
-  src: url('../../Utils/Fonts/Inter-VariableFont_slnt\,wght.ttf');
-  // font-display: swap;
-}
+
 @font-face {
   font-family: Roboto;
   src: url('../../Utils/Fonts/Roboto-Bold.ttf');
@@ -51,6 +47,20 @@
   // font-display: swap;
 
 }
+@font-face {
+  font-family: Inter;
+  src: url('../../Utils/Fonts/Inter-BoldItalic.otf');
+  font-weight: bold;
+  // font-display: swap;
+
+}
+@font-face {
+  font-family: BInter;
+  src: url('../../Utils/Fonts/f');
+  font-weight: bold;
+  // font-display: swap;
+
+}
 
 body {
     background-color: var(--bg);
@@ -90,6 +100,11 @@ button,svg{
     bottom: 0;
 }
 @mixin devices ($breakpoint) {
+  @if $breakpoint == LargLaptop {
+    @media only screen and (max-width: 2440px) {
+      @content;
+    }
+  }
     @if $breakpoint == Laptop {
       @media only screen and (max-width: 1440px) {
         @content;

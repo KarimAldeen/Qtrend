@@ -89,7 +89,6 @@
                     width: 100vw !important;
                     flex-direction: column-reverse !important;
                     .home_second_left{
-
                         justify-content: flex-start !important;
                         .frist_p{
                             width: 50vw !important; 
@@ -128,6 +127,7 @@
                 align-items: center;                
                 flex-direction: column;
                 text-align: left !important;
+                font-family: Inter  !important;
               
                 .frist_p{
                     margin-top: .6em;
@@ -135,8 +135,8 @@
                     font-weight: 900;
                     color: #323232;
                     width: 24vw ;
-                    font-style: italic;
-                    font-family: inter;
+                    font-family: BInter  !important;
+
                     line-height: 1.1em;
                     margin-left: 0 !important;
                 }

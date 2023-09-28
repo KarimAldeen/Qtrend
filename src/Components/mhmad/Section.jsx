@@ -10,8 +10,8 @@ const Section = ({translations , image}) => {
     <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
-    width={900}
-    height={240}
+    // width={900}
+    // height={240}
     className='category_section_body'
     viewBox="0 0 1351 356"
   >
@@ -45,7 +45,7 @@ const Section = ({translations , image}) => {
         <feComposite in="SourceGraphic" />
       </filter>
     </defs>
-    <g id="Section" transform="translate(39 28.921)">
+    <g id="Section" transform="translate(39 28.921)" className='category_section_body'>
       <g id="Group_237700" data-name="Group 237700">
         <g
           transform="matrix(1, 0, 0, 1, -39, -28.92)"
