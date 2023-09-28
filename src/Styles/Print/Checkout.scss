@@ -184,11 +184,12 @@
                             line-height: normal;
                         }
                         input{
-                            // border-radius: 0 !important;
+                            border-radius: 0 !important;
                             color: black;
-                            // border-top: none;
-                            // border-left: none;
-                            // border-right: none;
+                            border-top: none;
+                            height: 0;
+                            border-left: none;
+                            border-right: none;
                             margin-bottom: 10px;
                             &:focus{
                                 outline: none;

@@ -17,6 +17,7 @@ function ProductCategoryContainer({color , index , products}) {
                 translate={product?.translations}
                 image={product?.product_main_image}
                 {...product}
+                price={product?.product_price}
                 from_price={product?.low_price}
                 to_price={product?.high_price}
                 />

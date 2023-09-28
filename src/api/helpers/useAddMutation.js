@@ -16,7 +16,7 @@ export const useAddMutation = (key, url , toast_notification =true) => {
     {
       onSuccess: ({ message }) => {
         if(toast_notification){
-          toast.success(message || t("added_successfully"));
+          toast.success(message || t("Add Successfully"));
 
         }
         queryClient.invalidateQueries([key]);

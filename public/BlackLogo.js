@@ -1,6 +1,9 @@
 import React from 'react'
+import { useRouter } from 'next/navigation'
 
 const BlackLogo = () => {
+  const route = useRouter();
+
   return (
     <svg
     width={135}
@@ -9,6 +12,7 @@ const BlackLogo = () => {
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     className='BlackLogo'
+    onClick={() => route.push('/')}
   >
     <g clipPath="url(#clip0_295_835)">
       <path

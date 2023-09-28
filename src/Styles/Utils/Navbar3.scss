@@ -36,11 +36,7 @@
         font-family: BNoor !important;
     }
 }
-.GreenLogo{
-    margin-inline: 2vw;
-    width: 10vw ;
-    min-width: 50px;
-}
+
 .NavBar3{
     overflow: hidden !important;
     background: #000;
@@ -50,67 +46,86 @@
     
     display: flex;
     align-items: center !important;
-    justify-content: space-between;
+    justify-content : center !important ;
+    @include devices(BreakPoints){
+        &{
+            justify-content: space-between !important;
+        }
+    }
     z-index: 3;
     font-family: Poppins;
     font-weight: bolder !important;
     // font-display: swap;
     height: 40px;
-    img{
-        margin-left: 3vw !important;
-        
-        width:6vw;
-        min-width: 50px !important;
-        // height:2vw;
-        // margin-top: .1em;
-        // transform: translateX(12vw);
+    .SVGGREENLOGO{
+        margin-inline: 2vw;
+        width: 10vw ;
+        min-width: 50px;
+        // width:6vw;
+        // min-width: 50px !important;
         
     }
     
     .search_input{
         display: flex;
         align-items: center;
+        width: 23vw;
+        position: relative;
+        margin-inline:2vw !important ;
         justify-content: center;
         text-align: center;
+        
         @include devices(donkey){
             transform: translate(-10px,-3px) ;
-
+            &{
+                width: 50vw;
+            }
             input{
                 height: 25px !important;
                 border-radius: 5px !important;
                 width: 50vw !important;
+                
             }
             
         }
         input{
             display: flex;justify-content: center;align-items: center;
-            width: 23vw;
-            height:4vh;
+            width: 100%;
+            height:5vh;
             
             padding-inline: 10px;
-            margin-inline: 7vw;
+            // margin-inline: 7vw;
             border-radius: 2vw;
             border: none;
 
-            transform: translateX(8vw) translateY(4px);
+            // transform: translateX(8vw) translateY(4px);
             &:hover{
                 border: none;
             }
         }
         svg{
             color: #262626;
-            margin: .65vw 1vw 0vw -1.2vw ;
-            font-size: 10px;
+            // margin: .65vw 1vw 0vw -1.2vw ;
+            font-size: 16px;
+            position: absolute;
             z-index: 999;
-            margin-top: 8px;
+            right: 10px;
+
+            @include devices(BreakPoints){
+                &{
+                    right: 0;
+                }
+            }
+            // margin-top: 8px;
 
         }
     }
    .Links3{
+    
             display: flex;
             justify-content: space-around; 
             align-items: center; 
-            width: 50%;
+            // width: 50%;
             margin-right: 3vw;
         }
     a{
@@ -118,7 +133,11 @@
         font-size: .65vw;
         margin-inline: .8vw;
         font-weight: 900 !important ;
+        font-family: BPoppins !important;
+
+
     }
+    
     @include devices(Minlaptop){
         // a{
         //     font-size: 9px !important;

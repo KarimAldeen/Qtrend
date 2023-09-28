@@ -68,7 +68,7 @@ function CategoryHoemSectionWithProduct({color , index , products , perPage ,cat
                   name={product?.name}
                   id={product.id} 
                   image={product?.product_main_image}
-                  price={product?.price}
+                  price={product?.product_price}
                   from_price={product?.low_price}
                   to_price={product?.high_price}
                   translate={product?.translations}

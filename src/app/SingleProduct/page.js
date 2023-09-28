@@ -22,6 +22,7 @@ const SingleProduct = () => {
     const productID = useSearchParams().get('product_id');
     const [t] = useTranslation()
     const { data, isLoading } = useGetProduct({ product_id: productID })
+    console.log(data);
     const [selectedOption, setSelectedOption] = useState(1);
     const [selectedOption2, setSelectedOption2] = useState(null);
     const [Customized, setCustomized] = useState(false);
@@ -47,6 +48,8 @@ const SingleProduct = () => {
         emailOrPhone: Yup.string()
             .required('Email or Phone Number is required'),
         requirements: Yup.string().required('Requirements are required'),
+        image: Yup.mixed().required('Image are required'),
+
     });
     const [imagePreview, setImagePreview] = useState(null);
     const [FieldValue, setFieldValue] = useState(null);
@@ -77,7 +80,7 @@ const SingleProduct = () => {
         // console.log('Form submitted with values:', Data);
         // resetForm();
         // setImagePreview(null)
-        toast.success("Saved Custmized Data Successfuly")
+        toast.success(t("Saved Custmized Data Successfuly"))
 
     };
 
@@ -107,10 +110,12 @@ const SingleProduct = () => {
                 image:data?.product_main_image,
                 name:data?.name
             })
+            toast.success(t("Add Successfully"))
+
         }else{
 
             if(!CostmizedValue){
-                toast.error('Please Fill The Customized Information')
+                toast.error(t('Please Fill The Customized Information'))
             }else{
 
                 addProductToCartWithQuantity({
@@ -122,11 +127,13 @@ const SingleProduct = () => {
                     is_customized_design:true,
                     custom:{
                         ...CostmizedValue ,
-                        image:FieldValue
+                        image:FieldValue,
+                        imageToBack:data?.image
                     }
                 })
+                toast.success(t("Add Successfully"))
 
-                console.log(CostmizedValue)
+
             }
             
         }
@@ -149,12 +156,12 @@ const SingleProduct = () => {
                         <div className='mid_section'>
 
                             <div className='mid_left_section'>
-                                {/* <div className='more_img'>
-                                    <img src={'/Print/Rectangle 9629.png'} alt='more_img' />
-                                    <img src={'/Print/Rectangle 9629.png'} alt='more_img' />
-                                    <img src={'/Print/Rectangle 9629.png'} alt='more_img' />
-                                    <img src={'/Print/Rectangle 9629.png'} alt='more_img' />
-                                </div> */}
+                                <div className='more_img'>
+                                    <img src={BaseURLImage + data?.images[0]?.path} alt='more_img' />
+                                    <img src={BaseURLImage + data?.images[0]?.path} alt='more_img' />
+                                    <img src={BaseURLImage + data?.images[0]?.path} alt='more_img' />
+                                    <img src={BaseURLImage + data?.images[0]?.path} alt='more_img' />
+                                </div>
                                 <div className='main_img'>
                                     <img src={BaseURLImage + data?.product_main_image}
                                         // {BaseURL + product.image}
@@ -228,7 +235,7 @@ const SingleProduct = () => {
                                     validationSchema={validationSchema}
                                     onSubmit={handleSubmit}
                                 >
-                                    {({ errors, touched , submitForm }) => (
+                                    {({ errors, touched , submitForm ,  setFieldValue:formikFn} ) => (
                                         <Form>
                                          
                                             <div className="coustomized_design" >
@@ -283,12 +290,14 @@ const SingleProduct = () => {
                                                             type="file"
                                                             id="file-input"
                                                             accept="image/*"
-                                                            onChange={(e) => handleImageChange(e, setFieldValue)}
+                                                            onChange={(e) => {
+                                                                formikFn('image', e.target.files[0])
+                                                                handleImageChange(e, setFieldValue)}}
                                                         />
                                                     </div>
                                                     <button className="quote_button" type="submit">
                                                         {/* <BsWhatsapp />  */}
-                                                        {t("Save ")}
+                                                        {t("Save")}
                                                     </button>
                                                 </div>
                                             </div>

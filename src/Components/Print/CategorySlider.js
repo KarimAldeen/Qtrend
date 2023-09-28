@@ -28,7 +28,7 @@ function CategorySlider() {
         showArrows={false}
         infiniteLoop
         showStatus={false}
-        showThumbs={false}
+        showThumbs={false} 
         dynamicHeight
         >
              {

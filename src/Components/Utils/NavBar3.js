@@ -13,14 +13,15 @@ import useGetWidth from '../../hooks/useGetWidth'
 import { MdOutlineLegendToggle } from 'react-icons/md'
 import { useRouter } from 'next/navigation'
 import GreenLogo from '/public/GreenLogo'
-function NavBar3() {
+function NavBar3() {  
   const [t] = useTranslation();
   const { isHovered ,handleMouseEnter , handleMouseLeave} = useHover()
   const [isActive , setIsActive ] = useState(false)
   const width = useGetWidth()
   return (
     <>
-    <div className='NavBar3   '>
+    <div className='NavBar3'>
+      
           <GreenLogo />
           <NavBarSearch />
           {
@@ -29,7 +30,7 @@ function NavBar3() {
             <div className='In_Link3'> 
             <Link  href={'/'}  >{t('HOME')}</Link>
                 <Link  href={'/services?param=1'}  onMouseEnter={()=>handleMouseEnter()} >{t('OUR SERVICES')}</Link>
-                <Link href={'/Print'}  >{t("Print")}</Link>             
+                <Link href={'/Print'}  >{t("PRINTS")}</Link>             
                 <Link  href={'/works'}  >{t("OUR WORKS")}</Link>
 
                 {
