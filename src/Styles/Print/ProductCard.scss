@@ -11,8 +11,6 @@
         min-width: 30px;
     }
   }
-  .swiper-wrapper{
-  }
 
 .product_card{
     width:  13.5vw;
@@ -127,9 +125,7 @@
 @include devices(SS_mobile){
     .simple-continer-row{
         width: 100%;
-      .product_card{    
-    
-      }
+   
       .Arrow{
         display: none;
       }
