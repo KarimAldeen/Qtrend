@@ -17,6 +17,7 @@ import Arrow from '../Services/Arrow'
 import {TranslateObject} from '../../Utils/TranslateObject'
 import { useTranslation } from 'react-i18next'
 import useGetWidth from '../../hooks/useGetWidth'
+import MainPaper from '../mhmad/MainPaper'
 
 SwiperCore.use([Autoplay]);
 
@@ -36,10 +37,15 @@ function CategoryHoemSectionWithProduct({color , index , products , perPage ,cat
           {TranslateObject(category?.translations, i18n.language , 'name' )}
         </div>
         :
-          <Main_Paper
-        is_odd={is_odd}
-         name={TranslateObject(category?.translations, i18n.language , 'name' )}
-        quick_overview={TranslateObject(category?.translations, i18n.language , 'description')} id={category?.id}  image={category?.category_image}/>
+        //   <Main_Paper
+        // is_odd={is_odd}
+        //  name={TranslateObject(category?.translations, i18n.language , 'name' )}
+        // quick_overview={TranslateObject(category?.translations, i18n.language , 'description')} id={category?.id}  image={category?.category_image}/>
+               <MainPaper
+         is_odd={is_odd}
+          name={TranslateObject(category?.translations, i18n.language , 'name' )}
+         quick_overview={TranslateObject(category?.translations, i18n.language , 'description')} id={category?.id}  image={category?.category_image}/>
+      
       }
       
         </div>
