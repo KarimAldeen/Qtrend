@@ -39,7 +39,7 @@
                 color: var(--Black, #383838);
             /* Heading/Heading 3 */
             font-family: Montserrat;
-            font-size: 3em;
+            font-size: 2.5em;
             font-style: normal;
             margin: auto;
             text-align: center;
@@ -63,16 +63,16 @@
                     align-items: center;
                     color: #D0D0D2;
                     font-family: Poppins;
-                    font-size: 1.4em;
+                    font-size: 18px;
                     font-style: normal;
-                    font-weight: 400;
+                    font-weight: 600;
                     line-height: normal;
                     span{
                         cursor: pointer;
                     }
                     .circle{
-                        width: 50px;
-                        height: 50px;
+                        width: 40px;
+                        height: 40px;
                         margin-inline:10px ;
                         border: 1px solid gray;
                         display: flex;
@@ -83,7 +83,7 @@
                     }
                 }
                 .mid-level{
-                    width: 304px;
+                    width: 250px;
                     height: 2px;
                     margin-inline: 20px;
                     background: #383838;
@@ -94,15 +94,15 @@
                     align-items: center;
                     color: #D0D0D2;
                     font-family: Poppins;
-                    font-size: 24px;
+                    font-size: 18px;
                     font-style: normal;
-                    font-weight: 400;
+                    font-weight: 600;
                     line-height: normal;
                     color: #B0D04F;
 
                     .circle{
-                        width: 50px;
-                        height: 50px;
+                        width: 40px;
+                        height: 40px;
                         margin-inline:10px ;
                         border: 1px solid #B0D04F;
                         display: flex;
@@ -292,7 +292,6 @@
                         width: 90%;
                         margin: auto;
                         .header{
-                           
                             color:  #383838;
                             font-family: Poppins;
                             font-size: 18px;
@@ -316,7 +315,6 @@
                             margin: auto;
                             justify-content: center;
                             align-items: center;
-                            
                             margin-top: 20px;
                             border-radius: 6.22px;
                             border: 0.777px solid var(--Black, #383838);
@@ -347,7 +345,7 @@
                             text-align: center;
                             color:#383838;
                             font-family: Poppins;
-                            font-size: 13.995px;
+                            font-size: 11.995px;
                             font-style: normal;
                             font-weight: 500;
                             cursor: pointer;

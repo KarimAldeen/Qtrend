@@ -4,8 +4,9 @@ import { TranslateObject } from '../../Utils/TranslateObject'
 import { useTranslation } from 'react-i18next'
 
 
-const Section = ({translations , image}) => {
-    const {i18n} = useTranslation()
+const Section = ({translations , image, is_odd, id}) => {
+    const {i18n} = useTranslation();
+    const {t} = useTranslation();
   return (
     <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -58,8 +59,8 @@ const Section = ({translations , image}) => {
             height={252}
             rx={8}
             transform="translate(39 54)"
-            fill="#fff"
-          />
+            fill={is_odd ? "black" : "white"}
+            />
         </g>
         <g
           transform="matrix(1, 0, 0, 1, -39, -28.92)"
@@ -88,8 +89,9 @@ const Section = ({translations , image}) => {
         fontSize={54}
         fontFamily="Poppins-Black, Poppins"
         fontWeight={800}
+        fill={!is_odd ? "black" : "white"}
       >
-        <tspan x={0} y={57}>
+        <tspan x={0} y={57} style={{fontFamily:"BPoppins"}}>
         {TranslateObject(translations ,i18n?.language , 'name' )}
 
 
@@ -101,6 +103,7 @@ const Section = ({translations , image}) => {
         transform="translate(45 132.205)"
         fontSize={34}
         fontFamily="Poppins-Regular, Poppins"
+        fill={!is_odd ? "black" : "white"}
       >
         <tspan x={0} y={36}>
             {TranslateObject(translations ,i18n?.language , 'description' )}
@@ -113,19 +116,20 @@ const Section = ({translations , image}) => {
           width={124}
           height={38}
           rx={12}
-          fill="#060606"
+          fill={!is_odd ? "#060606" : "white"}
         />
         <text
           id="ALL"
           transform="translate(0 4.96)"
-          fill="#fff"
+          // fill="#fff"
           fontSize={20}
           fontFamily="Poppins-Black, Poppins"
           fontWeight={800}
+          fill={!is_odd ? "white" : "black"}
         >
           <tspan x="40" y={21} xmlSpace="preserve">
             {" "}
-            ALL
+            {t("ALL")}
           </tspan>
         </text>
       </g>

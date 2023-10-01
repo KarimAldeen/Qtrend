@@ -74,10 +74,10 @@ const MainPaper = ({ quick_overview, id, image, name, is_odd }) => {
                         fontFamily="Poppins-Black, Poppins"
                         fontWeight={800}
                     >
-                        <tspan x={0} y={28}>
+                        <tspan style={{fontFamily:"BPoppins"}} x={0} y={28}>
                             {name1}{" "}
                         </tspan>
-                        <tspan x={0} y={56}>
+                        <tspan style={{fontFamily:"BPoppins"}} x={0} y={56}>
                             {name2}
                         </tspan>
                     </text>
@@ -100,13 +100,13 @@ const MainPaper = ({ quick_overview, id, image, name, is_odd }) => {
                             height={38}
                             rx={12}
                             
-            fill={!is_odd ? "black" : "white"}
+                     fill={!is_odd ? "black" : "white"}
                         />
                         <text
                             id="VIEW_ALL-2"
                             data-name="VIEW ALL"
                             transform="translate(0 4.96)"
-            fill={is_odd ? "black" : "white"}
+                    fill={is_odd ? "black" : "white"}
                             fontSize={20}
                             fontFamily="Poppins-Black, Poppins"
                             fontWeight={800}
@@ -140,7 +140,8 @@ const MainPaper = ({ quick_overview, id, image, name, is_odd }) => {
                         height={34}
                         rx={17}
                         transform="translate(237 377) rotate(180)"
-                        fill="#898989"
+                        fill={is_odd ? "#898989" : "black"}
+                        // fill="#898989"
                     />
                     <path
                         id="Path_6"
@@ -157,7 +158,7 @@ const MainPaper = ({ quick_overview, id, image, name, is_odd }) => {
                         height={34}
                         rx={17}
                         transform="translate(245 343)"
-                        fill="#898989"
+                        fill={is_odd ? "#898989" : "black"}
                     />
                     <path
                         id="Path_7"
