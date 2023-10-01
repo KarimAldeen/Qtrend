@@ -6,7 +6,8 @@
     max-width: 100vw !important;
     justify-content: space-between;
     align-items: center;
-    margin-top: calc(10vh - 3px);
+    margin-top: calc(9vh - 3px);
+    padding-bottom: 10px;
     @include devices(Minlaptop){
         
           margin-top:53px;  
@@ -73,7 +74,7 @@
     }
     .print_icons{
         // margin-inline:10px ;
-        margin-top: 17px !important;
+        margin-top: 25px !important;
         
         @include devices(tablet){
             &{
@@ -84,6 +85,7 @@
         right: 100px !important;
         .notifictaion_circle{
             position: absolute;
+            color: #fff;
             top: -10px;
             right: -6px;
             background: #B0D04F;

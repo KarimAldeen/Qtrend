@@ -10,7 +10,7 @@ const Card = () => {
   height="410.4"
   viewBox="0 0 341.1 410.4"
   className='Card'
->
+  >
   <defs>
     <filter
       id="Rectangle_9625"

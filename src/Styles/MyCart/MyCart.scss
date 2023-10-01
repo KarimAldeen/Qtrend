@@ -9,7 +9,7 @@
     min-height: 100vh;
     width: 100vw;
     padding-bottom: 10vh;
-    border-top:#c2c2c2 3px solid;
+    border-top:#c2c2c2 1px solid;
     .MyCart_container{
         width: 80%;
         margin: auto;
@@ -41,7 +41,7 @@
                 color: var(--Black, #383838);
             /* Heading/Heading 3 */
             font-family: Montserrat;
-            font-size: 3em;
+            font-size: 2.5em;
             font-style: normal;
             text-align: center;
             font-weight: 700;
@@ -59,7 +59,7 @@
         }
         
         .steps_pay{
-            width: 80%;
+            width: 70%;
             height: 20vh;   
             margin: auto;
             display: flex;
@@ -70,12 +70,12 @@
                 align-items: center;
                 color: #B0D04F;
                 font-family: Poppins;
-                font-size: 24px;
-                font-weight: 400;
+                font-size: 18px;
+                font-weight: 600;
                 line-height: normal;
                 .circle{
-                    width: 50px;
-                    height: 50px;
+                    width: 40px;
+                    height: 40px;
                     margin-inline:10px ;
                     border: 1.5px solid #B0D04F;
                     display: flex;
@@ -86,7 +86,7 @@
                 }
             }
             .mid-level{
-                width: 304px;
+                width: 250px;
                 height: 2px;
                 margin-inline: 20px;
                 background: #383838;
@@ -96,14 +96,14 @@
                 align-items: center;
                 color: #D0D0D2;
                 font-family: Poppins;
-                font-size: 24px;
-                font-weight: 400;
+                font-size: 18px;
+                font-weight: 600;
                 span{
                     cursor: pointer;
                 }
                 .circle{
-                    width: 50px;
-                    height: 50px;
+                    width: 40px;
+                    height: 40px;
                     margin-inline:10px ;
                     border: 1.5px solid #D0D0D2;
                     display: flex;
@@ -132,11 +132,14 @@
         }
         .edit_product{
             display: flex;
-            align-items: center;
+            align-items: start;
             flex-direction: column;
-            width: 70vw;
+            justify-content: space-between !important;
+            width: 60%;
+            // margin-left: -1vw !important;
             min-height: 17vh;
-            margin: auto;
+            margin-left: 8vw;
+            // margin: auto;
             border-top:1px solid #B0D04F;
             border-bottom:1px solid #B0D04F;
             padding: 1vw;
@@ -151,8 +154,9 @@
             }
             .left_sec{
                 display: flex;justify-content: space-between;align-items: center;
-                width: 30%;
-                margin-top: 2vw;
+                width: 50%;
+                margin-top: 1vw;
+                margin-bottom: 1vw;
                 .left_left{
                     img{
                         width: 13vw;
@@ -165,23 +169,23 @@
                     flex-direction: column;
                     width: 13vw;
                     margin-top: -3vw;
-                    margin-left: 1vw;
+                    margin-left: 3vw;
                     .right_left_first{
                         color: var(--Black, #383838);
-                        font-family: Poppins;
+                        font-family: BPoppins;
                         font-size: 20px;
                         font-weight: 700;
                     }
                     .right_left_second{
                         color: #C7C7C7;
-                        font-family: Tajawal;
-                        font-size: 20px;
-                        font-weight: 400;
+                        // font-family: Tajawal;
+                        font-size: 14px;
+                        font-weight: 600;
                         text-transform: capitalize;
                     }
                     .right_left_third{
                         color: #B0D04F;
-                        font-family: Poppins;
+                        font-family: BPoppins;
                         font-size: 20px;
                         font-weight: 700;
                     }
@@ -228,7 +232,7 @@
                 color: #9AB72B;
                 font-size: 2vw;
                 font-weight: 700;
-                width: 10%;
+                // width: 10%;
                 cursor: pointer;
                 }
             }
@@ -245,30 +249,30 @@
                     color: var(--Black, #383838);
                     /* Text Medium/Text Medium 2 */
                     font-family: Poppins;
-                    font-size: 25px;
-                    font-weight: 500;
+                    font-size: 21px;
+                    font-weight: 900;
                     margin-left: 3.5em;
-                    width: 50vw;
+                    width: 54vw;
                     margin: auto;
                 }
                 .summary_total{
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    width: 50vw;
+                    width: 54vw;
                     margin: auto;
                     .total{
                         color: var(--Old-Gray, #A7A7A7);
                     /* Text Medium/Text Medium 3 */
                     font-family: Poppins;
-                    font-size: 25px;
+                    font-size: 21px;
                     font-weight: 500;
                     }
                     .price{
                         color: #B0D04F;
                     /* Text Medium/Text Medium 2 */
                     font-family: Poppins;
-                    font-size: 25px;
+                    font-size: 21px;
                     font-weight: 500;
                     }
                 }
@@ -277,9 +281,9 @@
                     background: #C4FD14;
                     color: #1D1D1D;
                     font-family: Poppins;
-                    font-size: 37px;
+                    font-size: 21px;
                     font-weight: 600;
-                    width: 50vw;
+                    width: 54vw;
                     border: none;
                     min-height: 8vh;
                     margin: auto;
@@ -289,7 +293,7 @@
                     text-align: center;
                     /* Text Medium/Text Medium 3 */
                     font-family: Poppins;
-                    font-size: 20px;
+                    font-size: 14px;
                     font-weight: 600;
                     cursor: pointer;
                     width: 50vw;

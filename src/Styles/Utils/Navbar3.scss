@@ -58,8 +58,9 @@
     // font-display: swap;
     height: 40px;
     .SVGGREENLOGO{
-        margin-inline: 2vw;
-        width: 10vw ;
+        margin-inline: 4vw;
+        margin-right: -.5vw !important;
+        width: 8vw ;
         min-width: 50px;
         // width:6vw;
         // min-width: 50px !important;
@@ -146,12 +147,12 @@
     span{
         background: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
-        padding: 0 .4vw;
+        padding: .5em .4em ;
        cursor: pointer;
-        font-weight: bold;
+        font-weight: 900;
         font-size: 1vw;
         margin-left: 2vw;
-        border-radius: .4vw;
+        border-radius: .2vw;
         position: relative;     
     }
 }

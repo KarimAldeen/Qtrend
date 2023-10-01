@@ -3,6 +3,9 @@
     min-height: 100vh !important;
     .category-product-page{
         // min-height: 100vh;
+        .category_section_body{
+            margin-top: -3vw;
+        }
     }
     .PrintNavBar{
             border-bottom: 3px solid #c2c2c2;
