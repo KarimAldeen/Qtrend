@@ -54,6 +54,7 @@
             min-height: 35px;
             word-wrap: break-word;
             margin-block: .7vw;
+            margin-left: .8vw;
             @include devices(BreakPoints){
                 &{
                     height: 42px !important;
@@ -64,6 +65,7 @@
         .price{
            
             font-size: max(.9vw ,8.8px);
+            margin-left: .8vw;
 
         }
         .card-body-left{

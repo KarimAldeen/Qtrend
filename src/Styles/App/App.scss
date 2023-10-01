@@ -1,5 +1,9 @@
 
-
+@font-face {
+  font-family: Inter;
+  src: url('../../Utils/Fonts/Inter-VariableFont_slnt\,wght.ttf');
+  // font-display: swap;
+}
 @font-face {
   font-family: Roboto;
   src: url('../../Utils/Fonts/Roboto-Bold.ttf');
@@ -50,13 +54,6 @@
 @font-face {
   font-family: Inter;
   src: url('../../Utils/Fonts/Inter-BoldItalic.otf');
-  font-weight: bold;
-  // font-display: swap;
-
-}
-@font-face {
-  font-family: BInter;
-  src: url('../../Utils/Fonts/f');
   font-weight: bold;
   // font-display: swap;
 
