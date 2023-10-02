@@ -23,6 +23,11 @@
         display: flex;
         align-items: center;
         margin-left: 15vw;
+        @include devices(mobile){
+            &{
+                margin-left: 5vw;
+            }
+        }
         div{
             .Link{
                 color: #323232;
@@ -38,25 +43,31 @@
             }
             @include devices(LargLaptop){
                 &{
-                    font-size: 1.4em;
+                    font-size: 1.2em;
                     
                 }
             }
             @include devices(Laptop){
                 &{
-                    font-size: 1em;
+                    font-size: .9em;
+                    
+                }
+            }
+            @include devices(SS_mobile){
+                &{
+                    font-size: .7em;
                     
                 }
             }
         }
         @include devices(LargLaptop){
             .LinkAll{
-                font-size: 1em !important ;
+                font-size: .9em !important ;
             }
         }
         @include devices(Laptop){
             .LinkAll{
-                font-size: .8em !important;
+                font-size: .7em !important;
                 
             }
         
@@ -99,14 +110,19 @@
     .print_icons{
         // margin-inline:10px ;
         margin-top: 25px !important;
-        
+        position: relative;
+        right: 100px !important;
         @include devices(tablet){
             &{
                 margin-top: 10px;
+                right: 50px !important;
             }
         }
-        position: relative;
-        right: 100px !important;
+        @include devices(SS_mobile){
+            &{
+                right: 20px !important;
+            }
+        }
         .notifictaion_circle{
             position: absolute;
             color: #fff;
