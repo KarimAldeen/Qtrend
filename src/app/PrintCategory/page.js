@@ -20,6 +20,7 @@ import LoadingPage from '../loading'
 function PrintCategory() {
   // Get the 'category_id' parameter from the URL
   const category_id = useSearchParams().get('category_id');
+  const category_index = useSearchParams().get('index');
 
   // Fetch data for the specified category
   const { data , isLoading } = useGetAllProductForCategory({ category_id: category_id });
@@ -59,7 +60,7 @@ function PrintCategory() {
           </div>
         </div>
         {/* Display a section with category information */}
-        <Section  image={data?.category_image} translations={data?.translations}/>
+        <Section  image={data?.category_image} translations={data?.translations} is_odd={category_index %2 ==1}/>
       </div>
       <div className='category_product'>
         {

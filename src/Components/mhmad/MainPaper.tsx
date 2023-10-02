@@ -92,7 +92,7 @@ const MainPaper = ({ quick_overview, id, image, name, is_odd }) => {
                         <tspan x="0" dy="1.2em">{first_text.join(' ')}</tspan>
                         <tspan x="0" dy="1.2em">{second_text.length > 29 ? second_text.slice(0, 29) + '...' : second_text}</tspan>
                     </text>
-                    <g id="View_All" data-name="View All" transform="translate(19 333)">
+                    <g id="View_All" data-name="View All" transform="translate(19 333)" onClick={()=>router.push("PrintCategory?category_id="+id+"&" + "index="+(is_odd?1:0)+"")}>
                         <rect
                             id="Rectangle_9627"
                             data-name="Rectangle 9627"
