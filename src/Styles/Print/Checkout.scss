@@ -321,9 +321,9 @@
                             background: var(--Black, #383838);
                         }
                         .checkout_button{
-                         display: flex;
+                        display: flex;
                         padding: 12.44px;
-                        justify-content: space-around;
+                        // justify-content: space-around;
                         align-items: center;
                         cursor: pointer;
                         flex-shrink: 0;
@@ -334,7 +334,7 @@
                         margin-top: 20px;
                         margin-bottom: 20px;
                         color: #232323;
-                        font-family: Poppins;
+                        font-family: BPoppins;
                         font-size: 1.2em;
                         font-style: normal;
                         font-weight: 900;
