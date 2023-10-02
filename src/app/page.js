@@ -12,7 +12,7 @@ const Page = () => {
 
   useEffect(()=>{
 
-    window.location.href = 'whatsapp://';
+    window.location.href = 'whatsapp';
 
     // window.addEventListener('offline', function () {
     //   return setIsOffline(true);
