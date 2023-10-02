@@ -11,6 +11,8 @@ function TopHeader() {
     const {data2} = useGetAllSocialMedia()
     const [t] = useTranslation();
   return (
+    <>
+    
     <div className='HEADER'>
      <div className='header_container'>
         <div className='header_left'>
@@ -44,8 +46,9 @@ function TopHeader() {
             </div>
           </div>
         </div>
-        <NavBar3/>
     </div>
+        <NavBar3/>
+    </>
   )
 }
 

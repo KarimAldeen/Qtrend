@@ -12,6 +12,15 @@
     }
   }
 
+  .ar{
+    .product_card{
+        .price{
+            direction: rtl !important;
+            margin-left: 0 !important;
+            margin-right: 1.6vw !important;
+        }
+    }
+  }
 .product_card{
     width:  13.5vw;
     min-width: 150px;
@@ -64,10 +73,15 @@
         }
         .price{
            
+            // direction: rtl !important;
             font-size: max(.9vw ,8.8px);
             margin-left: .8vw;
 
         }
+    
+           
+        
+        
         .card-body-left{
             width: 50%;
         }

@@ -38,25 +38,27 @@
 }
 
 .NavBar3{
-    overflow: hidden !important;
-    background: #000;
-    position: absolute;
-    width: 100vw;
-    padding: 1vw 0;
-    
-    display: flex;
-    align-items: center !important;
-    justify-content : center !important ;
+
+        overflow: hidden !important;
+        background: #000 !important;
+        position: relative !important;
+        width: 100vw !important;
+        padding: 1vw 0;
+        
+        display: flex;
+        align-items: center !important;
+        justify-content : center !important ;
+        z-index: 3;
+        font-family: Poppins;
+        font-weight: bolder !important;
+        // font-display: swap;
+        // height: 140px !important;
     @include devices(BreakPoints){
         &{
             justify-content: space-between !important;
         }
     }
-    z-index: 3;
-    font-family: Poppins;
-    font-weight: bolder !important;
-    // font-display: swap;
-    height: 40px;
+   
     .SVGGREENLOGO{
         margin-inline: 4vw;
         margin-right: -.5vw !important;

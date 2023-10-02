@@ -6,7 +6,7 @@
     max-width: 100vw !important;
     justify-content: space-between;
     align-items: center;
-    margin-top: calc(9vh - 3px);
+    // margin-top: calc(9vh - 3px);
     padding-bottom: 10px;
     @include devices(Minlaptop){
         
@@ -32,7 +32,7 @@
             .Link{
                 color: #323232;
                 font-family: BTajwal;
-                font-size: .7em;
+                font-size: .9em;
                 font-weight: 900 !important;
                 margin-left: 2.5vw;
             }
