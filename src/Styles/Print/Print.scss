@@ -16,7 +16,18 @@
         }
     }   
 }
+.ar{
+    .home_second_left{
+        align-items: center !important;
+        text-align: right !important;
+    }
+    .request_button{
+        margin: 1.5em 0em 0em -4em !important;
+
+    }
+}
 .HEADER{
+    
     min-width: 100vw !important;
     height: 35px;
     position: relative;
@@ -56,14 +67,6 @@
                 z-index: 999;
             }
         }
-    //     @include devices(Minlaptop){
-    //         .header_left{
-    //             .NUM, .EMAIL{
-    //                 font-size: 2vw !important;
-    //             }
-    //         }
-    // }
- 
 }
 }
 .print_page{
@@ -125,13 +128,14 @@
             }
             width: 70vw;
             margin-inline: auto;
+            
             .home_second_left{
                 width: 100%;
                 display: flex;
                 align-items: center;                
                 flex-direction: column;
-                text-align: left !important;
-              
+                text-align: left ;
+                
                 .frist_p{
                     margin-top: .6em;
                     font-size: 4vw;
@@ -238,12 +242,8 @@
         }
         .BGPrint{
             height: 50vw !important;
-
-        }
-    
+        }   
 }
-
-
 .PrintNavBar{
     border-bottom: 3px solid #c2c2c2;
     display: flex;
@@ -266,9 +266,6 @@
    
 }
 
-
-
-
 @keyframes Ibra_Is_Trash3 {
     0%   {opacity: 1;}
   20%  {opacity: 0;}
@@ -281,9 +278,6 @@
     transition: 1s ease-in-out;
 
 }
-  
-    
-  
 
 .Soso2{
     transform-origin: 50% 50%;
