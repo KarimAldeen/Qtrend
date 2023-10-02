@@ -16,6 +16,9 @@ const PrintNavBar = () => {
     const [t  ] = useTranslation()
     const {i18n}  = useTranslation()
     const route = useRouter();
+    function myFunction() {
+      document.getElementById('foo').style.cssText = 'background-color: red; color: white; font-size: 44px';
+  }
     useEffect(()=>(
       setLength(cart?.length)
     ),[cart])
