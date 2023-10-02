@@ -36,6 +36,30 @@
                     font-size: 2.5vw;
                 }
             }
+            @include devices(LargLaptop){
+                &{
+                    font-size: 1.4em;
+                    
+                }
+            }
+            @include devices(Laptop){
+                &{
+                    font-size: 1em;
+                    
+                }
+            }
+        }
+        @include devices(LargLaptop){
+            .LinkAll{
+                font-size: 1em !important ;
+            }
+        }
+        @include devices(Laptop){
+            .LinkAll{
+                font-size: .8em !important;
+                
+            }
+        
         }
         .middle{
             display: flex;
