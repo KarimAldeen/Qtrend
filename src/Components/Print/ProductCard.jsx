@@ -26,7 +26,7 @@ function ProductCard({name  , image  ,price , from_price , id ,  to_price ,trans
                 <div className='card-body-left'>
                     <p className='quick_overview'>{TranslateObject(translate,i18n.language , 'quick_overview' ).length > 34 ?TranslateObject(translate,i18n.language , 'quick_overview' ) +"..." :TranslateObject(translate,i18n.language , 'quick_overview' ) }</p>
                     <p className='price'>{t('From')} <b>{from_price}QR</b></p>
-                    <p className='price'>{t("To")} <b>{to_price}QR</b></p>
+                    <p className='price'>{t("to")} <b>{to_price}QR</b></p>
                 </div>
         </div>
         <AddToCartButton onClick={()=>{

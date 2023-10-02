@@ -44,10 +44,10 @@
     "This is a brief overview of our portfolio, and each project represents our capabilities in branding, marketing, and video/photo production. We would be delighted to provide more detailed information and showcase our work in a comprehensive portfolio presentation tailored to your specific requirements.":"هذه نظرة عامة موجزة على محفظتنا ، ويمثل كل مشروع قدراتنا في إنتاج العلامات التجارية والتسويق وإنتاج الفيديو الصور.يسعدنا تقديم معلومات أكثر تفصيلاً وعرض عملنا في عرض تقديمي شامل محفظة مصمم بمتطلباتك المحددة.",
     "Qtrend is a creative design agency that specializes in delivering the best full creative branding , logo creation, and posts creation digital design solutions. With a passion for visual aesthetics and a deep understanding of branding strategies, Qtrend aims to help businesses establish a strong and impactful brand presence." :"QTRend هي وكالة تصميم إبداعية متخصصة في تقديم أفضل العلامات التجارية الإبداعية الكاملة ، وإنشاء الشعار ، وإنشاء مشاركات إنشاء حلول التصميم الرقمي.مع شغف الجماليات البصرية وفهم عميق لاستراتيجيات العلامة التجارية ، تهدف QTRend إلى مساعدة الشركات على إنشاء وجود علامة تجارية قوية ومتأثرة." ,
     "Company":"شركة",
-    "About":"عن",
+    "About":"عننا",
     "Meet US":"قابلنا",
-    "Support":"يدعم",
-    "Our work":"عملنا",
+    "Support":"الدعم",
+    "Our work":"أعمالنا",
     "Quick Link":"رابط سريع",
     "Share Location":"مشاركة الموقع",
     "FAQs":"الأسئلة الشائعةئلة الشائعة",
@@ -220,7 +220,7 @@
     "Your Order Summary":"ملخص طلبك",
     "Subtotal":"المجموع الفرعي",
     "Shipping":"الشحن",
-    "Tax":"ضريبةال",
+    "Tax":"الضريبة",
     "Cash On Delivary":"نقدا عند التسليم",
     "Back TO Cart":"العودة إلى السلة",
     "Payment":"القسط",
@@ -238,7 +238,5 @@
     "please_login_first":"الرجاء تسجيل الدخول أولا",
     "Loading":"جاري التحميل",
     "VIEW ALL":"عرض الكل",
-    "Save":"حفظ",
-    "":""
-
+    "Save":"حفظ"
 }

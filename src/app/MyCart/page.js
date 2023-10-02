@@ -82,7 +82,7 @@ const MyCart = () => {
                 </div>
                 <div className='right_left'>
                   <p className='right_left_first'>{item?.name}</p>
-                  <p className='right_left_second'>{t("Quantity :")} {item?.quantity}</p>
+                  <p className='right_left_second'>{t("Quantity")}: {item?.quantity}</p>
                   <p className='right_left_third'>{item?.price} Qr</p>
                 </div>
               </div>

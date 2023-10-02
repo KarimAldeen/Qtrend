@@ -1,7 +1,9 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 
 const Card = () => {
+  const {t} = useTranslation()
   return (
     <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +109,7 @@ const Card = () => {
             From 130 Qr{" "}
           </tspan>
           <tspan x={0} y={27}>
-            to 15 QR
+            {t("to")} 15 QR
           </tspan>
         </text>
         <rect

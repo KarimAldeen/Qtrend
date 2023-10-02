@@ -1,12 +1,14 @@
 import React from 'react'
 import { BaseURL } from '../../api/config'
 import { useRouter } from 'next/navigation'
+import { useTranslation } from 'react-i18next'
 
 
 
 const MainPaper = ({ quick_overview, id, image, name, is_odd }) => {
     const router = useRouter()
     const stringFromBack = quick_overview
+    const {t} = useTranslation(); 
 
     const TextWordToArray = stringFromBack.split(' ')
     const TextWordLength = TextWordToArray.length
@@ -112,7 +114,7 @@ const MainPaper = ({ quick_overview, id, image, name, is_odd }) => {
                             fontWeight={800}
                         >
                             <tspan x="20" y={21}>
-                                VIEW ALL
+                                {t("VIEW ALL")}
                             </tspan>
                         </text>
                     </g>
