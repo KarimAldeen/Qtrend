@@ -10,7 +10,7 @@ const Page = () => {
 
   const [isOffline , setIsOffline] = useState(false) 
 
-  useEffect(()=>{
+  const  handelGo = ()=>{
 
     window.location.href = 'whatsapp://send';
 
@@ -21,12 +21,16 @@ const Page = () => {
     // window.addEventListener('online', function () {
     //   return setIsOffline(false);
     // });
-  },[])
+  }
 
   if(isOffline) return "You Are Offline PLease Connect in the internet "
  
   return (
     <div className='HOME_PAGE'>
+
+      <div onClick={handelGo}>
+        Go TO WhatApp 
+      </div>
       {/* <CheckInternetComponent />
       <Home1 t={t}/>
       <Home2 t={t} data={data}/>
