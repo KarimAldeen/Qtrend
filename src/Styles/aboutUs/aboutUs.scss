@@ -6,7 +6,7 @@
     .NavBar{
         position: absolute;
         margin-top: 0px;
-        height: 2vw;
+        height: 3vw;
         background: #bac3c7;
     }
     .ABOUT_US_WORD{
@@ -67,7 +67,7 @@
             color: #000000;
             text-align: center;
             font-family: Montserrat;
-            font-size: 1.65vw;
+            font-size: 1.45vw;
             font-weight: 545;
             line-height:1.6 ;
         }
@@ -129,7 +129,7 @@
 @include  devices(mobile){
     .AboutUs_p{
         // line-height: 1.7 !important;
-        font-size: 1.4vw !important;
+        font-size: 1.3vw !important;
     }
 }
 @media screen and (max-width: 480px) {
