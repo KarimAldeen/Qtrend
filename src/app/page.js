@@ -12,7 +12,7 @@ const Page = () => {
 
   const  handelGo = ()=>{
 
-    window.location.href = 'whatsapp://send';
+    window.location.href = 'mazadalnokhb://';
 
     // window.addEventListener('offline', function () {
     //   return setIsOffline(true);
