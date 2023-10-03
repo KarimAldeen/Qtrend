@@ -33,7 +33,7 @@ function CategoryHoemSectionWithProduct({color , index , products , perPage ,cat
 
       {
         width <500 ?
-        <div className='category-name-media'>
+        <div className='category-name-media' style={{color:is_odd?"#00a9d4" :"#ecf1f4"}}>
           {TranslateObject(category?.translations, i18n.language , 'name' )}
         </div>
         :
