@@ -7,15 +7,15 @@
     justify-content: space-between;
     align-items: center;
     // margin-top: calc(9vh - 3px);
-    padding-bottom: 10px;
+    // padding-bottom: 10px;
     @include devices(Minlaptop){
         
-          margin-top:53px;  
+        //   margin-top:53px;  
     }
     @include devices(mobile){
         &{
-            margin-top: min(13vw , calc(7.8vh - 3px) ) !important;
-            height: 5.5vh !important;
+            // margin-top: min(13vw , calc(7.8vh - 3px) ) !important;
+            // height: 5.5vh !important;
         }
     }
     .print_links{
