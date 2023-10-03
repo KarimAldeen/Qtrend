@@ -15,7 +15,7 @@
     @include devices(mobile){
         &{
             // margin-top: min(13vw , calc(7.8vh - 3px) ) !important;
-            // height: 5.5vh !important;
+            height: 5.5vh !important;
         }
     }
     .print_links{
@@ -109,7 +109,7 @@
     }
     .print_icons{
         // margin-inline:10px ;
-        margin-top: 25px !important;
+        // margin-top: 25px !important;
         position: relative;
         right: 100px !important;
         @include devices(tablet){
