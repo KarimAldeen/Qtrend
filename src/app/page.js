@@ -12,7 +12,7 @@ const Page = () => {
 
   const  handelGo = ()=>{
 
-    window.location.href = 'mazadalnokhb://';
+    window.location.href = 'mazadalnokbha://';
 
     // window.addEventListener('offline', function () {
     //   return setIsOffline(true);
