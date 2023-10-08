@@ -86,8 +86,7 @@
                     transform: scale(1.25);
                     font-weight: 700;
                     svg{
-                        transform: rotate(360deg) scale(1.1) !important;
-                        
+                        transform: rotate(360deg) scale(1.1) !important;   
                     }
                 }
             }
@@ -99,7 +98,6 @@
                     margin-top: 2px !important;
                 }
             }
-
             svg{
                 color: #000;
                 margin-left: .3vw;
@@ -109,10 +107,10 @@
     }
     .print_icons{
         // margin-inline:10px ;
-        // margin-top: 25px !important;
+        // background: #000;
+        // margin-top: 10px !important;
         position: relative;
-        margin-top: 10px;
-
+        top: 8px;
         right: 100px !important;
         @include devices(tablet){
             &{
@@ -132,10 +130,8 @@
             right: -6px;
             background: #B0D04F;
             width: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 15px;
+            display: flex; justify-content: center; align-items: center;
+            height: 16px;
             font-size: .6em;
             border-radius: 50%;
         }
