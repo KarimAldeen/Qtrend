@@ -22,3 +22,25 @@ export const useGetThirdService = ()=> useGetQuery(KEY+2 ,API.GETTHIRD)
 export const useGetFourthService = ()=> useGetQuery(KEY +3,API.GETFOURTH)
 export const useGetFifthService = ()=> useGetQuery(KEY +4,API.GETFIFTH)
 export const useGetSixthService = ()=> useGetQuery(KEY +5,API.GETSIXTH)
+
+
+
+// for ssr 
+export const getFirstService =async ()=>{
+    const data =await fetch(BaseURL + API.GETFIRST)
+    const res = await data.json()
+
+    return res
+}
+export const getFourthService =async ()=>{
+    const data =await fetch(BaseURL + API.GETFOURTH)
+    const res = await data.json()
+
+    return res
+}
+export const getThirdService =async ()=>{
+    const data =await fetch(BaseURL + API.GETTHIRD)
+    const res = await data.json()
+
+    return res
+}

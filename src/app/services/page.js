@@ -1,8 +1,6 @@
-'use client'
 import React from 'react'
 import FirstService from './Service'
-import { useGetFirstService, useGetFourthService, useGetThirdService } from '../../api/service/first_services'
-import LoadingPage from '../loading'
+import { getFirstService, getFourthService, getThirdService } from '../../api/service/first_services'
 
 
 
@@ -10,14 +8,10 @@ import LoadingPage from '../loading'
   
 
   
-    const {data , isLoading}  = useGetFirstService()  
-    const {data:data2 , isLoading:Loading}  = useGetThirdService()  
-    const {data:data3 , isLoading:Loading2}  = useGetFourthService()  
+    const {data }  = getFirstService()  
+    const {data:data2}  = getThirdService()  
+    const {data:data3 }  = getFourthService()  
 
-
-      if(isLoading || Loading || Loading2){
-        return <LoadingPage />
-      }
   return (
     
     <FirstService data={data}  data2={data2}  data3={data3} />
