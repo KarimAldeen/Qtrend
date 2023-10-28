@@ -1,8 +1,12 @@
+'use client'
 import React from 'react'
 import LogoAnimation from './LogoAnimation';
 import Ibrahem from './Ibrahem';
+import { useTranslation } from 'react-i18next';
 
-const Home5 = ({t}) => {
+const Home5 = () => {
+  const [t] = useTranslation();
+
   return (
     <div className='Home4'>
 

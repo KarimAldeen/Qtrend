@@ -3,7 +3,10 @@ import React from 'react'
 import NavBar from '../Utils/NavBar'
 import Home_BG from './Home_BG'
 import {useRouter} from 'next/navigation'
-const Home1 = ({t}) => {
+import { useTranslation } from 'react-i18next'
+const Home1 = () => {
+  const [t] = useTranslation();
+  
   const navigate   = useRouter()
   return (
     <div className='Home'>

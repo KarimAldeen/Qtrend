@@ -5,8 +5,11 @@ import { FaFacebookF, FaTiktok, FaWhatsapp, FaSnapchatGhost, FaInstagram, FaLink
 import {DATASOCIALMEDIA} from '../../config/SOCIALMEDIA'
 import Home23_BG from './Home23_BG';
 import {useRouter} from 'next/navigation'
+import { useTranslation } from 'react-i18next';
 
-const Home2 = ({t ,data}) => {
+const Home2 = ({data}) => {
+  const [t] = useTranslation();
+  
   
   const router  = useRouter()
   return (

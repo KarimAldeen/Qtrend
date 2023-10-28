@@ -1,7 +1,11 @@
+'use client'
 import React from 'react'
 import Home3_Sections from './Home3_Sections'
+import { useTranslation } from 'react-i18next';
 
-const Home4 = ({t}) => {
+const Home4 = () => {
+  const [t] = useTranslation();
+
   const Data1=
     {
       src: `../Home/4/Home4_Image/production.gif`,
