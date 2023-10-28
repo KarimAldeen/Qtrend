@@ -1,3 +1,4 @@
+import { BaseURL } from "../config"
 import { useGetQuery } from "../helpers/useGetQuery"
 
 
