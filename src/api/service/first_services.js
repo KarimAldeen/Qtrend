@@ -8,11 +8,11 @@ const KEY  =  "SERVICE"
 
 
 const API ={
-    GETFIRST:`/api/all-services?_start=0&_end=4`,
-    GETTHIRD:`/api/all-services?_start=5&_end=6`,
-    GETFOURTH:`/api/all-services?_start=7&_end=9`,
-    GETFIFTH:`/api/all-services?_start=10&_end=13`,
-    GETSIXTH:`/api/all-services?_start=14&_end=15`,
+    GETFIRST:`api/all-services?_start=0&_end=4`,
+    GETTHIRD:`api/all-services?_start=5&_end=6`,
+    GETFOURTH:`api/all-services?_start=7&_end=9`,
+    GETFIFTH:`api/all-services?_start=10&_end=13`,
+    GETSIXTH:`api/all-services?_start=14&_end=15`,
 
 
 

@@ -4,16 +4,18 @@ import { getFirstService, getFourthService, getThirdService } from '../../api/se
 
 
 
- function  Page() {
+ async function  Page() {
   
 
   
-    const {data }  = getFirstService()  
-    const {data:data2}  = getThirdService()  
-    const {data:data3 }  = getFourthService()  
+    const {data }  =await getFirstService()  
+    const {data:data2}  =await getThirdService()  
+    const {data:data3 }  = await getFourthService()  
 
   return (
     
+  
+  
     <FirstService data={data}  data2={data2}  data3={data3} />
   )
 }
