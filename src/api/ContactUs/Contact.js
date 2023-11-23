@@ -4,7 +4,6 @@ import {useGetQuery} from '../helpers/useGetQuery'
 const API = {
     SEND_MESSAGE: `/api/send`,
     GET: `/api/static-informations`,
-
 };
 
 
