@@ -5,8 +5,13 @@ import '../Styles/App/Import.scss'
 import CustomToastContainer from '../Utils/ToastifyContainer'
 import Head from 'next/head'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { useRouter } from 'next/navigation'
 
 export default function RootLayout({ children }) {
+
+  const route = useRouter();
+
+  route.push('/NotFound')
 
   const queryClient = new QueryClient()
 
