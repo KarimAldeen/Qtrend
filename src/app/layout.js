@@ -6,6 +6,7 @@ import CustomToastContainer from '../Utils/ToastifyContainer'
 import Head from 'next/head'
 import { useRouter } from 'next/navigation'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { useEffect } from 'react'
 
 export default function RootLayout({ children }) {
 
@@ -15,7 +16,10 @@ export default function RootLayout({ children }) {
   
   const route = useRouter();
 
-  route.push('/NotFound')
+  useEffect(()=>{
+    route.push('/NotFound')
+
+  },[])
   return (
     <html lang="en">
       <Head>
