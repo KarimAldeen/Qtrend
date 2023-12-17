@@ -16,10 +16,11 @@ export default function RootLayout({ children }) {
   
   const route = useRouter();
 
-  useEffect(()=>{
-    route.push('/NotFound')
+  // useEffect(()=>{
+  //   route.push('/NotFound')
 
-  },[])
+  // },[])
+  
   return (
     <html lang="en">
       <Head>
