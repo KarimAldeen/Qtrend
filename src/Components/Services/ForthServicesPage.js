@@ -7,7 +7,6 @@ import Word_animation from './Word_animation'
 import { useTranslation } from 'react-i18next'
 export const ForthServicesPage = ({data}) => {
 
-    console.log(data)
     const [t] = useTranslation()
     const Back_To_page3 = () => {
         document.getElementById("Transion_page").classList.remove("Transion_page4")
@@ -62,7 +61,7 @@ export const ForthServicesPage = ({data}) => {
                             {t("Our models boast an impressive portfolio that showcases their versatility and talent")}
                             </h3>
                             <p>
-                            {t("Are you in search of exceptional models to bring your creative vision to life? Look no further! At Qtrend, we specialize in providing professional models tailored to your specific requirements. With our extensive network of diverse and talented individuals, we ensure that you find the perfect match for your project.")}
+                            {t("Are you in search of exceptional models to bring your creative vision to life? Look no further! At SDNone, we specialize in providing professional models tailored to your specific requirements. With our extensive network of diverse and talented individuals, we ensure that you find the perfect match for your project.")}
                             </p>
                         </div>
 

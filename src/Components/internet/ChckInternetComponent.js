@@ -23,7 +23,6 @@ const CheckInternetComponent = () => {
                 },
               });
         }
-        console.log(speedMbps);
       };
 
     var MeasureConnectionSpeed = function MeasureConnectionSpeed() {
@@ -35,7 +34,6 @@ const CheckInternetComponent = () => {
     
         download.onload = function (d) {
           endTime = new Date().getTime();
-          console.log(startTime, endTime);
           showResults(startTime , endTime)
         };
 

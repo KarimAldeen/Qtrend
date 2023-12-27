@@ -14,12 +14,12 @@ function NavBar6() {
 
   return (
     <div className={`NavBar NavBar6`}>
-          <Logo6 />
+          <img className='Logo_image' src='SDN-Logo.png'/>
           <div className='Links'>
             <div className='In_Link'> 
             <Link  href={'/'}  >{t('HOME')}</Link>
                 <Link  href={'/services?param=1'}  onMouseEnter={()=>handleMouseEnter()} >{t('OUR SERVICES')}</Link>
-               
+                <Link href={'/Print'}  >{t("PRINTS")}</Link>             
                 <Link  href={'/works'}  >{t("OUR WORKS")}</Link>
 
                 {

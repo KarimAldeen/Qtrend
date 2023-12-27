@@ -6,10 +6,10 @@ const CopyRight = () => {
   return (
     <div className='CopyRight'>
         <p className='left'>
-            {t("© Copyright 2023 Qtrend For Advertising All Rights Reserved.")}
+            {t("© Copyright 2023 SDNone For Advertising All Rights Reserved.")}
         </p>
         <p className='right'>
-           {t("Develop and design by Qtrend studio")}
+           {t("Develop and design by SDNone studio")}
         </p>
     </div>
   )

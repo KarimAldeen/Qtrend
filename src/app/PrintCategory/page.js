@@ -33,7 +33,6 @@ function PrintCategory() {
 
   // Determine the number of products per page based on window width
   const per_page = width < 500 ? 2 : width < 800 ? 2 :width <950 ? 3: 4;
-  console.log(data?.translations);
   const [i18n] = useTranslation()
   // const {i} = useTransition()
   if(isLoading) return <LoadingPage/>

@@ -40,7 +40,6 @@ const MeetUs = () => {
   }, []);
 
   const {data  , isError}  = useGetALlStatics()
-  // console.log(data);
 
   const {mutate , isSuccess, isLoading} = useSendMessage()
   const ref = useRef()
@@ -55,7 +54,6 @@ const MeetUs = () => {
     values['email'] =""
     values['phoneNumber'] =""
     ref.current.value= "" 
-    console.log(values);
   };
   return (
     <>
@@ -110,7 +108,6 @@ const MeetUs = () => {
           </div>
           <Formik
                 initialValues={{
-                  // console.log(name);
                   companyName: "",
                   email: "",
                   phoneNumber: "",
@@ -122,9 +119,9 @@ const MeetUs = () => {
                 {({ errors, setFieldValue }) => (
 
           <Form className='MeetUs_mid_section_right'>
-            <Field type='text'  placeholder={t('Company Name')} name='companyName' />
-            <Field type='email' placeholder={t('Email')} name='email'/>
-            <Field type='text' placeholder={t('phone_number')} name='phoneNumber' autoComplete='on' />
+            <Field className='feild_input' type='text'  placeholder={t('Company Name')} name='companyName' />
+            <Field className='feild_input' type='email' placeholder={t('Email')} name='email'/>
+            <Field className='feild_input' type='text' placeholder={t('phone_number')} name='phoneNumber' autoComplete='on' />
                <textarea
                     ref={ref}
                     required="required"
@@ -135,7 +132,7 @@ const MeetUs = () => {
                  placeholder={t('Message')} 
                 />
             <div>
-                {isLoading  ? ". . ." :<button type='submit' >{t("send_message")}</button>}
+                {isLoading  ? ". . ." :<button className='submit_button' type='submit' >{t("send_message")}</button>}
             </div>
           </Form>
             )}

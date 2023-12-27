@@ -9,7 +9,6 @@ import { DragImages } from './DragImages'
 const Page = () => {
   const [ClassName, setClassName] = useState("")
   const handleDragStart = (e) => {
-    console.log(e);
     setClassName(e) 
     if(e==1){setClassName("T6_1")}
     if(e==2){setClassName("T6_1 T6_2")}
@@ -19,7 +18,6 @@ const Page = () => {
     if(e==6){setClassName("T6_1 T6_2 T6_3 T6_4 T6_5 T6_6")}
   };
   const { data, isLoading} = useGetSixthService();
-  console.log(data);
 
   return (
     <div className={` Drag_Pages ${ClassName}`}>

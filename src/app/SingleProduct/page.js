@@ -22,7 +22,6 @@ const SingleProduct = () => {
     const productID = useSearchParams().get('product_id');
     const [t] = useTranslation()
     const { data, isLoading } = useGetProduct({ product_id: productID })
-    console.log(data);
     const [selectedOption, setSelectedOption] = useState(1);
     const [selectedOption2, setSelectedOption2] = useState(null);
     const [Customized, setCustomized] = useState(false);
@@ -77,7 +76,6 @@ const SingleProduct = () => {
         // Handle form submission here, e.g., send data to a server
         setCostmizedValue(values)
         // const Data = { ...values, image: imagePreview }
-        // console.log('Form submitted with values:', Data);
         // resetForm();
         // setImagePreview(null)
         toast.success(t("Saved Custmized Data Successfuly"))

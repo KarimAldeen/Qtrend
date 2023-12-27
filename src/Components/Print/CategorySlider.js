@@ -12,7 +12,6 @@ import LoadingPage from '../../app/loading';
 function CategorySlider() {
  
     const {data , isLoading} = useGetSlider()
-    // console.log(data?.category_slider);
     const sliderRender = data?.category_slider?.map(slider =>(
         <img  style={{zIndex:"0 !important" }}
         src={BaseURLImage +slider.image} 

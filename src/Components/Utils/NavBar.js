@@ -2,7 +2,7 @@
 import { NavLinks } from '../../config/NavBarConfig'
 import Link from 'next/link'
 import React, { useRef } from 'react'
-import Logo from './Logo'
+import Logo from './MainLogo'
 import BtnTranslate from './BtnTranslate'
 import { useTranslation } from 'react-i18next'
 import MenuService from '../../Components/ui/Menu'
@@ -13,7 +13,7 @@ function NavBar() {
   const { isHovered ,handleMouseEnter , handleMouseLeave} = useHover()
   return (
     <div className={`NavBar`}>
-          <Logo />
+          <img className='Logo_image' src='SDN-Logo.png'/>
           <div className='Links'>
             <div className='In_Link' ref={ref} > 
             

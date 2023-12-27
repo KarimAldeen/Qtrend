@@ -24,7 +24,6 @@ function PrintCategory() {
   const { data } = useGetAllProductWithSearch({ search_keyword: keySearch });
 
   
-  console.log(data);// const data  = []
   // Extract product data from the fetched data
   
   // Get the current window width

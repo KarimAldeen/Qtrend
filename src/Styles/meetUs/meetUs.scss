@@ -11,9 +11,6 @@
     max-width: 100vw;
     overflow: hidden;
     cursor: auto;
-    // max-height: 200vh !important;
-    // height: 140vw;  
-
     .MeetUs_BG {
         img {
             max-width: 100vw;
@@ -24,21 +21,17 @@
     .MEET_US_WORD{
         position: absolute;
         width: 100vw;
-        // background: #ad2525;
         line-height: 6vw;
         margin: 29.3vw 0vw 0vw 6.7vw;
         .Meet_WORD{
             color: #FFF;
             text-shadow: 0px 6.275862216949463px 6.275862216949463px rgba(0, 0, 0, 0.25);
-            // font-family: Poppins;
             font-size: 6.5vw;
             font-weight: 990;
             letter-spacing: -.1vw;
-            // margin-left: -1vw !important;
         }
         .US_WORD{
             color: #B3EA73;
-            // font-family: Poppins;
             font-size: 8.1vw;
             font-weight: 900;
             letter-spacing: -.6vw;
@@ -68,27 +61,20 @@
                 display: flex;
                 align-items: center;
                 margin-inline: 1vw;
-
-                // background: inherit;
                 a {
-                    // background: #ffffff;
                     border-radius: 50%;
                     height: 5vw;
                     width: 5vw;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    // background: inherit;
                     border: .3vw white solid;
                 }
-
                 svg {
                     font-size: 3vw;
                     color: #000;
-                    // background: inherit;
                     color: inherit;
                 }
-
                 p {
                     white-space: nowrap;
                     font-size: .8vw;
@@ -97,11 +83,9 @@
                     font-weight: 600;
                     line-height: normal;
                     margin-left: 1vw;
-
                 }
             }
         }
-
         .MeetUs_mid_section_left {
             display: flex;
             align-items: center;
@@ -110,14 +94,11 @@
             margin-left: 1vw;
             line-height: 2.7vw;
             text-align: center;
-
             h2,
             h3 {
                 width: 90%;
                 text-align: center;
-
             }
-
             h1 {
                 font-size: 1.7vw;
                 font-weight: 400;
@@ -151,11 +132,12 @@
             padding-right: 4vw;
             direction: ltr;
             transform: translateY(-18.5vw);
+            .feild_input{
+                width: 25vw;
+            }
             div{
-                width: 27vw;
                 display: flex;
-                justify-content: center;
-                // margin-left: .5vw;
+                justify-content: center;   
                 button{
                     width: 24vw;
                     background: inherit;
@@ -168,7 +150,6 @@
                     &:hover{
                         background:#BB7AF5 ;
                         scale: 1.1;
-                        // color: ;
                     }
                 }
             }
@@ -185,17 +166,14 @@
                 outline: none;
                 box-shadow: 0px 2.869257926940918px 2.869257926940918px 0px #BB7AF5;
                 font-size: 1vw;
-
                 &::placeholder {
                     font-size: 1.6vw;
                 }
             }
-
             textarea {
                 height: 14vw;
             }
         }
-
     }
 }
 

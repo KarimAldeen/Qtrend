@@ -32,7 +32,6 @@ var cart = [
 function addProductToCart(product){
 
     const is_product_exists  = cart.find(productInCart => productInCart.id == product.id)
-    console.log(is_product_exists);
 
     if(is_product_exists){
 
@@ -48,7 +47,6 @@ function addProductToCart(product){
         cart = [...cart , product]
     }
 
-    console.log(cart);
 }
 
 
@@ -57,11 +55,11 @@ function addProductToCart(product){
 
 
 function getTotalPrice(){
-    console.log(
-        cart.reduce((total  ,cartItem) =>(
-            total + cartItem.quntity * cartItem.price
-        ),0)
-    );
+    // console.log(
+    //     cart.reduce((total  ,cartItem) =>(
+    //         total + cartItem.quntity * cartItem.price
+    //     ),0)
+    // );
 }
 
 getTotalPrice()
@@ -123,4 +121,4 @@ const stringFromBack = 'Top Quality Paper Prints in Qatar'
   const first_text = TextWordToArray.slice(0 , TextWordLength/2);
   const second_text = TextWordToArray.slice( TextWordLength/2 +1 , TextWordLength);
 
-  console.log(second_text.join(' '));
+//   console.log(second_text.join(' '));

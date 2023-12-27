@@ -9,7 +9,7 @@ const Home5 = ({t}) => {
     <img className='Home4_BG_Image' src="../Home/5/Home5_Image/Home5_BG.png" alt="Image" />
     <div className='Home4_Top'>
       <h1>{t("Our Awesome Portofolio")}</h1>
-      <LogoAnimation/>
+      {/* <LogoAnimation/> */}
 
     </div>
     <div className='Home4_Down'>

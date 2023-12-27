@@ -39,11 +39,11 @@ function Page() {
         if(isSuccess){
                             var whatsappLink ;
                     if(width < 768){
-                        // the device open the browser is  mobile 
+                        // the browser is open by a mobile 
                         whatsappLink = `whatsapp://send?phone=+97470070716&text=${encodeURIComponent(ConvertArrayToFatora({...valuesFormik , myCart}))}&app_absent=0`;
 
                     }else{
-                        // is laptop 
+                        // by laptop 
                         whatsappLink = `https://web.whatsapp.com/send?phone=+97470070716&text=${encodeURIComponent(ConvertArrayToFatora({...valuesFormik , myCart}))}&app_absent=0`;
                     }
 
@@ -57,7 +57,6 @@ function Page() {
 
    const handelSubmit = (values , {resetForm})=>{
 
-    console.log(myCart);
     if(myCart.length == 0){
         toast.warning(t("Cart Is Empty"))
         return ;

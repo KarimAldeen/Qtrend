@@ -9,13 +9,9 @@ export const initalValue = {
 
 }
 
-
 export const Schema = Yup.object().shape({
- 
       name: Yup.string()
       .required('Required'),
       phone: Yup.string().required('Required')
-    //   note: Yup.string().required('Required'),
-
   });
   

@@ -13,7 +13,6 @@ function SixComponent({div , handelDrag}):ReactNode{
   //   setTimeout(()=>{
   //     myDiv.classList.add('AddDisplayNone')
   //   },2200)
-  //       console.log('Div Has Been Drag')
   // }
   return (
     <div className='six-component' onDrag={(handelDrag)} id={`divtotransform`} ref={div}>

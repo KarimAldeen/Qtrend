@@ -17,7 +17,6 @@ const FifthService = () => {
   const [t] = useTranslation()
   const {i18n} = useTranslation()
   const { data, isloading} = useGetFifthService();
-  console.log(data);
   return (
       // Main Dev Page
     <div className='FifthService_page'>

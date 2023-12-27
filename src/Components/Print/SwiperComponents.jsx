@@ -23,7 +23,7 @@ const SwiperComponent = ({ children, slidesPerView =null }) => {
     slidesPerView={statment}
     pagination={{ clickable: true }}
     // onSwiper={(swiper) => }
-    // onSlideChange={() => console.log('slide change')}
+    // onSlideChange={() =>}
     centeredSlides={true}
     autoplay={{
       delay: 3000,

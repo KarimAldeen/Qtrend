@@ -14,7 +14,7 @@ function NavBar2() {
 
   return (
     <div className={`NavBar`}>
-          <BlackLogo/>
+          <img className='BlackLogo' src='SDN-Logo.png'/>
           <div className='Links'>
             <div className='In_Link'> 
             <Link  href={'/'}  >{t('HOME')}</Link>

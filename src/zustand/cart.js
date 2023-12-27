@@ -10,7 +10,6 @@ const useManageCart = create((set) => ({
   // Add a product to the cart
   addProductToCart: (product) =>
     set((state) =>{
-      console.log(product);
       const is_product_exists =  state.cart.find(productInCart => productInCart.id == product.id);
 
       if(is_product_exists){
@@ -36,7 +35,6 @@ const useManageCart = create((set) => ({
 
     addProductToCartWithQuantity: (product) =>
     set((state) =>{
-      console.log(product);
       const is_product_exists =  state.cart.find(productInCart => productInCart.id == product.id);
 
       if(is_product_exists){

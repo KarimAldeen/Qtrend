@@ -103,8 +103,8 @@ const Home23_BG = ({t}) => {
         fill="url(#pattern_Home23-2)"
       />
       <rect
-        id="Qtrend-face-Loop-Mov_1_1"
-        data-name="Qtrend-face-Loop-Mov (1) 1"
+        id="SDNone-face-Loop-Mov_1_1"
+        data-name="SDNone-face-Loop-Mov (1) 1"
         className='Face_Animation'
         width={602}
         height={602}

@@ -14,10 +14,10 @@ const Footer = () => {
     return (
         <div className='Footer'>
             <div className='Footer_Left'>
-                <img src='../Logo_Qtrend.svg' alt='logo' width="8vw" height="30vw" />
+                <img className='Logo_image_footer' src='SDN-Logo.png' alt='logo'  />
                 <p className='p'>
 
-                  {t("Qtrend is a creative design agency that specializes in delivering the best full creative branding , logo creation, and posts creation digital design solutions. With a passion for visual aesthetics and a deep understanding of branding strategies, Qtrend aims to help businesses establish a strong and impactful brand presence.")}
+                  {t("SDNone is a creative design agency that specializes in delivering the best full creative branding , logo creation, and posts creation digital design solutions. With a passion for visual aesthetics and a deep understanding of branding strategies, SDNone aims to help businesses establish a strong and impactful brand presence.")}
                 </p>
                 <div className='Footer_SocialMedia'>
    

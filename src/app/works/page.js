@@ -13,7 +13,6 @@ function Works() {
 
   const {data, isLoading}  = useGetAllOurWorks()
 
-  console.log(data)
   const images = data?.at(0)?.images || []
 
   if(isLoading) return <LoadingPage/>

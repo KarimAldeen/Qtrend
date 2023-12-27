@@ -25,17 +25,17 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <Head>
       <link rel='image_src' href='/LogoBlack.png' />
-        <title>Qtrend Company</title>
+        <title>SDNone Company</title>
         <meta 
         name='description' content='Protfolio that is my pesonal website with the best 
         animation skill that i show information about me and
         my skill , project  Nextjs ,tailiwndCss, frame-motion' />
-        <meta name="keywords" content='Qtrend , Qtrend Company , Qtrend Services 
-        , Company , qtrend Company ,Qtrend Website ,
-        Website , Web Development Company , Qtrend For Web Development  , ' />
+        <meta name="keywords" content='SDNone , SDNone Company , SDNone Services 
+        , Company , SDNone Company ,SDNone Website ,
+        Website , Web Development Company , SDNone For Web Development  , ' />
         <link rel="canonical" href={typeof window == "undefined"? "" : window.location.href} />
         <meta name="robots" content="index" />
-        <meta name="author" content='Qtrend' />
+        <meta name="author" content='SDNone' />
         <link href={typeof window == "undefined"? "" : window.location.href} rel="publisher" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="black" />
